@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-06T21:31:45-05:00       *-->
+<!--*       on 2022-03-12T14:39:40-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -97,6 +97,8 @@
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 <script src="http://pythontutor.com/build/pytutor-embed.bundle.js?cc25af72af"></script><!--*** Runestone Services ***-->
+<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -114,12 +116,12 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 </script><!--End: Google Global Site Tag code--><script>createAllVisualizersFromHtmlAttrs();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </head>
 <body id="pretext-SA" class="pretext article ignore-math">
-<a class="assistive" href="#content">[skip-to-content]</a><header id="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href="https://pretextbook.org" target="_blank"><img src="external/misc/book-cover-google-art-project.jpg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="derivatives.html"><span class="title">Derivatives and Integrals:</span> <span class="subtitle">An Annotated Discourse</span></a></h1>
 <p class="byline">Robert Beezer</p>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">[toc]</span></button><a class="index-button button" href="index-1.html" title="[index-part]"><span class="name">[index-part]</span></a><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
 <script>
 var ggbApp = new GGBApplet({"appName": "classic",
     "width": 330,
@@ -133,7 +135,7 @@ var ggbApp = new GGBApplet({"appName": "classic",
     "autoHeight": true,
     "disableAutoScale": false},
 true);
-</script><span class="treebuttons"><a class="previous-button button" href="section-6.html" title="[previous]"><span class="icon">&lt;</span><span class="name">[previous-short]</span></a><a class="up-button button" href="derivatives.html" title="[up]"><span class="icon">^</span><span class="name">[up-short]</span></a><a class="next-button button" href="text-in-paragraphs.html" title="[next]"><span class="name">[next-short]</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
+</script><span class="treebuttons"><a class="previous-button button" href="section-6.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="derivatives.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="text-in-paragraphs.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
 \newcommand{\myequation}[2]{#1\amp =#2} 
 \newcommand{\indefiniteintegral}[2]{\int#1\,d#2}
 \newcommand{\testingescapedpercent}{ \% } 
@@ -144,7 +146,7 @@ true);
 <div class="ptx-page">
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul>
 <li>
-<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">[frontmatter]</span></a></div>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul><li><div class="toc-item"><a href="frontmatter.html#abstract-1" class="internal"><span class="title"></span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="section-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div></li>
@@ -155,14 +157,14 @@ true);
 <ul>
 <li><div class="toc-item"><a href="interesting-corollary.html#subsection-second-FTC" class="internal"><span class="codenumber">4.1</span> <span class="title">Second Version of <abbr class="acronym">FTC</abbr></span></a></div></li>
 <li>
-<div class="toc-item"><a href="interesting-corollary.html#subsection-2" class="internal"><span class="codenumber">4.2</span> <span class="title">A Pedagogical Note about [subsection] 4.1</span></a></div>
+<div class="toc-item"><a href="interesting-corollary.html#subsection-2" class="internal"><span class="codenumber">4.2</span> <span class="title">A Pedagogical Note about Subsection 4.1</span></a></div>
 <ul>
 <li><div class="toc-item"><a href="interesting-corollary.html#subsubsection-different-integrals" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Symbolic and Numerical Integrals</span></a></div></li>
 <li><div class="toc-item"><a href="interesting-corollary.html#subsubsection-2" class="internal"><span class="codenumber">4.2.2</span> <span class="title"></span></a></div></li>
 <li><div class="toc-item"><a href="interesting-corollary.html#subsubsection-3" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Advice</span></a></div></li>
-<li><div class="toc-item"><a href="interesting-corollary.html#exercises-subsection-solo" class="internal"><span class="codenumber">4.2.4</span> <span class="title">[exercises]</span></a></div></li>
-<li><div class="toc-item"><a href="interesting-corollary.html#reading-questions-1" class="internal"><span class="codenumber">4.2.5</span> <span class="title">[reading-questions]</span></a></div></li>
-<li><div class="toc-item"><a href="interesting-corollary.html#glossary-1" class="internal"><span class="codenumber">4.2.6</span> <span class="title">[glossary]</span></a></div></li>
+<li><div class="toc-item"><a href="interesting-corollary.html#exercises-subsection-solo" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="interesting-corollary.html#reading-questions-1" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="interesting-corollary.html#glossary-1" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Glossary</span></a></div></li>
 <li><div class="toc-item"><a href="interesting-corollary.html#solutions-subsection" class="internal"><span class="codenumber">4.2.7</span> <span class="title">Solutions for This Subsection</span></a></div></li>
 </ul>
 </li>
@@ -177,7 +179,7 @@ true);
 <div class="toc-item"><a href="interesting-corollary.html#subsubsection-5" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Test Two</span></a></div>
 <ul>
 <li><div class="toc-item"><a href="interesting-corollary.html#reading-questions-2" class="internal"><span class="codenumber">4.6.2</span> <span class="title">What Did You Learn?</span></a></div></li>
-<li><div class="toc-item"><a href="interesting-corollary.html#exercises-2" class="internal"><span class="codenumber">4.6.2</span> <span class="title">[exercises]</span></a></div></li>
+<li><div class="toc-item"><a href="interesting-corollary.html#exercises-2" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="interesting-corollary.html#subsubsection-6" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Test Three</span></a></div></li>
@@ -359,7 +361,7 @@ true);
 <li><div class="toc-item"><a href="advanced-numbering.html#subsection-96" class="internal"><span class="codenumber">27.8</span> <span class="title">A Title with } a Right Brace</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsection-97" class="internal"><span class="codenumber">27.9</span> <span class="title">A Title with <span class="process-math">\(a]b\)</span> a Math Right Bracket</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsection-98" class="internal"><span class="codenumber">27.10</span> <span class="title">Just an Exercise</span></a></div></li>
-<li><div class="toc-item"><a href="advanced-numbering.html#solutions-2" class="internal"><span class="codenumber">27.11</span> <span class="title">[solutions]</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#solutions-2" class="internal"><span class="codenumber">27.11</span> <span class="title">Solutions</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -376,7 +378,7 @@ true);
 <ul>
 <li><div class="toc-item"><a href="worksheets.html#worksheet-1" class="internal"><span class="codenumber">31.1</span> <span class="title">A Geometric Prelude</span></a></div></li>
 <li><div class="toc-item"><a href="worksheets.html#worksheet-2" class="internal"><span class="codenumber">31.2</span> <span class="title">Networks Worksheet</span></a></div></li>
-<li><div class="toc-item"><a href="worksheets.html#worksheet-3" class="internal"><span class="codenumber">31.3</span> <span class="title">[worksheet]</span></a></div></li>
+<li><div class="toc-item"><a href="worksheets.html#worksheet-3" class="internal"><span class="codenumber">31.3</span> <span class="title">Worksheet</span></a></div></li>
 <li><div class="toc-item"><a href="worksheets.html#worksheet-4" class="internal"><span class="codenumber">31.4</span> <span class="title">Dot products and projection</span></a></div></li>
 </ul>
 </li>
@@ -427,16 +429,16 @@ true);
 </li>
 <li><div class="toc-item"><a href="references-backmatter.html" class="internal"><span class="title">References</span></a></div></li>
 <li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
-<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">[colophon]</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div class="ptx-content serif">
 <section class="section" id="section-7"><h2 class="heading hide-type">
-<span class="type">[section]</span> <span class="codenumber">7</span> <span class="title">Mathematics</span>
+<span class="type">Section</span> <span class="codenumber">7</span> <span class="title">Mathematics</span>
 </h2>
 <section class="introduction" id="introduction-15"><p class="para" id="p-275">To be able to create both <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> and HTML output (plus variations), we rely on MathJax, which in turn supports an extensive subset of the mathematical symbols normally available.  The AMSMath symbol set is a good approximation.  The PreTeXt Guide has a link to the complete list of macros supported by MathJax.  We load the <code class="code-inline tex2jax_ignore">AMSsymbols</code> library and the library for extensible arrows, <code class="code-inline tex2jax_ignore">extpfeil</code>.</p></section><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.1</span> <span class="title">Basic Mathematics</span>
+<span class="type">Subsection</span> <span class="codenumber">7.1</span> <span class="title">Basic Mathematics</span>
 </h3>
 <div class="para">
 <p id="p-276">The following is from the MathJax <a class="external" href="http://www.mathjax.org/demos/tex-samples/" target="_blank">demonstration page</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-11" id="fn-11"><sup> 1 </sup></a>, an identity due to Ramanujan:</p>
@@ -476,7 +478,7 @@ A\xmapsto[\text{bijection}]{\Phi+\Psi+\Theta}B
 \end{align}
 </div>
 </div></section><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.2</span> <span class="title">Displayed Mathematics</span>
+<span class="type">Subsection</span> <span class="codenumber">7.2</span> <span class="title">Displayed Mathematics</span>
 </h3>
 <p class="para" id="p-282">Multi-line displays of mathematics are achieved with the <code class="code-inline tex2jax_ignore">md</code> tag (“math display”), and the variant that produces numbers on each line, <code class="code-inline tex2jax_ignore">mdn</code> (“math display numbered”), used within a paragraph (<code class="code-inline tex2jax_ignore">p</code>).  As a good example of how XML syntax is superior, you author <span class="process-math">\(n\)</span> lines of equations by enclosing each line inside of a <code class="code-inline tex2jax_ignore">mrow</code> tag, rather than using <span class="process-math">\(n-1\)</span> separators (such as <code class="code-inline tex2jax_ignore">\\</code>).</p>
 <div class="para">
@@ -554,7 +556,7 @@ x  \amp {}+{} \amp 3y \amp {}+{} \amp 2z \amp {}={} \amp 13.
 </div>
 </div>
 <article class="example example-like" id="example-5"><h4 class="heading">
-<span class="type">[example]</span><span class="space"> </span><span class="codenumber">7.1</span><span class="period">.</span><span class="space"> </span><span class="title">Excessive Display Mathematics.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1</span><span class="period">.</span><span class="space"> </span><span class="title">Excessive Display Mathematics.</span>
 </h4>
 <div class="para">
 <p id="p-289">In print versions, a long run of displayed equations often needs to be broken across pages.  If you are reading some other version of this, then there is nothing to see here.  But for <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output it could be interesting.  First, with no extra effort, this page-long display should break naturally, no matter how the preceding material changes.</p>
@@ -680,7 +682,7 @@ a + b = c\text{.}
 </div>
 <p class="continuation">This final sentence should remain, inside another <abbr class="initialism">HTML</abbr> paragraph, without the second equation's period.</p>
 </div></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.3</span> <span class="title"><span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> Packages and MathJax Extensions</span>
+<span class="type">Subsection</span> <span class="codenumber">7.3</span> <span class="title"><span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> Packages and MathJax Extensions</span>
 </h3>
 <p class="para" id="p-293">If you would like to use macros from a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> package <em class="emphasis">and</em> there is a MathJax extension <em class="emphasis">of the same name</em> which implements the same macros, then you may use these with your mathematics as we demonstrate here.</p>
 <div class="para">
@@ -693,7 +695,7 @@ a + b = c\text{.}
 <p class="continuation">Look at the source of this article to see the package name being supplied in a <code class="code-inline tex2jax_ignore">latex-preamble/package</code> element within the <code class="code-inline tex2jax_ignore">docinfo</code> section.  That is the only setup required to make the macro usable in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> and <abbr class="initialism">HTML</abbr> output.</p>
 </div>
 <p class="para" id="p-295">The packages appear before the author-supplied macros, so you can use macros from the packages as building blocks for document-specific macros.  We cannot guarantee there will be no conflicts between additional packages and those in use normally, or added in the future.  So use at your own risk.</p></section><section class="subsection" id="subsection-11"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.4</span> <span class="title">Advanced Mathematics</span>
+<span class="type">Subsection</span> <span class="codenumber">7.4</span> <span class="title">Advanced Mathematics</span>
 </h3>
 <p class="para" id="p-296">MathJax is extremely capable in rendering a subset of <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> in web browsers, and improving all the time.  You can get fairly fancy with some of its supported commands.  In particular, if you need to mix in a few words with your mathematics, the <code class="code-inline tex2jax_ignore">\text{}</code> macro is supported.  For example, you might use an “if” or an “otherwise” in the definition of a piecewise function.</p>
 <div class="para">
@@ -725,7 +727,7 @@ y \rightarrow \frac{\sin(0) }{0} \rightarrow {{\text{“}}\atop{}}\frac{0}{0}{{\
 <p id="p-299">Generally, you cannot use any <abbr class="initialism">XML</abbr> elements inside of the mathematics elements.  An exception is the <code class="code-inline tex2jax_ignore">xref</code> element which you might want to use to provide justifications for the steps of a derivation.  Here is a visual example that is mathematically meaningless,</p>
 <div class="displaymath process-math" id="md-16">
 \begin{align*}
-A&amp;=B+C&amp;&amp;\knowl{./knowl/corollary-FTC-derivative.html}{\text{[corollary] 4.1}}\\
+A&amp;=B+C&amp;&amp;\knowl{./knowl/corollary-FTC-derivative.html}{\text{Corollary 4.1}}\\
 &amp;=D+E&amp;&amp;\knowl{./knowl/theorem-FTC.html}{\text{The Fundamental Theorem of Calculus}}\\
 &amp;=F+G&amp;&amp;\knowl{./knowl/theorem-number-01.html}{\text{A nice result}}\text{.}
 \end{align*}
@@ -744,9 +746,9 @@ A0_{n\times p}
 0_{m\times p}
 \end{equation*}
 </div>
-<p class="continuation">We suggest using cross-references that only display numbers (<code class="code-inline tex2jax_ignore">&lt;xref&gt;</code> with <code class="code-inline tex2jax_ignore">@text</code> set to <code class="code-inline tex2jax_ignore">global</code>) since if you stick to elements like <code class="code-inline tex2jax_ignore">&lt;theorem&gt;</code>, <code class="code-inline tex2jax_ignore">&lt;lemma&gt;</code>, <code class="code-inline tex2jax_ignore">&lt;definition&gt;</code>, or <code class="code-inline tex2jax_ignore">&lt;axiom&gt;</code>, then the numbers will be unambiguous and the target of the cross-reference will contain full information.  But note that if you mix in divisions, or perhaps figures, as reasons then there is a possibility that numbers will need to be qualified by their type.  We have provided an abbreviation for one cross-reference to <a href="" class="xref" data-knowl="./knowl/theorem-FTC.html" title="[theorem] 2.1: The Fundamental Theorem of Calculus">[theorem] 2.1</a> (which will not benefit from automatic translation to other languages).</p>
+<p class="continuation">We suggest using cross-references that only display numbers (<code class="code-inline tex2jax_ignore">&lt;xref&gt;</code> with <code class="code-inline tex2jax_ignore">@text</code> set to <code class="code-inline tex2jax_ignore">global</code>) since if you stick to elements like <code class="code-inline tex2jax_ignore">&lt;theorem&gt;</code>, <code class="code-inline tex2jax_ignore">&lt;lemma&gt;</code>, <code class="code-inline tex2jax_ignore">&lt;definition&gt;</code>, or <code class="code-inline tex2jax_ignore">&lt;axiom&gt;</code>, then the numbers will be unambiguous and the target of the cross-reference will contain full information.  But note that if you mix in divisions, or perhaps figures, as reasons then there is a possibility that numbers will need to be qualified by their type.  We have provided an abbreviation for one cross-reference to <a href="" class="xref" data-knowl="./knowl/theorem-FTC.html" title="Theorem 2.1: The Fundamental Theorem of Calculus">Theorem 2.1</a> (which will not benefit from automatic translation to other languages).</p>
 </div></section><section class="subsection" id="subsection-12"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.5</span> <span class="title">Local Tags on Equations</span>
+<span class="type">Subsection</span> <span class="codenumber">7.5</span> <span class="title">Local Tags on Equations</span>
 </h3>
 <p class="para" id="p-301">If you are not writing a research monograph, maybe (a) you will not use many numbered equations, or do not like the looks of them, or feel they scare your readers, and (b) maybe your cross-references are always local-ish, like strictly within an <code class="code-inline tex2jax_ignore">example</code> or a <code class="code-inline tex2jax_ignore">proof</code>.  For this situation you can create, and employ, a “local” tag on a displayed equation.  Nothing enforces the idea of what constitutes local, and there is nothing to stop you from using the same symbols more than once.  With freedom comes responsibility.</p>
 <div class="para">
@@ -768,9 +770,9 @@ c^2 \amp = a^2+b^2\tag{✠✠}\\
 z^2 \amp = x^2+y^2\tag{7.52}
 \end{align}
 </div>
-<p class="continuation">Here are the local cross-references: <a href="" class="xref" data-knowl="./knowl/equation-local-star.html" title="[mrow]">(✶✶)</a>, <a href="" class="xref" data-knowl="./knowl/equation-local-dagger.html" title="[mrow]">(††)</a>, <a href="" class="xref" data-knowl="./knowl/equation-local-daggerdbl.html" title="[mrow]">(‡‡)</a>, <a href="" class="xref" data-knowl="./knowl/equation-local-hash.html" title="[mrow]">(##)</a>, <a href="" class="xref" data-knowl="./knowl/equation-local-maltese.html" title="[mrow]">(✠✠)</a>.  We test another farther away in <a href="section-cross-referencing.html" class="internal" title="[section] 18: Cross-Referencing">[section] 18</a>, contrary to our advice above.</p>
+<p class="continuation">Here are the local cross-references: <a href="" class="xref" data-knowl="./knowl/equation-local-star.html" title="Equation">(✶✶)</a>, <a href="" class="xref" data-knowl="./knowl/equation-local-dagger.html" title="Equation">(††)</a>, <a href="" class="xref" data-knowl="./knowl/equation-local-daggerdbl.html" title="Equation">(‡‡)</a>, <a href="" class="xref" data-knowl="./knowl/equation-local-hash.html" title="Equation">(##)</a>, <a href="" class="xref" data-knowl="./knowl/equation-local-maltese.html" title="Equation">(✠✠)</a>.  We test another farther away in <a href="section-cross-referencing.html" class="internal" title="Section 18: Cross-Referencing">Section 18</a>, contrary to our advice above.</p>
 </div></section><section class="subsection" id="commutative-diagrams"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.6</span> <span class="title">Commutative Diagrams</span>
+<span class="type">Subsection</span> <span class="codenumber">7.6</span> <span class="title">Commutative Diagrams</span>
 </h3>
 <div class="para">
 <p id="p-303">This diagram is authored by Tom Judson using the syntax of the <abbr class="initialism">AMS</abbr> <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> “CD” package.  Inside of a <code class="code-inline tex2jax_ignore">&lt;me&gt;</code> element start with <code class="code-inline tex2jax_ignore">\begin{CD}</code>.  Remember to escape the less-than character.</p>
@@ -787,11 +789,11 @@ E     @&gt;\phi&gt;&gt;  F
 </div>
 <p class="continuation">While this package is not as flexible as some generic drawing packages, it has the advantage of full support by MathJax, and thus the <abbr class="initialism">HTML</abbr> version will be more accessible.</p>
 </div></section><section class="subsection" id="line-breaking-math"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.7</span> <span class="title">Line-Breaking after Mathematics</span>
+<span class="type">Subsection</span> <span class="codenumber">7.7</span> <span class="title">Line-Breaking after Mathematics</span>
 </h3>
 <p class="para" id="p-304">As of 2021-05-14, in <abbr class="initialism">HTML</abbr> output the next sentence should just fill a full line across the page.  We take active measures to bind the concluding period to the final bit of mathematics, the variable <span class="process-math">\(x\text{.}\)</span>  The prevents a bad line break which could see the period <em class="emphasis">begin</em> a new line, all by itself.  In the event that the line-breaking siutation improves, we could relax these measures.  This testing is only relevant to <abbr class="initialism">HTML</abbr> output, not <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output.</p>
 <p class="para" id="p-305">xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx <span class="process-math">\(x\text{.}\)</span></p></section><section class="subsection" id="font-math"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.8</span> <span class="title">Fonts and Mathematics</span>
+<span class="type">Subsection</span> <span class="codenumber">7.8</span> <span class="title">Fonts and Mathematics</span>
 </h3>
 <p class="para" id="p-306">This section is about testing types and sizes of fonts, not so much about using different typefaces.  First, one long displayed equation, which is designed to be full-width for <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output when using defaults as of 2020-01-29 (commit <code class="code-inline tex2jax_ignore">defd4bffd462e7ea</code>).</p>
 <div class="para">
@@ -820,7 +822,7 @@ a^2 + b^2 + a^2 + b^2 + a^2 + b^2 + a^2 + b^2 + a^2 + b^2 + a^2 + b^2 + a^2 + b^
 <p class="para" id="p-309">sin x | <span class="process-math">\(\sin x\)</span> | <span class="process-math">\(\text{sin}\ x\)</span> | <span class="process-math">\(\mathrm{sin}\ x\)</span>  | <span class="process-math">\(\text{sin}x\)</span> | <span class="process-math">\(sin x\)</span> | sin x</p>
 <p class="para" id="p-310">Finally a simple paragraph that places a text “x” next to a variable “x”.</p>
 <p class="para" id="p-311">wordxx<span class="process-math">\(x+x\)</span>xxword</p></section><section class="subsection" id="miscellaneous-math"><h3 class="heading hide-type">
-<span class="type">[subsection]</span> <span class="codenumber">7.9</span> <span class="title">Miscellaneous</span>
+<span class="type">Subsection</span> <span class="codenumber">7.9</span> <span class="title">Miscellaneous</span>
 </h3>
 <div class="para">
 <p id="p-312">In <abbr class="initialism">HTML</abbr> output, a MathJax workaround for a Safari rendering bug was inserting extra spaces after textual subscripts and superscripts (<a class="external" href="https://groups.google.com/g/mathjax-users/c/ANjLK9KtcWA/m/vlHaPja-AwAJ" target="_blank">MathJax thread</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-13" id="fn-13"><sup> 3 </sup></a>).  PreTeXt CSS now applies a correction.  The following tests if the CSS fix is sufficient, and could be used to test the necessity of our fix in the future.  Following is the original report, though <code class="code-inline tex2jax_ignore">NOT</code> has been moved to a superscript:</p>
@@ -835,11 +837,11 @@ T_\text{clk}-t_\text{su} \gt t_\text{clk-Q} + \max\left( t_\text{XOR}, t^\text{N
 <div class="hidden-content tex2jax_ignore" id="hk-fn-13"><div class="fn"><code class="code-inline tex2jax_ignore">groups.google.com/g/mathjax-users/c/ANjLK9KtcWA/m/vlHaPja-AwAJ</code></div></div>
 </div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="section-6.html" title="[previous]"><span class="icon">&lt;</span><span class="name">[previous-short]</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="text-in-paragraphs.html" title="[next]"><span class="name">[next-short]</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="section-6.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="text-in-paragraphs.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div class="ptx-page-footer">
-<a class="feedback-link" href="not-implemented.html" target="_blank">[feedback]</a><a class="pretext-link" href="https://pretextbook.org"><div class="name">[authored]</div>
+<a class="feedback-link" href="not-implemented.html" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
 <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
 </body>

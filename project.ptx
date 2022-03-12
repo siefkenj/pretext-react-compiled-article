@@ -8,6 +8,7 @@
   <targets>
     <target name="html-dev">
       <format>html</format>
+      <xsl>./tmp/pretext/xsl/pretext-html.xsl</xsl>
       <source>./tmp/pretext/examples/sample-article/sample-article.xml</source>
       <publication>./tmp/pretext/examples/sample-article/publication.xml</publication>
       <output-dir>html-dev</output-dir>
@@ -19,6 +20,7 @@
     </target>
     <target name="html-reference">
       <format>html</format>
+      <xsl>./tmp/pretext/xsl/pretext-html.xsl</xsl>
       <source>./tmp/pretext/examples/sample-article/sample-article.xml</source>
       <publication>./tmp/pretext/examples/sample-article/publication.xml</publication>
       <output-dir>html-reference</output-dir>

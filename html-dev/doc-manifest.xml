@@ -3,7 +3,7 @@
   <division type="article" number="" id="derivatives" url="derivatives.html#derivatives">
     <title>Derivatives and Integrals</title>
     <division type="frontmatter" number="" id="frontmatter" url="frontmatter.html#frontmatter">
-      <title>[frontmatter]</title>
+      <title>Front Matter</title>
       <division type="abstract" number="" id="abstract-1" url="frontmatter.html#abstract-1">
         <title/>
       </division>
@@ -23,7 +23,7 @@
         <title>Second Version of <abbr class="acronym">FTC</abbr></title>
       </division>
       <division type="subsection" number="4.2" id="subsection-2" url="interesting-corollary.html#subsection-2">
-        <title>A Pedagogical Note about [subsection] 4.1</title>
+        <title>A Pedagogical Note about Subsection 4.1</title>
         <division type="subsubsection" number="4.2.1" id="subsubsection-different-integrals" url="interesting-corollary.html#subsubsection-different-integrals">
           <title>Symbolic and Numerical Integrals</title>
         </division>
@@ -34,13 +34,13 @@
           <title>Advice</title>
         </division>
         <division type="exercises" number="4.2.4" id="exercises-subsection-solo" url="interesting-corollary.html#exercises-subsection-solo">
-          <title>[exercises]</title>
+          <title>Exercises</title>
         </division>
         <division type="reading-questions" number="4.2.5" id="reading-questions-1" url="interesting-corollary.html#reading-questions-1">
-          <title>[reading-questions]</title>
+          <title>Reading Questions</title>
         </division>
         <division type="glossary" number="4.2.6" id="glossary-1" url="interesting-corollary.html#glossary-1">
-          <title>[glossary]</title>
+          <title>Glossary</title>
         </division>
         <division type="solutions" number="4.2.7" id="solutions-subsection" url="interesting-corollary.html#solutions-subsection">
           <title>Solutions for This Subsection</title>
@@ -66,7 +66,7 @@
             <title>What Did You Learn?</title>
           </division>
           <division type="exercises" number="4.6.2" id="exercises-2" url="interesting-corollary.html#exercises-2">
-            <title>[exercises]</title>
+            <title>Exercises</title>
           </division>
         </division>
         <division type="subsubsection" number="4.6.3" id="subsubsection-6" url="interesting-corollary.html#subsubsection-6">
@@ -452,7 +452,7 @@
         <title>Just an Exercise</title>
       </division>
       <division type="solutions" number="27.11" id="solutions-2" url="advanced-numbering.html#solutions-2">
-        <title>[solutions]</title>
+        <title>Solutions</title>
       </division>
     </division>
     <division type="section" number="28" id="section-28" url="section-28.html#section-28">
@@ -479,7 +479,7 @@
         <title>Networks Worksheet</title>
       </division>
       <division type="worksheet" number="31.3" id="worksheet-3" url="worksheets.html#worksheet-3">
-        <title>[worksheet]</title>
+        <title>Worksheet</title>
       </division>
       <division type="worksheet" number="31.4" id="worksheet-4" url="worksheets.html#worksheet-4">
         <title>Dot products and projection</title>
@@ -572,7 +572,7 @@
         <title>Index</title>
       </division>
       <division type="colophon" number="" id="colophon-1" url="colophon-1.html#colophon-1">
-        <title>[colophon]</title>
+        <title>Colophon</title>
       </division>
     </division>
   </division>
