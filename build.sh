@@ -24,6 +24,7 @@ set -x
 # Compile the source!
 pretext build -x $PRETEXT_HTML_XSL html-dev &
 pretext build -x $PRETEXT_HTML_XSL html-reference &
+pretext build -x $PRETEXT_HTML_XSL html-testing &
 
 wait
 

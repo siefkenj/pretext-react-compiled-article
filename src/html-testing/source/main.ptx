@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<pretext>
+
+  <docinfo>
+    <macros>
+    \newcommand{\doubler}[1]{2#1}
+    </macros>
+    <latex-image-preamble>
+      \usepackage{pgfplots}
+      \usetikzlibrary{positioning,matrix,arrows,arrows.meta}
+    </latex-image-preamble>
+  </docinfo>
+
+  <book xml:id="testing-document">
+    <title>A Minimal Book for UI Testing</title>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>Robert A. Beezer</personname>
+          <institution>University of Puget Sound</institution>
+        </author>
+        <date><today /></date>
+      </titlepage>
+    </frontmatter>
+
+    <chapter xml:id="test-1">
+      <title>test-1</title>
+      <p>
+        This chapter tests functionality of xref knowls and born-hidden knowls.
+        We begin with a definition, so it can be xref-ed.
+      </p>
+
+      <definition xml:id="test-1-def">
+        <statement>
+          <p>
+            This is a definition that can be cross-referenced.
+          </p>
+        </statement>
+      </definition>
+
+      <p>
+        Now that we've made a definition, we can add a reference to it,
+        like so: <xref ref="test-1-def"/>.
+        Next we will add an example, whose solution will be a born-hidden knowl.
+        We could also refer to it with an xref: <xref ref="test-1-eg"/>
+      </p>
+
+      <example xml:id="test-1-eg">
+        <statement>
+          <p>
+            Find the derivatives of the following functions:
+
+            <ol cols="3">
+              <li><m>y = \sin(2x)</m>.</li>
+
+              <li><m>y= \ln(4x^3-2x^2)</m>.</li>
+
+              <li><m>y = e^{-x^2}</m>.</li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Recognize  that <m>y = e^{-x^2}</m> is the composition of
+                  <m>f(x) = e^x</m> and <m>g(x) = -x^2</m>.
+                  Remembering that <m>\fp(x) = e^x</m>, we have
+                  <md>
+                     <mrow>y' \amp = e^{-x^2}\cdot \frac{d}{dx}(-x^2)</mrow>
+                     <mrow>\amp = e^{-x^2}\cdot (-2x)</mrow>
+                     <mrow>\amp = -2xe^{-x^2}</mrow>
+                  </md>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </example>
+    </chapter>
+
+    <chapter xml:id="test-2">
+      <title>test-2</title>
+      <p>
+        In this chapter we want to check that the most recently clicked knowl
+        is placed before any previously clicked knowls.
+      </p>
+
+      <exercise xml:id="test-2-ex">
+        <statement>
+          <p>
+            This is an exercise that has several answers, a solution, and a hint.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Here is a hint.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            Here is the first answer.
+          </p>
+        </answer>
+        <answer>
+          <p>
+            Here is the second answer.
+          </p>
+        </answer>
+        <answer>
+          <p>
+            Here is the third answer.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Here is a solution.
+          </p>
+        </solution>
+      </exercise>
+    </chapter>
+    <chapter xml:id="test-3">
+      <title>test-3</title>
+      <p>
+        In this chapter, we want to refer back to a definition in the middle of a calculation.
+      </p>
+      <p>
+        Consider the following calculation:
+        <md>
+          <mrow>f(x) \amp = x^2-4 \text{ using } <xref ref="test-1-def"/> </mrow>
+          <mrow> \amp = (x-2)(x+2) \text{ according to } <xref ref="test-2-ex"/> </mrow>
+        </md>.
+      </p>
+    </chapter>
+    <chapter xml:id="test-4">
+      <title>test-4</title>
+      <p>
+        In this chapter we want to test in-context links within knowls,
+        such as <xref ref="test-1-def"/>, or <xref ref="test-2-ex"/>.
+      </p>
+
+      <p>
+        In case we need it to work for an xref to something in the same chapter,
+        consider <xref ref="test-4-thm"/> below.
+      </p>
+
+      <theorem xml:id="test-4-thm">
+        <statement>
+          <p>
+            This is a theorem.
+          </p>
+        </statement>
+      </theorem>
+
+    </chapter>
+
+    <chapter xml:id="test-5">
+      <title>test-5</title>
+      <p>
+        First, we will try adding several Sage cells that are meant to share variables.
+        Since this is the default, we will just grab a few linked cells from another project.
+        These cells run Python code. Probably that doesn't matter,
+        but perhaps someone with proper Sage code would like to replace them.
+      </p>
+
+      <p>
+        The SymPy library contains the <c>cholesky()</c> algorithm.
+        Note however that it produces a lower triangular matrix, rather than upper triangular.
+        (That is, the output gives <m>L=U^T</m> rather than <m>U</m>, so you will have <m>A=LL^T</m>.)
+        Let's give it a try. First, enter a positive-definite matrix.
+      </p>
+
+      <sage>
+        <input>
+          from sympy import Matrix,init_printing
+          init_printing()
+          A = Matrix([[10,5,2],[5,3,2],[2,2,3]])
+          A
+        </input>
+      </sage>
+
+      <p>
+        Next, find the Cholesky factorization:
+      </p>
+
+      <sage>
+        <input>
+          L = A.cholesky()
+          L, L*L.T
+        </input>
+      </sage>
+
+      <sage>
+        <input>
+          L*L.T == A
+        </input>
+      </sage>
+
+      <p>
+        We will add one more Sage cell that is not linked to the ones above.
+        Since it is not linked, computing the determinant of <m>A</m> should fail,
+        since it is not defined.
+      </p>
+
+      <sage linked="false">
+        <input>
+          A.det()
+        </input>
+      </sage>
+    </chapter>
+
+    <chapter xml:id="test-6">
+      <title>test-6</title>
+      <p>
+        In this chapter, we add an aside, to see how that behaves.
+      </p>
+
+      <aside>
+        <p>
+          An aside is like a marginal note.
+          It contains some information that is useful,
+          but not necessarily essential to the argument at hand.
+        </p>
+      </aside>
+
+      <p>
+        That's all for this chapter.
+      </p>
+    </chapter>
+
+    <chapter xml:id="test-7">
+      <title>test-7</title>
+      <p>
+        In this chapter we will include a TikZ image,
+        which should enlarge when clicked.
+      </p>
+
+      <figure xml:id="test-7-fig">
+        <caption>An image, for testing purposes.</caption>
+        <image xml:id="img_trans_matrix" width="35%">
+          <latex-image>
+            \begin{tikzpicture}
+            \matrix (m) [matrix of math nodes,row sep=3em,column sep=4em,minimum width=2em]
+            {
+            V \amp W \\
+            \mathbb{R}^n \amp \mathbb{R}^m \\};
+            \path[-stealth]
+            (m-1-1) edge node [left] {$C_B$} (m-2-1)
+                    edge node [above] {$T$} (m-1-2)
+            (m-2-1) edge node [above] {$T_A$} (m-2-2)
+            (m-1-2) edge node [right] {$C_{B'}$} (m-2-2);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+
+    </chapter>
+  </book>
+
+</pretext>
