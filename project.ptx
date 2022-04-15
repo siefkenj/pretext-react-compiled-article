@@ -13,6 +13,7 @@
       <publication>./tmp/pretext/examples/sample-article/publication.xml</publication>
       <output-dir>html-dev</output-dir>
       <stringparam key="debug.react.local" value="yes"/>
+      <stringparam key="debug.datedfiles" value="no"/>
       <stringparam key="html-css-shellfile" value="shell_min.css"/>
       <stringparam key="html-css-bannerfile" value="banner_min.css"/>
       <stringparam key="html-css-tocfile" value="toc_min.css"/>
@@ -24,6 +25,7 @@
       <source>./tmp/pretext/examples/sample-article/sample-article.xml</source>
       <publication>./tmp/pretext/examples/sample-article/publication.xml</publication>
       <output-dir>html-reference</output-dir>
+      <stringparam key="debug.datedfiles" value="no"/>
       <stringparam key="html-css-shellfile" value="shell_min.css"/>
       <stringparam key="html-css-bannerfile" value="banner_min.css"/>
       <stringparam key="html-css-tocfile" value="toc_min.css"/>
@@ -36,6 +38,7 @@
       <publication>./src/html-testing/publication/publication.ptx</publication>
       <output-dir>html-testing</output-dir>
       <stringparam key="debug.react.local" value="yes"/>
+      <stringparam key="debug.datedfiles" value="no"/>
       <stringparam key="html-css-shellfile" value="shell_min.css"/>
       <stringparam key="html-css-bannerfile" value="banner_min.css"/>
       <stringparam key="html-css-tocfile" value="toc_min.css"/>
