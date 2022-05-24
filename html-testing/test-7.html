@@ -47,6 +47,10 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+/* Mathjax typesetting operation is under the control of React */
+  startup: {
+    typeset: false;
+  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -181,7 +185,7 @@
 \newcommand{\amp}{&amp;}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul>
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter-1.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li><div class="toc-item"><a href="test-1.html" class="internal"><span class="codenumber">1</span> <span class="title">test-1</span></a></div></li>
 <li><div class="toc-item"><a href="test-2.html" class="internal"><span class="codenumber">2</span> <span class="title">test-2</span></a></div></li>
@@ -195,7 +199,7 @@
 <span class="type">Chapter</span> <span class="codenumber">7</span> <span class="title">test-7</span>
 </h2>
 <div class="para" id="p-26">In this chapter we will include a TikZ image, which should enlarge when clicked.</div>
-<figure class="figure figure-like" id="test-7-fig"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/img_trans_matrix.svg" role="img" class="contained"></div>
+<figure class="figure figure-like" id="test-7-fig"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="generated/latex-image/img_trans_matrix.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.0.1<span class="period">.</span></span><span class="space"> </span>An image, for testing purposes.</figcaption></figure></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="test-6.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span>

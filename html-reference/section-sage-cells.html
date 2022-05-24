@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-04-03T14:04:35-04:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -18,13 +15,13 @@
 <meta property="og:image" content="https://pretextbook.org/examples/sample-article/html/external/misc/book-cover-google-art-project.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
-<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script>window.MathJax = {
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
     tagSide: "right",
     tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl', 'sfrac']}
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
   },
   options: {
     ignoreHtmlClass: "tex2jax_ignore|ignore-math",
@@ -51,72 +48,37 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-/* support for the sfrac command in MathJax (Beveled fraction) */
-  startup: {
-    ready() {
-      //
-      // Creating a simple "sfrac" package on-the-fly
-      //
-      const Configuration = MathJax._.input.tex.Configuration.Configuration;
-      const CommandMap = MathJax._.input.tex.SymbolMap.CommandMap;
-      
-      new CommandMap('sfrac', {
-        sfrac: 'SFrac'
-        }, {
-        SFrac(parser, name) {
-        const num = parser.ParseArg(name);
-        const den = parser.ParseArg(name);
-        const frac = parser.create('node', 'mfrac', [num, den], {bevelled: true});
-        parser.Push(frac);
-        }
-      });
-      //
-      // Create the package for the overridden macros
-      //
-      Configuration.create('sfrac', {
-        handler: {macro: ['sfrac']}
-      });
-      
-    MathJax.startup.defaultReady();
-    }
-  },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>$(function () {
-    // Make *any* pre with class 'sagecell-sage' an executable Sage cell
-    // Their results will be linked, only within language type
-    sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                           linked: true,
-                           languages: ['sage'],
-                           evalButtonText: 'Evaluate (Sage)'});
-});
-</script><script>$(function () {
-    // Make *any* pre with class 'sage-display' a visible, uneditable Sage cell
-    sagecell.makeSagecell({inputLocation: 'pre.sage-display',
-                           editor: 'codemirror-readonly',
-                           hide: ['evalButton', 'editorToggle', 'language']});
-});
-</script><script>$(function () {
-    // Make *any* pre with class 'sagecell-practice' an executable Sage cell
-    // Their results will be linked, only within language type
-    sagecell.makeSagecell({inputLocation: 'pre.sagecell-practice',
-                           linked: true,
-                           languages: sagecell.allLanguages,
-                           evalButtonText: 'Evaluate'});
-});
-</script><script>$(function () {
-    // Make *any* pre with class 'sagecell-r' an executable Sage cell
-    // Their results will be linked, only within language type
-    sagecell.makeSagecell({inputLocation: 'pre.sagecell-r',
-                           linked: true,
-                           languages: ['r'],
-                           evalButtonText: 'Evaluate (R)'});
-});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
+                       linked: true,
+                       languages: ['sage'],
+                       evalButtonText: 'Evaluate (Sage)'});
+</script><script>// Make *any* pre with class 'sage-display' a visible, uneditable Sage cell
+sagecell.makeSagecell({inputLocation: 'pre.sage-display',
+                       editor: 'codemirror-readonly',
+                       hide: ['evalButton', 'editorToggle', 'language']});
+</script><script>// Make *any* pre with class 'sagecell-practice' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-practice',
+                       linked: true,
+                       languages: sagecell.allLanguages,
+                       evalButtonText: 'Evaluate'});
+</script><script>// Make *any* pre with class 'sagecell-r' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-r',
+                       linked: true,
+                       languages: ['r'],
+                       evalButtonText: 'Evaluate (R)'});
 </script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 <link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/shell_min.css" rel="stylesheet" type="text/css">
@@ -128,9 +90,6 @@
 <link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
-<script src="http://pythontutor.com/build/pytutor-embed.bundle.js?cc25af72af"></script><!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/runtime.dae47fcea5a0b194.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.61f83a67b708750a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -145,7 +104,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script>createAllVisualizersFromHtmlAttrs();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </head>
 <body id="pretext-SA" class="pretext article ignore-math">
 <a class="assistive" href="#content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
@@ -167,30 +126,133 @@ var ggbApp = new GGBApplet({"appName": "classic",
     "autoHeight": true,
     "disableAutoScale": false},
 true);
-</script><span class="treebuttons"><a class="previous-button button" href="section-fundamental-theorem.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="derivatives.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="interesting-corollary.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
+</script><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-fundamental-theorem.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="derivatives.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="interesting-corollary.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
 \newcommand{\myequation}[2]{#1\amp =#2} 
 \newcommand{\indefiniteintegral}[2]{\int#1\,d#2}
 \newcommand{\testingescapedpercent}{ \% } 
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul>
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
 <li>
 <div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul><li><div class="toc-item"><a href="frontmatter.html#abstract-1" class="internal"><span class="title"></span></a></div></li></ul>
+<ul class="structural"><li><div class="toc-item"><a href="frontmatter.html#abstract-1" class="internal"><span class="title"></span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="section-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div></li>
 <li><div class="toc-item"><a href="section-fundamental-theorem.html" class="internal"><span class="codenumber">2</span> <span class="title">The Fundamental Theorem</span></a></div></li>
 <li class="active"><div class="toc-item"><a href="section-sage-cells.html" class="internal"><span class="codenumber">3</span> <span class="title">Computing Integrals with Sage (<span class="process-math">\(\int\)</span>)</span></a></div></li>
 <li>
 <div class="toc-item"><a href="interesting-corollary.html" class="internal"><span class="codenumber">4</span> <span class="title">An Interesting Corollary</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="interesting-corollary.html#subsection-second-FTC" class="internal"><span class="codenumber">4.1</span> <span class="title">Second Version of <abbr class="acronym">FTC</abbr></span></a></div></li>
 <li>
 <div class="toc-item"><a href="interesting-corollary.html#subsection-2" class="internal"><span class="codenumber">4.2</span> <span class="title">A Pedagogical Note about Subsection 4.1</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="interesting-corollary.html#subsubsection-different-integrals" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Symbolic and Numerical Integrals</span></a></div></li>
 <li><div class="toc-item"><a href="interesting-corollary.html#subsubsection-2" class="internal"><span class="codenumber">4.2.2</span> <span class="title"></span></a></div></li>
 <li><div class="toc-item"><a href="interesting-corollary.html#subsubsection-3" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Advice</span></a></div></li>
@@ -205,11 +267,11 @@ true);
 <li><div class="toc-item"><a href="interesting-corollary.html#subsection-5" class="internal"><span class="codenumber">4.5</span> <span class="title">Hierarchy</span></a></div></li>
 <li>
 <div class="toc-item"><a href="interesting-corollary.html#subsection-intro-conclude" class="internal"><span class="codenumber">4.6</span> <span class="title">Introductions and Conclusions</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="interesting-corollary.html#subsubsection-4" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Test One</span></a></div></li>
 <li>
 <div class="toc-item"><a href="interesting-corollary.html#subsubsection-5" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Test Two</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="interesting-corollary.html#reading-questions-2" class="internal"><span class="codenumber">4.6.2</span> <span class="title">What Did You Learn?</span></a></div></li>
 <li><div class="toc-item"><a href="interesting-corollary.html#exercises-2" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Exercises</span></a></div></li>
 </ul>
@@ -224,7 +286,7 @@ true);
 <li><div class="toc-item"><a href="section-6.html" class="internal"><span class="codenumber">6</span> <span class="title">Some Advanced Ideas</span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-7.html" class="internal"><span class="codenumber">7</span> <span class="title">Mathematics</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="section-7.html#subsection-8" class="internal"><span class="codenumber">7.1</span> <span class="title">Basic Mathematics</span></a></div></li>
 <li><div class="toc-item"><a href="section-7.html#subsection-9" class="internal"><span class="codenumber">7.2</span> <span class="title">Displayed Mathematics</span></a></div></li>
 <li><div class="toc-item"><a href="section-7.html#subsection-10" class="internal"><span class="codenumber">7.3</span> <span class="title"><span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> Packages and MathJax Extensions</span></a></div></li>
@@ -238,7 +300,7 @@ true);
 </li>
 <li>
 <div class="toc-item"><a href="text-in-paragraphs.html" class="internal"><span class="codenumber">8</span> <span class="title">Text in Paragraphs</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="text-in-paragraphs.html#subsection-xml-escape" class="internal"><span class="codenumber">8.1</span> <span class="title">Special <abbr class="initialism">XML</abbr> characters</span></a></div></li>
 <li><div class="toc-item"><a href="text-in-paragraphs.html#subsection-18" class="internal"><span class="codenumber">8.2</span> <span class="title">Quotations</span></a></div></li>
 <li><div class="toc-item"><a href="text-in-paragraphs.html#subsection-19" class="internal"><span class="codenumber">8.3</span> <span class="title">Groupings</span></a></div></li>
@@ -257,7 +319,7 @@ true);
 </li>
 <li>
 <div class="toc-item"><a href="graphics.html" class="internal"><span class="codenumber">9</span> <span class="title">Graphics</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="graphics.html#subsection-31" class="internal"><span class="codenumber">9.1</span> <span class="title">Images from External Sources</span></a></div></li>
 <li><div class="toc-item"><a href="graphics.html#subsection-32" class="internal"><span class="codenumber">9.2</span> <span class="title"><span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> images</span></a></div></li>
 <li><div class="toc-item"><a href="graphics.html#subsection-33" class="internal"><span class="codenumber">9.3</span> <span class="title">Asymptote, 2D</span></a></div></li>
@@ -275,7 +337,7 @@ true);
 <li><div class="toc-item"><a href="section-10.html" class="internal"><span class="codenumber">10</span> <span class="title">Demonstrations</span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-11.html" class="internal"><span class="codenumber">11</span> <span class="title">Further Reading</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="section-11.html#subsection-43" class="internal"><span class="codenumber">11.1</span> <span class="title">Specialized Subdivisions</span></a></div></li>
 <li><div class="toc-item"><a href="section-11.html#exercises-3" class="internal"><span class="codenumber">11.2</span> <span class="title">Exercises</span></a></div></li>
 <li><div class="toc-item"><a href="section-11.html#exercises-section-multiple" class="internal"><span class="codenumber">11.3</span> <span class="title">More Exercises</span></a></div></li>
@@ -284,50 +346,51 @@ true);
 </li>
 <li>
 <div class="toc-item"><a href="lists.html" class="internal"><span class="codenumber">12</span> <span class="title">List Calisthenics</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="lists.html#subsection-44" class="internal"><span class="codenumber">12.1</span> <span class="title">Lists, Generally</span></a></div></li>
 <li><div class="toc-item"><a href="lists.html#subsection-45" class="internal"><span class="codenumber">12.2</span> <span class="title">List Spacing, I</span></a></div></li>
 <li><div class="toc-item"><a href="lists.html#subsection-46" class="internal"><span class="codenumber">12.3</span> <span class="title">List Spacing, II</span></a></div></li>
 <li><div class="toc-item"><a href="lists.html#test-second" class="internal"><span class="codenumber">12.4</span> <span class="title">List items containing only inline math</span></a></div></li>
-<li><div class="toc-item"><a href="lists.html#subsection-48" class="internal"><span class="codenumber">12.5</span> <span class="title">Description Lists</span></a></div></li>
-<li><div class="toc-item"><a href="lists.html#subsection-49" class="internal"><span class="codenumber">12.6</span> <span class="title">Named Lists</span></a></div></li>
-<li><div class="toc-item"><a href="lists.html#subsection-50" class="internal"><span class="codenumber">12.7</span> <span class="title">Testing List Decompositions</span></a></div></li>
-<li><div class="toc-item"><a href="lists.html#exercises-5" class="internal"><span class="codenumber">12.8</span> <span class="title">Exercises (with lists)</span></a></div></li>
-<li><div class="toc-item"><a href="lists.html#references-2" class="internal"><span class="codenumber">12.9</span> <span class="title">References (with lists in Annotations)</span></a></div></li>
+<li><div class="toc-item"><a href="lists.html#subsection-48" class="internal"><span class="codenumber">12.5</span> <span class="title">Difficult List Items</span></a></div></li>
+<li><div class="toc-item"><a href="lists.html#subsection-49" class="internal"><span class="codenumber">12.6</span> <span class="title">Description Lists</span></a></div></li>
+<li><div class="toc-item"><a href="lists.html#subsection-50" class="internal"><span class="codenumber">12.7</span> <span class="title">Named Lists</span></a></div></li>
+<li><div class="toc-item"><a href="lists.html#subsection-51" class="internal"><span class="codenumber">12.8</span> <span class="title">Testing List Decompositions</span></a></div></li>
+<li><div class="toc-item"><a href="lists.html#exercises-5" class="internal"><span class="codenumber">12.9</span> <span class="title">Exercises (with lists)</span></a></div></li>
+<li><div class="toc-item"><a href="lists.html#references-2" class="internal"><span class="codenumber">12.10</span> <span class="title">References (with lists in Annotations)</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="table-calisthenics.html" class="internal"><span class="codenumber">13</span> <span class="title">Table Calisthenics</span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-interactive-authored.html" class="internal"><span class="codenumber">14</span> <span class="title">Interactive Elements, Authored</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="section-interactive-authored.html#interactive-html5-canvas" class="internal"><span class="codenumber">14.1</span> <span class="title">HTML5 Canvas</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-52" class="internal"><span class="codenumber">14.2</span> <span class="title">D3.js</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-53" class="internal"><span class="codenumber">14.3</span> <span class="title">SVG</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-54" class="internal"><span class="codenumber">14.4</span> <span class="title">JSXGraph</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-55" class="internal"><span class="codenumber">14.5</span> <span class="title">JessieCode</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-56" class="internal"><span class="codenumber">14.6</span> <span class="title">Sage Interacts</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-57" class="internal"><span class="codenumber">14.7</span> <span class="title">Geogebra</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-53" class="internal"><span class="codenumber">14.2</span> <span class="title">D3.js</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-54" class="internal"><span class="codenumber">14.3</span> <span class="title">SVG</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-55" class="internal"><span class="codenumber">14.4</span> <span class="title">JSXGraph</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-56" class="internal"><span class="codenumber">14.5</span> <span class="title">JessieCode</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-57" class="internal"><span class="codenumber">14.6</span> <span class="title">Sage Interacts</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-58" class="internal"><span class="codenumber">14.7</span> <span class="title">Geogebra</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-authored.html#interactive-iframes" class="internal"><span class="codenumber">14.8</span> <span class="title">IFrames</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-authored.html#interactive-threejs" class="internal"><span class="codenumber">14.9</span> <span class="title">threejs</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="section-interactive-server.html" class="internal"><span class="codenumber">15</span> <span class="title">Interactive Elements, Server</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="section-interactive-server.html#subsection-geogebra-server" class="internal"><span class="codenumber">15.1</span> <span class="title">GeoGebra</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-server.html#subsection-61" class="internal"><span class="codenumber">15.2</span> <span class="title">Desmos Graphs</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-server.html#subsection-62" class="internal"><span class="codenumber">15.3</span> <span class="title">CalcPlot3D</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-server.html#subsection-63" class="internal"><span class="codenumber">15.4</span> <span class="title">Wolfram CDF</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-server.html#subsection-62" class="internal"><span class="codenumber">15.2</span> <span class="title">Desmos Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-server.html#subsection-63" class="internal"><span class="codenumber">15.3</span> <span class="title">CalcPlot3D</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-server.html#subsection-64" class="internal"><span class="codenumber">15.4</span> <span class="title">Wolfram CDF</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-audio.html" class="internal"><span class="codenumber">16</span> <span class="title">Audio</span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-video.html" class="internal"><span class="codenumber">17</span> <span class="title">Video</span></a></div>
-<ul>
-<li><div class="toc-item"><a href="section-video.html#subsection-64" class="internal"><span class="codenumber">17.1</span> <span class="title">Video Files</span></a></div></li>
-<li><div class="toc-item"><a href="section-video.html#subsection-65" class="internal"><span class="codenumber">17.2</span> <span class="title">YouTube</span></a></div></li>
-<li><div class="toc-item"><a href="section-video.html#subsection-66" class="internal"><span class="codenumber">17.3</span> <span class="title">Vimeo</span></a></div></li>
-<li><div class="toc-item"><a href="section-video.html#subsection-67" class="internal"><span class="codenumber">17.4</span> <span class="title">Captions and Subtitles</span></a></div></li>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-video.html#subsection-65" class="internal"><span class="codenumber">17.1</span> <span class="title">Video Files</span></a></div></li>
+<li><div class="toc-item"><a href="section-video.html#subsection-66" class="internal"><span class="codenumber">17.2</span> <span class="title">YouTube</span></a></div></li>
+<li><div class="toc-item"><a href="section-video.html#subsection-67" class="internal"><span class="codenumber">17.3</span> <span class="title">Vimeo</span></a></div></li>
+<li><div class="toc-item"><a href="section-video.html#subsection-68" class="internal"><span class="codenumber">17.4</span> <span class="title">Captions and Subtitles</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-cross-referencing.html" class="internal"><span class="codenumber">18</span> <span class="title">Cross-Referencing</span></a></div></li>
@@ -337,31 +400,31 @@ true);
 <li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">22</span> <span class="title">Units of Measure</span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-side-by-side.html" class="internal"><span class="codenumber">23</span> <span class="title">Side-By-Side Panels</span></a></div>
-<ul>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-68" class="internal"><span class="codenumber">23.1</span> <span class="title">Figures with Numbers Side-By-Side</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-69" class="internal"><span class="codenumber">23.2</span> <span class="title">Images</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-70" class="internal"><span class="codenumber">23.3</span> <span class="title">Common Side-By-Side Constructions</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-71" class="internal"><span class="codenumber">23.4</span> <span class="title">Vertical Alignment</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-72" class="internal"><span class="codenumber">23.5</span> <span class="title">Text Next to Text and Images</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-73" class="internal"><span class="codenumber">23.6</span> <span class="title">Image Formats, Side-by-Sides</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-74" class="internal"><span class="codenumber">23.7</span> <span class="title">Tables Side-By-Side</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-75" class="internal"><span class="codenumber">23.8</span> <span class="title">Tables Next to Figures</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-76" class="internal"><span class="codenumber">23.9</span> <span class="title">Tables Next to Text</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-77" class="internal"><span class="codenumber">23.10</span> <span class="title">Tabular Next to Each Other</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-78" class="internal"><span class="codenumber">23.11</span> <span class="title">Lists in Side-by-Sides</span></a></div></li>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-69" class="internal"><span class="codenumber">23.1</span> <span class="title">Figures with Numbers Side-By-Side</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-70" class="internal"><span class="codenumber">23.2</span> <span class="title">Images</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-71" class="internal"><span class="codenumber">23.3</span> <span class="title">Common Side-By-Side Constructions</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-72" class="internal"><span class="codenumber">23.4</span> <span class="title">Vertical Alignment</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-73" class="internal"><span class="codenumber">23.5</span> <span class="title">Text Next to Text and Images</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-74" class="internal"><span class="codenumber">23.6</span> <span class="title">Image Formats, Side-by-Sides</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-75" class="internal"><span class="codenumber">23.7</span> <span class="title">Tables Side-By-Side</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-76" class="internal"><span class="codenumber">23.8</span> <span class="title">Tables Next to Figures</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-77" class="internal"><span class="codenumber">23.9</span> <span class="title">Tables Next to Text</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-78" class="internal"><span class="codenumber">23.10</span> <span class="title">Tabular Next to Each Other</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-79" class="internal"><span class="codenumber">23.11</span> <span class="title">Lists in Side-by-Sides</span></a></div></li>
 <li><div class="toc-item"><a href="section-side-by-side.html#stacking-side-by-side" class="internal"><span class="codenumber">23.12</span> <span class="title">Stacking: Back to Vertical Flow</span></a></div></li>
 <li><div class="toc-item"><a href="section-side-by-side.html#subsection-sbs-other-panels" class="internal"><span class="codenumber">23.13</span> <span class="title">Other Panels</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-81" class="internal"><span class="codenumber">23.14</span> <span class="title">Poems as Side-By-Side Panels</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-82" class="internal"><span class="codenumber">23.14</span> <span class="title">Poems as Side-By-Side Panels</span></a></div></li>
 <li><div class="toc-item"><a href="section-side-by-side.html#subsection-sbsgroup" class="internal"><span class="codenumber">23.15</span> <span class="title">Side-By-Side Groups</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-83" class="internal"><span class="codenumber">23.16</span> <span class="title">Testing a Side-By-Side First</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-84" class="internal"><span class="codenumber">23.17</span> <span class="title">Testing Styling of Related Elements</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-84" class="internal"><span class="codenumber">23.16</span> <span class="title">Testing a Side-By-Side First</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-85" class="internal"><span class="codenumber">23.17</span> <span class="title">Testing Styling of Related Elements</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-24.html" class="internal"><span class="codenumber">24</span> <span class="title">Side-by-Side Gallery</span></a></div></li>
 <li><div class="toc-item"><a href="poetry.html" class="internal"><span class="codenumber">25</span> <span class="title">Poetry</span></a></div></li>
 <li>
 <div class="toc-item"><a href="atomic-items.html" class="internal"><span class="codenumber">26</span> <span class="title">Atomic Objects</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="atomic-items.html#atomic-image" class="internal"><span class="codenumber">26.1</span> <span class="title"><code class="code-inline tex2jax_ignore">&lt;image&gt;</code></span></a></div></li>
 <li><div class="toc-item"><a href="atomic-items.html#atomic-video" class="internal"><span class="codenumber">26.2</span> <span class="title"><code class="code-inline tex2jax_ignore">&lt;video&gt;</code></span></a></div></li>
 <li><div class="toc-item"><a href="atomic-items.html#atomic-program" class="internal"><span class="codenumber">26.3</span> <span class="title"><code class="code-inline tex2jax_ignore">&lt;program&gt;</code>, <code class="code-inline tex2jax_ignore">&lt;console&gt;</code></span></a></div></li>
@@ -370,44 +433,44 @@ true);
 </li>
 <li>
 <div class="toc-item"><a href="advanced-numbering.html" class="internal"><span class="codenumber">27</span> <span class="title">Advanced Numbering</span></a></div>
-<ul>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-89" class="internal"><span class="codenumber">27.1</span> <span class="title">One</span></a></div></li>
+<ul class="structural">
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-90" class="internal"><span class="codenumber">27.1</span> <span class="title">One</span></a></div></li>
 <li>
-<div class="toc-item"><a href="advanced-numbering.html#subsection-90" class="internal"><span class="codenumber">27.2</span> <span class="title">Two</span></a></div>
-<ul>
+<div class="toc-item"><a href="advanced-numbering.html#subsection-91" class="internal"><span class="codenumber">27.2</span> <span class="title">Two</span></a></div>
+<ul class="structural">
 <li><div class="toc-item"><a href="advanced-numbering.html#subsubsection-7" class="internal"><span class="codenumber">27.2.1</span> <span class="title">Uno</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsubsection-8" class="internal"><span class="codenumber">27.2.2</span> <span class="title">Dos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-91" class="internal"><span class="codenumber">27.3</span> <span class="title">Three</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-92" class="internal"><span class="codenumber">27.3</span> <span class="title">Three</span></a></div></li>
 <li>
-<div class="toc-item"><a href="advanced-numbering.html#subsection-92" class="internal"><span class="codenumber">27.4</span> <span class="title">Four</span></a></div>
-<ul>
+<div class="toc-item"><a href="advanced-numbering.html#subsection-93" class="internal"><span class="codenumber">27.4</span> <span class="title">Four</span></a></div>
+<ul class="structural">
 <li><div class="toc-item"><a href="advanced-numbering.html#subsubsection-9" class="internal"><span class="codenumber">27.4.1</span> <span class="title">Uno</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsubsection-10" class="internal"><span class="codenumber">27.4.2</span> <span class="title">Dos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-93" class="internal"><span class="codenumber">27.5</span> <span class="title">Five</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-94" class="internal"><span class="codenumber">27.5</span> <span class="title">Five</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsection-local-theorems" class="internal"><span class="codenumber">27.6</span> <span class="title">Theorems in This Section</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsection-with-an-exercise" class="internal"><span class="codenumber">27.7</span> <span class="title">A Title with ] a Right Bracket</span></a></div></li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-96" class="internal"><span class="codenumber">27.8</span> <span class="title">A Title with } a Right Brace</span></a></div></li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-97" class="internal"><span class="codenumber">27.9</span> <span class="title">A Title with <span class="process-math">\(a]b\)</span> a Math Right Bracket</span></a></div></li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-98" class="internal"><span class="codenumber">27.10</span> <span class="title">Just an Exercise</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-97" class="internal"><span class="codenumber">27.8</span> <span class="title">A Title with } a Right Brace</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-98" class="internal"><span class="codenumber">27.9</span> <span class="title">A Title with <span class="process-math">\(a]b\)</span> a Math Right Bracket</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-99" class="internal"><span class="codenumber">27.10</span> <span class="title">Just an Exercise</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#solutions-2" class="internal"><span class="codenumber">27.11</span> <span class="title">Solutions</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="section-28.html" class="internal"><span class="codenumber">28</span> <span class="title">Customizations</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="section-28.html#rename-facility" class="internal"><span class="codenumber">28.1</span> <span class="title">Renaming Document Parts, Plus This Is A Really Long Title So That We Can Test How Well It Reacts To The Right Margin And Wraps Around To Form A Couple Of Lines, Plus How It Sits Relative To The Number Of The Subsection</span></a></div></li>
-<li><div class="toc-item"><a href="section-28.html#subsection-100" class="internal"><span class="codenumber">28.2</span> <span class="title">Customizing Phrases</span></a></div></li>
+<li><div class="toc-item"><a href="section-28.html#subsection-101" class="internal"><span class="codenumber">28.2</span> <span class="title">Customizing Phrases</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-myopenmath.html" class="internal"><span class="codenumber">29</span> <span class="title">MyOpenMath Interactive Problems</span></a></div></li>
 <li><div class="toc-item"><a href="ancillaries.html" class="internal"><span class="codenumber">30</span> <span class="title">Ancillaries</span></a></div></li>
 <li>
 <div class="toc-item"><a href="worksheets.html" class="internal"><span class="codenumber">31</span> <span class="title">Worksheets</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="worksheets.html#worksheet-1" class="internal"><span class="codenumber">31.1</span> <span class="title">A Geometric Prelude</span></a></div></li>
 <li><div class="toc-item"><a href="worksheets.html#worksheet-2" class="internal"><span class="codenumber">31.2</span> <span class="title">Networks Worksheet</span></a></div></li>
 <li><div class="toc-item"><a href="worksheets.html#worksheet-3" class="internal"><span class="codenumber">31.3</span> <span class="title">Worksheet</span></a></div></li>
@@ -416,7 +479,7 @@ true);
 </li>
 <li>
 <div class="toc-item"><a href="exercises-single.html" class="internal"><span class="codenumber">32</span> <span class="title">Exercises, One Subsection</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="exercises-single.html#exercise-collection" class="internal"><span class="codenumber">32</span> <span class="title">Exercise Collection</span></a></div></li>
 <li><div class="toc-item"><a href="exercises-single.html#references-3" class="internal"><span class="codenumber">32</span> <span class="title">More Reading</span></a></div></li>
 </ul>
@@ -424,8 +487,8 @@ true);
 <li><div class="toc-item"><a href="exercises-7.html" class="internal"><span class="codenumber">33</span> <span class="title">Exercise Section, Structured</span></a></div></li>
 <li>
 <div class="toc-item"><a href="exercises-multiple.html" class="internal"><span class="codenumber">34</span> <span class="title">Exercises, Multiple Subsections</span></a></div>
-<ul>
-<li><div class="toc-item"><a href="exercises-multiple.html#subsection-101" class="internal"><span class="codenumber">34.1</span> <span class="title">Faux Subsection</span></a></div></li>
+<ul class="structural">
+<li><div class="toc-item"><a href="exercises-multiple.html#subsection-102" class="internal"><span class="codenumber">34.1</span> <span class="title">Faux Subsection</span></a></div></li>
 <li><div class="toc-item"><a href="exercises-multiple.html#exercises-drill" class="internal"><span class="codenumber">34.2</span> <span class="title">Drill Exercises</span></a></div></li>
 <li><div class="toc-item"><a href="exercises-multiple.html#exercises-9" class="internal"><span class="codenumber">34.3</span> <span class="title">Challenging Exercises</span></a></div></li>
 <li><div class="toc-item"><a href="exercises-multiple.html#exercises-10" class="internal"><span class="codenumber">34.4</span> <span class="title">Impossible Exercises</span></a></div></li>
@@ -435,7 +498,7 @@ true);
 <li><div class="toc-item"><a href="exercises.html" class="internal"><span class="codenumber">35</span> <span class="title">Exercises, Top-Level</span></a></div></li>
 <li>
 <div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Reference</span></a></div>
-<ul>
+<ul class="structural">
 <li><div class="toc-item"><a href="appendix-1.html" class="internal"><span class="codenumber">A</span> <span class="title">Notation</span></a></div></li>
 <li><div class="toc-item"><a href="solutions-backmatter.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Selected Exercises</span></a></div></li>
 <li><div class="toc-item"><a href="solutions-4.html" class="internal"><span class="codenumber">C</span> <span class="title">Solutions to a Single Exercises Division</span></a></div></li>
@@ -445,16 +508,16 @@ true);
 <li><div class="toc-item"><a href="appendix-exercise-lists.html" class="internal"><span class="codenumber">G</span> <span class="title">Lists of Exercises</span></a></div></li>
 <li>
 <div class="toc-item"><a href="appendix-4.html" class="internal"><span class="codenumber">H</span> <span class="title">A Structured Appendix</span></a></div>
-<ul><li>
-<div class="toc-item"><a href="appendix-4.html#subsection-102" class="internal"><span class="codenumber">H.1</span> <span class="title">A Subsection in an Appendix</span></a></div>
-<ul><li><div class="toc-item"><a href="appendix-4.html#subsubsection-11" class="internal"><span class="codenumber">H.1.1</span> <span class="title">A Subsubsection in a Subsection in an Appendix</span></a></div></li></ul>
+<ul class="structural"><li>
+<div class="toc-item"><a href="appendix-4.html#subsection-103" class="internal"><span class="codenumber">H.1</span> <span class="title">A Subsection in an Appendix</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="appendix-4.html#subsubsection-11" class="internal"><span class="codenumber">H.1.1</span> <span class="title">A Subsubsection in a Subsection in an Appendix</span></a></div></li></ul>
 </li></ul>
 </li>
 <li><div class="toc-item"><a href="appendix-5.html" class="internal"><span class="codenumber">I</span> <span class="title">Index</span></a></div></li>
 <li>
 <div class="toc-item"><a href="references.html" class="internal"><span class="codenumber">J</span> <span class="title">Multiple References</span></a></div>
-<ul>
-<li><div class="toc-item"><a href="references.html#subsection-103" class="internal"><span class="codenumber">J.1</span> <span class="title">Multiple Specialized References</span></a></div></li>
+<ul class="structural">
+<li><div class="toc-item"><a href="references.html#subsection-104" class="internal"><span class="codenumber">J.1</span> <span class="title">Multiple Specialized References</span></a></div></li>
 <li><div class="toc-item"><a href="references.html#references-5" class="internal"><span class="codenumber">J.2</span> <span class="title">General References</span></a></div></li>
 <li><div class="toc-item"><a href="references.html#references-6" class="internal"><span class="codenumber">J.3</span> <span class="title">Specialized References</span></a></div></li>
 </ul>
@@ -465,33 +528,34 @@ true);
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div class="ptx-content serif"><section class="section" id="Abc"><h2 class="heading hide-type">
+<main class="ptx-main"><div class="ptx-content"><section class="section" id="Abc"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Computing Integrals with Sage (<span class="process-math">\(\int\)</span>)</span>
 </h2>
-<p class="para" id="p-12">Sage can compute definite integrals.  The output contains the approximate numerical value of the definite integral, followed by an upper bound  of the error in the approximation.</p>
+<div class="para" id="p-12">Sage can compute definite integrals.  The output contains the approximate numerical value of the definite integral, followed by an upper bound  of the error in the approximation.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">numerical_integral(sin(x)^2, (0, 2))
 </script></pre>
-<p class="para" id="p-13">Given the Fundamental Theorem, we would find the antiderivative useful.</p>
+<div class="para" id="p-13">Given the Fundamental Theorem, we would find the antiderivative useful.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-2"><script type="text/x-sage">integral(sin(x)^2, x)
 </script></pre>
-<p class="para" id="p-14">The same command can be used to employ the antiderivative in the application of the Fundamental Theorem.  Notice that the answer is <em class="emphasis">exact</em> and any further manipulation is likely to be simply producing a numerical approximation.</p>
+<div class="para" id="p-14">The same command can be used to employ the antiderivative in the application of the Fundamental Theorem.  Notice that the answer is <em class="emphasis">exact</em> and any further manipulation is likely to be simply producing a numerical approximation.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-3"><script type="text/x-sage">integral(sin(x)^2, (x, 0, 2))
 </script></pre>
-<p class="para" id="p-15">There are integrals you really do not want to evaluate, or you do not want your reader to evaluate.  A Sage cell can be configured for display purposes only—you can look but you cannot touch.</p>
+<div class="para" id="p-15">There are integrals you really do not want to evaluate, or you do not want your reader to evaluate.  A Sage cell can be configured for display purposes only—you can look but you cannot touch.</div>
 <pre class="ptx-sagecell sage-display"><script type="text/x-sage">integral(e^(x^2), x)
 </script></pre>
-<p class="para" id="p-16">You can give a Sage element a <code class="code-inline tex2jax_ignore">doctest</code> attribute, whose value mirrors the optional hash tags used in Sage doctests.  Possible values are <code class="code-inline tex2jax_ignore">random</code>, <code class="code-inline tex2jax_ignore">long time</code>, <code class="code-inline tex2jax_ignore">not implemented</code>, <code class="code-inline tex2jax_ignore">not tested</code>, <code class="code-inline tex2jax_ignore">known bug</code>, <code class="code-inline tex2jax_ignore">absolute</code>, <code class="code-inline tex2jax_ignore">relative</code>, and <code class="code-inline tex2jax_ignore">optional</code>.  The values <code class="code-inline tex2jax_ignore">absolute</code> and <code class="code-inline tex2jax_ignore">relative</code> refer to floating-point tolerances for equality and require a second attribute <code class="code-inline tex2jax_ignore">tolerance</code> to specify a floating point value.  The value <code class="code-inline tex2jax_ignore">optional</code> refers to the test requiring that an optional Sage package be present.  The name of that package should be provided in the <code class="code-inline tex2jax_ignore">package</code> attribute.</p>
-<p class="para" id="p-17">The next cell is marked in the source as <code class="code-inline tex2jax_ignore">doctest="random"</code>, and so is specified as unpredictable and not tested.  But there is some “sample” output which will appear in the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> version (and always be the same). </p>
+<div class="para" id="p-16">You can give a Sage element a <code class="code-inline tex2jax_ignore">doctest</code> attribute, whose value mirrors the optional hash tags used in Sage doctests.  Possible values are <code class="code-inline tex2jax_ignore">random</code>, <code class="code-inline tex2jax_ignore">long time</code>, <code class="code-inline tex2jax_ignore">not implemented</code>, <code class="code-inline tex2jax_ignore">not tested</code>, <code class="code-inline tex2jax_ignore">known bug</code>, <code class="code-inline tex2jax_ignore">absolute</code>, <code class="code-inline tex2jax_ignore">relative</code>, and <code class="code-inline tex2jax_ignore">optional</code>.  The values <code class="code-inline tex2jax_ignore">absolute</code> and <code class="code-inline tex2jax_ignore">relative</code> refer to floating-point tolerances for equality and require a second attribute <code class="code-inline tex2jax_ignore">tolerance</code> to specify a floating point value.  The value <code class="code-inline tex2jax_ignore">optional</code> refers to the test requiring that an optional Sage package be present.  The name of that package should be provided in the <code class="code-inline tex2jax_ignore">package</code> attribute.</div>
+<div class="para" id="p-17">The next cell is marked in the source as <code class="code-inline tex2jax_ignore">doctest="random"</code>, and so is specified as unpredictable and not tested.  But there is some “sample” output which will appear in the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> version (and always be the same). </div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-5"><script type="text/x-sage">random()
 </script></pre>
-<p class="para" id="p-18">While the next cell is random, the returned value will never be more than <span class="process-math">\(0.01\)</span> away from <span class="process-math">\(12\text{,}\)</span> since the <code class="code-inline tex2jax_ignore">random()</code> function stays between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span>  So we provide <span class="process-math">\(12.005\)</span> as the expected answer, but test with an absolute tolerance of <span class="process-math">\(\epsilon=0.006\text{.}\)</span></p>
+<div class="para" id="p-18">While the next cell is random, the returned value will never be more than <span class="process-math">\(0.01\)</span> away from <span class="process-math">\(12\text{,}\)</span> since the <code class="code-inline tex2jax_ignore">random()</code> function stays between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span>  So we provide <span class="process-math">\(12.005\)</span> as the expected answer, but test with an absolute tolerance of <span class="process-math">\(\epsilon=0.006\text{.}\)</span>
+</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-6"><script type="text/x-sage">12 + 0.01*random()
 </script></pre>
-<p class="para" id="p-19">Sage has some functions which affect output, generally making mathematics look more like mathematics via <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> syntax.  This is a simple test, and you should see the variable and superscript in italics, properly formatted as output when viewed within HTML output.  We have provided expected output for doctesting, but it is sort of silly to have this as part of <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output, even if it is instructive.</p>
+<div class="para" id="p-19">Sage has some functions which affect output, generally making mathematics look more like mathematics via <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> syntax.  This is a simple test, and you should see the variable and superscript in italics, properly formatted as output when viewed within HTML output.  We have provided expected output for doctesting, but it is sort of silly to have this as part of <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output, even if it is instructive.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-7"><script type="text/x-sage">pretty_print(html("$a^2$"))
 </script></pre>
-<p class="para" id="p-20">Sage, and by extension, the Sage Cell Server, can interpret several languages.  The next example has code in the <code class="code-inline tex2jax_ignore">R</code> language, a popular open source language for statistics.  As an author, you add the attribute <code class="code-inline tex2jax_ignore">language="r"</code> to your <code class="code-inline tex2jax_ignore">sage</code> element.  (The default language is Sage, so you do not need to indicate that repeatedly.)  Note that a language like <code class="code-inline tex2jax_ignore">R</code> likes to use a “less than” character, &lt;, special character in XML.  You need to escape it by writing <code class="code-inline tex2jax_ignore">&amp;lt;</code> as we have done in the source for this example.  (See the discussion in <a href="text-in-paragraphs.html#subsection-xml-escape" class="internal" title="Subsection 8.1: Special XML characters">Subsection 8.1</a>.)</p>
-<p class="para" id="p-21">As a reader you learn that the “Evaluate” button for a pre-loaded Sage cell will indicate the language in use.</p>
+<div class="para" id="p-20">Sage, and by extension, the Sage Cell Server, can interpret several languages.  The next example has code in the <code class="code-inline tex2jax_ignore">R</code> language, a popular open source language for statistics.  As an author, you add the attribute <code class="code-inline tex2jax_ignore">language="r"</code> to your <code class="code-inline tex2jax_ignore">sage</code> element.  (The default language is Sage, so you do not need to indicate that repeatedly.)  Note that a language like <code class="code-inline tex2jax_ignore">R</code> likes to use a “less than” character, &lt;, special character in XML.  You need to escape it by writing <code class="code-inline tex2jax_ignore">&amp;lt;</code> as we have done in the source for this example.  (See the discussion in <a href="text-in-paragraphs.html#subsection-xml-escape" class="internal" title="Subsection 8.1: Special XML characters">Subsection 8.1</a>.)</div>
+<div class="para" id="p-21">As a reader you learn that the “Evaluate” button for a pre-loaded Sage cell will indicate the language in use.</div>
 <pre class="ptx-sagecell sagecell-r" id="sage-8"><script type="text/x-sage">ruth <- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
 bonds <- c(16, 25, 24, 19, 33, 25, 34, 46, 37, 33, 42, 40, 37, 34, 49, 73, 46, 45, 45, 5, 26, 28)
 dimaggio <- c(12, 14, 20, 21, 25, 29, 30, 30, 31, 32, 32, 39, 46)
@@ -500,8 +564,8 @@ summary(bonds)
 summary(dimaggio)
 boxplot(ruth, bonds, dimaggio)
 </script></pre>
-<p class="para" id="p-22">The Sage Cell Server supports the following languages:  <code class="code-inline tex2jax_ignore">sage</code>, <code class="code-inline tex2jax_ignore">gap</code>, <code class="code-inline tex2jax_ignore">gp</code>, <code class="code-inline tex2jax_ignore">html</code>, <code class="code-inline tex2jax_ignore">maxima</code>, <code class="code-inline tex2jax_ignore">octave</code>, <code class="code-inline tex2jax_ignore">python</code>, <code class="code-inline tex2jax_ignore">r</code>, and <code class="code-inline tex2jax_ignore">singular</code>.</p>
-<p class="para" id="p-23">Here is another <code class="code-inline tex2jax_ignore">R</code> cell.  Unfortunately, it seems Sage's <code class="code-inline tex2jax_ignore">doctest</code> facility cannot be used easily with code from other languages.  In the source for this example, we have employed the <abbr class="initialism">XML</abbr> escape sequence, <code class="code-inline tex2jax_ignore">&amp;lt;</code> several times (see <a href="text-in-paragraphs.html#subsection-xml-escape" class="internal" title="Subsection 8.1: Special XML characters">Subsection 8.1</a>).</p>
+<div class="para" id="p-22">The Sage Cell Server supports the following languages:  <code class="code-inline tex2jax_ignore">sage</code>, <code class="code-inline tex2jax_ignore">gap</code>, <code class="code-inline tex2jax_ignore">gp</code>, <code class="code-inline tex2jax_ignore">html</code>, <code class="code-inline tex2jax_ignore">maxima</code>, <code class="code-inline tex2jax_ignore">octave</code>, <code class="code-inline tex2jax_ignore">python</code>, <code class="code-inline tex2jax_ignore">r</code>, and <code class="code-inline tex2jax_ignore">singular</code>.</div>
+<div class="para" id="p-23">Here is another <code class="code-inline tex2jax_ignore">R</code> cell.  Unfortunately, it seems Sage's <code class="code-inline tex2jax_ignore">doctest</code> facility cannot be used easily with code from other languages.  In the source for this example, we have employed the <abbr class="initialism">XML</abbr> escape sequence, <code class="code-inline tex2jax_ignore">&amp;lt;</code> several times (see <a href="text-in-paragraphs.html#subsection-xml-escape" class="internal" title="Subsection 8.1: Special XML characters">Subsection 8.1</a>).</div>
 <pre class="ptx-sagecell sagecell-r" id="sage-9"><script type="text/x-sage">age <- c(25, 30, 56)
 gender <- c("male", "female", "male")
 weight <- c(160, 110, 220)
@@ -512,29 +576,29 @@ mean(mydata$age)
 sd(mydata$age)
 plot(mydata$age,mydata$weight)
 </script></pre>
-<p class="para" id="p-24">Here is a blank Sage cell that you may use for practice and experimentation with the commands above.  Note that this cell allows a choice of languages, and is not linked with any of the previous cells, so a reader would need to start fresh, or cut/paste definitioons from other cells.</p>
+<div class="para" id="p-24">Here is a blank Sage cell that you may use for practice and experimentation with the commands above.  Note that this cell allows a choice of languages, and is not linked with any of the previous cells, so a reader would need to start fresh, or cut/paste definitioons from other cells.</div>
 <pre class="ptx-sagecell sagecell-practice" id="sage-10"><script type="text/x-sage"># Practice area (not linked for Sage Cell use)
 </script></pre>
-<p class="para" id="p-25">On the other hand a <code class="code-inline tex2jax_ignore">&lt;sage&gt;</code> element with no content will also create an empty Sage cell for the reader's use, but now it will be specific to a particular language and linked to others of the same language.  Run the <code class="code-inline tex2jax_ignore">R</code> cell above that defines the variable <code class="code-inline tex2jax_ignore">ruth</code> and then try typing <code class="code-inline tex2jax_ignore">summary(ruth)</code> in the cell below.  (The linking seems a bit buggy, as it repeats the boxplot in the output, as of 2016-06-13).</p>
+<div class="para" id="p-25">On the other hand a <code class="code-inline tex2jax_ignore">&lt;sage&gt;</code> element with no content will also create an empty Sage cell for the reader's use, but now it will be specific to a particular language and linked to others of the same language.  Run the <code class="code-inline tex2jax_ignore">R</code> cell above that defines the variable <code class="code-inline tex2jax_ignore">ruth</code> and then try typing <code class="code-inline tex2jax_ignore">summary(ruth)</code> in the cell below.  (The linking seems a bit buggy, as it repeats the boxplot in the output, as of 2016-06-13).</div>
 <pre class="ptx-sagecell sagecell-r" id="sage-11"><script type="text/x-sage"></script></pre>
-<p class="para" id="p-26">You can make Sage blocks which are of <code class="code-inline tex2jax_ignore">type="invisible"</code>, which will never be shown to a reader, but which get doctested.  Why do this?  If some code produces an error, and you hope it is fixed someday, use an invisible block to raise the error.  Once fixed, the doctest will fail, and you can adjust your commentary to suit.  There is such a block right now, <em class="emphasis">but</em> you will need to go to the source to see it.</p>
-<p class="para" id="p-27">Our maximum width for text, designed for readability, suggests you should format your Sage code with a maximum of about 54 characters. On a mobile device, the number of displayed characters might be as low as 28 in portrait orientation, and again around 50 in landscape.  You can use a variety of techniques to shorten long lines, such as using intermediate variables.  Since Sage is just a huge Python library, you can use any of Python's facilities for handling long lines.  These include a continuation character (which I try to avoid using) or natural places where you can break long lines, such as between entries of a list.  Also, if writing loops or functions, you may wish to have your indentation be only two characters wide (rather than, say, four).</p>
-<p class="para" id="p-28">Sage output can sometimes be quite long, though this has improved with some changes in Sage's output routines.  Output code should be included primarily for doctesting purposes, and in this use, you may break at almost whitespace character and the doctesting framework will adjust accordingly.  You may wish to show sample output in a static format, like a PDF, so you can consider formatting your output to fit the width constraints of that medium.  Or you may even adjust exactly what is output, to keep it from being too verbose.  Sage doctesting also allows for a wild-card style syntax which allows you to skip over huge chunks of meaningless or unpredictable output, such as tracebacks on error messages.</p>
-<div class="para">
-<p id="p-29">This paragraph is just a placeholder.  It has handful of index entries, all starting with the letters “gas”, taken from <span class="booktitle">Indexing for Editors and Authors: A Practical Guide to Understanding Indexes</span> by Leise, Mertes, and Badgett.  The intent is to test letter-by-letter versus word-by-word sorting of index entries.  We use a word-by-word order, resulting in:</p>
+<div class="para" id="p-26">You can make Sage blocks which are of <code class="code-inline tex2jax_ignore">type="invisible"</code>, which will never be shown to a reader, but which get doctested.  Why do this?  If some code produces an error, and you hope it is fixed someday, use an invisible block to raise the error.  Once fixed, the doctest will fail, and you can adjust your commentary to suit.  There is such a block right now, <em class="emphasis">but</em> you will need to go to the source to see it.</div>
+<div class="para" id="p-27">Our maximum width for text, designed for readability, suggests you should format your Sage code with a maximum of about 54 characters. On a mobile device, the number of displayed characters might be as low as 28 in portrait orientation, and again around 50 in landscape.  You can use a variety of techniques to shorten long lines, such as using intermediate variables.  Since Sage is just a huge Python library, you can use any of Python's facilities for handling long lines.  These include a continuation character (which I try to avoid using) or natural places where you can break long lines, such as between entries of a list.  Also, if writing loops or functions, you may wish to have your indentation be only two characters wide (rather than, say, four).</div>
+<div class="para" id="p-28">Sage output can sometimes be quite long, though this has improved with some changes in Sage's output routines.  Output code should be included primarily for doctesting purposes, and in this use, you may break at almost whitespace character and the doctesting framework will adjust accordingly.  You may wish to show sample output in a static format, like a PDF, so you can consider formatting your output to fit the width constraints of that medium.  Or you may even adjust exactly what is output, to keep it from being too verbose.  Sage doctesting also allows for a wild-card style syntax which allows you to skip over huge chunks of meaningless or unpredictable output, such as tracebacks on error messages.</div>
+<div class="para logical" id="p-29">
+<div class="para">This paragraph is just a placeholder.  It has handful of index entries, all starting with the letters “gas”, taken from <span class="booktitle">Indexing for Editors and Authors: A Practical Guide to Understanding Indexes</span> by Leise, Mertes, and Badgett.  The intent is to test letter-by-letter versus word-by-word sorting of index entries.  We use a word-by-word order, resulting in:</div>
 <ol class="decimal">
-<li id="li-1"><p class="para" id="p-derived-li-1">gas</p></li>
-<li id="li-2"><p class="para" id="p-derived-li-2">gas masks</p></li>
-<li id="li-3"><p class="para" id="p-derived-li-3">gas production</p></li>
-<li id="li-4"><p class="para" id="p-derived-li-4">gas works</p></li>
-<li id="li-5"><p class="para" id="p-derived-li-5">gasoline</p></li>
-<li id="li-6"><p class="para" id="p-derived-li-6">gastritis</p></li>
+<li id="li-1"><div class="para" id="p-derived-li-1">gas</div></li>
+<li id="li-2"><div class="para" id="p-derived-li-2">gas masks</div></li>
+<li id="li-3"><div class="para" id="p-derived-li-3">gas production</div></li>
+<li id="li-4"><div class="para" id="p-derived-li-4">gas works</div></li>
+<li id="li-5"><div class="para" id="p-derived-li-5">gasoline</div></li>
+<li id="li-6"><div class="para" id="p-derived-li-6">gastritis</div></li>
 </ol>
 </div>
 <section class="paragraphs" id="paragraphs-1"><h3 class="heading"><span class="title">Titled Sage Cells.</span></h3>
 <pre class="ptx-sagecell sagecell-sage" id="sage-13"><script type="text/x-sage">integral(sin(x)^2, x)
 </script></pre>
-<p class="para" id="p-30">You can place Sage cells inside of a <code class="code-inline tex2jax_ignore">paragraphs</code> if you want to give them a title, but no numbers, etc.  Their surrounding box sometimes gets clobbered in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output if they are the first piece of content, so we test that here also.  A defensive <code class="code-inline tex2jax_ignore">\leavevmode</code> solves the problem.</p></section></section></div>
+<div class="para" id="p-30">You can place Sage cells inside of a <code class="code-inline tex2jax_ignore">paragraphs</code> if you want to give them a title, but no numbers, etc.  Their surrounding box sometimes gets clobbered in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output if they are the first piece of content, so we test that here also.  A defensive <code class="code-inline tex2jax_ignore">\leavevmode</code> solves the problem.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-fundamental-theorem.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="interesting-corollary.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

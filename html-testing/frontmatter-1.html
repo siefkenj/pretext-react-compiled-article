@@ -47,6 +47,10 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+/* Mathjax typesetting operation is under the control of React */
+  startup: {
+    typeset: false;
+  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -181,7 +185,7 @@
 \newcommand{\amp}{&amp;}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul>
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
 <li class="active"><div class="toc-item"><a href="frontmatter-1.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li><div class="toc-item"><a href="test-1.html" class="internal"><span class="codenumber">1</span> <span class="title">test-1</span></a></div></li>
 <li><div class="toc-item"><a href="test-2.html" class="internal"><span class="codenumber">2</span> <span class="title">test-2</span></a></div></li>
@@ -196,7 +200,7 @@
 <div class="author-name">Robert A. Beezer</div>
 <div class="author-info">University of Puget Sound</div>
 </div>
-<div class="date">April 15, 2022</div></section></div>
+<div class="date">May 24, 2022</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="testing-document.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="test-1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
