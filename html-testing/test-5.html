@@ -47,6 +47,10 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+/* Mathjax typesetting operation is under the control of React */
+  startup: {
+    typeset: false;
+  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
@@ -187,7 +191,7 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 \newcommand{\amp}{&amp;}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul>
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter-1.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li><div class="toc-item"><a href="test-1.html" class="internal"><span class="codenumber">1</span> <span class="title">test-1</span></a></div></li>
 <li><div class="toc-item"><a href="test-2.html" class="internal"><span class="codenumber">2</span> <span class="title">test-2</span></a></div></li>
