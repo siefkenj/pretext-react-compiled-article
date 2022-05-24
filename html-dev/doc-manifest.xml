@@ -230,18 +230,21 @@
         <title>List items containing only inline math</title>
       </division>
       <division type="subsection" number="12.5" id="subsection-48" url="lists.html#subsection-48">
-        <title>Description Lists</title>
+        <title>Difficult List Items</title>
       </division>
       <division type="subsection" number="12.6" id="subsection-49" url="lists.html#subsection-49">
-        <title>Named Lists</title>
+        <title>Description Lists</title>
       </division>
       <division type="subsection" number="12.7" id="subsection-50" url="lists.html#subsection-50">
+        <title>Named Lists</title>
+      </division>
+      <division type="subsection" number="12.8" id="subsection-51" url="lists.html#subsection-51">
         <title>Testing List Decompositions</title>
       </division>
-      <division type="exercises" number="12.8" id="exercises-5" url="lists.html#exercises-5">
+      <division type="exercises" number="12.9" id="exercises-5" url="lists.html#exercises-5">
         <title>Exercises (with lists)</title>
       </division>
-      <division type="references" number="12.9" id="references-2" url="lists.html#references-2">
+      <division type="references" number="12.10" id="references-2" url="lists.html#references-2">
         <title>References (with lists in Annotations)</title>
       </division>
     </division>
@@ -253,22 +256,22 @@
       <division type="subsection" number="14.1" id="interactive-html5-canvas" url="section-interactive-authored.html#interactive-html5-canvas">
         <title>HTML5 Canvas</title>
       </division>
-      <division type="subsection" number="14.2" id="subsection-52" url="section-interactive-authored.html#subsection-52">
+      <division type="subsection" number="14.2" id="subsection-53" url="section-interactive-authored.html#subsection-53">
         <title>D3.js</title>
       </division>
-      <division type="subsection" number="14.3" id="subsection-53" url="section-interactive-authored.html#subsection-53">
+      <division type="subsection" number="14.3" id="subsection-54" url="section-interactive-authored.html#subsection-54">
         <title>SVG</title>
       </division>
-      <division type="subsection" number="14.4" id="subsection-54" url="section-interactive-authored.html#subsection-54">
+      <division type="subsection" number="14.4" id="subsection-55" url="section-interactive-authored.html#subsection-55">
         <title>JSXGraph</title>
       </division>
-      <division type="subsection" number="14.5" id="subsection-55" url="section-interactive-authored.html#subsection-55">
+      <division type="subsection" number="14.5" id="subsection-56" url="section-interactive-authored.html#subsection-56">
         <title>JessieCode</title>
       </division>
-      <division type="subsection" number="14.6" id="subsection-56" url="section-interactive-authored.html#subsection-56">
+      <division type="subsection" number="14.6" id="subsection-57" url="section-interactive-authored.html#subsection-57">
         <title>Sage Interacts</title>
       </division>
-      <division type="subsection" number="14.7" id="subsection-57" url="section-interactive-authored.html#subsection-57">
+      <division type="subsection" number="14.7" id="subsection-58" url="section-interactive-authored.html#subsection-58">
         <title>Geogebra</title>
       </division>
       <division type="subsection" number="14.8" id="interactive-iframes" url="section-interactive-authored.html#interactive-iframes">
@@ -283,13 +286,13 @@
       <division type="subsection" number="15.1" id="subsection-geogebra-server" url="section-interactive-server.html#subsection-geogebra-server">
         <title>GeoGebra</title>
       </division>
-      <division type="subsection" number="15.2" id="subsection-61" url="section-interactive-server.html#subsection-61">
+      <division type="subsection" number="15.2" id="subsection-62" url="section-interactive-server.html#subsection-62">
         <title>Desmos Graphs</title>
       </division>
-      <division type="subsection" number="15.3" id="subsection-62" url="section-interactive-server.html#subsection-62">
+      <division type="subsection" number="15.3" id="subsection-63" url="section-interactive-server.html#subsection-63">
         <title>CalcPlot3D</title>
       </division>
-      <division type="subsection" number="15.4" id="subsection-63" url="section-interactive-server.html#subsection-63">
+      <division type="subsection" number="15.4" id="subsection-64" url="section-interactive-server.html#subsection-64">
         <title>Wolfram CDF</title>
       </division>
     </division>
@@ -298,16 +301,16 @@
     </division>
     <division type="section" number="17" id="section-video" url="section-video.html#section-video">
       <title>Video</title>
-      <division type="subsection" number="17.1" id="subsection-64" url="section-video.html#subsection-64">
+      <division type="subsection" number="17.1" id="subsection-65" url="section-video.html#subsection-65">
         <title>Video Files</title>
       </division>
-      <division type="subsection" number="17.2" id="subsection-65" url="section-video.html#subsection-65">
+      <division type="subsection" number="17.2" id="subsection-66" url="section-video.html#subsection-66">
         <title>YouTube</title>
       </division>
-      <division type="subsection" number="17.3" id="subsection-66" url="section-video.html#subsection-66">
+      <division type="subsection" number="17.3" id="subsection-67" url="section-video.html#subsection-67">
         <title>Vimeo</title>
       </division>
-      <division type="subsection" number="17.4" id="subsection-67" url="section-video.html#subsection-67">
+      <division type="subsection" number="17.4" id="subsection-68" url="section-video.html#subsection-68">
         <title>Captions and Subtitles</title>
       </division>
     </division>
@@ -328,37 +331,37 @@
     </division>
     <division type="section" number="23" id="section-side-by-side" url="section-side-by-side.html#section-side-by-side">
       <title>Side-By-Side Panels</title>
-      <division type="subsection" number="23.1" id="subsection-68" url="section-side-by-side.html#subsection-68">
+      <division type="subsection" number="23.1" id="subsection-69" url="section-side-by-side.html#subsection-69">
         <title>Figures with Numbers Side-By-Side</title>
       </division>
-      <division type="subsection" number="23.2" id="subsection-69" url="section-side-by-side.html#subsection-69">
+      <division type="subsection" number="23.2" id="subsection-70" url="section-side-by-side.html#subsection-70">
         <title>Images</title>
       </division>
-      <division type="subsection" number="23.3" id="subsection-70" url="section-side-by-side.html#subsection-70">
+      <division type="subsection" number="23.3" id="subsection-71" url="section-side-by-side.html#subsection-71">
         <title>Common Side-By-Side Constructions</title>
       </division>
-      <division type="subsection" number="23.4" id="subsection-71" url="section-side-by-side.html#subsection-71">
+      <division type="subsection" number="23.4" id="subsection-72" url="section-side-by-side.html#subsection-72">
         <title>Vertical Alignment</title>
       </division>
-      <division type="subsection" number="23.5" id="subsection-72" url="section-side-by-side.html#subsection-72">
+      <division type="subsection" number="23.5" id="subsection-73" url="section-side-by-side.html#subsection-73">
         <title>Text Next to Text and Images</title>
       </division>
-      <division type="subsection" number="23.6" id="subsection-73" url="section-side-by-side.html#subsection-73">
+      <division type="subsection" number="23.6" id="subsection-74" url="section-side-by-side.html#subsection-74">
         <title>Image Formats, Side-by-Sides</title>
       </division>
-      <division type="subsection" number="23.7" id="subsection-74" url="section-side-by-side.html#subsection-74">
+      <division type="subsection" number="23.7" id="subsection-75" url="section-side-by-side.html#subsection-75">
         <title>Tables Side-By-Side</title>
       </division>
-      <division type="subsection" number="23.8" id="subsection-75" url="section-side-by-side.html#subsection-75">
+      <division type="subsection" number="23.8" id="subsection-76" url="section-side-by-side.html#subsection-76">
         <title>Tables Next to Figures</title>
       </division>
-      <division type="subsection" number="23.9" id="subsection-76" url="section-side-by-side.html#subsection-76">
+      <division type="subsection" number="23.9" id="subsection-77" url="section-side-by-side.html#subsection-77">
         <title>Tables Next to Text</title>
       </division>
-      <division type="subsection" number="23.10" id="subsection-77" url="section-side-by-side.html#subsection-77">
+      <division type="subsection" number="23.10" id="subsection-78" url="section-side-by-side.html#subsection-78">
         <title>Tabular Next to Each Other</title>
       </division>
-      <division type="subsection" number="23.11" id="subsection-78" url="section-side-by-side.html#subsection-78">
+      <division type="subsection" number="23.11" id="subsection-79" url="section-side-by-side.html#subsection-79">
         <title>Lists in Side-by-Sides</title>
       </division>
       <division type="subsection" number="23.12" id="stacking-side-by-side" url="section-side-by-side.html#stacking-side-by-side">
@@ -367,16 +370,16 @@
       <division type="subsection" number="23.13" id="subsection-sbs-other-panels" url="section-side-by-side.html#subsection-sbs-other-panels">
         <title>Other Panels</title>
       </division>
-      <division type="subsection" number="23.14" id="subsection-81" url="section-side-by-side.html#subsection-81">
+      <division type="subsection" number="23.14" id="subsection-82" url="section-side-by-side.html#subsection-82">
         <title>Poems as Side-By-Side Panels</title>
       </division>
       <division type="subsection" number="23.15" id="subsection-sbsgroup" url="section-side-by-side.html#subsection-sbsgroup">
         <title>Side-By-Side Groups</title>
       </division>
-      <division type="subsection" number="23.16" id="subsection-83" url="section-side-by-side.html#subsection-83">
+      <division type="subsection" number="23.16" id="subsection-84" url="section-side-by-side.html#subsection-84">
         <title>Testing a Side-By-Side First</title>
       </division>
-      <division type="subsection" number="23.17" id="subsection-84" url="section-side-by-side.html#subsection-84">
+      <division type="subsection" number="23.17" id="subsection-85" url="section-side-by-side.html#subsection-85">
         <title>Testing Styling of Related Elements</title>
       </division>
     </division>
@@ -409,10 +412,10 @@
     </division>
     <division type="section" number="27" id="advanced-numbering" url="advanced-numbering.html#advanced-numbering">
       <title>Advanced Numbering</title>
-      <division type="subsection" number="27.1" id="subsection-89" url="advanced-numbering.html#subsection-89">
+      <division type="subsection" number="27.1" id="subsection-90" url="advanced-numbering.html#subsection-90">
         <title>One</title>
       </division>
-      <division type="subsection" number="27.2" id="subsection-90" url="advanced-numbering.html#subsection-90">
+      <division type="subsection" number="27.2" id="subsection-91" url="advanced-numbering.html#subsection-91">
         <title>Two</title>
         <division type="subsubsection" number="27.2.1" id="subsubsection-7" url="advanced-numbering.html#subsubsection-7">
           <title>Uno</title>
@@ -421,10 +424,10 @@
           <title>Dos</title>
         </division>
       </division>
-      <division type="subsection" number="27.3" id="subsection-91" url="advanced-numbering.html#subsection-91">
+      <division type="subsection" number="27.3" id="subsection-92" url="advanced-numbering.html#subsection-92">
         <title>Three</title>
       </division>
-      <division type="subsection" number="27.4" id="subsection-92" url="advanced-numbering.html#subsection-92">
+      <division type="subsection" number="27.4" id="subsection-93" url="advanced-numbering.html#subsection-93">
         <title>Four</title>
         <division type="subsubsection" number="27.4.1" id="subsubsection-9" url="advanced-numbering.html#subsubsection-9">
           <title>Uno</title>
@@ -433,7 +436,7 @@
           <title>Dos</title>
         </division>
       </division>
-      <division type="subsection" number="27.5" id="subsection-93" url="advanced-numbering.html#subsection-93">
+      <division type="subsection" number="27.5" id="subsection-94" url="advanced-numbering.html#subsection-94">
         <title>Five</title>
       </division>
       <division type="subsection" number="27.6" id="subsection-local-theorems" url="advanced-numbering.html#subsection-local-theorems">
@@ -442,13 +445,13 @@
       <division type="subsection" number="27.7" id="subsection-with-an-exercise" url="advanced-numbering.html#subsection-with-an-exercise">
         <title>A Title with ] a Right Bracket</title>
       </division>
-      <division type="subsection" number="27.8" id="subsection-96" url="advanced-numbering.html#subsection-96">
+      <division type="subsection" number="27.8" id="subsection-97" url="advanced-numbering.html#subsection-97">
         <title>A Title with } a Right Brace</title>
       </division>
-      <division type="subsection" number="27.9" id="subsection-97" url="advanced-numbering.html#subsection-97">
+      <division type="subsection" number="27.9" id="subsection-98" url="advanced-numbering.html#subsection-98">
         <title>A Title with <span class="process-math">\(a]b\)</span> a Math Right Bracket</title>
       </division>
-      <division type="subsection" number="27.10" id="subsection-98" url="advanced-numbering.html#subsection-98">
+      <division type="subsection" number="27.10" id="subsection-99" url="advanced-numbering.html#subsection-99">
         <title>Just an Exercise</title>
       </division>
       <division type="solutions" number="27.11" id="solutions-2" url="advanced-numbering.html#solutions-2">
@@ -460,7 +463,7 @@
       <division type="subsection" number="28.1" id="rename-facility" url="section-28.html#rename-facility">
         <title>Renaming Document Parts, Plus This Is A Really Long Title So That We Can Test How Well It Reacts To The Right Margin And Wraps Around To Form A Couple Of Lines, Plus How It Sits Relative To The Number Of The Subsection</title>
       </division>
-      <division type="subsection" number="28.2" id="subsection-100" url="section-28.html#subsection-100">
+      <division type="subsection" number="28.2" id="subsection-101" url="section-28.html#subsection-101">
         <title>Customizing Phrases</title>
       </division>
     </division>
@@ -499,7 +502,7 @@
     </division>
     <division type="section" number="34" id="exercises-multiple" url="exercises-multiple.html#exercises-multiple">
       <title>Exercises, Multiple Subsections</title>
-      <division type="subsection" number="34.1" id="subsection-101" url="exercises-multiple.html#subsection-101">
+      <division type="subsection" number="34.1" id="subsection-102" url="exercises-multiple.html#subsection-102">
         <title>Faux Subsection</title>
       </division>
       <division type="exercises" number="34.2" id="exercises-drill" url="exercises-multiple.html#exercises-drill">
@@ -543,7 +546,7 @@
       </division>
       <division type="appendix" number="H" id="appendix-4" url="appendix-4.html#appendix-4">
         <title>A Structured Appendix</title>
-        <division type="subsection" number="H.1" id="subsection-102" url="appendix-4.html#subsection-102">
+        <division type="subsection" number="H.1" id="subsection-103" url="appendix-4.html#subsection-103">
           <title>A Subsection in an Appendix</title>
           <division type="subsubsection" number="H.1.1" id="subsubsection-11" url="appendix-4.html#subsubsection-11">
             <title>A Subsubsection in a Subsection in an Appendix</title>
@@ -555,7 +558,7 @@
       </division>
       <division type="appendix" number="J" id="references" url="references.html#references">
         <title>Multiple References</title>
-        <division type="subsection" number="J.1" id="subsection-103" url="references.html#subsection-103">
+        <division type="subsection" number="J.1" id="subsection-104" url="references.html#subsection-104">
           <title>Multiple Specialized References</title>
         </division>
         <division type="references" number="J.2" id="references-5" url="references.html#references-5">
