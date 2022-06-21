@@ -71,7 +71,38 @@
 <link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -217,6 +248,8 @@ true);
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
 <div class="ptx-page">
@@ -513,32 +546,32 @@ true);
 <main class="ptx-main"><div class="ptx-content"><section class="section" id="section-24"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">24</span> <span class="title">Side-by-Side Gallery</span>
 </h2>
-<div class="para" id="p-1133">This subsection attempts to survey all the possible items that can be placed into a <code class="code-inline tex2jax_ignore">sidebyside</code> element, in various combinations.  While intended to be exhaustive across contents, it does not test all possibilities, and is not meant to be instructive (see <a href="section-side-by-side.html" class="internal" title="Section 23: Side-By-Side Panels">Section 23</a> for that). The layout is identical for each <code class="code-inline tex2jax_ignore">sidebyside</code>, 5% margins, panel widths of 40% and 45%, leaving 5% for the space between the panels.  The vertical alignment is left at the default, <code class="code-inline tex2jax_ignore">top</code>.</div>
-<div class="para" id="p-1134">We begin with “simpler” atomic items.  If necessary, comments follow each.</div>
+<div class="para" id="p-1138">This subsection attempts to survey all the possible items that can be placed into a <code class="code-inline tex2jax_ignore">sidebyside</code> element, in various combinations.  While intended to be exhaustive across contents, it does not test all possibilities, and is not meant to be instructive (see <a href="section-side-by-side.html" class="internal" title="Section 23: Side-By-Side Panels">Section 23</a> for that). The layout is identical for each <code class="code-inline tex2jax_ignore">sidebyside</code>, 5% margins, panel widths of 40% and 45%, leaving 5% for the space between the panels.  The vertical alignment is left at the default, <code class="code-inline tex2jax_ignore">top</code>.</div>
+<div class="para" id="p-1139">We begin with “simpler” atomic items.  If necessary, comments follow each.</div>
 <figure class="figure figure-like" id="figure-162"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;"><div class="para" id="p-1135">Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae. Curabitur sagittis, risus non suscipit pulvinar, enim tortor posuere purus, id dignissim sapien sapien non dui. Vestibulum ultrices, enim a ornare consectetur, nisl est iaculis arcu, eget scelerisque nunc magna a nisl. Vestibulum vestibulum ante sit amet ex vulputate, eu facilisis sapien tempor.</div></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><div class="para" id="p-1140">Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae. Curabitur sagittis, risus non suscipit pulvinar, enim tortor posuere purus, id dignissim sapien sapien non dui. Vestibulum ultrices, enim a ornare consectetur, nisl est iaculis arcu, eget scelerisque nunc magna a nisl. Vestibulum vestibulum ante sit amet ex vulputate, eu facilisis sapien tempor.</div></div>
 <div class="sbspanel top" style="width:50%;">
-<div class="para" id="p-1136">Aliquam dui nisi, pharetra id enim vel, imperdiet laoreet risus. Nunc convallis elit eu erat imperdiet tincidunt. Sed eget augue et nunc mollis tempor. Suspendisse luctus elit non lorem scelerisque, nec lacinia lectus dictum.</div>
-<div class="para" id="p-1137">Vivamus ut orci nisl. Donec eleifend ultricies tortor, a pellentesque neque dignissim in. Praesent maximus, augue eu pretium auctor, dolor quam feugiat augue, ut vulputate nunc eros vitae massa. Phasellus quis ante quis est venenatis dapibus eget luctus ipsum.</div>
+<div class="para" id="p-1141">Aliquam dui nisi, pharetra id enim vel, imperdiet laoreet risus. Nunc convallis elit eu erat imperdiet tincidunt. Sed eget augue et nunc mollis tempor. Suspendisse luctus elit non lorem scelerisque, nec lacinia lectus dictum.</div>
+<div class="para" id="p-1142">Vivamus ut orci nisl. Donec eleifend ultricies tortor, a pellentesque neque dignissim in. Praesent maximus, augue eu pretium auctor, dolor quam feugiat augue, ut vulputate nunc eros vitae massa. Phasellus quis ante quis est venenatis dapibus eget luctus ipsum.</div>
 </div>
 </div></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.1<span class="period">.</span></span><span class="space"> </span>Single <code class="code-inline tex2jax_ignore">&lt;p&gt;</code> (left), <code class="code-inline tex2jax_ignore">&lt;stack&gt;</code> (right)</figcaption></figure><figure class="figure figure-like" id="figure-163"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
 <div class="sbspanel top" style="width:44.4444444444444%;"><ol class="decimal">
-<li id="li-394"><div class="para" id="p-derived-li-394">Blue</div></li>
-<li id="li-395"><div class="para" id="p-derived-li-395">Red</div></li>
-<li id="li-396"><div class="para" id="p-derived-li-396">Green</div></li>
-<li id="li-397"><div class="para" id="p-derived-li-397">Purple</div></li>
-<li id="li-398"><div class="para" id="p-derived-li-398">Violet</div></li>
-<li id="li-399"><div class="para" id="p-derived-li-399">Brown</div></li>
+<li id="li-395"><div class="para" id="p-derived-li-395">Blue</div></li>
+<li id="li-396"><div class="para" id="p-derived-li-396">Red</div></li>
+<li id="li-397"><div class="para" id="p-derived-li-397">Green</div></li>
+<li id="li-398"><div class="para" id="p-derived-li-398">Purple</div></li>
+<li id="li-399"><div class="para" id="p-derived-li-399">Violet</div></li>
+<li id="li-400"><div class="para" id="p-derived-li-400">Brown</div></li>
 </ol></div>
 <div class="sbspanel top" style="width:50%;"><ul class="disc">
-<li id="li-400">
-<div class="para" id="p-1138">Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae.</div>
-<div class="para" id="p-1139">Curabitur sagittis, risus non suscipit pulvinar, enim tortor posuere purus, id dignissim sapien sapien non dui.</div>
-</li>
 <li id="li-401">
-<div class="para" id="p-1140">Vestibulum ultrices, enim a ornare consectetur, nisl est iaculis arcu, eget scelerisque nunc magna a nisl.</div>
-<div class="para" id="p-1141">Vestibulum vestibulum ante sit amet ex vulputate, eu facilisis sapien tempor.</div>
+<div class="para" id="p-1143">Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae.</div>
+<div class="para" id="p-1144">Curabitur sagittis, risus non suscipit pulvinar, enim tortor posuere purus, id dignissim sapien sapien non dui.</div>
+</li>
+<li id="li-402">
+<div class="para" id="p-1145">Vestibulum ultrices, enim a ornare consectetur, nisl est iaculis arcu, eget scelerisque nunc magna a nisl.</div>
+<div class="para" id="p-1146">Vestibulum vestibulum ante sit amet ex vulputate, eu facilisis sapien tempor.</div>
 </li>
 </ul></div>
 </div></div>
@@ -557,7 +590,7 @@ x.means
 <span class="prompt unselectable">pi@rpi ~$ </span><b>
 </b></pre></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.3<span class="period">.</span></span><span class="space"> </span>A <code class="code-inline tex2jax_ignore">&lt;program&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;console&gt;</code></figcaption></figure><div class="para" id="p-1142">Note that these two chunks of verbatim text will very likely exceed the right side of a too-skinny panel.  We have severly edited these two examples from previous appearances just to fit here.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.3<span class="period">.</span></span><span class="space"> </span>A <code class="code-inline tex2jax_ignore">&lt;program&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;console&gt;</code></figcaption></figure><div class="para" id="p-1147">Note that these two chunks of verbatim text will very likely exceed the right side of a too-skinny panel.  We have severly edited these two examples from previous appearances just to fit here.</div>
 <figure class="figure figure-like" id="figure-165"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
 <div class="sbspanel top" style="width:44.4444444444444%;"><article class="poem" id="poem-8"><h3 class="heading"><span class="title">To A Friend Whose Work Has Come To Nothing</span></h3>
 <div class="stanza">
@@ -606,7 +639,7 @@ x.means
 </tr>
 </table></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.4<span class="period">.</span></span><span class="space"> </span>An <code class="code-inline tex2jax_ignore">&lt;poem&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;tabular&gt;</code></figcaption></figure><div class="para" id="p-1143">A <code class="code-inline tex2jax_ignore">tabular</code> can exceed the width of its panel in print, while in <code class="code-inline tex2jax_ignore">HTML</code> it may reflow individual cells to stay within a panel, depending on their contents.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.4<span class="period">.</span></span><span class="space"> </span>An <code class="code-inline tex2jax_ignore">&lt;poem&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;tabular&gt;</code></figcaption></figure><div class="para" id="p-1148">A <code class="code-inline tex2jax_ignore">tabular</code> can exceed the width of its panel in print, while in <code class="code-inline tex2jax_ignore">HTML</code> it may reflow individual cells to stay within a panel, depending on their contents.</div>
 <figure class="figure figure-like" id="figure-166"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
 <div class="sbspanel top" style="width:44.4444444444444%;"><pre class="code-block tex2jax_ignore">Vestibulum sit amet est non
     lacus accumsan iaculis
@@ -623,13 +656,13 @@ a lobortis odio convallis
         vitae.
 </pre></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.5<span class="period">.</span></span><span class="space"> </span>A <code class="code-inline tex2jax_ignore">&lt;pre&gt;</code>, and a <code class="code-inline tex2jax_ignore">&lt;pre&gt;</code> employing <code class="code-inline tex2jax_ignore">&lt;cline&gt;</code></figcaption></figure><div class="para" id="p-1144">Be aware that the lines of <code class="code-inline tex2jax_ignore">pre</code> can spill outside of its panel without any word-wrapping.  So you may need to vary panel widths or rearrange line breaks manually.  Page width is a scarce resource.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.5<span class="period">.</span></span><span class="space"> </span>A <code class="code-inline tex2jax_ignore">&lt;pre&gt;</code>, and a <code class="code-inline tex2jax_ignore">&lt;pre&gt;</code> employing <code class="code-inline tex2jax_ignore">&lt;cline&gt;</code></figcaption></figure><div class="para" id="p-1149">Be aware that the lines of <code class="code-inline tex2jax_ignore">pre</code> can spill outside of its panel without any word-wrapping.  So you may need to vary panel widths or rearrange line breaks manually.  Page width is a scarce resource.</div>
 <figure class="figure figure-like" id="figure-167"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
 <div class="sbspanel top" style="width:44.4444444444444%;"><img src="external/images/cross-rectangle.png" class="contained"></div>
 <div class="sbspanel top" style="width:50%;"><img src="external/images/cross-rectangle.png" class="contained"></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.6<span class="period">.</span></span><span class="space"> </span>An identical <code class="code-inline tex2jax_ignore">&lt;image&gt;</code>, twice</figcaption></figure><div class="para" id="p-1145">Images will scale to fill their panel's width.  We provide no services to change the aspect ratio of your images, that is your responsibility to accomplish elsewhere.  This rectangular image will have slightly different widths, and so will be slightly deeper in the right panel (at a 45:40 ratio).  Remember, vertical alignment is at the top.</div>
-<div class="para" id="p-1146">Now we turn to “captioned” items: <code class="code-inline tex2jax_ignore">figure</code>, <code class="code-inline tex2jax_ignore">table</code>, <code class="code-inline tex2jax_ignore">listing</code>, and the anomalous “named list”, <code class="code-inline tex2jax_ignore">list</code>, whose future is uncertain.  We test subcaptions here.  Note that many different atomic items can go in a figure, and largely they will behave in a <code class="code-inline tex2jax_ignore">sidebyside</code> much as they do when placed in a panel all by themselves (i.e. captionless).</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.6<span class="period">.</span></span><span class="space"> </span>An identical <code class="code-inline tex2jax_ignore">&lt;image&gt;</code>, twice</figcaption></figure><div class="para" id="p-1150">Images will scale to fill their panel's width.  We provide no services to change the aspect ratio of your images, that is your responsibility to accomplish elsewhere.  This rectangular image will have slightly different widths, and so will be slightly deeper in the right panel (at a 45:40 ratio).  Remember, vertical alignment is at the top.</div>
+<div class="para" id="p-1151">Now we turn to “captioned” items: <code class="code-inline tex2jax_ignore">figure</code>, <code class="code-inline tex2jax_ignore">table</code>, <code class="code-inline tex2jax_ignore">listing</code>, and the anomalous “named list”, <code class="code-inline tex2jax_ignore">list</code>, whose future is uncertain.  We test subcaptions here.  Note that many different atomic items can go in a figure, and largely they will behave in a <code class="code-inline tex2jax_ignore">sidebyside</code> much as they do when placed in a panel all by themselves (i.e. captionless).</div>
 <figure class="figure figure-like" id="figure-168"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
 <div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="figure-169"><img src="external/images/cross-rectangle.png" class="contained"><figcaption><span class="codenumber">(a)</span><span class="space"> </span>A Rectangular Test Image</figcaption></figure></div>
 <div class="sbspanel fixed-width top" style="width:50%;"><figure class="table table-like" id="table-47"><table class="tabular">
@@ -671,25 +704,25 @@ x.means
 </code></pre>
 <figcaption><span class="codenumber">(a)</span><span class="space"> </span>A statistical computation</figcaption></figure></div>
 <div class="sbspanel top" style="width:50%;"><figure class="list table-like" id="list-8"><div class="named-list-content">
-<div class="introduction" id="introduction-32"><div class="para" id="p-1147">We have named list of colors.</div></div>
+<div class="introduction" id="introduction-32"><div class="para" id="p-1152">We have named list of colors.</div></div>
 <ol class="decimal">
-<li id="li-402"><div class="para" id="p-derived-li-402">Blue</div></li>
-<li id="li-403"><div class="para" id="p-derived-li-403">Red</div></li>
-<li id="li-404"><div class="para" id="p-derived-li-404">Green</div></li>
-<li id="li-405"><div class="para" id="p-derived-li-405">Purple</div></li>
-<li id="li-406"><div class="para" id="p-derived-li-406">Violet</div></li>
-<li id="li-407"><div class="para" id="p-derived-li-407">Brown</div></li>
+<li id="li-403"><div class="para" id="p-derived-li-403">Blue</div></li>
+<li id="li-404"><div class="para" id="p-derived-li-404">Red</div></li>
+<li id="li-405"><div class="para" id="p-derived-li-405">Green</div></li>
+<li id="li-406"><div class="para" id="p-derived-li-406">Purple</div></li>
+<li id="li-407"><div class="para" id="p-derived-li-407">Violet</div></li>
+<li id="li-408"><div class="para" id="p-derived-li-408">Brown</div></li>
 </ol>
-<div class="conclusion" id="conclusion-22"><div class="para" id="p-1148">That was nice.</div></div>
+<div class="conclusion" id="conclusion-22"><div class="para" id="p-1153">That was nice.</div></div>
 </div>
 <figcaption><span class="codenumber">(b)</span><span class="space"> </span>Colors Again</figcaption></figure></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.8<span class="period">.</span></span><span class="space"> </span>A <code class="code-inline tex2jax_ignore">&lt;listing&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;list&gt;</code></figcaption></figure><div class="para" id="p-1149">Now we have some more interactive elements.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24.8<span class="period">.</span></span><span class="space"> </span>A <code class="code-inline tex2jax_ignore">&lt;listing&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;list&gt;</code></figcaption></figure><div class="para" id="p-1154">Now we have some more interactive elements.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
 <div class="sbspanel top" style="width:44.4444444444444%;"><div class="video-box" style="width: 80%;padding-top: 45%; margin-left: 10%; margin-right: 10%;"><video id="video-37" class="video" controls="" poster="preview/ups-promo-frame-one.jpg"><source src="external/video/ups-visitor-guide-360.ogv" type="video/ogg"></source><source src="external/video/ups-visitor-guide-360.webm" type="video/webm"></source><source src="external/video/ups-visitor-guide-360.mp4" type="video/mp4"></source><source src="external/video/ups-visitor-guide-360.ogg" type="video/ogg"></source>Your browser does not support the &lt;video&gt; tag.</video></div></div>
 <div class="sbspanel top" style="width:50%;"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="airborne-midnight-1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/UYPoMjR6-Ao?&amp;modestbranding=1&amp;rel=0"></iframe></div></div>
 </div></div>
-<div class="para" id="p-1150">Videos can be placed quite compactly for HTML output, but we display a fair amount of information for a YouTube video in print, and therefore two videos side-by-side gets pretty crowded.  The examples above have the bare minimum amount of information attached (not in an overarching <code class="code-inline tex2jax_ignore">figure</code>), and the bare amount which which is displayed in print.  We could relax our common spacing to make it a bit better.  Read about “side-by-side” groups (<code class="code-inline tex2jax_ignore">sbsgroup</code>) and experiment with stacking several sub-captioned videos into an overall captioned figure (<a href="section-side-by-side.html#subsection-sbsgroup" class="internal" title="Subsection 23.15: Side-By-Side Groups">Subsection 23.15</a>).  For other examples see <a href="section-video.html" class="internal" title="Section 17: Video">Section 17</a> and <a href="atomic-items.html#atomic-video" class="internal" title="Subsection 26.2: &lt;video&gt;">Subsection 26.2</a>.</div></section></div>
+<div class="para" id="p-1155">Videos can be placed quite compactly for HTML output, but we display a fair amount of information for a YouTube video in print, and therefore two videos side-by-side gets pretty crowded.  The examples above have the bare minimum amount of information attached (not in an overarching <code class="code-inline tex2jax_ignore">figure</code>), and the bare amount which which is displayed in print.  We could relax our common spacing to make it a bit better.  Read about “side-by-side” groups (<code class="code-inline tex2jax_ignore">sbsgroup</code>) and experiment with stacking several sub-captioned videos into an overall captioned figure (<a href="section-side-by-side.html#subsection-sbsgroup" class="internal" title="Subsection 23.15: Side-By-Side Groups">Subsection 23.15</a>).  For other examples see <a href="section-video.html" class="internal" title="Section 17: Video">Section 17</a> and <a href="atomic-items.html#atomic-video" class="internal" title="Subsection 26.2: &lt;video&gt;">Subsection 26.2</a>.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-side-by-side.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="poetry.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
@@ -698,5 +731,19 @@ x.means
 <a class="feedback-link" href="not-implemented.html" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
 <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
+<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
+var sc_project=9664088;
+var sc_invisible=1;
+var sc_security="6e60c510";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/9664088/0/6e60c510/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48811660-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-48811660-1');
+</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

@@ -67,7 +67,38 @@
 <link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -213,6 +244,8 @@ true);
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
 <div class="ptx-page">
@@ -510,101 +543,101 @@ true);
 <section class="section" id="advanced-numbering"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">27</span> <span class="title">Advanced Numbering</span>
 </h2>
-<section class="introduction" id="introduction-34"><div class="para" id="p-1211">This section demonstrates the numbering patterns used throughout PreTeXt.  There are five subsections.  Two intermediate subsections each have two subsubsections.  This creates a total of seven divisions that are leaves of the document tree.  In each leaf we have placed two numbered theorems, for a total of fourteen.  There is no real content, this is just a demonstration.</div>
-<div class="para" id="p-1212">Use values of <code class="code-inline tex2jax_ignore">0</code> through <code class="code-inline tex2jax_ignore">3</code> for the <code class="code-inline tex2jax_ignore">numbering.theorems.level</code> parameter to see how these numbers change accordingly.  It is easiest to compare if you use <code class="code-inline tex2jax_ignore">chunk.level &lt; 2</code> so the theorems all land on the same page if you are previewing in HTML.</div></section><section class="subsection" id="subsection-90"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-34"><div class="para" id="p-1217">This section demonstrates the numbering patterns used throughout PreTeXt.  There are five subsections.  Two intermediate subsections each have two subsubsections.  This creates a total of seven divisions that are leaves of the document tree.  In each leaf we have placed two numbered theorems, for a total of fourteen.  There is no real content, this is just a demonstration.</div>
+<div class="para" id="p-1218">Use values of <code class="code-inline tex2jax_ignore">0</code> through <code class="code-inline tex2jax_ignore">3</code> for the <code class="code-inline tex2jax_ignore">numbering.theorems.level</code> parameter to see how these numbers change accordingly.  It is easiest to compare if you use <code class="code-inline tex2jax_ignore">chunk.level &lt; 2</code> so the theorems all land on the same page if you are previewing in HTML.</div></section><section class="subsection" id="subsection-90"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.1</span> <span class="title">One</span>
 </h3>
-<div class="para" id="p-1213">A document leaf.</div>
+<div class="para" id="p-1219">A document leaf.</div>
 <article class="theorem theorem-like" id="theorem-number-01"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.1</span><span class="space"> </span><span class="creator">(Cauchy)</span><span class="period">.</span><span class="space"> </span><span class="title">First Theorem.</span>
 </h4>
-<div class="para" id="p-1214">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-02"><h4 class="heading">
+<div class="para" id="p-1220">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-02"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.2</span><span class="space"> </span><span class="creator">(Bunyakovsky)</span><span class="period">.</span><span class="space"> </span><span class="title">Second Theorem.</span>
 </h4>
-<div class="para" id="p-1215">No statement.</div></article></section><section class="subsection" id="subsection-91"><h3 class="heading hide-type">
+<div class="para" id="p-1221">No statement.</div></article></section><section class="subsection" id="subsection-91"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.2</span> <span class="title">Two</span>
 </h3>
-<section class="introduction" id="introduction-35"><div class="para" id="p-1216">Further subdivided.</div></section><section class="subsubsection" id="subsubsection-7"><h4 class="heading hide-type">
+<section class="introduction" id="introduction-35"><div class="para" id="p-1222">Further subdivided.</div></section><section class="subsubsection" id="subsubsection-7"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">27.2.1</span> <span class="title">Uno</span>
 </h4>
-<div class="para" id="p-1217">A document leaf.</div>
+<div class="para" id="p-1223">A document leaf.</div>
 <article class="theorem theorem-like" id="theorem-number-03"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.3</span><span class="space"> </span><span class="creator">(Schwarz)</span><span class="period">.</span><span class="space"> </span><span class="title">First Theorem!</span>
 </h5>
-<div class="para" id="p-1218">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-04"><h5 class="heading">
+<div class="para" id="p-1224">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-04"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.4</span><span class="space"> </span><span class="creator">(Inequality)</span><span class="period">.</span><span class="space"> </span><span class="title">Second Theorem?</span>
 </h5>
-<div class="para" id="p-1219">No statement.</div></article></section><section class="subsubsection" id="subsubsection-8"><h4 class="heading hide-type">
+<div class="para" id="p-1225">No statement.</div></article></section><section class="subsubsection" id="subsubsection-8"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">27.2.2</span> <span class="title">Dos</span>
 </h4>
-<div class="para" id="p-1220">A document leaf.</div>
+<div class="para" id="p-1226">A document leaf.</div>
 <article class="theorem theorem-like" id="theorem-number-05"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.5</span><span class="period">.</span><span class="space"> </span><span class="title">First Theorem?</span>
 </h5>
-<div class="para" id="p-1221">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-06"><h5 class="heading">
+<div class="para" id="p-1227">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-06"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.6</span><span class="period">.</span><span class="space"> </span><span class="title">Second Theorem!</span>
 </h5>
-<div class="para" id="p-1222">No statement.</div></article></section></section><section class="subsection" id="subsection-92"><h3 class="heading hide-type">
+<div class="para" id="p-1228">No statement.</div></article></section></section><section class="subsection" id="subsection-92"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.3</span> <span class="title">Three</span>
 </h3>
-<div class="para" id="p-1223">A document leaf.</div>
+<div class="para" id="p-1229">A document leaf.</div>
 <article class="theorem theorem-like" id="theorem-number-07"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.7</span><span class="period">.</span><span class="space"> </span><span class="title">First Theorem.</span>
 </h4>
-<div class="para" id="p-1224">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-08"><h4 class="heading">
+<div class="para" id="p-1230">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-08"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.8</span><span class="period">.</span><span class="space"> </span><span class="title">Second Theorem.</span>
 </h4>
-<div class="para" id="p-1225">No statement.</div></article></section><section class="subsection" id="subsection-93"><h3 class="heading hide-type">
+<div class="para" id="p-1231">No statement.</div></article></section><section class="subsection" id="subsection-93"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.4</span> <span class="title">Four</span>
 </h3>
-<section class="introduction" id="introduction-36"><div class="para" id="p-1226">Further subdivided.  We include two theorems as numbered items in the introduction to test their numbers, which should always be logical.</div>
+<section class="introduction" id="introduction-36"><div class="para" id="p-1232">Further subdivided.  We include two theorems as numbered items in the introduction to test their numbers, which should always be logical.</div>
 <article class="theorem theorem-like" id="theorem-good-one"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.9</span><span class="period">.</span><span class="space"> </span><span class="title">Good Numbered Theorem One.</span>
 </h4>
-<div class="para" id="p-1227">No statement.</div></article><article class="theorem theorem-like" id="theorem-good-two"><h4 class="heading">
+<div class="para" id="p-1233">No statement.</div></article><article class="theorem theorem-like" id="theorem-good-two"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.10</span><span class="period">.</span><span class="space"> </span><span class="title">Good Numbered Theorem Two.</span>
 </h4>
-<div class="para" id="p-1228">No statement.</div></article></section><section class="subsubsection" id="subsubsection-9"><h4 class="heading hide-type">
+<div class="para" id="p-1234">No statement.</div></article></section><section class="subsubsection" id="subsubsection-9"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">27.4.1</span> <span class="title">Uno</span>
 </h4>
-<div class="para" id="p-1229">A document leaf.</div>
+<div class="para" id="p-1235">A document leaf.</div>
 <article class="theorem theorem-like" id="theorem-number-09"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.11</span><span class="period">.</span><span class="space"> </span><span class="title">First Theorem.</span>
 </h5>
-<div class="para" id="p-1230">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-10"><h5 class="heading">
+<div class="para" id="p-1236">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-10"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.12</span><span class="period">.</span><span class="space"> </span><span class="title">Second Theorem.</span>
 </h5>
-<div class="para" id="p-1231">No statement.</div></article></section><section class="subsubsection" id="subsubsection-10"><h4 class="heading hide-type">
+<div class="para" id="p-1237">No statement.</div></article></section><section class="subsubsection" id="subsubsection-10"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">27.4.2</span> <span class="title">Dos</span>
 </h4>
-<div class="para" id="p-1232">A document leaf.</div>
+<div class="para" id="p-1238">A document leaf.</div>
 <article class="theorem theorem-like" id="theorem-number-11"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.13</span><span class="period">.</span><span class="space"> </span><span class="title">First Theorem.</span>
 </h5>
-<div class="para" id="p-1233">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-12"><h5 class="heading">
+<div class="para" id="p-1239">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-12"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.14</span><span class="period">.</span><span class="space"> </span><span class="title">Second Theorem.</span>
 </h5>
-<div class="para" id="p-1234">No statement.</div></article></section><section class="conclusion" id="conclusion-23"><div class="para" id="p-1235">Conclusion now.  We include two theorems as numbered items in the conclusion to test their numbers, which are sometimes totally illogical and are inconsistent across output formats.  To see the effect, use <code class="code-inline tex2jax_ignore">--stringparam numbering.theorems.level 3</code> in the <code class="code-inline tex2jax_ignore">xsltproc</code> invocation. See this GitHub <a class="external" href="https://github.com/PreTeXtBook/pretext/issues/139" target="_blank">Issue #139</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-82" id="fn-82"><sup> 1 </sup></a> for details.</div>
+<div class="para" id="p-1240">No statement.</div></article></section><section class="conclusion" id="conclusion-23"><div class="para" id="p-1241">Conclusion now.  We include two theorems as numbered items in the conclusion to test their numbers, which are sometimes totally illogical and are inconsistent across output formats.  To see the effect, use <code class="code-inline tex2jax_ignore">--stringparam numbering.theorems.level 3</code> in the <code class="code-inline tex2jax_ignore">xsltproc</code> invocation. See this GitHub <a class="external" href="https://github.com/PreTeXtBook/pretext/issues/139" target="_blank">Issue #139</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-84" id="fn-84"><sup> 1 </sup></a> for details.</div>
 <article class="theorem theorem-like" id="theorem-bad-one"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.15</span><span class="period">.</span><span class="space"> </span><span class="title">Bad Numbered Theorem One.</span>
 </h4>
-<div class="para" id="p-1236">No statement.</div></article><article class="theorem theorem-like" id="theorem-bad-two"><h4 class="heading">
+<div class="para" id="p-1242">No statement.</div></article><article class="theorem theorem-like" id="theorem-bad-two"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.16</span><span class="period">.</span><span class="space"> </span><span class="title">Bad Numbered Theorem Two.</span>
 </h4>
-<div class="para" id="p-1237">No statement.</div></article></section></section><section class="subsection" id="subsection-94"><h3 class="heading hide-type">
+<div class="para" id="p-1243">No statement.</div></article></section></section><section class="subsection" id="subsection-94"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.5</span> <span class="title">Five</span>
 </h3>
-<div class="para" id="p-1238">A document leaf.</div>
+<div class="para" id="p-1244">A document leaf.</div>
 <article class="theorem theorem-like" id="theorem-number-13"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.17</span><span class="period">.</span><span class="space"> </span><span class="title">First Theorem.</span>
 </h4>
-<div class="para" id="p-1239">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-14"><h4 class="heading">
+<div class="para" id="p-1245">No statement.</div></article><article class="theorem theorem-like" id="theorem-number-14"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">27.18</span><span class="period">.</span><span class="space"> </span><span class="title">Second Theorem.</span>
 </h4>
-<div class="para" id="p-1240">No statement.</div></article></section><section class="subsection" id="subsection-local-theorems"><h3 class="heading hide-type">
+<div class="para" id="p-1246">No statement.</div></article></section><section class="subsection" id="subsection-local-theorems"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.6</span> <span class="title">Theorems in This Section</span>
 </h3>
-<div class="para" id="p-1241">We have a lot of theorems in this section, so we illustrate including an automatic list of these here.  We use the <code class="code-inline tex2jax_ignore">elements</code> attribute to limit the list to <code class="code-inline tex2jax_ignore">theorem</code> elements, and we use the <code class="code-inline tex2jax_ignore">scope</code> attribute to limit the list to this <code class="code-inline tex2jax_ignore">section</code>.  You can use an introductory <code class="code-inline tex2jax_ignore">p</code> like this one, or not.  The list gets no title or visual separation, so use the usual subdivision elements to make that happen.  The <code class="code-inline tex2jax_ignore">elements</code> attribute can be a space-delimited list of many different elements.  This list should not include the Fundamental Theorem of Calculus, Theorem <a href="" class="xref" data-knowl="./knowl/theorem-FTC.html" title="Theorem 2.1: The Fundamental Theorem of Calculus">2.1</a>.  See a slightly different example in <a href="appendix-results.html" class="internal" title="Appendix F: List of Results">Appendix F</a>.</div>
+<div class="para" id="p-1247">We have a lot of theorems in this section, so we illustrate including an automatic list of these here.  We use the <code class="code-inline tex2jax_ignore">elements</code> attribute to limit the list to <code class="code-inline tex2jax_ignore">theorem</code> elements, and we use the <code class="code-inline tex2jax_ignore">scope</code> attribute to limit the list to this <code class="code-inline tex2jax_ignore">section</code>.  You can use an introductory <code class="code-inline tex2jax_ignore">p</code> like this one, or not.  The list gets no title or visual separation, so use the usual subdivision elements to make that happen.  The <code class="code-inline tex2jax_ignore">elements</code> attribute can be a space-delimited list of many different elements.  This list should not include the Fundamental Theorem of Calculus, Theorem <a href="" class="xref" data-knowl="./knowl/theorem-FTC.html" title="Theorem 2.1: The Fundamental Theorem of Calculus">2.1</a>.  See a slightly different example in <a href="appendix-results.html" class="internal" title="Appendix F: List of Results">Appendix F</a>.</div>
 <div>
 <a href="" class="xref" data-knowl="./knowl/theorem-number-01.html" title="Theorem 27.1: First Theorem">Theorem 27.1</a> First Theorem</div>
 <div>
@@ -643,39 +676,39 @@ true);
 <a href="" class="xref" data-knowl="./knowl/theorem-number-14.html" title="Theorem 27.18: Second Theorem">Theorem 27.18</a> Second Theorem</div></section><section class="subsection" id="subsection-with-an-exercise"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.7</span> <span class="title">A Title with ] a Right Bracket</span>
 </h3>
-<div class="para" id="p-1242">
+<div class="para" id="p-1248">
 <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> has trouble with brackets that end up inside optional arguments, so this subsection title is only a check on the defense against that.  And now an <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code> with a title that could really be a problem.</div>
 <article class="exercise exercise-like" id="exercise-difficult-title"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-difficult-title"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">27.19</span><span class="period">.</span><span class="space"> </span><span class="title">A Right Brace } and a Right Bracket].</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-difficult-title"><article class="exercise exercise-like"><div class="para" id="p-1243">The right brace is is used as a grouping character in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> so this is just a test of its behavior in titles.</div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-difficult-title"><article class="exercise exercise-like"><div class="para" id="p-1249">The right brace is is used as a grouping character in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> so this is just a test of its behavior in titles.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-15" id="hint-15"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-15"><div class="hint solution-like"><div class="para" id="p-1244">A faux hint to get this exercise to migrate into a <code class="code-inline tex2jax_ignore">&lt;solutions&gt;</code>.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-15" id="hint-15"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-15"><div class="hint solution-like"><div class="para" id="p-1250">A faux hint to get this exercise to migrate into a <code class="code-inline tex2jax_ignore">&lt;solutions&gt;</code>.</div></div></div>
 </div></article></div></section><section class="subsection" id="subsection-97"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.8</span> <span class="title">A Title with } a Right Brace</span>
 </h3>
-<div class="para" id="p-1245">And now a right brace in a division title.</div></section><section class="subsection" id="subsection-98"><h3 class="heading hide-type">
+<div class="para" id="p-1251">And now a right brace in a division title.</div></section><section class="subsection" id="subsection-98"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.9</span> <span class="title">A Title with <span class="process-math">\(a]b\)</span> a Math Right Bracket</span>
 </h3>
-<div class="para" id="p-1246">And now a right bracket within math in a division title.</div>
-<div class="para" id="p-1247">We do not test a right brace within math, since it should be escaped, as is normal <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> practice.</div></section><section class="subsection" id="subsection-99"><h3 class="heading hide-type">
+<div class="para" id="p-1252">And now a right bracket within math in a division title.</div>
+<div class="para" id="p-1253">We do not test a right brace within math, since it should be escaped, as is normal <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> practice.</div></section><section class="subsection" id="subsection-99"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">27.10</span> <span class="title">Just an Exercise</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-52"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-52"><h4 class="heading">
+<article class="exercise exercise-like" id="exercise-53"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-53"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">27.20</span><span class="period">.</span><span class="space"> </span><span class="title">An Extraneous Exercise.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-52"><article class="exercise exercise-like"><div class="para" id="p-1248">This exercise is here just as a test of the <code class="code-inline tex2jax_ignore">&lt;solutions&gt;</code> division coming next.  So it is serving a purpose, even if it is not apparent.</div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-53"><article class="exercise exercise-like"><div class="para" id="p-1254">This exercise is here just as a test of the <code class="code-inline tex2jax_ignore">&lt;solutions&gt;</code> division coming next.  So it is serving a purpose, even if it is not apparent.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-16" id="hint-16"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-16"><div class="hint solution-like"><div class="para" id="p-1249">A hint, so this exercise looks identical in structure to the one in the previous subsection.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-16" id="hint-16"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-16"><div class="hint solution-like"><div class="para" id="p-1255">A hint, so this exercise looks identical in structure to the one in the previous subsection.</div></div></div>
 </div></article></div></section><section class="solutions" id="solutions-2"><h3 class="heading hide-type">
 <span class="type">Solutions</span> <span class="codenumber">27.11</span> <span class="title">Solutions</span>
 </h3>
-<section class="introduction" id="introduction-37"><div class="para" id="p-1250">This is a <code class="code-inline tex2jax_ignore">&lt;solutions&gt;</code> division, which will be a peer of the other <code class="code-inline tex2jax_ignore">&lt;subsection&gt;</code> in this <code class="code-inline tex2jax_ignore">&lt;section&gt;</code>. The default behavior is to look to the parent division (a <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> here) and collect all the hints, answers, and solutions from every <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code> (and friends) inside this containing division.  (There are just two, similar inline <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code>.)</div>
-<div class="para" id="p-1251">But instead of the default, we employ a <code class="code-inline tex2jax_ignore">@scope</code> attribute to <em class="emphasis">define</em> the parent division of the exercises whose solutions will be shown.  In this example we specify the  <code class="code-inline tex2jax_ignore">&lt;subsection&gt;</code> that is two back, the one which tests brackets in titles.</div></section><h4 class="heading hide-type" title="Subsection 27.7: A Title with ] a Right Bracket">
+<section class="introduction" id="introduction-37"><div class="para" id="p-1256">This is a <code class="code-inline tex2jax_ignore">&lt;solutions&gt;</code> division, which will be a peer of the other <code class="code-inline tex2jax_ignore">&lt;subsection&gt;</code> in this <code class="code-inline tex2jax_ignore">&lt;section&gt;</code>. The default behavior is to look to the parent division (a <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> here) and collect all the hints, answers, and solutions from every <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code> (and friends) inside this containing division.  (There are just two, similar inline <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code>.)</div>
+<div class="para" id="p-1257">But instead of the default, we employ a <code class="code-inline tex2jax_ignore">@scope</code> attribute to <em class="emphasis">define</em> the parent division of the exercises whose solutions will be shown.  In this example we specify the  <code class="code-inline tex2jax_ignore">&lt;subsection&gt;</code> that is two back, the one which tests brackets in titles.</div></section><h4 class="heading hide-type" title="Subsection 27.7: A Title with ] a Right Bracket">
 <span class="codenumber">27.7</span><span class="space"> </span><span class="title">A Title with ] a Right Bracket</span>
 </h4>
 <article class="exercise-like"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">27.19</span><span class="period">.</span><span class="space"> </span><span class="title">A Right Brace } and a Right Bracket].</span>
 </h5>
-<div class="solutions"><a href="" class="hint-knowl original" data-knowl="./knowl/hint-15-hidden.html" title="Hint 27.19.1"><span class="type">Hint</span><span class="period">.</span></a></div></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-82"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/PreTeXtBook/pretext/issues/139</code></div></div>
+<div class="solutions"><a href="" class="hint-knowl original" data-knowl="./knowl/hint-15-hidden.html" title="Hint 27.19.1"><span class="type">Hint</span><span class="period">.</span></a></div></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-84"><div class="fn"><code class="code-inline tex2jax_ignore">github.com/PreTeXtBook/pretext/issues/139</code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="atomic-items.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-28.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
@@ -685,5 +718,19 @@ true);
 <a class="feedback-link" href="not-implemented.html" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
 <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
+<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
+var sc_project=9664088;
+var sc_invisible=1;
+var sc_security="6e60c510";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/9664088/0/6e60c510/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48811660-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-48811660-1');
+</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

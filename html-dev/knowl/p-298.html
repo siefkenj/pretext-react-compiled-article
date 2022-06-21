@@ -13,15 +13,13 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Consider that the first line below is text sandwiched in-between two Greek letters, wrapped in a <code class="code-inline tex2jax_ignore">\text{}</code> macro.  In HTML output we have taken care that the font for text material within display mathematics should match the font of the  surrounding paragraph, as also happens with <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output.  The second line is nearly identical in the source, but is just naked text being rendered like a slew of variables.</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-\alpha\text{ is not equal to }\beta\\
-\alpha is not equal to \beta\\
-\alpha\neq\beta\text{.}
-\end{gather*}
+<div class="para">This example is from Jason Underdown.  The package is named <code class="code-inline tex2jax_ignore">cancel</code> and is included in the TeXLive distribution, so is fairly standard.  The particular macro being demonstrated is <code class="code-inline tex2jax_ignore">\cancelto{}{}</code>.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{b \rightarrow \infty}\left[\cancelto{0}{-\frac{1}{s}e^{-sb}} + \frac{1}{s}\right]\text{.}
+\end{equation*}
 </div>
-<div class="para">We are not suggesting here that using words in place of symbols, as in the first line, is a good practice.  (It is not.)</div>
+<div class="para">Look at the source of this article to see the package name being supplied in a <code class="code-inline tex2jax_ignore">latex-preamble/package</code> element within the <code class="code-inline tex2jax_ignore">docinfo</code> section.  That is the only setup required to make the macro usable in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> and <abbr class="initialism">HTML</abbr> output.</div>
 </div>
 <span class="incontext"><a href="section-7.html#p-298" class="internal">in-context</a></span>
 </body>

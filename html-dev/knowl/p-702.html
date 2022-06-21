@@ -12,16 +12,22 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">A one item list, whose item is a paragraph with two contained ordered lists, separated by text.</div>
-<ul class="square"><li><div class="para logical">
-<div class="para">Introductory text.</div>
-<ol class="upper-alpha"><li><div class="para">First item, first list.</div></li></ol>
-<div class="para">Intermediate text.</div>
-<ol class="lower-alpha"><li><div class="para">First item, second list.</div></li></ol>
-<div class="para">Concluding text.</div>
-</div></li></ul>
-</div>
+<div class="para logical"><ul class="disc">
+<li><div class="para">The next three cross-references point to a list item, just above.  It is interesting because the list is named, hence numbered.  The global reference uses the full number, while the local reference uses the number from within the list.  The hybrid reference recognizes that the target is within the same named list, so the number can be shorter.  An identical hybrid cross-reference appears within the <code class="code-inline tex2jax_ignore">&lt;introduction&gt;</code> to this list, an immediately following, but outside the <code class="code-inline tex2jax_ignore">&lt;list&gt;</code>.</div></li>
+<li><div class="para">Cross-reference within named list (<code class="code-inline tex2jax_ignore">global</code>): <a href="" class="xref" data-knowl="./knowl/target-item.html" title="Item 12.4:B.c">Item 12.4:B.c</a>
+</div></li>
+<li><div class="para">Cross-reference within named list (<code class="code-inline tex2jax_ignore">hybrid</code>): <a href="" class="xref" data-knowl="./knowl/target-item.html" title="Item 12.4:B.c">Item B.c</a>
+</div></li>
+<li><div class="para">Cross-reference within named list (<code class="code-inline tex2jax_ignore">local</code>): <a href="" class="xref" data-knowl="./knowl/target-item.html" title="Item 12.4:B.c">Item B.c</a>
+</div></li>
+<li><div class="para logical"><ol class="decimal">
+<li><div class="para">C and bullet and 1</div></li>
+<li><div class="para">C and bullet and 2</div></li>
+<li><div class="para">C and bullet and 3</div></li>
+</ol></div></li>
+<li><div class="para">C and bullet</div></li>
+<li><div class="para">C and bullet</div></li>
+</ul></div>
 <span class="incontext"><a href="lists.html#p-702" class="internal">in-context</a></span>
 </body>
 </html>

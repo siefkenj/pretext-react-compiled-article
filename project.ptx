@@ -31,6 +31,19 @@
       <stringparam key="html-css-tocfile" value="toc_min.css"/>
       <stringparam key="html-css-navbarfile" value="navbar_min.css"/>
     </target>
+    <target name="html-book">
+      <format>html</format>
+      <xsl>./tmp/pretext/xsl/pretext-html.xsl</xsl>
+      <source>./tmp/pretext/examples/sample-book/sample-book.xml</source>
+      <publication>./tmp/pretext/examples/sample-book/publication-noparts.xml</publication>
+      <output-dir>html-book-dev</output-dir>
+      <stringparam key="debug.react.local" value="yes"/>
+      <stringparam key="debug.datedfiles" value="no"/>
+      <stringparam key="html-css-shellfile" value="shell_min.css"/>
+      <stringparam key="html-css-bannerfile" value="banner_min.css"/>
+      <stringparam key="html-css-tocfile" value="toc_min.css"/>
+      <stringparam key="html-css-navbarfile" value="navbar_min.css"/>
+    </target>
     <target name="html-testing">
       <format>html</format>
       <xsl>./tmp/pretext/xsl/pretext-html.xsl</xsl>

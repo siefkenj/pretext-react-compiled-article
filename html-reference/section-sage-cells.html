@@ -89,7 +89,38 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-r',
 <link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -235,6 +266,8 @@ true);
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
 <div class="ptx-page">
@@ -528,7 +561,8 @@ true);
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div class="ptx-content"><section class="section" id="Abc"><h2 class="heading hide-type">
+<main class="ptx-main"><div class="ptx-content">
+<section class="section" id="Abc"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Computing Integrals with Sage (<span class="process-math">\(\int\)</span>)</span>
 </h2>
 <div class="para" id="p-12">Sage can compute definite integrals.  The output contains the approximate numerical value of the definite integral, followed by an upper bound  of the error in the approximation.</div>
@@ -576,15 +610,30 @@ mean(mydata$age)
 sd(mydata$age)
 plot(mydata$age,mydata$weight)
 </script></pre>
-<div class="para" id="p-24">Here is a blank Sage cell that you may use for practice and experimentation with the commands above.  Note that this cell allows a choice of languages, and is not linked with any of the previous cells, so a reader would need to start fresh, or cut/paste definitioons from other cells.</div>
-<pre class="ptx-sagecell sagecell-practice" id="sage-10"><script type="text/x-sage"># Practice area (not linked for Sage Cell use)
+<div class="para" id="p-24">The Sage Cell server importants a few important R packages.  As of 2022-06-04 these are <code class="code-inline tex2jax_ignore">deSolve</code>, <code class="code-inline tex2jax_ignore">ggplot2</code>, <code class="code-inline tex2jax_ignore">pracma</code>, <code class="code-inline tex2jax_ignore">survey</code>, <code class="code-inline tex2jax_ignore">swirl</code>, and <code class="code-inline tex2jax_ignore">tidyverse</code>.  This next example uses the <code class="code-inline tex2jax_ignore">ggplot</code> library for both a data set and the plotting capabilities.  Note the initial use of the <code class="code-inline tex2jax_ignore">library()</code> function.  This is a modified version of the <span class="articletitle">“Bubble plot”</span> example at <a class="external" href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html" target="_blank">Top 50 <code class="code-inline tex2jax_ignore">ggplot2</code> Visualizations —The Master List</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-3" id="fn-3"><sup> 1 </sup></a>.</div>
+<pre class="ptx-sagecell sagecell-r" id="sage-10"><script type="text/x-sage"># load package and data
+library(ggplot2)
+data(mpg, package="ggplot2")
+
+mpg_select <- mpg[mpg$manufacturer %in% c("audi", "ford", "honda", "hyundai"), ]
+
+# Scatterplot
+g <- ggplot(mpg_select, aes(displ, cty)) +
+  labs(subtitle="mpg: Displacement vs City Mileage",
+       title="Bubble chart")
+
+g + geom_jitter(aes(col=manufacturer, size=hwy)) +
+  geom_smooth(aes(col=manufacturer), method="lm", se=F)
 </script></pre>
-<div class="para" id="p-25">On the other hand a <code class="code-inline tex2jax_ignore">&lt;sage&gt;</code> element with no content will also create an empty Sage cell for the reader's use, but now it will be specific to a particular language and linked to others of the same language.  Run the <code class="code-inline tex2jax_ignore">R</code> cell above that defines the variable <code class="code-inline tex2jax_ignore">ruth</code> and then try typing <code class="code-inline tex2jax_ignore">summary(ruth)</code> in the cell below.  (The linking seems a bit buggy, as it repeats the boxplot in the output, as of 2016-06-13).</div>
-<pre class="ptx-sagecell sagecell-r" id="sage-11"><script type="text/x-sage"></script></pre>
-<div class="para" id="p-26">You can make Sage blocks which are of <code class="code-inline tex2jax_ignore">type="invisible"</code>, which will never be shown to a reader, but which get doctested.  Why do this?  If some code produces an error, and you hope it is fixed someday, use an invisible block to raise the error.  Once fixed, the doctest will fail, and you can adjust your commentary to suit.  There is such a block right now, <em class="emphasis">but</em> you will need to go to the source to see it.</div>
-<div class="para" id="p-27">Our maximum width for text, designed for readability, suggests you should format your Sage code with a maximum of about 54 characters. On a mobile device, the number of displayed characters might be as low as 28 in portrait orientation, and again around 50 in landscape.  You can use a variety of techniques to shorten long lines, such as using intermediate variables.  Since Sage is just a huge Python library, you can use any of Python's facilities for handling long lines.  These include a continuation character (which I try to avoid using) or natural places where you can break long lines, such as between entries of a list.  Also, if writing loops or functions, you may wish to have your indentation be only two characters wide (rather than, say, four).</div>
-<div class="para" id="p-28">Sage output can sometimes be quite long, though this has improved with some changes in Sage's output routines.  Output code should be included primarily for doctesting purposes, and in this use, you may break at almost whitespace character and the doctesting framework will adjust accordingly.  You may wish to show sample output in a static format, like a PDF, so you can consider formatting your output to fit the width constraints of that medium.  Or you may even adjust exactly what is output, to keep it from being too verbose.  Sage doctesting also allows for a wild-card style syntax which allows you to skip over huge chunks of meaningless or unpredictable output, such as tracebacks on error messages.</div>
-<div class="para logical" id="p-29">
+<div class="para" id="p-25">Here is a blank Sage cell that you may use for practice and experimentation with the commands above.  Note that this cell allows a choice of languages, and is not linked with any of the previous cells, so a reader would need to start fresh, or cut/paste definitioons from other cells.</div>
+<pre class="ptx-sagecell sagecell-practice" id="sage-11"><script type="text/x-sage"># Practice area (not linked for Sage Cell use)
+</script></pre>
+<div class="para" id="p-26">On the other hand a <code class="code-inline tex2jax_ignore">&lt;sage&gt;</code> element with no content will also create an empty Sage cell for the reader's use, but now it will be specific to a particular language and linked to others of the same language.  Run the <code class="code-inline tex2jax_ignore">R</code> cell above that defines the variable <code class="code-inline tex2jax_ignore">ruth</code> and then try typing <code class="code-inline tex2jax_ignore">summary(ruth)</code> in the cell below.</div>
+<pre class="ptx-sagecell sagecell-r" id="sage-12"><script type="text/x-sage"></script></pre>
+<div class="para" id="p-27">You can make Sage blocks which are of <code class="code-inline tex2jax_ignore">type="invisible"</code>, which will never be shown to a reader, but which get doctested.  Why do this?  If some code produces an error, and you hope it is fixed someday, use an invisible block to raise the error.  Once fixed, the doctest will fail, and you can adjust your commentary to suit.  There is such a block right now, <em class="emphasis">but</em> you will need to go to the source to see it.</div>
+<div class="para" id="p-28">Our maximum width for text, designed for readability, suggests you should format your Sage code with a maximum of about 54 characters. On a mobile device, the number of displayed characters might be as low as 28 in portrait orientation, and again around 50 in landscape.  You can use a variety of techniques to shorten long lines, such as using intermediate variables.  Since Sage is just a huge Python library, you can use any of Python's facilities for handling long lines.  These include a continuation character (which I try to avoid using) or natural places where you can break long lines, such as between entries of a list.  Also, if writing loops or functions, you may wish to have your indentation be only two characters wide (rather than, say, four).</div>
+<div class="para" id="p-29">Sage output can sometimes be quite long, though this has improved with some changes in Sage's output routines.  Output code should be included primarily for doctesting purposes, and in this use, you may break at almost whitespace character and the doctesting framework will adjust accordingly.  You may wish to show sample output in a static format, like a PDF, so you can consider formatting your output to fit the width constraints of that medium.  Or you may even adjust exactly what is output, to keep it from being too verbose.  Sage doctesting also allows for a wild-card style syntax which allows you to skip over huge chunks of meaningless or unpredictable output, such as tracebacks on error messages.</div>
+<div class="para logical" id="p-30">
 <div class="para">This paragraph is just a placeholder.  It has handful of index entries, all starting with the letters “gas”, taken from <span class="booktitle">Indexing for Editors and Authors: A Practical Guide to Understanding Indexes</span> by Leise, Mertes, and Badgett.  The intent is to test letter-by-letter versus word-by-word sorting of index entries.  We use a word-by-word order, resulting in:</div>
 <ol class="decimal">
 <li id="li-1"><div class="para" id="p-derived-li-1">gas</div></li>
@@ -596,9 +645,10 @@ plot(mydata$age,mydata$weight)
 </ol>
 </div>
 <section class="paragraphs" id="paragraphs-1"><h3 class="heading"><span class="title">Titled Sage Cells.</span></h3>
-<pre class="ptx-sagecell sagecell-sage" id="sage-13"><script type="text/x-sage">integral(sin(x)^2, x)
+<pre class="ptx-sagecell sagecell-sage" id="sage-14"><script type="text/x-sage">integral(sin(x)^2, x)
 </script></pre>
-<div class="para" id="p-30">You can place Sage cells inside of a <code class="code-inline tex2jax_ignore">paragraphs</code> if you want to give them a title, but no numbers, etc.  Their surrounding box sometimes gets clobbered in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output if they are the first piece of content, so we test that here also.  A defensive <code class="code-inline tex2jax_ignore">\leavevmode</code> solves the problem.</div></section></section></div>
+<div class="para" id="p-31">You can place Sage cells inside of a <code class="code-inline tex2jax_ignore">paragraphs</code> if you want to give them a title, but no numbers, etc.  Their surrounding box sometimes gets clobbered in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output if they are the first piece of content, so we test that here also.  A defensive <code class="code-inline tex2jax_ignore">\leavevmode</code> solves the problem.</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-3"><div class="fn"><code class="code-inline tex2jax_ignore">r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html</code></div></div>
+</div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-fundamental-theorem.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="interesting-corollary.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
@@ -607,5 +657,19 @@ plot(mydata$age,mydata$weight)
 <a class="feedback-link" href="not-implemented.html" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
 <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
+<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
+var sc_project=9664088;
+var sc_invisible=1;
+var sc_security="6e60c510";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/9664088/0/6e60c510/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48811660-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-48811660-1');
+</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

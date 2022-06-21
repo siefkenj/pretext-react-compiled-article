@@ -11,8 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">An <code class="code-inline tex2jax_ignore">&lt;image&gt;</code> should either have a non-empty description or set <code class="code-inline tex2jax_ignore">@decorative</code> to the value <code class="code-inline tex2jax_ignore">yes</code>. Some of the following images comply, and some do not.  There's not really anything to see here visually, this is testing notifications made elsewhere.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">In a TikZ diagram, name locations of interest explicitly, with the <code class="code-inline tex2jax_ignore">\coordinate</code> macro, such as</div>
+<pre class="code-display tex2jax_ignore">\coordinate (positive-y-axis) at (4,6);</pre>
+<div class="para">Both Cartesian and polar coordinates are supported by TikZ using different syntax.  These names will not be seen by your reader, they are just used in the TikZ code.</div>
+</div>
 <span class="incontext"><a href="graphics.html#p-454" class="internal">in-context</a></span>
 </body>
 </html>

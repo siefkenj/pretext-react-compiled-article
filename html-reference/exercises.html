@@ -67,7 +67,38 @@
 <link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -213,6 +244,8 @@ true);
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
 <div class="ptx-page">
@@ -509,79 +542,79 @@ true);
 <main class="ptx-main"><div class="ptx-content"><section class="exercises" id="exercises"><h2 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">35</span> <span class="title">Exercises, Top-Level</span>
 </h2>
-<section class="introduction" id="introduction-54"><div class="para" id="p-1381"></div>
-<div class="para" id="p-1382">This <code class="code-inline tex2jax_ignore">&lt;exercises&gt;</code> of the sample article is a peer of all the preceding <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> and is the only such <code class="code-inline tex2jax_ignore">&lt;exercises&gt;</code>.  As such, it is not numbered, and contains only <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code>, but for this <code class="code-inline tex2jax_ignore">&lt;introduction&gt;</code> you are reading.  The <code class="code-inline tex2jax_ignore">&lt;exercises&gt;</code> contained within will be numbered in cross-references according to the enclosing division, in this case the entire article and so without any qualification, to wit, <a href="" class="xref" data-knowl="./knowl/exercise-challenging-one-top.html" title="Exercise 35.4: Challenging One">Exercise 35.4</a>.</div></section><article class="exercise exercise-like" id="exercise-107"><h3 class="heading">
+<section class="introduction" id="introduction-54"><div class="para" id="p-1387"></div>
+<div class="para" id="p-1388">This <code class="code-inline tex2jax_ignore">&lt;exercises&gt;</code> of the sample article is a peer of all the preceding <code class="code-inline tex2jax_ignore">&lt;section&gt;</code> and is the only such <code class="code-inline tex2jax_ignore">&lt;exercises&gt;</code>.  As such, it is not numbered, and contains only <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code>, but for this <code class="code-inline tex2jax_ignore">&lt;introduction&gt;</code> you are reading.  The <code class="code-inline tex2jax_ignore">&lt;exercises&gt;</code> contained within will be numbered in cross-references according to the enclosing division, in this case the entire article and so without any qualification, to wit, <a href="" class="xref" data-knowl="./knowl/exercise-challenging-one-top.html" title="Exercise 35.4: Challenging One">Exercise 35.4</a>.</div></section><article class="exercise exercise-like" id="exercise-108"><h3 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Drill One.</span>
 </h3>
-<div class="para" id="p-1383">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.</div></article><article class="exercise exercise-like" id="exercise-108"><h3 class="heading">
+<div class="para" id="p-1389">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.</div></article><article class="exercise exercise-like" id="exercise-109"><h3 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Drill Two.</span>
 </h3>
-<div class="para" id="p-1384">Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.</div>
+<div class="para" id="p-1390">Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.</div>
 <figure class="figure figure-like" id="figure-202"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="external/images/cross-square.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">35.6<span class="period">.</span></span><span class="space"> </span>Testing numbering in a <code class="code-inline tex2jax_ignore">&lt;exercises&gt;</code> without a number</figcaption></figure></article><article class="exercise exercise-like" id="exercise-109"><h3 class="heading">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">35.6<span class="period">.</span></span><span class="space"> </span>Testing numbering in a <code class="code-inline tex2jax_ignore">&lt;exercises&gt;</code> without a number</figcaption></figure></article><article class="exercise exercise-like" id="exercise-110"><h3 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Drill Three.</span>
 </h3>
-<div class="para" id="p-1385">Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.</div></article><article class="exercise exercise-like" id="exercise-challenging-one-top"><h3 class="heading">
+<div class="para" id="p-1391">Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.</div></article><article class="exercise exercise-like" id="exercise-challenging-one-top"><h3 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Challenging One.</span>
 </h3>
-<div class="para" id="p-1386">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.</div></article><div class="exercisegroup" id="exercisegroup-9">
+<div class="para" id="p-1392">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.</div></article><div class="exercisegroup" id="exercisegroup-9">
 <h3 class="heading"><span class="title">Exercise Group.</span></h3>
-<div class="introduction" id="introduction-55"><div class="para" id="p-1387">An introduction to an <code class="code-inline tex2jax_ignore">exercisegroup</code>.  This is here to attempt to interrupt the flow of the counting from this division to the next.</div></div>
+<div class="introduction" id="introduction-55"><div class="para" id="p-1393">An introduction to an <code class="code-inline tex2jax_ignore">exercisegroup</code>.  This is here to attempt to interrupt the flow of the counting from this division to the next.</div></div>
 <div class="exercisegroup-exercises">
-<article class="exercise exercise-like" id="exercise-111"><h4 class="heading">
+<article class="exercise exercise-like" id="exercise-112"><h4 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Challenging Two.</span>
 </h4>
-<div class="para" id="p-1388">Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.</div></article><article class="exercise exercise-like" id="exercise-112"><h4 class="heading">
+<div class="para" id="p-1394">Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.</div></article><article class="exercise exercise-like" id="exercise-113"><h4 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Challenging Three.</span>
 </h4>
-<div class="para" id="p-1389">Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.</div></article>
+<div class="para" id="p-1395">Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.</div></article>
 </div>
 </div>
-<article class="exercise exercise-like" id="exercise-113"><h3 class="heading">
+<article class="exercise exercise-like" id="exercise-114"><h3 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">Impossible One.</span>
 </h3>
-<div class="para" id="p-1390">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.</div></article><article class="exercise exercise-like" id="exercise-114"><h3 class="heading">
+<div class="para" id="p-1396">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.</div></article><article class="exercise exercise-like" id="exercise-115"><h3 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Impossible Two.</span>
 </h3>
-<div class="para" id="p-1391">Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.</div></article><article class="exercise exercise-like" id="exercise-115"><h3 class="heading">
+<div class="para" id="p-1397">Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.</div></article><article class="exercise exercise-like" id="exercise-116"><h3 class="heading">
 <span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title">Impossible Three.</span>
 </h3>
-<div class="para" id="p-1392">Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.</div></article><article class="exercise exercise-like" id="exercise-116"><h3 class="heading">
+<div class="para" id="p-1398">Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.</div></article><article class="exercise exercise-like" id="exercise-117"><h3 class="heading">
 <span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title">An Exercise in a Section.</span>
 </h3>
-<div class="para" id="p-1393">Exercises can appear in a “section” of their own.  You need to give the section a title, even if it seems obvious what to call it.  Individual exercises may have titles, as you choose.  Problem: How should we hide solutions?</div>
+<div class="para" id="p-1399">Exercises can appear in a “section” of their own.  You need to give the section a title, even if it seems obvious what to call it.  Individual exercises may have titles, as you choose.  Problem: How should we hide solutions?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like"><div class="para" id="p-1394">Maybe a global switch should be used to suppress solutions, while a separate processing regime could use them as part of a solutions manual.</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like"><div class="para" id="p-1400">Maybe a global switch should be used to suppress solutions, while a separate processing regime could use them as part of a solutions manual.</div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-with-hardcoded-number"><h3 class="heading">
 <span class="codenumber">42a<span class="period">.</span></span><span class="space"> </span><span class="title">An Exercise with a Hard-Coded Problem Number.</span>
 </h3>
-<div class="para" id="p-1395">Compute the definite integral <span class="process-math">\(\definiteintegral{2}{4}{x^2}{x}\text{,}\)</span> not as an approximate value from a Riemann sum, but as an exact value based of the limit by using the Fundamental Theorem.</div>
+<div class="para" id="p-1401">Compute the definite integral <span class="process-math">\(\definiteintegral{2}{4}{x^2}{x}\text{,}\)</span> not as an approximate value from a Riemann sum, but as an exact value based of the limit by using the Fundamental Theorem.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-antiderivative" id="solution-antiderivative"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-antiderivative"><div class="solution solution-like"><div class="para logical" id="p-1396">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-antiderivative" id="solution-antiderivative"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-antiderivative"><div class="solution solution-like"><div class="para logical" id="p-1402">
 <div class="para">An antiderivative of <span class="process-math">\(x^2\)</span> is <span class="process-math">\(F(x)=x^3/3\text{,}\)</span> so by the FTC,</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="displaymath process-math">
 \begin{equation*}
 \definiteintegral{2}{4}{x^2}{x}=F(4)-F(2)=\frac{1}{3}\left(4^3-2^3\right)=\frac{56}{3}\text{!?!}
 \end{equation*}
 </div>
 <div class="para">This is indeed an exciting result, but we are mostly interested in seeing that the sentence-ending punctuation is absorbed properly into the displayed equation.</div>
 </div></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-118"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
-<div class="para logical" id="p-1397">
+</div></article><article class="exercise exercise-like" id="exercise-119"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1403">
 <div class="para">Can you prove Corollary <a href="" class="xref" data-knowl="./knowl/corollary-FTC-derivative.html" title="Corollary 4.1">4.1</a> directly?  If not consider that a problem could have several parts, which should be formatted as a second-level list, since the problems normally get numbered at the top level.</div>
 <ol class="lower-alpha">
-<li id="li-437"><div class="para" id="p-1398">Why is this result a Corollary?</div></li>
-<li id="li-438"><div class="para" id="p-1399">Could you interchange the Theorem and Corollary?</div></li>
+<li id="li-438"><div class="para" id="p-1404">Why is this result a Corollary?</div></li>
+<li id="li-439"><div class="para" id="p-1405">Could you interchange the Theorem and Corollary?</div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-20" id="hint-20"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">MVT</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-20"><div class="hint solution-like"><div class="para" id="p-1400">Consider the definite integral as an area function and employ the Mean Value Theorem.</div></div></div>
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-exercise-complicated-second-hint" id="exercise-complicated-second-hint"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">Motivator</span></a><div class="hidden-content tex2jax_ignore" id="hk-exercise-complicated-second-hint"><div class="hint solution-like"><div class="para" id="p-1401">Think harder!</div></div></div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-exercise-complicated-first-answer" id="exercise-complicated-first-answer"><span class="type">Answer</span><span class="period">.</span><span class="space"> </span><span class="title">Helpful</span></a><div class="hidden-content tex2jax_ignore" id="hk-exercise-complicated-first-answer"><div class="answer solution-like"><div class="para logical" id="p-1402"><ol class="lower-alpha">
-<li id="li-439"><div class="para" id="p-1403">It follows easily.</div></li>
-<li id="li-440"><div class="para" id="p-1404">Yes.</div></li>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-20" id="hint-20"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">MVT</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-20"><div class="hint solution-like"><div class="para" id="p-1406">Consider the definite integral as an area function and employ the Mean Value Theorem.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-exercise-complicated-second-hint" id="exercise-complicated-second-hint"><span class="type">Hint</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">Motivator</span></a><div class="hidden-content tex2jax_ignore" id="hk-exercise-complicated-second-hint"><div class="hint solution-like"><div class="para" id="p-1407">Think harder!</div></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-exercise-complicated-first-answer" id="exercise-complicated-first-answer"><span class="type">Answer</span><span class="period">.</span><span class="space"> </span><span class="title">Helpful</span></a><div class="hidden-content tex2jax_ignore" id="hk-exercise-complicated-first-answer"><div class="answer solution-like"><div class="para logical" id="p-1408"><ol class="lower-alpha">
+<li id="li-440"><div class="para" id="p-1409">It follows easily.</div></li>
+<li id="li-441"><div class="para" id="p-1410">Yes.</div></li>
 </ol></div></div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><div class="para" id="p-1405">We could prove either result first, then obtain the other as an easy consequence.</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><div class="para" id="p-1411">We could prove either result first, then obtain the other as an easy consequence.</div></div></div>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="exercises-multiple.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
@@ -591,5 +624,19 @@ true);
 <a class="feedback-link" href="not-implemented.html" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
 <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
+<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
+var sc_project=9664088;
+var sc_invisible=1;
+var sc_security="6e60c510";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/9664088/0/6e60c510/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48811660-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-48811660-1');
+</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

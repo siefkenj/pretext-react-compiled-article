@@ -11,9 +11,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">
-<dfn class="terminology">D3</dfn> is a Javascript library for “Data-Driven Documents”, which might greatly enhance some data you wish to display.  In short, it uses the animation capabilities of <abbr class="initialism">SVG</abbr>.  Available examples seem sensitive to the version of the library, so we have examples using different versions.  Use the <code class="code-inline tex2jax_ignore">@version</code> attribute on <code class="code-inline tex2jax_ignore">&lt;interactive&gt;</code> to specify the version number.  The default is <code class="code-inline tex2jax_ignore">5</code>.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">If your <code class="code-inline tex2jax_ignore">&lt;interactive&gt;</code> employs a <code class="code-inline tex2jax_ignore">&lt;slate&gt;</code> with a <code class="code-inline tex2jax_ignore">@surface</code> attribute whose value is <code class="code-inline tex2jax_ignore">html</code>, then you are advised to augment each top-level (<abbr class="initialism">HTML</abbr>) element within the <code class="code-inline tex2jax_ignore">&lt;slate&gt;</code> with the attribute:</div>
+<pre class="code-display tex2jax_ignore">xmlns="http://www.w3.org/1999/xhtml"
+</pre>
+<div class="para">This will identify <em class="emphasis">all</em> of the elements within the <code class="code-inline tex2jax_ignore">&lt;slate&gt;</code> as <abbr class="initialism">HTML</abbr> elements and not as PreTeXt elements.  The danger is that elements with the same name in both languages, such as <code class="code-inline tex2jax_ignore">&lt;li&gt;</code> and <code class="code-inline tex2jax_ignore">&lt;table&gt;</code>, will be mis-identified.  This could be harmless, but could also create chaos, such as disrupting numbering of PreTeXt elements.</div>
+</div>
 <span class="incontext"><a href="section-interactive-authored.html#p-773" class="internal">in-context</a></span>
 </body>
 </html>

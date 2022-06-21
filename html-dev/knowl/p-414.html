@@ -12,13 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">There are suggestions online that</div>
-<pre class="code-display tex2jax_ignore">\usepackage[pdf]{pstricks}</pre>
-<div class="para">along with</div>
-<pre class="code-display tex2jax_ignore">pdflatex --shell-escape *.tex</pre>
-<div class="para">is workable.  We could not make it happen, and a “shell escape” can be a dangerous security hole.  That said, updates to this approach are welcome.</div>
-</div>
+<div class="para">A plot might use a graphics language to draw the axes and grid, but the data might be from an experiment and live in an external file that you do not wish to place in your source.  Place such a file in a subdirectory directly below the directory where your master source file resides.  In the example below <code class="code-inline tex2jax_ignore">data</code> is the directory and <code class="code-inline tex2jax_ignore">hodgkin-huxley-data.dat</code> is the file with the data points.  You <em class="emphasis">must</em> place the file in a subdirectory (it cannot reside next to your source file), but that directory may have subdirectories if you have many such files and want to organize them that way.  Then the <code class="code-inline tex2jax_ignore">--include</code> command-line argument to the <code class="code-inline tex2jax_ignore">pretext</code> script will manage the external files properly as it creates individual image files.</div>
 <span class="incontext"><a href="graphics.html#p-414" class="internal">in-context</a></span>
 </body>
 </html>

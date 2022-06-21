@@ -67,7 +67,38 @@
 <link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -213,6 +244,8 @@ true);
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
 <div class="ptx-page">
@@ -510,8 +543,8 @@ true);
 <section class="section" id="section-programs"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">21</span> <span class="title">Program Listings</span>
 </h2>
-<div class="para" id="p-993">Sage cells can be used for Python examples, but Sage uses a mild amount of pre-parsing, so that might not be a wise decision, especially in instructional settings.  We might implement Skulpt or Brython (in-browser Python) or the Python language argument to the Sage Cell Server.  To see examples of authoring Sage cells, have a look at Section <a href="section-sage-cells.html" class="internal" title="Section 3: Computing Integrals with Sage (∫)">3</a>.</div>
-<div class="para" id="p-994">In the meantime, program listings, especially with syntax highlighting, is useful all by itself.  The “R” language might not be a bad stand-in for pseudo-code, as it supports assignment with a left arrow and has fairly generic procedural syntax for control structures and data structures.  Or maybe Pascal would be a good choice?  Here is an example of R.  Note in the source that the entire block of code is wrapped in a CDATA section due to the four left angle brackets.  We do not recommend this technique for isolated problem characters, but it is a life-saver for situations like the <abbr class="initialism">XSLT</abbr> code just following.</div>
+<div class="para" id="p-998">Sage cells can be used for Python examples, but Sage uses a mild amount of pre-parsing, so that might not be a wise decision, especially in instructional settings.  We might implement Skulpt or Brython (in-browser Python) or the Python language argument to the Sage Cell Server.  To see examples of authoring Sage cells, have a look at Section <a href="section-sage-cells.html" class="internal" title="Section 3: Computing Integrals with Sage (∫)">3</a>.</div>
+<div class="para" id="p-999">In the meantime, program listings, especially with syntax highlighting, is useful all by itself.  The “R” language might not be a bad stand-in for pseudo-code, as it supports assignment with a left arrow and has fairly generic procedural syntax for control structures and data structures.  Or maybe Pascal would be a good choice?  Here is an example of R.  Note in the source that the entire block of code is wrapped in a CDATA section due to the four left angle brackets.  We do not recommend this technique for isolated problem characters, but it is a life-saver for situations like the <abbr class="initialism">XSLT</abbr> code just following.</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-r">n_loops &lt;- 10
 x.means &lt;- numeric(n_loops)  # create a vector of zeros for results
 for (i in 1:n_loops){
@@ -520,14 +553,14 @@ for (i in 1:n_loops){
 }
 x.means
 </code></pre></div>
-<div class="para" id="p-995">And some self-referential XSL:</div>
+<div class="para" id="p-1000">And some self-referential XSL:</div>
 <div class="code-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><pre class="program"><code class="language-xml">&lt;xsl:template match="biblio" mode="number"&gt;
     &lt;xsl:apply-templates select="." mode="structural-number" /&gt;
     &lt;xsl:text&gt;.&lt;/xsl:text&gt;
     &lt;xsl:number from="references" level="any" count="biblio" /&gt;
 &lt;/xsl:template&gt;
 </code></pre></div>
-<div class="para" id="p-996">Matlab is a commercial language for mathematics, while Octave in an open source version.  The <code class="code-inline tex2jax_ignore">@language</code> values of <code class="code-inline tex2jax_ignore">matlab</code> and <code class="code-inline tex2jax_ignore">octave</code> are somewhat interchangeable.  Following is a very slighlty edited version of an example from <a class="external" href="http://www.public.asu.edu/~hhuang38/hph_matlab_basic2013_1.pdf" target="_blank"><span class="articletitle">“50 Basic Examples for Matlab”</span></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-71" id="fn-71"><sup> 1 </sup></a>.</div>
+<div class="para" id="p-1001">Matlab is a commercial language for mathematics, while Octave in an open source version.  The <code class="code-inline tex2jax_ignore">@language</code> values of <code class="code-inline tex2jax_ignore">matlab</code> and <code class="code-inline tex2jax_ignore">octave</code> are somewhat interchangeable.  Following is a very slighlty edited version of an example from <a class="external" href="http://www.public.asu.edu/~hhuang38/hph_matlab_basic2013_1.pdf" target="_blank"><span class="articletitle">“50 Basic Examples for Matlab”</span></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-72" id="fn-72"><sup> 1 </sup></a>.</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-matlab">a = [0:0.5:5]; % A Matlab comment here
 b = 2*a.^2 + 3*a -5;
 c = 1.2*a.^2+4*a-3;
@@ -538,7 +571,7 @@ subplot(1,2,2)
 plot(a,c,'--ok','MarkerFaceColor','c','LineWidth',2)
 xlabel('X'); ylabel('Y'); legend('Curve 2','Location','NorthWest')
 </code></pre></div>
-<div class="para" id="p-997">You can write made-up pseudo-code, but you might explain to a reader what your symbols all mean.  This routine takes the <span class="process-math">\(m\times n\)</span> marix <span class="process-math">\(A\)</span> to reduced row-echelon form.  Note that with no language specified, there is no special formatting or use of color.  Note in the source the use of escaped characters for the three less-than symbols.</div>
+<div class="para" id="p-1002">You can write made-up pseudo-code, but you might explain to a reader what your symbols all mean.  This routine takes the <span class="process-math">\(m\times n\)</span> marix <span class="process-math">\(A\)</span> to reduced row-echelon form.  Note that with no language specified, there is no special formatting or use of color.  Note in the source the use of escaped characters for the three less-than symbols.</div>
 <div class="code-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><pre class="program"><code class="language-none">input m, n and A
 r := 0
 for j := 1 to n
@@ -553,9 +586,9 @@ for j := 1 to n
            make A[k,j] zero (row op 3, employing row r)
 output r and A
 </code></pre></div>
-<div class="para" id="p-998">Look in the <code class="code-inline tex2jax_ignore">pretext-common.xsl</code> file to see the strings to use to identify languages.  Always all-lowercase, no symbols, no punctuation.</div>
-<div class="para" id="p-999">Note that the above examples all have slightly different widths (theser are very evident in print with the frames).  As 2-D atomic objects, to place them in the narrative requires the layout features of a <code class="code-inline tex2jax_ignore">sidebyside</code> element.  Then <code class="code-inline tex2jax_ignore">width</code> and/or <code class="code-inline tex2jax_ignore">margin</code> attributes will influence the width of the panel.</div>
-<div class="para" id="p-1000">A <code class="code-inline tex2jax_ignore">program</code> may also be nested inside a <code class="code-inline tex2jax_ignore">listing</code>, which behaves similar to a <code class="code-inline tex2jax_ignore">figure</code>.  You can provide a <code class="code-inline tex2jax_ignore">caption</code>, and the listing will be numbered along with tables and figures.  This then makes it possible to cross-reference the listing, such as <a href="" class="xref" data-knowl="./knowl/listing-c-hello.html" title="Listing 21.1">Listing 21.1</a>.  It also removes the requirement of wrapping the <code class="code-inline tex2jax_ignore">program</code> in a <code class="code-inline tex2jax_ignore">sidebyside</code>.  For technical reasons, the three examples above will not split across a page break in PDF output, but the placement inside a <code class="code-inline tex2jax_ignore">listing</code> will allow splits, as you should see in at least one example following.</div>
+<div class="para" id="p-1003">Look in the <code class="code-inline tex2jax_ignore">pretext-common.xsl</code> file to see the strings to use to identify languages.  Always all-lowercase, no symbols, no punctuation.</div>
+<div class="para" id="p-1004">Note that the above examples all have slightly different widths (theser are very evident in print with the frames).  As 2-D atomic objects, to place them in the narrative requires the layout features of a <code class="code-inline tex2jax_ignore">sidebyside</code> element.  Then <code class="code-inline tex2jax_ignore">width</code> and/or <code class="code-inline tex2jax_ignore">margin</code> attributes will influence the width of the panel.</div>
+<div class="para" id="p-1005">A <code class="code-inline tex2jax_ignore">program</code> may also be nested inside a <code class="code-inline tex2jax_ignore">listing</code>, which behaves similar to a <code class="code-inline tex2jax_ignore">figure</code>.  You can provide a <code class="code-inline tex2jax_ignore">caption</code>, and the listing will be numbered along with tables and figures.  This then makes it possible to cross-reference the listing, such as <a href="" class="xref" data-knowl="./knowl/listing-c-hello.html" title="Listing 21.1">Listing 21.1</a>.  It also removes the requirement of wrapping the <code class="code-inline tex2jax_ignore">program</code> in a <code class="code-inline tex2jax_ignore">sidebyside</code>.  For technical reasons, the three examples above will not split across a page break in PDF output, but the placement inside a <code class="code-inline tex2jax_ignore">listing</code> will allow splits, as you should see in at least one example following.</div>
 <figure class="listing figure-like" id="listing-c-hello"><div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-c">/* Hello World program */
 
 #include&lt;stdio.h&gt;
@@ -565,37 +598,37 @@ main()
     printf("Hello, World!");
 }
 </code></pre></div>
-<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.1<span class="period">.</span></span><span class="space"> </span>C Version of “Hello, World!”</figcaption></figure><div class="para" id="p-1001">If you are discussing algorithms in the abstract (or even concretely), you can set them off like a theorem, with a number, a title and a target for cross-references.  Sometimes you claim an algorithm produces something in particular, or has certain properties, such as a theoretical run time, so a proof may be included.  See the discussion just preceding about (limited) options for pseudo-code.</div>
+<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.1<span class="period">.</span></span><span class="space"> </span>C Version of “Hello, World!”</figcaption></figure><div class="para" id="p-1006">If you are discussing algorithms in the abstract (or even concretely), you can set them off like a theorem, with a number, a title and a target for cross-references.  Sometimes you claim an algorithm produces something in particular, or has certain properties, such as a theoretical run time, so a proof may be included.  See the discussion just preceding about (limited) options for pseudo-code.</div>
 <article class="algorithm theorem-like" id="algorithm-sieve-eratosthenes"><h3 class="heading">
 <span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">21.2</span><span class="period">.</span><span class="space"> </span><span class="title">Sieve of Eratosthenes.</span>
 </h3>
-<div class="para logical" id="p-1002">
-<div class="para">On input of a positive integer <code class="code-inline tex2jax_ignore">n</code> this algorithm will compute all the prime numbers up to, and including, <code class="code-inline tex2jax_ignore">n</code>.  It was named for Eratosthenes of Cyrene (ca. 276 BC–ca. 195/194 BC) by Nicomachus (ca. 60–ca. 120 CE) in <span class="booktitle">Introduction to Arithmetic</span>. (<a class="external" href="http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" target="_blank">Wikipedia</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-72" id="fn-72"><sup> 2 </sup></a>, 2015)</div>
+<div class="para logical" id="p-1007">
+<div class="para">On input of a positive integer <code class="code-inline tex2jax_ignore">n</code> this algorithm will compute all the prime numbers up to, and including, <code class="code-inline tex2jax_ignore">n</code>.  It was named for Eratosthenes of Cyrene (ca. 276 BC–ca. 195/194 BC) by Nicomachus (ca. 60–ca. 120 CE) in <span class="booktitle">Introduction to Arithmetic</span>. (<a class="external" href="http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" target="_blank">Wikipedia</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-73" id="fn-73"><sup> 2 </sup></a>, 2015)</div>
 <ol class="decimal">
-<li id="li-345"><div class="para" id="p-derived-li-345">Input: <code class="code-inline tex2jax_ignore">n</code>
+<li id="li-346"><div class="para" id="p-derived-li-346">Input: <code class="code-inline tex2jax_ignore">n</code>
 </div></li>
-<li id="li-346"><div class="para" id="p-derived-li-346">Form the list of all integers from <code class="code-inline tex2jax_ignore">2</code> to <code class="code-inline tex2jax_ignore">n</code>
+<li id="li-347"><div class="para" id="p-derived-li-347">Form the list of all integers from <code class="code-inline tex2jax_ignore">2</code> to <code class="code-inline tex2jax_ignore">n</code>
 </div></li>
-<li id="li-347"><div class="para" id="p-derived-li-347">Set <code class="code-inline tex2jax_ignore">p = 2</code>
+<li id="li-348"><div class="para" id="p-derived-li-348">Set <code class="code-inline tex2jax_ignore">p = 2</code>
 </div></li>
-<li id="li-348"><div class="para logical" id="p-1003">
+<li id="li-349"><div class="para logical" id="p-1008">
 <div class="para">While <code class="code-inline tex2jax_ignore">p &lt; sqrt(n)</code>
 </div>
 <ol class="decimal">
-<li id="li-349"><div class="para" id="p-derived-li-349">If present, remove from the list multiples <code class="code-inline tex2jax_ignore">2p, 3p, ...</code>
+<li id="li-350"><div class="para" id="p-derived-li-350">If present, remove from the list multiples <code class="code-inline tex2jax_ignore">2p, 3p, ...</code>
 </div></li>
-<li id="li-350"><div class="para" id="p-derived-li-350">If <code class="code-inline tex2jax_ignore">p</code> is now the last element of the list, stop</div></li>
-<li id="li-351"><div class="para" id="p-derived-li-351">Otherwise, set <code class="code-inline tex2jax_ignore">p</code> to the element of the list immediately after current <code class="code-inline tex2jax_ignore">p</code>
+<li id="li-351"><div class="para" id="p-derived-li-351">If <code class="code-inline tex2jax_ignore">p</code> is now the last element of the list, stop</div></li>
+<li id="li-352"><div class="para" id="p-derived-li-352">Otherwise, set <code class="code-inline tex2jax_ignore">p</code> to the element of the list immediately after current <code class="code-inline tex2jax_ignore">p</code>
 </div></li>
 </ol>
 </div></li>
-<li id="li-352"><div class="para" id="p-derived-li-352">Output: the remaining elements of the list</div></li>
+<li id="li-353"><div class="para" id="p-derived-li-353">Output: the remaining elements of the list</div></li>
 </ol>
 </div></article><article class="proof" id="proof-11"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3>
-<div class="para" id="p-1004">Any element removed is a non-trivial product of two integers and hence composite.  So no prime is is ever removed from the list.</div>
-<div class="para" id="p-1005">Each composite number is a multiple of some prime, and since no prime is ever removed, each composite will be removed.  Hence the removed elements are precisely the set of composite numbers in the list and thus the remainder are precisely the primes on the list.</div></article><div class="para logical" id="p-1006">
+<div class="para" id="p-1009">Any element removed is a non-trivial product of two integers and hence composite.  So no prime is is ever removed from the list.</div>
+<div class="para" id="p-1010">Each composite number is a multiple of some prime, and since no prime is ever removed, each composite will be removed.  Hence the removed elements are precisely the set of composite numbers in the list and thus the remainder are precisely the primes on the list.</div></article><div class="para logical" id="p-1011">
 <div class="para">If you are writing about system-level software, you may need to write numbers in hexadecimal or binary.  Here we use a numbered, displayed equation (mathematics) and <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> macros such as <code class="code-inline tex2jax_ignore">\texttt</code> for a monospace text font, and <code class="code-inline tex2jax_ignore">\;</code> for spacing/grouping the bits of the binary number.</div>
-<div class="displaymath process-math" data-contains-math-knowls="" id="men-3">
+<div class="displaymath process-math" id="men-3">
 \begin{equation}
 \texttt{6C2A}_{16} = \texttt{0110}\;\texttt{1100}\;\texttt{0010}\;\texttt{1010}_{2}\tag{21.1}
 \end{equation}
@@ -605,30 +638,30 @@ main()
 <article class="theorem theorem-like" id="theorem-detached"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">21.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1007">This is a spurious theorem to break up the run of consecutive <code class="code-inline tex2jax_ignore">listing</code> so we might test the effect.</div></article><div class="para" id="p-1008">And this is a spurious paragraph to prove that the theorem beforehand, and the proof following, are distinct from one another.</div>
+<div class="para" id="p-1012">This is a spurious theorem to break up the run of consecutive <code class="code-inline tex2jax_ignore">listing</code> so we might test the effect.</div></article><div class="para" id="p-1013">And this is a spurious paragraph to prove that the theorem beforehand, and the proof following, are distinct from one another.</div>
 <article class="proof" id="proof-12"><h3 class="heading">
 <span class="type">Proof<span class="period">.</span></span>(<a href="" class="xref" data-knowl="./knowl/theorem-detached.html" title="Theorem 21.3">Theorem 21.3</a>)</h3>
-<a href="" class="xref" data-knowl="./knowl/theorem-detached.html" title="Theorem 21.3">Theorem 21.3</a><div class="para" id="p-1009">This is a proof that is authored “detached.”  It is not associated with the theorem above in a way other than simply following it.</div></article><div class="para" id="p-1010">A specialized version of a program listing is an interactive command/response session at a command-line, where differing fonts are used to differentiate the system prompt, the user's commands, and the system's reaction.  A   <code class="code-inline tex2jax_ignore">console</code> session may be used by itself inside a <code class="code-inline tex2jax_ignore">sidebyside</code>, or it can be wrapped in a listing to get a number and a caption.  As elsewhere, you will need to escape ampersands and angle brackets (such as if you have a command using redirection), using <code class="code-inline tex2jax_ignore">&amp;amp;</code>, <code class="code-inline tex2jax_ignore">&amp;lt;</code>, and <code class="code-inline tex2jax_ignore">&amp;gt;</code> in your source.</div>
+<a href="" class="xref" data-knowl="./knowl/theorem-detached.html" title="Theorem 21.3">Theorem 21.3</a><div class="para" id="p-1014">This is a proof that is authored “detached.”  It is not associated with the theorem above in a way other than simply following it.</div></article><div class="para" id="p-1015">A specialized version of a program listing is an interactive command/response session at a command-line, where differing fonts are used to differentiate the system prompt, the user's commands, and the system's reaction.  A   <code class="code-inline tex2jax_ignore">console</code> session may be used by itself inside a <code class="code-inline tex2jax_ignore">sidebyside</code>, or it can be wrapped in a listing to get a number and a caption.  As elsewhere, you will need to escape ampersands and angle brackets (such as if you have a command using redirection), using <code class="code-inline tex2jax_ignore">&amp;amp;</code>, <code class="code-inline tex2jax_ignore">&amp;lt;</code>, and <code class="code-inline tex2jax_ignore">&amp;gt;</code> in your source.</div>
 <figure class="listing figure-like" id="console-raspberry-pi"><div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="console"><span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>gcc -Wall -o intAndFloat intAndFloat.c
 </b><span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>./intAndFloat
 </b>The integer is 19088743 and the float is 19088.742188
 <span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>
 </b></pre></div>
-<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.4<span class="period">.</span></span><span class="space"> </span>Console Session: <code class="code-inline tex2jax_ignore">int</code> and <code class="code-inline tex2jax_ignore">float</code></figcaption></figure><div class="para" id="p-1011">Here is the plain version, some layout control.  We simply place a small margin on the left (at 4% width).</div>
+<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.4<span class="period">.</span></span><span class="space"> </span>Console Session: <code class="code-inline tex2jax_ignore">int</code> and <code class="code-inline tex2jax_ignore">float</code></figcaption></figure><div class="para" id="p-1016">Here is the plain version, some layout control.  We simply place a small margin on the left (at 4% width).</div>
 <div class="code-box" style="width: 92%; margin-left: 4%; margin-right: 4%;"><pre class="console"><span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>gcc -Wall -o intAndFloat intAndFloat.c
 </b><span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>./intAndFloat
 </b>The integer is 19088743 and the float is 19088.742188
 <span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>
 </b></pre></div>
-<div class="para" id="p-1012">If your console input exceeds more than one line, you can author it across several lines and your choice of line breaks will be reflected in the rendering.  You can decide to indent lines after the first one for clarity, if desired.  You can also decide if your audience needs line-continuation characters or not.</div>
+<div class="para" id="p-1017">If your console input exceeds more than one line, you can author it across several lines and your choice of line breaks will be reflected in the rendering.  You can decide to indent lines after the first one for clarity, if desired.  You can also decide if your audience needs line-continuation characters or not.</div>
 <figure class="listing figure-like" id="console-raspberry-pi-multi"><div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="console"><span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>gcc -Wall
     -o intAndFloat intAndFloat.c
 </b><span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>./intAndFloat
 </b>The integer is 19088743 and the float is 19088.742188
 <span class="prompt unselectable">pi@raspberrypi ~/progs/chap02 $ </span><b>
 </b></pre></div>
-<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.5<span class="period">.</span></span><span class="space"> </span>Console Session: <code class="code-inline tex2jax_ignore">int</code> and <code class="code-inline tex2jax_ignore">float</code> (multi-line input)</figcaption></figure><div class="para" id="p-1013">Notice in the HTML version of the above example that when you highlight all, or a portion, of the listing for a cut-and-paste that the prompts are not included.</div>
-<div class="para" id="p-1014">The next listing is just absurdity, to check various characters from <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> that are otherwise employed by the code supporting consoles, and some Latin-1 characters.  We test each in a prompt, input, and output.  We use <code class="code-inline tex2jax_ignore">(*</code> and <code class="code-inline tex2jax_ignore">*)</code> as sequences used to escape embedded <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> commands, so we test those also.</div>
+<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.5<span class="period">.</span></span><span class="space"> </span>Console Session: <code class="code-inline tex2jax_ignore">int</code> and <code class="code-inline tex2jax_ignore">float</code> (multi-line input)</figcaption></figure><div class="para" id="p-1018">Notice in the HTML version of the above example that when you highlight all, or a portion, of the listing for a cut-and-paste that the prompts are not included.</div>
+<div class="para" id="p-1019">The next listing is just absurdity, to check various characters from <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> that are otherwise employed by the code supporting consoles, and some Latin-1 characters.  We test each in a prompt, input, and output.  We use <code class="code-inline tex2jax_ignore">(*</code> and <code class="code-inline tex2jax_ignore">*)</code> as sequences used to escape embedded <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> commands, so we test those also.</div>
 <figure class="listing figure-like" id="listing-4"><div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="console"><span class="prompt unselectable">A backslash \ here  </span><b>A backslash \ here
 </b>A backslash \ here
 <span class="prompt unselectable">A begin group { here  </span><b>A begin group { here
@@ -646,7 +679,7 @@ main()
 <span class="prompt unselectable">Latin-1: ÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß  </span><b>Latin-1: ÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß
 </b>Latin-1: ÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß
 </pre></div>
-<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.6<span class="period">.</span></span><span class="space"> </span>Console Session: problematic <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> characters</figcaption></figure><div class="para" id="p-1015">We conclude this section with a longer example of a program listing, an assembly language program from Bob Plantz, included to test a <code class="code-inline tex2jax_ignore">listing</code> breaking across pages in PDF output.</div>
+<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.6<span class="period">.</span></span><span class="space"> </span>Console Session: problematic <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> characters</figcaption></figure><div class="para" id="p-1020">We conclude this section with a longer example of a program listing, an assembly language program from Bob Plantz, included to test a <code class="code-inline tex2jax_ignore">listing</code> breaking across pages in PDF output.</div>
 <figure class="listing figure-like" id="listing-5"><div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">@ structPass2.s
 @ Allocates two structs and assigns a value to each field
 @ in each struct, then displays the values.
@@ -753,8 +786,8 @@ dispAnIntAddr:
 dispOtherCharAddr:
         .word   dispOtherChar
 </code></pre></div>
-<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.7<span class="period">.</span></span><span class="space"> </span>A longer program listing</figcaption></figure></section><div class="hidden-content tex2jax_ignore" id="hk-fn-71"><div class="fn"><code class="code-inline tex2jax_ignore">www.public.asu.edu/~hhuang38/hph_matlab_basic2013_1.pdf</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-72"><div class="fn"><code class="code-inline tex2jax_ignore">en.wikipedia.org/wiki/Sieve_of_Eratosthenes</code></div></div>
+<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">21.7<span class="period">.</span></span><span class="space"> </span>A longer program listing</figcaption></figure></section><div class="hidden-content tex2jax_ignore" id="hk-fn-72"><div class="fn"><code class="code-inline tex2jax_ignore">www.public.asu.edu/~hhuang38/hph_matlab_basic2013_1.pdf</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-73"><div class="fn"><code class="code-inline tex2jax_ignore">en.wikipedia.org/wiki/Sieve_of_Eratosthenes</code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-20.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-22.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
@@ -764,5 +797,19 @@ dispOtherCharAddr:
 <a class="feedback-link" href="not-implemented.html" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
 <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
+<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
+var sc_project=9664088;
+var sc_invisible=1;
+var sc_security="6e60c510";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/9664088/0/6e60c510/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48811660-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-48811660-1');
+</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

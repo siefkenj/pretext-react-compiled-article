@@ -71,7 +71,38 @@
 <link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -217,6 +248,8 @@ true);
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
 <div class="ptx-page">
@@ -513,29 +546,29 @@ true);
 <main class="ptx-main"><div class="ptx-content"><section class="section" id="section-20"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">20</span> <span class="title">Pre-Formatted Text</span>
 </h2>
-<div class="para" id="p-984">In Sage, if you wanted to build a matrix, then you would use the <code class="code-inline tex2jax_ignore">matrix()</code> constructor.  Here is the matrix of second partials of <span class="process-math">\(f(x,y)=x^3+8x^2y^3 + y^4\text{,}\)</span> as you would enter it in Sage.  Notice that <code class="code-inline tex2jax_ignore">SR</code> is the ring of symbolic expressions, <code class="code-inline tex2jax_ignore">Symbolic Ring</code>.</div>
+<div class="para" id="p-989">In Sage, if you wanted to build a matrix, then you would use the <code class="code-inline tex2jax_ignore">matrix()</code> constructor.  Here is the matrix of second partials of <span class="process-math">\(f(x,y)=x^3+8x^2y^3 + y^4\text{,}\)</span> as you would enter it in Sage.  Notice that <code class="code-inline tex2jax_ignore">SR</code> is the ring of symbolic expressions, <code class="code-inline tex2jax_ignore">Symbolic Ring</code>.</div>
 <pre class="code-block tex2jax_ignore">var('x', 'y')
 J = matrix(SR, [
     [6*x + 16*y^3, 48*x*y^2],
     [48*x*y^2, 48*x^2*y + 12*y^2]
     ])
 </pre>
-<div class="para" id="p-985">That accomplished, Sage will easily and naturally provide a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> representation of the matrix with the command <code class="code-inline tex2jax_ignore">latex(J)</code>.</div>
+<div class="para" id="p-990">That accomplished, Sage will easily and naturally provide a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> representation of the matrix with the command <code class="code-inline tex2jax_ignore">latex(J)</code>.</div>
 <pre class="code-block tex2jax_ignore">\left(\begin{array}{rr}
 16 \, y^{3} + 6 \, x &amp; -48 \, x y^{2} \\
 48 \, x y^{2} &amp; 48 \, x^{2} y + 12 \, y^{2}
 \end{array}\right)
 </pre>
-<div class="para" id="p-986">The <code class="code-inline tex2jax_ignore">pre</code> element surrounds text that should be preserved verbatim.  It is like a special kind of paragraph, and can be used almost everywhere that a paragraph can be used.   The realization of preformatted text should be robust enough that it can be cut from documents and pasted without any substitutions of “fancier” Unicode characters for generic ASCII characters.  Try the “minus” sign on the <span class="process-math">\(48\)</span> above to see if it does not become a dash, or the single quotes on the Sage variables.</div>
-<div class="para" id="p-987">For Sage input code, the first non-whitespace character sets the left margin, since legitimate Python code has no subsequent lines outdented.  For pre-formatted code, the line with the <em class="emphasis">least</em> whitespace leading the line will determine the left margin.  If preserving indentation is important, do not mix spaces and tabs.  For syntax highlighting of text representing computer programs, or parts of them, see Section <a href="section-programs.html" class="internal" title="Section 21: Program Listings">21</a>.  Examine the source of the following example to help understand this paragraph.</div>
+<div class="para" id="p-991">The <code class="code-inline tex2jax_ignore">pre</code> element surrounds text that should be preserved verbatim.  It is like a special kind of paragraph, and can be used almost everywhere that a paragraph can be used.   The realization of preformatted text should be robust enough that it can be cut from documents and pasted without any substitutions of “fancier” Unicode characters for generic ASCII characters.  Try the “minus” sign on the <span class="process-math">\(48\)</span> above to see if it does not become a dash, or the single quotes on the Sage variables.</div>
+<div class="para" id="p-992">For Sage input code, the first non-whitespace character sets the left margin, since legitimate Python code has no subsequent lines outdented.  For pre-formatted code, the line with the <em class="emphasis">least</em> whitespace leading the line will determine the left margin.  If preserving indentation is important, do not mix spaces and tabs.  For syntax highlighting of text representing computer programs, or parts of them, see Section <a href="section-programs.html" class="internal" title="Section 21: Program Listings">21</a>.  Examine the source of the following example to help understand this paragraph.</div>
 <pre class="code-block tex2jax_ignore">        A normal line
                 An indented line
 An outdented line
 </pre>
-<div class="para" id="p-988">Snippets should also be robust for cut/paste operations.  For example, you should not get “curly” “smart” quote marks in verbatim text: <code class="code-inline tex2jax_ignore">this should have "dumb" quote marks</code>. Here are a few characters that should migrate through <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> to a PDF unmolested:  <code class="code-inline tex2jax_ignore">'"----"'</code>
+<div class="para" id="p-993">Snippets should also be robust for cut/paste operations.  For example, you should not get “curly” “smart” quote marks in verbatim text: <code class="code-inline tex2jax_ignore">this should have "dumb" quote marks</code>. Here are a few characters that should migrate through <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> to a PDF unmolested:  <code class="code-inline tex2jax_ignore">'"----"'</code>
 </div>
-<div class="para" id="p-989"><code class="code-inline tex2jax_ignore">If you write a very long snippet of inline code (i.e. within a &lt;c&gt; element) it can impinge on the right margin, since very long words will not hypenate, unless you have a dash/hypen.  Such as when you use words like pneumonoultramicroscopicsilicovolcanoconiosis, parastratiosphecomyia stratiosphecomyioides, floccinaucinihilipilification, or subdermatoglyphic.  For output in LaTeX we get line-breaking, and perhaps word-spacing, but we do not get hyphenation and the font is fixed-width.  So not always perfect.  Consider other options like &lt;cd&gt; or &lt;pre&gt; below.</code></div>
-<div class="para logical" id="p-990">
+<div class="para" id="p-994"><code class="code-inline tex2jax_ignore">If you write a very long snippet of inline code (i.e. within a &lt;c&gt; element) it can impinge on the right margin, since very long words will not hypenate, unless you have a dash/hypen.  Such as when you use words like pneumonoultramicroscopicsilicovolcanoconiosis, parastratiosphecomyia stratiosphecomyioides, floccinaucinihilipilification, or subdermatoglyphic.  For output in LaTeX we get line-breaking, and perhaps word-spacing, but we do not get hyphenation and the font is fixed-width.  So not always perfect.  Consider other options like &lt;cd&gt; or &lt;pre&gt; below.</code></div>
+<div class="para logical" id="p-995">
 <div class="para">An intermediate type of verbatim text can be accomplished with the <code class="code-inline tex2jax_ignore">&lt;cd&gt;</code> tag, short for “code display.”  It allows for larger chunks of verbatim text to show up in the middle of a paragraph, but with some vertical space above and below, and centered between the margins.  It can be</div>
 <pre class="code-display tex2jax_ignore">authored as a single line</pre>
 <div class="para">or if you wish to have multiple lines</div>
@@ -548,7 +581,7 @@ and short for "code line"
 </pre>
 <div class="para">if you like to have your source closely model the visual look of the output.</div>
 </div>
-<div class="para logical" id="p-991">
+<div class="para logical" id="p-996">
 <div class="para">With the <code class="code-inline tex2jax_ignore">@showspaces</code> attribute of <code class="code-inline tex2jax_ignore">&lt;cd&gt;</code> set to <code class="code-inline tex2jax_ignore">all</code> there will be a visual indication of every space character, which is nice if indentation is critical.  For example,</div>
 <pre class="code-display tex2jax_ignore">there␣is␣the␣&lt;cline&gt;␣tag
 ␣␣␣␣meant␣to␣model␣the␣line␣tag
@@ -558,7 +591,7 @@ and short for "code line"
 <pre class="code-display tex2jax_ignore">authored␣as␣a␣single␣line</pre>
 <div class="para">that is not structured with <code class="code-inline tex2jax_ignore">&lt;cline&gt;</code> elements.</div>
 </div>
-<div class="para" id="p-992">The <code class="code-inline tex2jax_ignore">&lt;pre&gt;</code> tag is meant for use outside of paragraphs, but is otherwise very similar.  The source may also be structured as a sequence of <code class="code-inline tex2jax_ignore">&lt;cline&gt;</code> as in the next example, recycling content from above.</div>
+<div class="para" id="p-997">The <code class="code-inline tex2jax_ignore">&lt;pre&gt;</code> tag is meant for use outside of paragraphs, but is otherwise very similar.  The source may also be structured as a sequence of <code class="code-inline tex2jax_ignore">&lt;cline&gt;</code> as in the next example, recycling content from above.</div>
 <pre class="code-block tex2jax_ignore">If you write a very long snippet of inline code (i.e. within
 a &lt;c&gt; element) it can impinge on the right margin, since
 very long words will not hypenate, unless you have a dash/hypen.
@@ -578,5 +611,19 @@ perfect. Consider other options like &lt;cd&gt; or &lt;pre&gt; below.
 <a class="feedback-link" href="not-implemented.html" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
 <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
 </div>
+<!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
+var sc_project=9664088;
+var sc_invisible=1;
+var sc_security="6e60c510";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/9664088/0/6e60c510/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48811660-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-48811660-1');
+</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

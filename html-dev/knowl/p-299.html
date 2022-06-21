@@ -12,20 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">The following example is a good stress-test of using the <code class="code-inline tex2jax_ignore">\text{}</code> macro to achieve certain effects.  Note the Unicode left and right smart quotes.  This a contribution from Alex Jordan as part of his work on <span class="booktitle">APEX Calculus</span>.</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-y \rightarrow \frac{\sin(0) }{0} \rightarrow {{\text{“}}\atop{}}\frac{0}{0}{{\text{”}}\atop{}}\text{.}
-\end{gather*}
-</div>
-<div class="para">And another one from Alex.  Note the use of the <code class="code-inline tex2jax_ignore">\mathord{}</code> and <code class="code-inline tex2jax_ignore">\mathrel{}</code> macros to control spacing around the mathematical symbols.  Examine the source to see how the quotation marks have been authored with <abbr class="initialism">XML</abbr> syntax for Unicode characters, since we do not allow most markup inside mathematics.</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-\zeta(1)=\sum_{n=1}^{\infty}\frac{1}{n}\mathrel{\text{ “}\mathord{=}{\text{” }}}\prod_{p}\left(\frac{1}{1-1/p}\right)=\prod_{p}\left(\frac{1}{1-p^{-1}}\right)
-\end{gather*}
-</div>
-</div>
+<div class="para">The packages appear before the author-supplied macros, so you can use macros from the packages as building blocks for document-specific macros.  We cannot guarantee there will be no conflicts between additional packages and those in use normally, or added in the future.  So use at your own risk.</div>
 <span class="incontext"><a href="section-7.html#p-299" class="internal">in-context</a></span>
 </body>
 </html>

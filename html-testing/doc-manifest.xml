@@ -5,26 +5,29 @@
     <division type="frontmatter" number="" id="frontmatter-1" url="frontmatter-1.html#frontmatter-1">
       <title>Front Matter</title>
     </division>
-    <division type="chapter" number="1" id="test-1" url="test-1.html#test-1">
-      <title>test-1</title>
-    </division>
-    <division type="chapter" number="2" id="test-2" url="test-2.html#test-2">
-      <title>test-2</title>
-    </division>
-    <division type="chapter" number="3" id="test-3" url="test-3.html#test-3">
-      <title>test-3</title>
-    </division>
-    <division type="chapter" number="4" id="test-4" url="test-4.html#test-4">
-      <title>test-4</title>
-    </division>
-    <division type="chapter" number="5" id="test-5" url="test-5.html#test-5">
-      <title>test-5</title>
-    </division>
-    <division type="chapter" number="6" id="test-6" url="test-6.html#test-6">
-      <title>test-6</title>
-    </division>
-    <division type="chapter" number="7" id="test-7" url="test-7.html#test-7">
-      <title>test-7</title>
+    <division type="mainmatter" number="" id="mainmatter" url="testing-document.html#testing-document">
+      <title>Main Matter</title>
+      <division type="chapter" number="1" id="test-1" url="test-1.html#test-1">
+        <title>test-1</title>
+      </division>
+      <division type="chapter" number="2" id="test-2" url="test-2.html#test-2">
+        <title>test-2</title>
+      </division>
+      <division type="chapter" number="3" id="test-3" url="test-3.html#test-3">
+        <title>test-3</title>
+      </division>
+      <division type="chapter" number="4" id="test-4" url="test-4.html#test-4">
+        <title>test-4</title>
+      </division>
+      <division type="chapter" number="5" id="test-5" url="test-5.html#test-5">
+        <title>test-5</title>
+      </division>
+      <division type="chapter" number="6" id="test-6" url="test-6.html#test-6">
+        <title>test-6</title>
+      </division>
+      <division type="chapter" number="7" id="test-7" url="test-7.html#test-7">
+        <title>test-7</title>
+      </division>
     </division>
   </division>
 </toc>
