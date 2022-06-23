@@ -21,7 +21,7 @@
     tags: "none",
     tagSide: "right",
     tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
   },
   options: {
     ignoreHtmlClass: "tex2jax_ignore|ignore-math",
@@ -45,7 +45,7 @@
     mtextInheritFont: true
   },
   loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
 /* Mathjax typesetting operation is under the control of React */
@@ -67,16 +67,6 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 <link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/shell_min.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/banner_min.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/navbar_min.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/toc_min.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
 <!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -437,7 +427,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <span class="type">Chapter</span> <span class="codenumber">1</span> <span class="title">Preliminaries</span>
 </h2>
 <section class="introduction" id="introduction-1"><div class="para" id="p-30">A certain amount of mathematical maturity is necessary to find and study applications of abstract algebra.  A basic knowledge of set theory, mathematical induction, equivalence relations, and matrices is a must.  Even more important is the ability to read and understand mathematical proofs.  In this chapter we will outline the background needed for a course in abstract algebra.</div>
-<div class="para" id="p-31">It helps when testing to know when this sample document was generated: June 23, 2022, 14:10:26 (-04:00).</div></section><nav class="summary-links"><ul>
+<div class="para" id="p-31">It helps when testing to know when this sample document was generated: June 23, 2022, 14:52:14 (-04:00).</div></section><nav class="summary-links"><ul>
 <li><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">A Short Note on Proofs</span></a></li>
 <li><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets and Equivalence Relations</span></a></li>
 <li><a href="sets-sage.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sage</span></a></li>
