@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<all>
+	<js type="list">
+		<item type="str">runtime.bundle.js</item>
+		<item type="str">vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.bundle.js</item>
+		<item type="str">runestone.bundle.js</item>
+	</js>
+	<css type="list">
+		<item type="str">vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.d789e6e5a9767e06.css</item>
+		<item type="str">runestone.d5ffdb9ec42bd589.css</item>
+	</css>
+	<cdn-url type="str">https://runestone.academy/cdn/runestone/</cdn-url>
+	<version type="str">test</version>
+</all>
