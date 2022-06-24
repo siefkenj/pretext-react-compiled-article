@@ -18,6 +18,7 @@
       <stringparam key="html-css-bannerfile" value="banner_min.css"/>
       <stringparam key="html-css-tocfile" value="toc_min.css"/>
       <stringparam key="html-css-navbarfile" value="navbar_min.css"/>
+      <stringparam key="debug.rs.services.file" value="/home/albert/programming/pretext-react-compiled-article/webpack_static_imports.xml"/>
     </target>
     <target name="html-reference">
       <format>html</format>
