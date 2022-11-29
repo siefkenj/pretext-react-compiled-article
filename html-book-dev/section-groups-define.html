@@ -13,9 +13,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="og:image" content="https://pretextbook.org/examples/noparts/decorative/html/external/cover_aata_2014.png">
-<meta property="book:title" content="Abstract Algebra">
+<meta property="book:title" content="PreTeXt Sample Book">
 <meta property="book:author" content="Thomas W. Judson">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -48,13 +49,13 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-/* Mathjax typesetting operation is under the control of React */
   startup: {
+    /* Mathjax typesetting operation is under the control of React */
     typeset: false,
-  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
@@ -69,8 +70,8 @@
 eBookConfig = {};
 eBookConfig.useRunestoneServices = false;
 eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
 eBookConfig.isLoggedIn = false;
 eBookConfig.email = '';
 eBookConfig.isInstructor = false;
@@ -80,10 +81,10 @@ eBookConfig.readings = null;
 eBookConfig.activities = null;
 eBookConfig.downloadsEnabled = false;
 eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
+eBookConfig.enableScratchAC = true;
+eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.runestone_version = '5.0.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
@@ -91,8 +92,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runtime.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runestone.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.d789e6e5a9767e06.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/runestone.d5ffdb9ec42bd589.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runtime.b9c4862031d919a3.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runestone.d6e48037c4e99c27.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/runestone.93e720e6c6581fb5.css">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
 var sc_invisible=1;
@@ -106,15 +107,21 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </head>
 <body id="PTXSB" data-react-in-use="yes" class="pretext book ignore-math">
-<a class="assistive" href="#content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/cover_aata_2014.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="sample-book.html"><span class="title">Abstract Algebra:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<h1 class="heading"><a href="sample-book.html"><span class="title">PreTeXt Sample Book:</span> <span class="subtitle">Abstract Algebra (SAMPLE ONLY)</span></a></h1>
 <p class="byline">Thomas W. Judson, Isaac Newton (Editor)</p>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><a href="javascript:runestoneComponents.popupScratchAC()" class="activecode-toggle" title="Scratch ActiveCode"><span class="icon">✏</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -216,7 +223,9 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-mod-n-sym.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="groups.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="section-subgroups.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-mod-n-sym.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="groups.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="section-subgroups.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
 \newcommand{\notdivide}{{\not{\mid}}}
 \newcommand{\notsubset}{\not\subset}
 \newcommand{\lcm}{\operatorname{lcm}}
@@ -288,7 +297,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li>
 <div class="toc-item"><a href="integers.html" class="internal"><span class="codenumber">2</span> <span class="title">The Integers</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction</span></a></div></li>
+<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction and Math in a Title <span class="process-math">\(A\notsubset B\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Division Algorithm</span></a></div>
 <ul class="structural">
@@ -373,20 +382,26 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li>
 <div class="toc-item"><a href="rune.html" class="internal"><span class="codenumber">5</span> <span class="title">Runestone Testing</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-15.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
+<li><div class="toc-item"><a href="activecode.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
 <li><div class="toc-item"><a href="code-lens.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Code Lens</span></a></div></li>
 <li><div class="toc-item"><a href="coding-exercises.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Coding Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="section-18.html" class="internal"><span class="codenumber">5.4</span> <span class="title">YouTube Videos</span></a></div></li>
+<li><div class="toc-item"><a href="videos-in-runestone.html" class="internal"><span class="codenumber">5.4</span> <span class="title">YouTube Videos</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-19.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Deeper</span></a></div>
+<div class="toc-item"><a href="rune-nested-divisions.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Deeper</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-19.html#subsection-29" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Subsection One</span></a></div></li>
-<li><div class="toc-item"><a href="section-19.html#subsection-30" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Subsection Two</span></a></div></li>
+<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-29" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Subsection One</span></a></div></li>
+<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-30" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Subsection Two</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-12.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Interactive Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="section-20.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Expedited Samples</span></a></div></li>
-<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="interactive-exercises.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Interactive Exercises</span></a></div></li>
+<li>
+<div class="toc-item"><a href="exercises-timed.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Exercises that are Timed</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="exercises-timed.html#timed-exercises" class="internal"><span class="codenumber">5.7</span> <span class="title">Timed Exercises</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="interactive-projects.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Projects and Friends</span></a></div></li>
+<li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Expedited Samples</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="atomic-video.html" class="internal"><span class="codenumber">5.11</span> <span class="title">YouTube Video Embedding</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -402,13 +417,13 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <div class="toc-item"><a href="appendix-2.html" class="internal"><span class="codenumber">E</span> <span class="title">A Structured Appendix</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-21.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
+<div class="toc-item"><a href="section-24.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
 <ul class="structural"><li>
-<div class="toc-item"><a href="section-21.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-21.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
+<div class="toc-item"><a href="section-24.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-24.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
 </li></ul>
 </li>
-<li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
+<li><div class="toc-item"><a href="section-25.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">F</span> <span class="title">GNU Free Documentation License</span></a></div></li>
@@ -417,7 +432,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div class="ptx-content"><section class="section" id="section-groups-define"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-groups-define"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Definitions and Examples</span>
 </h2>
 <section class="subsection" id="subsection-19"><h3 class="heading hide-type">
@@ -460,15 +475,14 @@ a \circ a^{-1} = a^{-1} \circ a = e\text{.}
 </h3>
 <article class="example example-like" id="example-groups-integers"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-groups-integers"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Group of All Integers.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-integers"><article class="example example-like"><div class="para" id="p-412">The integers <span class="process-math">\({\mathbb Z } = \{ \ldots , -1, 0, 1, 2, \ldots \}\)</span> form a group under the operation of addition.  The binary operation on two integers <span class="process-math">\(m, n \in {\mathbb Z}\)</span> is just their sum.  Since the integers under addition already have a well-established notation, we will use the operator <span class="process-math">\(+\)</span> instead of <span class="process-math">\(\circ\text{;}\)</span> that is, we shall write <span class="process-math">\(m + n\)</span> instead of <span class="process-math">\(m \circ n\text{.}\)</span>  The identity is 0, and the inverse of <span class="process-math">\(n \in {\mathbb Z}\)</span> is written as <span class="process-math">\(-n\)</span> instead of <span class="process-math">\(n^{-1}\text{.}\)</span>  Notice that the set of integers under addition have the additional property that <span class="process-math">\(m + n = n + m\)</span> and therefore form an abelian group.</div></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-integers"><article class="example example-like"> <div class="para" id="p-412">The integers <span class="process-math">\({\mathbb Z } = \{ \ldots , -1, 0, 1, 2, \ldots \}\)</span> form a group under the operation of addition.  The binary operation on two integers <span class="process-math">\(m, n \in {\mathbb Z}\)</span> is just their sum.  Since the integers under addition already have a well-established notation, we will use the operator <span class="process-math">\(+\)</span> instead of <span class="process-math">\(\circ\text{;}\)</span> that is, we shall write <span class="process-math">\(m + n\)</span> instead of <span class="process-math">\(m \circ n\text{.}\)</span>  The identity is 0, and the inverse of <span class="process-math">\(n \in {\mathbb Z}\)</span> is written as <span class="process-math">\(-n\)</span> instead of <span class="process-math">\(n^{-1}\text{.}\)</span>  Notice that the set of integers under addition have the additional property that <span class="process-math">\(m + n = n + m\)</span> and therefore form an abelian group.</div></article></div>
 <div class="para" id="p-413">Most of the time we will write <span class="process-math">\(ab\)</span> instead of <span class="process-math">\(a \circ b\text{;}\)</span> however, if the group already has a natural operation such as addition in the integers, we will use that operation.  That is, if we are adding two integers, we still write <span class="process-math">\(m + n\text{,}\)</span> <span class="process-math">\(-n\)</span> for the inverse, and 0 for the identity as usual. We also write <span class="process-math">\(m - n\)</span> instead of <span class="process-math">\(m + (-n)\text{.}\)</span>
 </div>
 <div class="para" id="p-414">It is often convenient to describe a group in terms of an addition or multiplication table.  Such a table is called a <dfn class="terminology">Cayley table</dfn>.</div>
 <article class="example example-like" id="example-groups-z5"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-groups-z5"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Group of Integers Modulo <span class="process-math">\(5\)</span>.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-z5"><article class="example example-like"><div class="para" id="p-415">The integers mod <span class="process-math">\(n\)</span> form a group under addition modulo <span class="process-math">\(n\text{.}\)</span>  Consider <span class="process-math">\({\mathbb Z}_5\text{,}\)</span> consisting of the equivalence classes of the integers 0, 1, 2, 3, and 4.  We define the group operation on <span class="process-math">\({\mathbb Z}_5\)</span> by modular addition.  We write the binary operation on the group additively; that is, we write <span class="process-math">\(m + n\text{.}\)</span>  The element 0 is the identity of the group and each element in <span class="process-math">\({\mathbb Z}_5\)</span> has an inverse. For instance, <span class="process-math">\(2 + 3 = 3 + 2 = 0\text{.}\)</span>  <a href="" class="xref" data-knowl="./knowl/figure-z5-cayley.html" title="Figure 3.2.3">Figure 3.2.3</a> is a Cayley table for <span class="process-math">\({\mathbb Z}_5\)</span>  (Contributed by <a href="" class="xref" data-knowl="./knowl/rbeezer.html" title="Contributor">Robert Beezer</a>).  By <a href="" class="xref" data-knowl="./knowl/proposition-zn-equiv-classes.html" title="Proposition 3.1.4">Proposition 3.1.4</a>, <span class="process-math">\({\mathbb Z}_n = \{0, 1, \ldots, n-1 \}\)</span> is a group under the binary operation of addition mod <span class="process-math">\(n\text{.}\)</span>
-</div>
-<figure class="figure figure-like" id="figure-z5-cayley"><div class="para logical" id="p-416"><div class="displaymath process-math">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-z5"><article class="example example-like"> <div class="para" id="p-415">The integers mod <span class="process-math">\(n\)</span> form a group under addition modulo <span class="process-math">\(n\text{.}\)</span>  Consider <span class="process-math">\({\mathbb Z}_5\text{,}\)</span> consisting of the equivalence classes of the integers 0, 1, 2, 3, and 4.  We define the group operation on <span class="process-math">\({\mathbb Z}_5\)</span> by modular addition.  We write the binary operation on the group additively; that is, we write <span class="process-math">\(m + n\text{.}\)</span>  The element 0 is the identity of the group and each element in <span class="process-math">\({\mathbb Z}_5\)</span> has an inverse. For instance, <span class="process-math">\(2 + 3 = 3 + 2 = 0\text{.}\)</span>  <a href="" class="xref" data-knowl="./knowl/figure-z5-cayley.html" title="Figure 3.2.3">Figure 3.2.3</a> is a Cayley table for <span class="process-math">\({\mathbb Z}_5\)</span>  (Contributed by <a href="" class="xref" data-knowl="./knowl/rbeezer.html" title="Contributor">Robert Beezer</a>).  By <a href="" class="xref" data-knowl="./knowl/proposition-zn-equiv-classes.html" title="Proposition 3.1.4">Proposition 3.1.4</a>, <span class="process-math">\({\mathbb Z}_n = \{0, 1, \ldots, n-1 \}\)</span> is a group under the binary operation of addition mod <span class="process-math">\(n\text{.}\)</span>
+</div> <figure class="figure figure-like" id="figure-z5-cayley"><div class="para logical" id="p-416"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{c|ccccc}
 + &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\
@@ -484,7 +498,7 @@ a \circ a^{-1} = a^{-1} \circ a = e\text{.}
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.3<span class="period">.</span></span><span class="space"> </span>Cayley table for <span class="process-math">\(({\mathbb Z_5}, +)\)</span></figcaption></figure></article></div>
 <article class="example example-like" id="example-groups-z6-mult"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-groups-z6-mult"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Multiplication of Integers Modulo <span class="process-math">\(6\)</span>.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-z6-mult"><article class="example example-like"><div class="para logical" id="p-417">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-z6-mult"><article class="example example-like"> <div class="para logical" id="p-417">
 <div class="para">Not every set with a binary operation is a group.  For example, if we let modular multiplication be the binary operation on <span class="process-math">\({\mathbb Z}_n\text{,}\)</span> then <span class="process-math">\({\mathbb Z}_n\)</span> fails to be a group.  The element 1 acts as a group identity since <span class="process-math">\(1 \cdot k = k \cdot 1 = k\)</span> for any <span class="process-math">\(k \in {\mathbb Z}_n\text{;}\)</span> however, a multiplicative inverse for <span class="process-math">\(0\)</span> does not exist since <span class="process-math">\(0 \cdot k = k \cdot 0 = 0\)</span> for every <span class="process-math">\(k\)</span> in <span class="process-math">\({\mathbb Z}_n\text{.}\)</span>  Even if we consider the set <span class="process-math">\({\mathbb Z}_n \setminus \{0 \}\text{,}\)</span> we still may not have a group.  For instance, let <span class="process-math">\(2 \in {\mathbb Z}_6\text{.}\)</span> Then 2 has no multiplicative inverse since</div>
 <div class="displaymath process-math" id="md-32">
 \begin{align*}
@@ -493,10 +507,8 @@ a \circ a^{-1} = a^{-1} \circ a = e\text{.}
 4 \cdot 2 &amp; = 2 \qquad 5 \cdot 2 = 4\text{.}
 \end{align*}
 </div>
-</div>
-<div class="para" id="p-418">By <a href="" class="xref" data-knowl="./knowl/proposition-zn-equiv-classes.html" title="Proposition 3.1.4">Proposition 3.1.4</a>, every nonzero <span class="process-math">\(k\)</span> does have an inverse in <span class="process-math">\({\mathbb Z}_n\)</span> if <span class="process-math">\(k\)</span> is relatively prime to <span class="process-math">\(n\text{.}\)</span>  Denote the set of all such nonzero elements in <span class="process-math">\({\mathbb Z}_n\)</span> by <span class="process-math">\(U(n)\text{.}\)</span>   Then <span class="process-math">\(U(n)\)</span> is a group called the <dfn class="terminology">group of units</dfn> of <span class="process-math">\({\mathbb Z}_n\text{.}\)</span>  <a href="" class="xref" data-knowl="./knowl/figure-cayley-u8.html" title="Figure 3.2.5">Figure 3.2.5</a> is a Cayley table for the group <span class="process-math">\(U(8)\text{.}\)</span>
-</div>
-<figure class="figure figure-like" id="figure-cayley-u8"><div class="para logical" id="p-419"><div class="displaymath process-math">
+</div> <div class="para" id="p-418">By <a href="" class="xref" data-knowl="./knowl/proposition-zn-equiv-classes.html" title="Proposition 3.1.4">Proposition 3.1.4</a>, every nonzero <span class="process-math">\(k\)</span> does have an inverse in <span class="process-math">\({\mathbb Z}_n\)</span> if <span class="process-math">\(k\)</span> is relatively prime to <span class="process-math">\(n\text{.}\)</span>  Denote the set of all such nonzero elements in <span class="process-math">\({\mathbb Z}_n\)</span> by <span class="process-math">\(U(n)\text{.}\)</span>   Then <span class="process-math">\(U(n)\)</span> is a group called the <dfn class="terminology">group of units</dfn> of <span class="process-math">\({\mathbb Z}_n\text{.}\)</span>  <a href="" class="xref" data-knowl="./knowl/figure-cayley-u8.html" title="Figure 3.2.5">Figure 3.2.5</a> is a Cayley table for the group <span class="process-math">\(U(8)\text{.}\)</span>
+</div> <figure class="figure figure-like" id="figure-cayley-u8"><div class="para logical" id="p-419"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{c|cccc}
 \cdot &amp; 1 &amp; 3 &amp; 5 &amp; 7 \\
@@ -511,10 +523,10 @@ a \circ a^{-1} = a^{-1} \circ a = e\text{.}
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.5<span class="period">.</span></span><span class="space"> </span>Multiplication table for <span class="process-math">\(U(8)\)</span></figcaption></figure></article></div>
 <article class="example example-like" id="example-groups-nonabelian"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-groups-nonabelian"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Symmetries of a Triangle is not Abelian.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-nonabelian"><article class="example example-like"><div class="para" id="p-420">The symmetries of an equilateral triangle described in <a href="section-mod-n-sym.html" class="internal" title="Section 3.1: Integer Equivalence Classes and Symmetries">Section 3.1</a> form a nonabelian group. As we observed, it is not necessarily true that <span class="process-math">\(\alpha \beta = \beta \alpha\)</span> for two symmetries <span class="process-math">\(\alpha\)</span> and <span class="process-math">\(\beta\text{.}\)</span>  Using <a href="" class="xref" data-knowl="./knowl/figure-s3.html" title="Figure 3.1.7">Figure 3.1.7</a>, which is a Cayley table for this group, we can easily check that the symmetries of an equilateral triangle are indeed a group. We will denote this group by either <span class="process-math">\(S_3\)</span> or <span class="process-math">\(D_3\text{,}\)</span> for reasons that will be explained later.</div></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-nonabelian"><article class="example example-like"> <div class="para" id="p-420">The symmetries of an equilateral triangle described in <a href="section-mod-n-sym.html" class="internal" title="Section 3.1: Integer Equivalence Classes and Symmetries">Section 3.1</a> form a nonabelian group. As we observed, it is not necessarily true that <span class="process-math">\(\alpha \beta = \beta \alpha\)</span> for two symmetries <span class="process-math">\(\alpha\)</span> and <span class="process-math">\(\beta\text{.}\)</span>  Using <a href="" class="xref" data-knowl="./knowl/figure-s3.html" title="Figure 3.1.7">Figure 3.1.7</a>, which is a Cayley table for this group, we can easily check that the symmetries of an equilateral triangle are indeed a group. We will denote this group by either <span class="process-math">\(S_3\)</span> or <span class="process-math">\(D_3\text{,}\)</span> for reasons that will be explained later.</div></article></div>
 <article class="example example-like" id="example-groups-gl2"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-groups-gl2"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Matrix Multiplication of <span class="process-math">\(2\times 2\)</span> Matrices is a Group.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-gl2"><article class="example example-like"><div class="para logical" id="p-421">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-gl2"><article class="example example-like"> <div class="para logical" id="p-421">
 <div class="para">We use  <span class="process-math">\({\mathbb M}_2 ( {\mathbb R})\)</span> to denote the set of all <span class="process-math">\(2 \times 2\)</span> matrices.  Let <span class="process-math">\(GL_2({\mathbb R})\)</span> be the subset of <span class="process-math">\({\mathbb M}_2 ( {\mathbb R})\)</span> consisting of invertible matrices; that is, a matrix </div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -550,7 +562,7 @@ d &amp; -b \\
 </div></article></div>
 <article class="example example-like" id="example-groups-quaterions"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-groups-quaterions"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Group of Quaternions.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-quaterions"><article class="example example-like"><div class="para logical" id="p-422">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-quaterions"><article class="example example-like"> <div class="para logical" id="p-422">
 <div class="para">Let</div>
 <div class="displaymath process-math" id="md-33">
 \begin{align*}
@@ -583,7 +595,7 @@ i &amp; 0\\
 </div></article></div>
 <article class="example example-like" id="example-groups-c-star"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-groups-c-star"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Group of Nonzero Complex Numbers.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-c-star"><article class="example example-like"><div class="para logical" id="p-423">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-groups-c-star"><article class="example example-like"> <div class="para logical" id="p-423">
 <div class="para">Let <span class="process-math">\({\mathbb C}^\ast\)</span>be the set of nonzero complex numbers.  Under the operation of multiplication <span class="process-math">\({\mathbb C}^\ast\)</span> forms a group.  The identity is 1. If <span class="process-math">\(z = a+bi\)</span> is a nonzero complex number, then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -629,8 +641,7 @@ z^{-1} = \frac{a -bi}{a^2 +b^2}
 </h4>
 <div class="para" id="p-434">Let <span class="process-math">\(G\)</span> be a group and <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be any two elements in <span class="process-math">\(G\text{.}\)</span> Then the equations <span class="process-math">\(ax = b\)</span> and <span class="process-math">\(xa = b\)</span> have unique solutions in <span class="process-math">\(G\text{.}\)</span>
 </div></article><article class="hiddenproof" id="proof-17"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-17"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-17"><article class="hiddenproof"><div class="para" id="p-435">Suppose that <span class="process-math">\(ax = b\text{.}\)</span> We must show that such an <span class="process-math">\(x\)</span> exists. Multiplying both sides of <span class="process-math">\(ax = b\)</span> by <span class="process-math">\(a^{-1}\text{,}\)</span> we have <span class="process-math">\(x = ex = a^{-1}ax = a^{-1}b\text{.}\)</span>
-</div>
-<div class="para" id="p-436">To show uniqueness, suppose that <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_2\)</span> are both solutions of <span class="process-math">\(ax = b\text{;}\)</span> then <span class="process-math">\(ax_1 = b = ax_2\text{.}\)</span> So <span class="process-math">\(x_1 = a^{-1}ax_1 = a^{-1}ax_2 = x_2\text{.}\)</span> The proof for the existence and uniqueness of the solution of <span class="process-math">\(xa = b\)</span> is similar.</div></article></div>
+</div> <div class="para" id="p-436">To show uniqueness, suppose that <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_2\)</span> are both solutions of <span class="process-math">\(ax = b\text{;}\)</span> then <span class="process-math">\(ax_1 = b = ax_2\text{.}\)</span> So <span class="process-math">\(x_1 = a^{-1}ax_1 = a^{-1}ax_2 = x_2\text{.}\)</span> The proof for the existence and uniqueness of the solution of <span class="process-math">\(xa = b\)</span> is similar.</div></article></div>
 <article class="proposition theorem-like" id="proposition-8"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">3.2.15</span><span class="period">.</span>
 </h4>
@@ -708,6 +719,6 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </body>
 </html>

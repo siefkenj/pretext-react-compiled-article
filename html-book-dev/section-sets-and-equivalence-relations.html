@@ -13,9 +13,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="og:image" content="https://pretextbook.org/examples/noparts/decorative/html/external/cover_aata_2014.png">
-<meta property="book:title" content="Abstract Algebra">
+<meta property="book:title" content="PreTeXt Sample Book">
 <meta property="book:author" content="Thomas W. Judson">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -48,13 +49,13 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-/* Mathjax typesetting operation is under the control of React */
   startup: {
+    /* Mathjax typesetting operation is under the control of React */
     typeset: false,
-  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
@@ -69,8 +70,8 @@
 eBookConfig = {};
 eBookConfig.useRunestoneServices = false;
 eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
 eBookConfig.isLoggedIn = false;
 eBookConfig.email = '';
 eBookConfig.isInstructor = false;
@@ -80,10 +81,10 @@ eBookConfig.readings = null;
 eBookConfig.activities = null;
 eBookConfig.downloadsEnabled = false;
 eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
+eBookConfig.enableScratchAC = true;
+eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.runestone_version = '5.0.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
@@ -91,8 +92,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runtime.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runestone.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.d789e6e5a9767e06.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/runestone.d5ffdb9ec42bd589.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runtime.b9c4862031d919a3.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runestone.d6e48037c4e99c27.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/runestone.93e720e6c6581fb5.css">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
 var sc_invisible=1;
@@ -106,15 +107,21 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </head>
 <body id="PTXSB" data-react-in-use="yes" class="pretext book ignore-math">
-<a class="assistive" href="#content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/cover_aata_2014.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="sample-book.html"><span class="title">Abstract Algebra:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<h1 class="heading"><a href="sample-book.html"><span class="title">PreTeXt Sample Book:</span> <span class="subtitle">Abstract Algebra (SAMPLE ONLY)</span></a></h1>
 <p class="byline">Thomas W. Judson, Isaac Newton (Editor)</p>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><a href="javascript:runestoneComponents.popupScratchAC()" class="activecode-toggle" title="Scratch ActiveCode"><span class="icon">✏</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -216,7 +223,9 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-note-on-proofs.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="sets.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sets-sage.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-note-on-proofs.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="sets.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sets-sage.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
 \newcommand{\notdivide}{{\not{\mid}}}
 \newcommand{\notsubset}{\not\subset}
 \newcommand{\lcm}{\operatorname{lcm}}
@@ -288,7 +297,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li>
 <div class="toc-item"><a href="integers.html" class="internal"><span class="codenumber">2</span> <span class="title">The Integers</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction</span></a></div></li>
+<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction and Math in a Title <span class="process-math">\(A\notsubset B\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Division Algorithm</span></a></div>
 <ul class="structural">
@@ -373,20 +382,26 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li>
 <div class="toc-item"><a href="rune.html" class="internal"><span class="codenumber">5</span> <span class="title">Runestone Testing</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-15.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
+<li><div class="toc-item"><a href="activecode.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
 <li><div class="toc-item"><a href="code-lens.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Code Lens</span></a></div></li>
 <li><div class="toc-item"><a href="coding-exercises.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Coding Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="section-18.html" class="internal"><span class="codenumber">5.4</span> <span class="title">YouTube Videos</span></a></div></li>
+<li><div class="toc-item"><a href="videos-in-runestone.html" class="internal"><span class="codenumber">5.4</span> <span class="title">YouTube Videos</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-19.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Deeper</span></a></div>
+<div class="toc-item"><a href="rune-nested-divisions.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Deeper</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-19.html#subsection-29" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Subsection One</span></a></div></li>
-<li><div class="toc-item"><a href="section-19.html#subsection-30" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Subsection Two</span></a></div></li>
+<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-29" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Subsection One</span></a></div></li>
+<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-30" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Subsection Two</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-12.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Interactive Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="section-20.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Expedited Samples</span></a></div></li>
-<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="interactive-exercises.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Interactive Exercises</span></a></div></li>
+<li>
+<div class="toc-item"><a href="exercises-timed.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Exercises that are Timed</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="exercises-timed.html#timed-exercises" class="internal"><span class="codenumber">5.7</span> <span class="title">Timed Exercises</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="interactive-projects.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Projects and Friends</span></a></div></li>
+<li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Expedited Samples</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="atomic-video.html" class="internal"><span class="codenumber">5.11</span> <span class="title">YouTube Video Embedding</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -402,13 +417,13 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <div class="toc-item"><a href="appendix-2.html" class="internal"><span class="codenumber">E</span> <span class="title">A Structured Appendix</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-21.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
+<div class="toc-item"><a href="section-24.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
 <ul class="structural"><li>
-<div class="toc-item"><a href="section-21.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-21.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
+<div class="toc-item"><a href="section-24.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-24.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
 </li></ul>
 </li>
-<li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
+<li><div class="toc-item"><a href="section-25.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">F</span> <span class="title">GNU Free Documentation License</span></a></div></li>
@@ -417,7 +432,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div class="ptx-content"><section class="section" id="section-sets-and-equivalence-relations"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-sets-and-equivalence-relations"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Sets and Equivalence Relations</span>
 </h2>
 <section class="subsection" id="subsection-2"><h3 class="heading hide-type">
@@ -529,7 +544,7 @@ A \setminus B = A \cap B'  = \{ x : x \in A \text{ and } x \notin B \}\text{.}
 </div>
 <article class="example example-like" id="example-sets-operations"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-operations"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Set Operations.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-operations"><article class="example example-like"><div class="para logical" id="p-60">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-operations"><article class="example example-like"> <div class="para logical" id="p-60">
 <div class="para">Let <span class="process-math">\({\mathbb R}\)</span> be the universal set and suppose that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -567,8 +582,7 @@ A' &amp; =  \{ x \in {\mathbb R} : x \leq 0 \text{ or } x \gt 3 \}\text{.}
 <li id="li-27"><div class="para" id="p-66"><span class="process-math">\(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\text{;}\)</span></div></li>
 <li id="li-28"><div class="para" id="p-67"><span class="process-math">\(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\text{.}\)</span></div></li>
 </ol>
-</div></article><article class="hiddenproof" id="proof-1"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-1"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-1"><article class="hiddenproof"><div class="para" id="p-68">We will prove (1) and (3) and leave the remaining results to be proven in the exercises.</div>
-<div class="para logical" id="p-69">
+</div></article><article class="hiddenproof" id="proof-1"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-1"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-1"><article class="hiddenproof"><div class="para" id="p-68">We will prove (1) and (3) and leave the remaining results to be proven in the exercises.</div> <div class="para logical" id="p-69">
 <div class="para">(1) Observe that</div>
 <div class="displaymath process-math" id="md-4">
 \begin{align*}
@@ -583,10 +597,8 @@ A \cap A &amp; =  \{ x : x \in A \text{ and } x \in A \}\\
 &amp; =  A\text{.}
 \end{align*}
 </div>
-</div>
-<div class="para" id="p-70">Also, <span class="process-math">\(A \setminus A = A \cap A' = \emptyset\text{.}\)</span>
-</div>
-<div class="para logical" id="p-71">
+</div> <div class="para" id="p-70">Also, <span class="process-math">\(A \setminus A = A \cap A' = \emptyset\text{.}\)</span>
+</div> <div class="para logical" id="p-71">
 <div class="para">(3) For sets <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{,}\)</span>
 </div>
 <div class="displaymath process-math" id="md-5">
@@ -597,8 +609,7 @@ A \cup (B \cup C) &amp; = A \cup \{ x : x \in B \text{ or } x \in C \}\\
 &amp; = (A \cup B) \cup C. 
 \end{align*}
 </div>
-</div>
-<div class="para" id="p-72">A similar argument proves that  <span class="process-math">\(A \cap (B \cap C) = (A \cap B) \cap C\text{.}\)</span>
+</div> <div class="para" id="p-72">A similar argument proves that  <span class="process-math">\(A \cap (B \cap C) = (A \cap B) \cap C\text{.}\)</span>
 </div></article></div>
 <article class="theorem theorem-like" id="theorem-1"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="creator">(Augustus De Morgan, 1806–1871)</span><span class="period">.</span><span class="space"> </span><span class="title">De Morgan's Laws.</span>
@@ -610,13 +621,11 @@ A \cup (B \cup C) &amp; = A \cup \{ x : x \in B \text{ or } x \in C \}\\
 <li id="li-30"><div class="para" id="p-75"><span class="process-math">\((A \cap B)' = A' \cup B'\text{.}\)</span></div></li>
 </ol>
 </div></article><article class="hiddenproof" id="proof-2"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-2"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-2"><article class="hiddenproof"><div class="para" id="p-76">(1) We must show that <span class="process-math">\((A \cup B)' \subset A' \cap B'\)</span> and <span class="process-math">\((A \cup B)' \supset A' \cap B'\text{.}\)</span> Let <span class="process-math">\(x \in (A \cup B)'\text{.}\)</span>  Then <span class="process-math">\(x \notin A \cup B\text{.}\)</span> So <span class="process-math">\(x\)</span> is neither in <span class="process-math">\(A\)</span> nor in <span class="process-math">\(B\text{,}\)</span> by the definition of the union of sets.  By the definition of the complement, <span class="process-math">\(x \in A'\)</span> and <span class="process-math">\(x \in B'\text{.}\)</span>  Therefore, <span class="process-math">\(x \in A' \cap B'\)</span> and we have <span class="process-math">\((A \cup B)' \subset A' \cap B'\text{.}\)</span>
-</div>
-<div class="para" id="p-77">To show the reverse inclusion, suppose that <span class="process-math">\(x \in A' \cap B'\text{.}\)</span>  Then <span class="process-math">\(x \in A'\)</span> and <span class="process-math">\(x \in B'\text{,}\)</span> and so <span class="process-math">\(x \notin A\)</span> and <span class="process-math">\(x \notin B\text{.}\)</span> Thus <span class="process-math">\(x \notin A \cup B\)</span> and so <span class="process-math">\(x \in (A \cup B)'\text{.}\)</span>  Hence, <span class="process-math">\((A \cup B)' \supset A' \cap B'\)</span> and so <span class="process-math">\((A \cup B)' = A' \cap B'\text{.}\)</span>
-</div>
-<div class="para" id="p-78">The proof of (2) is left as an exercise.</div></article></div>
+</div> <div class="para" id="p-77">To show the reverse inclusion, suppose that <span class="process-math">\(x \in A' \cap B'\text{.}\)</span>  Then <span class="process-math">\(x \in A'\)</span> and <span class="process-math">\(x \in B'\text{,}\)</span> and so <span class="process-math">\(x \notin A\)</span> and <span class="process-math">\(x \notin B\text{.}\)</span> Thus <span class="process-math">\(x \notin A \cup B\)</span> and so <span class="process-math">\(x \in (A \cup B)'\text{.}\)</span>  Hence, <span class="process-math">\((A \cup B)' \supset A' \cap B'\)</span> and so <span class="process-math">\((A \cup B)' = A' \cap B'\text{.}\)</span>
+</div> <div class="para" id="p-78">The proof of (2) is left as an exercise.</div></article></div>
 <article class="example example-like" id="example-sets-other-relations"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-other-relations"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Other Relations on Sets.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-other-relations"><article class="example example-like"><div class="para logical" id="p-79">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-other-relations"><article class="example example-like"> <div class="para logical" id="p-79">
 <div class="para">Other relations between sets often hold true. For example,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -644,7 +653,7 @@ A \times B = \{ (a,b) : a \in A \text{ and } b \in B \}\text{.}
 </div>
 <article class="example example-like" id="example-sets-cartesian-products"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-cartesian-products"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Cartesian Products.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-cartesian-products"><article class="example example-like"><div class="para logical" id="p-81">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-cartesian-products"><article class="example example-like"> <div class="para logical" id="p-81">
 <div class="para">If <span class="process-math">\(A = \{ x, y \}\text{,}\)</span> <span class="process-math">\(B = \{ 1, 2, 3 \}\text{,}\)</span> and <span class="process-math">\(C = \emptyset\text{,}\)</span> then <span class="process-math">\(A \times B\)</span> is the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -679,7 +688,7 @@ f(A) = \{ f(a) : a \in A \} \subset B
 <figure class="figure figure-like" id="figure-sets-mappings"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/sets-mappings.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.6<span class="period">.</span></span><span class="space"> </span>Mappings and relations</figcaption></figure><article class="example example-like" id="example-sets-mappings"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-mappings"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Mappings.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-mappings"><article class="example example-like"><div class="para" id="p-84">Suppose <span class="process-math">\(A = \{1, 2, 3 \}\)</span> and <span class="process-math">\(B = \{a, b, c \}\text{.}\)</span>  In <a href="" class="xref" data-knowl="./knowl/figure-sets-mappings.html" title="Figure 1.2.6">Figure 1.2.6</a> we define relations <span class="process-math">\(f\)</span> and  <span class="process-math">\(g\)</span> from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{.}\)</span>  The relation <span class="process-math">\(f\)</span> is a mapping, but <span class="process-math">\(g\)</span> is not because <span class="process-math">\(1 \in A\)</span> is not assigned to a unique element in <span class="process-math">\(B\text{;}\)</span> that is, <span class="process-math">\(g(1) = a\)</span> and <span class="process-math">\(g(1) = b\text{.}\)</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-mappings"><article class="example example-like"> <div class="para" id="p-84">Suppose <span class="process-math">\(A = \{1, 2, 3 \}\)</span> and <span class="process-math">\(B = \{a, b, c \}\text{.}\)</span>  In <a href="" class="xref" data-knowl="./knowl/figure-sets-mappings.html" title="Figure 1.2.6">Figure 1.2.6</a> we define relations <span class="process-math">\(f\)</span> and  <span class="process-math">\(g\)</span> from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{.}\)</span>  The relation <span class="process-math">\(f\)</span> is a mapping, but <span class="process-math">\(g\)</span> is not because <span class="process-math">\(1 \in A\)</span> is not assigned to a unique element in <span class="process-math">\(B\text{;}\)</span> that is, <span class="process-math">\(g(1) = a\)</span> and <span class="process-math">\(g(1) = b\text{.}\)</span>
 </div></article></div>
 <div class="para" id="p-85">Given a function <span class="process-math">\(f : A \rightarrow B\text{,}\)</span> it is often possible to write a list describing what the function does to each specific element in the domain.  However, not all functions can be described in this manner.  For example, the function <span class="process-math">\(f: {\mathbb R} \rightarrow {\mathbb R}\)</span> that sends each real number to its cube is a mapping that must be described by writing <span class="process-math">\(f(x) = x^3\)</span> or <span class="process-math">\(f:x \mapsto x^3\text{.}\)</span>
 </div>
@@ -687,16 +696,16 @@ f(A) = \{ f(a) : a \in A \} \subset B
 <div class="para" id="p-87">If <span class="process-math">\(f:A \rightarrow B\)</span> is a map and the image of <span class="process-math">\(f\)</span> is <span class="process-math">\(B\text{,}\)</span> i.e., <span class="process-math">\(f(A) = B\text{,}\)</span> then <span class="process-math">\(f\)</span> is said to be <dfn class="terminology">onto</dfn> or <dfn class="terminology">surjective</dfn>. In other words, if there exists an <span class="process-math">\(a \in A\)</span> for each <span class="process-math">\(b \in B\)</span> such that <span class="process-math">\(f(a) = b\text{,}\)</span> then <span class="process-math">\(f\)</span> is onto. A map is <dfn class="terminology">one-to-one</dfn> or <dfn class="terminology">injective</dfn> if <span class="process-math">\(a_1 \neq a_2\)</span> implies <span class="process-math">\(f(a_1) \neq f(a_2)\text{.}\)</span>  Equivalently, a function is one-to-one if <span class="process-math">\(f(a_1) = f(a_2)\)</span> implies <span class="process-math">\(a_1 = a_2\text{.}\)</span>  A map that is both one-to-one and onto is called <dfn class="terminology">bijective</dfn>.</div>
 <article class="example example-like" id="example-sets-one-to-one-onto"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-one-to-one-onto"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">One-to-One and Onto Mappings.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-one-to-one-onto"><article class="example example-like"><div class="para" id="p-88">Let <span class="process-math">\(f:{\mathbb Z} \rightarrow {\mathbb Q}\)</span> be defined by <span class="process-math">\(f(n) = n/1\text{.}\)</span>  Then <span class="process-math">\(f\)</span> is one-to-one but not onto.  Define <span class="process-math">\(g : {\mathbb Q} \rightarrow {\mathbb Z}\)</span> by <span class="process-math">\(g(p/q) = p\)</span> where <span class="process-math">\(p/q\)</span> is a rational number expressed in its lowest terms with a positive denominator.  The function <span class="process-math">\(g\)</span> is onto but not one-to-one.</div></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-one-to-one-onto"><article class="example example-like"> <div class="para" id="p-88">Let <span class="process-math">\(f:{\mathbb Z} \rightarrow {\mathbb Q}\)</span> be defined by <span class="process-math">\(f(n) = n/1\text{.}\)</span>  Then <span class="process-math">\(f\)</span> is one-to-one but not onto.  Define <span class="process-math">\(g : {\mathbb Q} \rightarrow {\mathbb Z}\)</span> by <span class="process-math">\(g(p/q) = p\)</span> where <span class="process-math">\(p/q\)</span> is a rational number expressed in its lowest terms with a positive denominator.  The function <span class="process-math">\(g\)</span> is onto but not one-to-one.</div></article></div>
 <div class="para" id="p-89">Given two functions, we can construct a new function by using the range of the first function as the domain of the second function.  Let <span class="process-math">\(f : A \rightarrow B\)</span> and <span class="process-math">\(g : B \rightarrow C\)</span> be mappings.  Define a new map, the <dfn class="terminology">composition</dfn> of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> from <span class="process-math">\(A\)</span> to <span class="process-math">\(C\text{,}\)</span> by <span class="process-math">\((g \circ f)(x) = g(f(x))\text{.}\)</span>
 </div>
 <figure class="figure figure-like" id="figure-sets-composition"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/sets-composition.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.9<span class="period">.</span></span><span class="space"> </span>Composition of maps</figcaption></figure><article class="example example-like" id="example-sets-composition"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-composition"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Composition of Mappings.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-composition"><article class="example example-like"><div class="para" id="p-90">Consider the functions <span class="process-math">\(f: A \rightarrow B\)</span> and <span class="process-math">\(g: B \rightarrow C\)</span> that are defined in <a href="" class="xref" data-knowl="./knowl/figure-sets-composition.html" title="Figure 1.2.9">Figure 1.2.9</a> (top).  The composition of these functions, <span class="process-math">\(g \circ f: A \rightarrow C\text{,}\)</span> is defined in <a href="" class="xref" data-knowl="./knowl/figure-sets-composition.html" title="Figure 1.2.9">Figure 1.2.9</a> (bottom).</div></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-composition"><article class="example example-like"> <div class="para" id="p-90">Consider the functions <span class="process-math">\(f: A \rightarrow B\)</span> and <span class="process-math">\(g: B \rightarrow C\)</span> that are defined in <a href="" class="xref" data-knowl="./knowl/figure-sets-composition.html" title="Figure 1.2.9">Figure 1.2.9</a> (top).  The composition of these functions, <span class="process-math">\(g \circ f: A \rightarrow C\text{,}\)</span> is defined in <a href="" class="xref" data-knowl="./knowl/figure-sets-composition.html" title="Figure 1.2.9">Figure 1.2.9</a> (bottom).</div></article></div>
 <article class="example example-like" id="example-sets-composition-noncommute"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-composition-noncommute"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Composition is not Commutative.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-composition-noncommute"><article class="example example-like"><div class="para logical" id="p-91">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-composition-noncommute"><article class="example example-like"> <div class="para logical" id="p-91">
 <div class="para">Let <span class="process-math">\(f(x) = x^2\)</span> and <span class="process-math">\(g(x) = 2x + 5\text{.}\)</span> Then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -714,7 +723,7 @@ f(A) = \{ f(a) : a \in A \} \subset B
 </div></article></div>
 <article class="example example-like" id="example-sets-composition-commute"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-composition-commute"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Some Mappings Commute.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-composition-commute"><article class="example example-like"><div class="para logical" id="p-92">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-composition-commute"><article class="example example-like"> <div class="para logical" id="p-92">
 <div class="para">Sometimes it is the case that <span class="process-math">\(f \circ g= g \circ f\text{.}\)</span>  Let <span class="process-math">\(f(x) = x^3\)</span> and <span class="process-math">\(g(x) = \sqrt[3]{x}\text{.}\)</span> Then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -730,7 +739,7 @@ f(A) = \{ f(a) : a \in A \} \subset B
 </div></article></div>
 <article class="example example-like" id="example-sets-linear-map"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-linear-map"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">A Linear Map.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-linear-map"><article class="example example-like"><div class="para logical" id="p-93">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-linear-map"><article class="example example-like"> <div class="para logical" id="p-93">
 <div class="para">Given a <span class="process-math">\(2 \times 2\)</span> matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -768,7 +777,7 @@ cx +dy
 </div></article></div>
 <article class="example example-like" id="example-sets-permutation"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-permutation"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span><span class="space"> </span><span class="title">A Permutation.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-permutation"><article class="example example-like"><div class="para logical" id="p-94">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-permutation"><article class="example example-like"> <div class="para logical" id="p-94">
 <div class="para">Suppose that <span class="process-math">\(S = \{ 1,2,3  \}\text{.}\)</span> Define a map <span class="process-math">\(\pi :S\rightarrow S\)</span> by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -805,8 +814,7 @@ cx +dy
 <li id="li-34"><div class="para" id="p-99">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are bijective, then so is <span class="process-math">\(g \circ f\text{.}\)</span>
 </div></li>
 </ol>
-</div></article><article class="hiddenproof" id="proof-3"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-3"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><div class="para" id="p-100">We will prove (1) and (3). Part (2) is left as an exercise.  Part (4) follows directly from (2) and (3).</div>
-<div class="para logical" id="p-101">
+</div></article><article class="hiddenproof" id="proof-3"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-3"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><div class="para" id="p-100">We will prove (1) and (3). Part (2) is left as an exercise.  Part (4) follows directly from (2) and (3).</div> <div class="para logical" id="p-101">
 <div class="para">(1) We must show that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -822,8 +830,7 @@ h \circ (g \circ f) = (h \circ g) \circ f\text{.}
 &amp; = ((h \circ g) \circ f)(a)\text{.}
 \end{align*}
 </div>
-</div>
-<div class="para logical" id="p-102">
+</div> <div class="para logical" id="p-102">
 <div class="para">(3) Assume that <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both onto functions. Given <span class="process-math">\(c \in C\text{,}\)</span> we must show that there exists an <span class="process-math">\(a \in A\)</span> such that <span class="process-math">\((g \circ f)(a) = g(f(a)) = c\text{.}\)</span> However, since <span class="process-math">\(g\)</span> is onto, there is an element <span class="process-math">\(b \in B\)</span> such that <span class="process-math">\(g(b) = c\text{.}\)</span> Similarly, there is an <span class="process-math">\(a \in A\)</span> such that <span class="process-math">\(f(a) = b\text{.}\)</span> Accordingly,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -834,10 +841,10 @@ h \circ (g \circ f) = (h \circ g) \circ f\text{.}
 <div class="para" id="p-103">If <span class="process-math">\(S\)</span> is any set, we will use <span class="process-math">\(id_S\)</span> or <span class="process-math">\(id\)</span> to denote the <dfn class="terminology">identity mapping</dfn> from <span class="process-math">\(S\)</span> to itself.  Define this map by <span class="process-math">\(id(s) = s\)</span> for all <span class="process-math">\(s \in S\text{.}\)</span>  A map <span class="process-math">\(g: B \rightarrow A\)</span> is an <dfn class="terminology">inverse mapping</dfn> of <span class="process-math">\(f: A \rightarrow B\)</span> if <span class="process-math">\(g \circ f = id_A\)</span> and <span class="process-math">\(f \circ g = id_B\text{;}\)</span> in other words, the inverse function of a function simply “undoes” the function.   A map is said to be <dfn class="terminology">invertible</dfn> if it has an inverse.  We usually write <span class="process-math">\(f^{-1}\)</span> for the inverse of <span class="process-math">\(f\text{.}\)</span> </div>
 <article class="example example-like" id="example-sets-inverse-function"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-inverse-function"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.16</span><span class="period">.</span><span class="space"> </span><span class="title">An Inverse Function.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-inverse-function"><article class="example example-like"><div class="para" id="p-104">The function <span class="process-math">\(f(x) = x^3\)</span> has inverse <span class="process-math">\(f^{-1}(x) = \sqrt[3]{x}\)</span> by <a href="" class="xref" data-knowl="./knowl/example-sets-composition-commute.html" title="Example 1.2.12: Some Mappings Commute">Example 1.2.12</a>.</div></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-inverse-function"><article class="example example-like"> <div class="para" id="p-104">The function <span class="process-math">\(f(x) = x^3\)</span> has inverse <span class="process-math">\(f^{-1}(x) = \sqrt[3]{x}\)</span> by <a href="" class="xref" data-knowl="./knowl/example-sets-composition-commute.html" title="Example 1.2.12: Some Mappings Commute">Example 1.2.12</a>.</div></article></div>
 <article class="example example-like" id="example-sets-exponential"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-exponential"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.17</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential and Logarithmic Functions are Inverses.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-exponential"><article class="example example-like"><div class="para logical" id="p-105">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-exponential"><article class="example example-like"> <div class="para logical" id="p-105">
 <div class="para">The natural logarithm and the exponential functions, <span class="process-math">\(f(x) = \ln x\)</span> and <span class="process-math">\(f^{-1}(x) = e^x\text{,}\)</span> are inverses of each other provided that we are careful about choosing domains.  Observe that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -854,7 +861,7 @@ f^{-1}(f(x)) = f^{-1}(\ln x) = e^{\ln x} = x
 </div></article></div>
 <article class="example example-like" id="example-sets-inverse-matrix"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-inverse-matrix"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.18</span><span class="period">.</span><span class="space"> </span><span class="title">A Matrix Inverse Yields an Inverse of a Linear Map.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-inverse-matrix"><article class="example example-like"><div class="para logical" id="p-106">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-inverse-matrix"><article class="example example-like"> <div class="para logical" id="p-106">
 <div class="para">Suppose that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -925,7 +932,7 @@ T_B^{-1} (x,y) = (ax + by, cx +dy)
 </div></article></div>
 <article class="example example-like" id="example-sets-inverse-permutation"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-inverse-permutation"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.19</span><span class="period">.</span><span class="space"> </span><span class="title">An Inverse Permutation.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-inverse-permutation"><article class="example example-like"><div class="para logical" id="p-107">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-inverse-permutation"><article class="example example-like"> <div class="para logical" id="p-107">
 <div class="para">Given the permutation</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -952,8 +959,7 @@ T_B^{-1} (x,y) = (ax + by, cx +dy)
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.20</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-108">A mapping is invertible if and only if it is both one-to-one and onto.</div></article><article class="hiddenproof" id="proof-4"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-4"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><div class="para" id="p-109">Suppose first that <span class="process-math">\(f:A \rightarrow B\)</span> is invertible with inverse <span class="process-math">\(g: B \rightarrow A\text{.}\)</span> Then <span class="process-math">\(g \circ f = id_A\)</span> is the identity map; that is, <span class="process-math">\(g(f(a)) = a\text{.}\)</span> If <span class="process-math">\(a_1, a_2 \in A\)</span> with <span class="process-math">\(f(a_1) = f(a_2)\text{,}\)</span> then <span class="process-math">\(a_1 = g(f(a_1)) = g(f(a_2)) = a_2\text{.}\)</span>  Consequently, <span class="process-math">\(f\)</span> is one-to-one.  Now suppose that <span class="process-math">\(b \in B\text{.}\)</span> To show that <span class="process-math">\(f\)</span> is onto, it is necessary to find an <span class="process-math">\(a \in A\)</span> such that <span class="process-math">\(f(a) = b\text{,}\)</span> but <span class="process-math">\(f(g(b)) = b\)</span> with <span class="process-math">\(g(b) \in A\text{.}\)</span> Let <span class="process-math">\(a = g(b)\text{.}\)</span>
-</div>
-<div class="para" id="p-110">Conversely, let <span class="process-math">\(f\)</span> be bijective and let <span class="process-math">\(b \in B\text{.}\)</span>  Since <span class="process-math">\(f\)</span> is onto, there exists an <span class="process-math">\(a \in A\)</span> such that <span class="process-math">\(f(a) = b\text{.}\)</span>  Because <span class="process-math">\(f\)</span> is one-to-one, <span class="process-math">\(a\)</span> must be unique. Define <span class="process-math">\(g\)</span> by letting <span class="process-math">\(g(b) = a\text{.}\)</span>  We have now constructed the inverse of <span class="process-math">\(f\text{.}\)</span>
+</div> <div class="para" id="p-110">Conversely, let <span class="process-math">\(f\)</span> be bijective and let <span class="process-math">\(b \in B\text{.}\)</span>  Since <span class="process-math">\(f\)</span> is onto, there exists an <span class="process-math">\(a \in A\)</span> such that <span class="process-math">\(f(a) = b\text{.}\)</span>  Because <span class="process-math">\(f\)</span> is one-to-one, <span class="process-math">\(a\)</span> must be unique. Define <span class="process-math">\(g\)</span> by letting <span class="process-math">\(g(b) = a\text{.}\)</span>  We have now constructed the inverse of <span class="process-math">\(f\text{.}\)</span>
 </div></article></div></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Equivalence Relations and Partitions</span>
 </h3>
@@ -971,7 +977,7 @@ T_B^{-1} (x,y) = (ax + by, cx +dy)
 <div class="para" id="p-115">Given an equivalence relation <span class="process-math">\(R\)</span>  on a set <span class="process-math">\(X\text{,}\)</span> we usually write  <span class="process-math">\(x \sim y\)</span> instead of <span class="process-math">\((x, y) \in R\text{.}\)</span> If the equivalence relation already has an associated notation such as <span class="process-math">\(=\text{,}\)</span> <span class="process-math">\(\equiv\text{,}\)</span> or <span class="process-math">\(\cong\text{,}\)</span> we will use that notation.</div>
 <article class="example example-like" id="example-sets-equivalent-fractions"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-equivalent-fractions"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.21</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalent Fractions.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-equivalent-fractions"><article class="example example-like"><div class="para logical" id="p-116">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-equivalent-fractions"><article class="example example-like"> <div class="para logical" id="p-116">
 <div class="para">Let <span class="process-math">\(p\text{,}\)</span> <span class="process-math">\(q\text{,}\)</span> <span class="process-math">\(r\text{,}\)</span> and <span class="process-math">\(s\)</span> be integers, where <span class="process-math">\(q\)</span> and <span class="process-math">\(s\)</span> are nonzero.  Define <span class="process-math">\(p/q \sim r/s\)</span> if <span class="process-math">\(ps = qr\text{.}\)</span>  Clearly <span class="process-math">\(\sim\)</span> is reflexive and symmetric.  To show that it is also transitive, suppose that <span class="process-math">\(p/q \sim r/s\)</span> and <span class="process-math">\(r/s \sim t/u\text{,}\)</span> with <span class="process-math">\(q\text{,}\)</span> <span class="process-math">\(s\text{,}\)</span> and <span class="process-math">\(u\)</span> all nonzero.  Then <span class="process-math">\(ps = qr\)</span> and <span class="process-math">\(ru = st\text{.}\)</span> Therefore,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -983,7 +989,7 @@ psu = qru = qst\text{.}
 </div></article></div>
 <article class="example example-like" id="example-sets-equivalent-derivative"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-equivalent-derivative"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.22</span><span class="period">.</span><span class="space"> </span><span class="title">An Equivalence Relation From Derivatives.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-equivalent-derivative"><article class="example example-like"><div class="para logical" id="p-117">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-equivalent-derivative"><article class="example example-like"> <div class="para logical" id="p-117">
 <div class="para">Suppose that <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are differentiable functions on <span class="process-math">\({\mathbb R}\text{.}\)</span>  We can define an equivalence relation on such functions by letting <span class="process-math">\(f(x) \sim g(x)\)</span> if <span class="process-math">\(f'(x) = g'(x)\text{.}\)</span> It is clear that <span class="process-math">\(\sim\)</span> is both reflexive and symmetric.  To demonstrate transitivity, suppose that <span class="process-math">\(f(x) \sim g(x)\)</span> and  <span class="process-math">\(g(x) \sim h(x)\text{.}\)</span>  From calculus we know that <span class="process-math">\(f(x) - g(x) = c_1\)</span> and <span class="process-math">\(g(x)- h(x) = c_2\text{,}\)</span> where <span class="process-math">\(c_1\)</span> and <span class="process-math">\(c_2\)</span> are both constants. Hence,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -995,11 +1001,11 @@ f(x) - h(x) = ( f(x) - g(x)) + ( g(x)- h(x))  = c_1 - c_2
 </div></article></div>
 <article class="example example-like" id="example-sets-equivalent-circles"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-equivalent-circles"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.23</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalent Circles.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-equivalent-circles"><article class="example example-like"><div class="para" id="p-118">For <span class="process-math">\((x_1, y_1 )\)</span> and <span class="process-math">\((x_2, y_2)\)</span> in <span class="process-math">\({\mathbb R}^2\text{,}\)</span> define <span class="process-math">\((x_1, y_1 ) \sim (x_2, y_2)\)</span> if <span class="process-math">\(x_1^2 + y_1^2 = x_2^2 + y_2^2\text{.}\)</span>  Then <span class="process-math">\(\sim\)</span> is an equivalence relation on <span class="process-math">\({\mathbb R}^2\text{.}\)</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-equivalent-circles"><article class="example example-like"> <div class="para" id="p-118">For <span class="process-math">\((x_1, y_1 )\)</span> and <span class="process-math">\((x_2, y_2)\)</span> in <span class="process-math">\({\mathbb R}^2\text{,}\)</span> define <span class="process-math">\((x_1, y_1 ) \sim (x_2, y_2)\)</span> if <span class="process-math">\(x_1^2 + y_1^2 = x_2^2 + y_2^2\text{.}\)</span>  Then <span class="process-math">\(\sim\)</span> is an equivalence relation on <span class="process-math">\({\mathbb R}^2\text{.}\)</span>
 </div></article></div>
 <article class="example example-like" id="example-sets-equivalent-matrices"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-equivalent-matrices"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.24</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalent Matrices.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-equivalent-matrices"><article class="example example-like"><div class="para logical" id="p-119">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-equivalent-matrices"><article class="example example-like"> <div class="para logical" id="p-119">
 <div class="para">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be <span class="process-math">\(2 \times 2\)</span> matrices with entries in the real numbers. We can define an equivalence relation on the set of <span class="process-math">\(2 \times 2\)</span> matrices, by saying <span class="process-math">\(A \sim B\)</span> if there exists an invertible matrix <span class="process-math">\(P\)</span> such that <span class="process-math">\(PAP^{-1} = B\text{.}\)</span>  For example, if</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1055,24 +1061,23 @@ C = QBQ^{-1} = QPAP^{-1} Q^{-1} = (QP)A(QP)^{-1}\text{,}
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.25</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-121">Given an equivalence relation <span class="process-math">\(\sim\)</span> on a set <span class="process-math">\(X\text{,}\)</span> the equivalence classes of <span class="process-math">\(X\)</span> form a partition of <span class="process-math">\(X\text{.}\)</span>  Conversely, if <span class="process-math">\({\mathcal P} = \{ X_i\}\)</span> is a partition of a set <span class="process-math">\(X\text{,}\)</span> then there is an equivalence relation on <span class="process-math">\(X\)</span> with equivalence classes <span class="process-math">\(X_i\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-5"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-5"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof"><div class="para" id="p-122">Suppose there exists an equivalence relation <span class="process-math">\(\sim\)</span> on the set <span class="process-math">\(X\text{.}\)</span>  For any <span class="process-math">\(x \in X\text{,}\)</span> the reflexive property shows that <span class="process-math">\(x \in [x]\)</span> and so <span class="process-math">\([x]\)</span> is nonempty.  Clearly <span class="process-math">\(X = \bigcup_{x \in X} [x]\text{.}\)</span>  Now let <span class="process-math">\(x, y \in X\text{.}\)</span> We need to show that either <span class="process-math">\([x] = [y]\)</span> or <span class="process-math">\([x] \cap [y] = \emptyset\text{.}\)</span>  Suppose that the intersection of <span class="process-math">\([x]\)</span> and <span class="process-math">\([y]\)</span> is not empty and that <span class="process-math">\(z \in [x] \cap [y]\text{.}\)</span> Then <span class="process-math">\(z \sim x\)</span> and <span class="process-math">\(z \sim y\text{.}\)</span>  By symmetry and transitivity <span class="process-math">\(x \sim y\text{;}\)</span> hence, <span class="process-math">\([x] \subset [y]\text{.}\)</span>  Similarly, <span class="process-math">\([y] \subset [x]\)</span> and so <span class="process-math">\([x] = [y]\text{.}\)</span>  Therefore, any two equivalence classes are either disjoint or exactly the same.</div>
-<div class="para" id="p-123">Conversely, suppose that <span class="process-math">\({\mathcal P} = \{X_i\}\)</span> is a partition of a set <span class="process-math">\(X\text{.}\)</span>  Let two elements be equivalent if they are in the same partition.  Clearly, the relation is reflexive.  If <span class="process-math">\(x\)</span> is in the same partition as <span class="process-math">\(y\text{,}\)</span> then <span class="process-math">\(y\)</span> is in the same partition as <span class="process-math">\(x\text{,}\)</span> so <span class="process-math">\(x \sim y\)</span> implies <span class="process-math">\(y \sim x\text{.}\)</span>  Finally, if <span class="process-math">\(x\)</span> is in the same partition as <span class="process-math">\(y\)</span> and <span class="process-math">\(y\)</span> is in the same partition as <span class="process-math">\(z\text{,}\)</span> then <span class="process-math">\(x\)</span> must be in the same partition as <span class="process-math">\(z\text{,}\)</span> and transitivity holds.</div></article></div>
+</div></article><article class="hiddenproof" id="proof-5"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-5"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof"><div class="para" id="p-122">Suppose there exists an equivalence relation <span class="process-math">\(\sim\)</span> on the set <span class="process-math">\(X\text{.}\)</span>  For any <span class="process-math">\(x \in X\text{,}\)</span> the reflexive property shows that <span class="process-math">\(x \in [x]\)</span> and so <span class="process-math">\([x]\)</span> is nonempty.  Clearly <span class="process-math">\(X = \bigcup_{x \in X} [x]\text{.}\)</span>  Now let <span class="process-math">\(x, y \in X\text{.}\)</span> We need to show that either <span class="process-math">\([x] = [y]\)</span> or <span class="process-math">\([x] \cap [y] = \emptyset\text{.}\)</span>  Suppose that the intersection of <span class="process-math">\([x]\)</span> and <span class="process-math">\([y]\)</span> is not empty and that <span class="process-math">\(z \in [x] \cap [y]\text{.}\)</span> Then <span class="process-math">\(z \sim x\)</span> and <span class="process-math">\(z \sim y\text{.}\)</span>  By symmetry and transitivity <span class="process-math">\(x \sim y\text{;}\)</span> hence, <span class="process-math">\([x] \subset [y]\text{.}\)</span>  Similarly, <span class="process-math">\([y] \subset [x]\)</span> and so <span class="process-math">\([x] = [y]\text{.}\)</span>  Therefore, any two equivalence classes are either disjoint or exactly the same.</div> <div class="para" id="p-123">Conversely, suppose that <span class="process-math">\({\mathcal P} = \{X_i\}\)</span> is a partition of a set <span class="process-math">\(X\text{.}\)</span>  Let two elements be equivalent if they are in the same partition.  Clearly, the relation is reflexive.  If <span class="process-math">\(x\)</span> is in the same partition as <span class="process-math">\(y\text{,}\)</span> then <span class="process-math">\(y\)</span> is in the same partition as <span class="process-math">\(x\text{,}\)</span> so <span class="process-math">\(x \sim y\)</span> implies <span class="process-math">\(y \sim x\text{.}\)</span>  Finally, if <span class="process-math">\(x\)</span> is in the same partition as <span class="process-math">\(y\)</span> and <span class="process-math">\(y\)</span> is in the same partition as <span class="process-math">\(z\text{,}\)</span> then <span class="process-math">\(x\)</span> must be in the same partition as <span class="process-math">\(z\text{,}\)</span> and transitivity holds.</div></article></div>
 <article class="corollary theorem-like" id="corollary-1"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.2.26</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-124">Two equivalence classes of an equivalence relation are either disjoint or equal.</div></article><div class="para" id="p-125">Let us examine some of the partitions given by the equivalence classes in the last set of examples.</div>
 <article class="example example-like" id="example-sets-fraction-partition"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-fraction-partition"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.27</span><span class="period">.</span><span class="space"> </span><span class="title">A Partition of Fractions.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-fraction-partition"><article class="example example-like"><div class="para" id="p-126">In the equivalence relation in <a href="" class="xref" data-knowl="./knowl/example-sets-equivalent-fractions.html" title="Example 1.2.21: Equivalent Fractions">Example 1.2.21</a>, two pairs of integers, <span class="process-math">\((p,q)\)</span> and <span class="process-math">\((r,s)\text{,}\)</span> are in the same equivalence class when they reduce to the same fraction in its lowest terms.</div></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-fraction-partition"><article class="example example-like"> <div class="para" id="p-126">In the equivalence relation in <a href="" class="xref" data-knowl="./knowl/example-sets-equivalent-fractions.html" title="Example 1.2.21: Equivalent Fractions">Example 1.2.21</a>, two pairs of integers, <span class="process-math">\((p,q)\)</span> and <span class="process-math">\((r,s)\text{,}\)</span> are in the same equivalence class when they reduce to the same fraction in its lowest terms.</div></article></div>
 <article class="example example-like" id="example-sets-matrix-partition"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-matrix-partition"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.28</span><span class="period">.</span><span class="space"> </span><span class="title">A Partition of Functions.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-matrix-partition"><article class="example example-like"><div class="para" id="p-127">In the equivalence relation in <a href="" class="xref" data-knowl="./knowl/example-sets-equivalent-derivative.html" title="Example 1.2.22: An Equivalence Relation From Derivatives">Example 1.2.22</a>, two functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are in the same partition when they differ by a constant.</div></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-matrix-partition"><article class="example example-like"> <div class="para" id="p-127">In the equivalence relation in <a href="" class="xref" data-knowl="./knowl/example-sets-equivalent-derivative.html" title="Example 1.2.22: An Equivalence Relation From Derivatives">Example 1.2.22</a>, two functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are in the same partition when they differ by a constant.</div></article></div>
 <article class="example example-like" id="example-sets-circle-partition"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-circle-partition"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.29</span><span class="period">.</span><span class="space"> </span><span class="title">A Partition of Circles.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-circle-partition"><article class="example example-like"><div class="para" id="p-128">We defined an equivalence class on <span class="process-math">\({\mathbb R}^2\)</span> by <span class="process-math">\((x_1, y_1 ) \sim (x_2, y_2)\)</span> if <span class="process-math">\(x_1^2 + y_1^2 = x_2^2 + y_2^2\text{.}\)</span>  Two pairs of real numbers are in the same partition when they lie on the same circle about the origin.</div></article></div>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-circle-partition"><article class="example example-like"> <div class="para" id="p-128">We defined an equivalence class on <span class="process-math">\({\mathbb R}^2\)</span> by <span class="process-math">\((x_1, y_1 ) \sim (x_2, y_2)\)</span> if <span class="process-math">\(x_1^2 + y_1^2 = x_2^2 + y_2^2\text{.}\)</span>  Two pairs of real numbers are in the same partition when they lie on the same circle about the origin.</div></article></div>
 <article class="example example-like" id="example-sets-congruent-integers"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-sets-congruent-integers"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.30</span><span class="period">.</span><span class="space"> </span><span class="title">A Partition of Integers.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-congruent-integers"><article class="example example-like"><div class="para logical" id="p-129">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-sets-congruent-integers"><article class="example example-like"> <div class="para logical" id="p-129">
 <div class="para">Let <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> be two integers and suppose that <span class="process-math">\(n \in {\mathbb N}\text{.}\)</span>  We say that <span class="process-math">\(r\)</span> is <dfn class="terminology">congruent</dfn> to <span class="process-math">\(s\)</span> <dfn class="terminology">modulo</dfn> <span class="process-math">\(n\text{,}\)</span> or <span class="process-math">\(r\)</span> is congruent to <span class="process-math">\(s\)</span> mod <span class="process-math">\(n\text{,}\)</span> if <span class="process-math">\(r - s\)</span> is evenly divisible by <span class="process-math">\(n\text{;}\)</span> that is, <span class="process-math">\(r - s = nk\)</span>  for some <span class="process-math">\(k \in {\mathbb Z}\text{.}\)</span>  In this case we write <span class="process-math">\(r \equiv s \pmod{n}\text{.}\)</span>    For example, <span class="process-math">\(41 \equiv 17 \pmod{ 8}\)</span> since <span class="process-math">\(41 - 17=24\)</span> is divisible by 8.  We claim that congruence modulo <span class="process-math">\(n\)</span> forms an equivalence relation of <span class="process-math">\({\mathbb Z}\text{.}\)</span>  Certainly any integer <span class="process-math">\(r\)</span> is equivalent to itself since <span class="process-math">\(r - r = 0\)</span> is divisible by <span class="process-math">\(n\text{.}\)</span>  We will now show that the relation is symmetric.  If <span class="process-math">\(r \equiv s \pmod{ n}\text{,}\)</span> then <span class="process-math">\(r - s = -(s -r)\)</span> is divisible by <span class="process-math">\(n\text{.}\)</span> So <span class="process-math">\(s - r\)</span> is divisible by <span class="process-math">\(n\)</span> and <span class="process-math">\(s \equiv r \pmod{ n}\text{.}\)</span>  Now suppose that <span class="process-math">\(r \equiv s \pmod{ n}\)</span> and <span class="process-math">\(s \equiv t \pmod{ n}\text{.}\)</span>  Then there exist integers <span class="process-math">\(k\)</span> and <span class="process-math">\(l\)</span> such that <span class="process-math">\(r -s = kn\)</span> and <span class="process-math">\(s - t = ln\text{.}\)</span>  To show transitivity, it is necessary to prove that <span class="process-math">\(r - t\)</span> is divisible by <span class="process-math">\(n\text{.}\)</span>  However,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1081,8 +1086,7 @@ r - t = r - s + s - t = kn + ln = (k + l)n\text{,}
 </div>
 <div class="para">and so <span class="process-math">\(r - t\)</span> is divisible by <span class="process-math">\(n\text{.}\)</span>
 </div>
-</div>
-<div class="para logical" id="p-130">
+</div> <div class="para logical" id="p-130">
 <div class="para">If we consider the equivalence relation established by the integers modulo 3, then</div>
 <div class="displaymath process-math" id="md-8">
 \begin{align*}
@@ -1091,9 +1095,7 @@ r - t = r - s + s - t = kn + ln = (k + l)n\text{,}
 {[2]} &amp; = \{ \ldots, -1, 2, 5, 8, \ldots \}\text{.}
 \end{align*}
 </div>
-</div>
-<div class="para" id="p-131">Notice that <span class="process-math">\([0] \cup [1] \cup [2] = {\mathbb Z}\)</span> and also that the sets are disjoint.  The sets <span class="process-math">\([0]\text{,}\)</span> <span class="process-math">\([1]\text{,}\)</span> and <span class="process-math">\([2]\)</span> form a partition of the integers.</div>
-<div class="para" id="p-132">The integers modulo <span class="process-math">\(n\)</span> are a very important example in the study of abstract algebra and will become quite useful in our investigation of various algebraic structures such as groups and rings.  In our discussion of the integers modulo <span class="process-math">\(n\)</span> we have actually assumed a result known as the division algorithm, which will be stated and proved in <a href="integers.html" class="internal" title="Chapter 2: The Integers">Chapter 2</a>.</div></article></div></section></section></div>
+</div> <div class="para" id="p-131">Notice that <span class="process-math">\([0] \cup [1] \cup [2] = {\mathbb Z}\)</span> and also that the sets are disjoint.  The sets <span class="process-math">\([0]\text{,}\)</span> <span class="process-math">\([1]\text{,}\)</span> and <span class="process-math">\([2]\)</span> form a partition of the integers.</div> <div class="para" id="p-132">The integers modulo <span class="process-math">\(n\)</span> are a very important example in the study of abstract algebra and will become quite useful in our investigation of various algebraic structures such as groups and rings.  In our discussion of the integers modulo <span class="process-math">\(n\)</span> we have actually assumed a result known as the division algorithm, which will be stated and proved in <a href="integers.html" class="internal" title="Chapter 2: The Integers">Chapter 2</a>.</div></article></div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-note-on-proofs.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sets-sage.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
@@ -1115,6 +1117,6 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </body>
 </html>

@@ -8,7 +8,8 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -41,10 +42,9 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-/* Mathjax typesetting operation is under the control of React */
   startup: {
+    /* Mathjax typesetting operation is under the control of React */
     typeset: false,
-  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
@@ -64,8 +64,8 @@
 <div class="sbspanel top" style="width:50%;"><canvas style="display:block" id="right" width="300" height="300"></canvas></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;">
-<div class="sbspanel top" style="width:50%;"><button xmlns="http://www.w3.org/1999/xhtml" type="button" id="compose">Compose</button></div>
-<div class="sbspanel top" style="width:50%;"><button xmlns="http://www.w3.org/1999/xhtml" type="button" id="reset">Reset</button></div>
+<div class="sbspanel top" style="width:50%;"><button xmlns="http://www.w3.org/1999/xhtml" type="button" id="compose" original-id="interactive-animation-s1s4s1b1">Compose</button></div>
+<div class="sbspanel top" style="width:50%;"><button xmlns="http://www.w3.org/1999/xhtml" type="button" id="reset" original-id="interactive-animation-s1s4s2b1">Reset</button></div>
 </div></div>
 <script src="external/code/austin/animation.js"></script>
 </div></body>

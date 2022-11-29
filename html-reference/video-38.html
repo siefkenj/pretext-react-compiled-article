@@ -13,7 +13,7 @@
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://pretextbook.org/examples/sample-article/html/external/misc/book-cover-google-art-project.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
@@ -22,7 +22,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
 <link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_min.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/banner_min.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_min.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/toc_min.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
@@ -36,8 +38,8 @@
 eBookConfig = {};
 eBookConfig.useRunestoneServices = false;
 eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
 eBookConfig.isLoggedIn = false;
 eBookConfig.email = '';
 eBookConfig.isInstructor = false;
@@ -50,7 +52,6 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.runestone_version = '5.0.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
@@ -58,12 +59,12 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runtime.c6074682ddb240f8.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-72cd89.51d9dde4e5162190.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runestone.edc626ef0ae7609a.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-72cd89.cd688d1623c9932e.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/runestone.bf73008a1eba9f4e.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runtime.b9c4862031d919a3.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runestone.d6e48037c4e99c27.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/runestone.93e720e6c6581fb5.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body id="pretext-SA" class="pretext article ignore-math">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
+<a class="assistive" href="#ptx-content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
 \newcommand{\myequation}[2]{#1\amp =#2} 
 \newcommand{\indefiniteintegral}[2]{\int#1\,d#2}
 \newcommand{\testingescapedpercent}{ \% } 
@@ -79,7 +80,7 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="derivatives.html"><span class="title">Derivatives and Integrals:</span> <span class="subtitle">An Annotated Discourse</span></a></h1>
 <p class="byline">Robert Beezer</p>
 </div>
-</div></header><div class="ptx-page"><main class="ptx-main"><div class="ptx-content" style="max-width: 1600px">
+</div></header><div class="ptx-page"><main class="ptx-main"><div id="ptx-content" class="ptx-content" style="max-width: 1600px">
 <div style="text-align: center;">Reloading this page will reset a start location</div>
 <div class="video-box" style="width: 100%;padding-top: 56.25%;"><video id="video-38" class="video" controls="" autoplay=""><source src="external/video/ups-visitor-guide-360.ogv" type="video/ogg"></source><source src="external/video/ups-visitor-guide-360.webm" type="video/webm"></source><source src="external/video/ups-visitor-guide-360.mp4" type="video/mp4"></source><source src="external/video/ups-visitor-guide-360.ogg" type="video/ogg"></source>Your browser does not support the &lt;video&gt; tag.</video></div>
 </div></main></div>
