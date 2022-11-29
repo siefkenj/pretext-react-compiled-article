@@ -13,9 +13,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="og:image" content="https://pretextbook.org/examples/noparts/decorative/html/external/cover_aata_2014.png">
-<meta property="book:title" content="Abstract Algebra">
+<meta property="book:title" content="PreTeXt Sample Book">
 <meta property="book:author" content="Thomas W. Judson">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -48,10 +49,9 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-/* Mathjax typesetting operation is under the control of React */
   startup: {
+    /* Mathjax typesetting operation is under the control of React */
     typeset: false,
-  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
@@ -64,7 +64,8 @@ sagecell.makeSagecell({inputLocation: 'pre.sage-display',
                        editor: 'codemirror-readonly',
                        hide: ['evalButton', 'editorToggle', 'language']});
 </script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
@@ -79,8 +80,8 @@ sagecell.makeSagecell({inputLocation: 'pre.sage-display',
 eBookConfig = {};
 eBookConfig.useRunestoneServices = false;
 eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
 eBookConfig.isLoggedIn = false;
 eBookConfig.email = '';
 eBookConfig.isInstructor = false;
@@ -90,10 +91,10 @@ eBookConfig.readings = null;
 eBookConfig.activities = null;
 eBookConfig.downloadsEnabled = false;
 eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
+eBookConfig.enableScratchAC = true;
+eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.runestone_version = '5.0.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
@@ -101,8 +102,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runtime.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runestone.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.d789e6e5a9767e06.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/runestone.d5ffdb9ec42bd589.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runtime.b9c4862031d919a3.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runestone.d6e48037c4e99c27.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/runestone.93e720e6c6581fb5.css">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
 var sc_invisible=1;
@@ -116,15 +117,21 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </head>
 <body id="PTXSB" data-react-in-use="yes" class="pretext book ignore-math">
-<a class="assistive" href="#content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/cover_aata_2014.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="sample-book.html"><span class="title">Abstract Algebra:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<h1 class="heading"><a href="sample-book.html"><span class="title">PreTeXt Sample Book:</span> <span class="subtitle">Abstract Algebra (SAMPLE ONLY)</span></a></h1>
 <p class="byline">Thomas W. Judson, Isaac Newton (Editor)</p>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><a href="javascript:runestoneComponents.popupScratchAC()" class="activecode-toggle" title="Scratch ActiveCode"><span class="icon">✏</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -226,7 +233,9 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="exercises-10.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="cyclic.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="references-4.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="exercises-10.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="cyclic.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="references-4.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
 \newcommand{\notdivide}{{\not{\mid}}}
 \newcommand{\notsubset}{\not\subset}
 \newcommand{\lcm}{\operatorname{lcm}}
@@ -298,7 +307,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li>
 <div class="toc-item"><a href="integers.html" class="internal"><span class="codenumber">2</span> <span class="title">The Integers</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction</span></a></div></li>
+<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction and Math in a Title <span class="process-math">\(A\notsubset B\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Division Algorithm</span></a></div>
 <ul class="structural">
@@ -383,20 +392,26 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li>
 <div class="toc-item"><a href="rune.html" class="internal"><span class="codenumber">5</span> <span class="title">Runestone Testing</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-15.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
+<li><div class="toc-item"><a href="activecode.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
 <li><div class="toc-item"><a href="code-lens.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Code Lens</span></a></div></li>
 <li><div class="toc-item"><a href="coding-exercises.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Coding Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="section-18.html" class="internal"><span class="codenumber">5.4</span> <span class="title">YouTube Videos</span></a></div></li>
+<li><div class="toc-item"><a href="videos-in-runestone.html" class="internal"><span class="codenumber">5.4</span> <span class="title">YouTube Videos</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-19.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Deeper</span></a></div>
+<div class="toc-item"><a href="rune-nested-divisions.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Deeper</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-19.html#subsection-29" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Subsection One</span></a></div></li>
-<li><div class="toc-item"><a href="section-19.html#subsection-30" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Subsection Two</span></a></div></li>
+<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-29" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Subsection One</span></a></div></li>
+<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-30" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Subsection Two</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-12.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Interactive Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="section-20.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Expedited Samples</span></a></div></li>
-<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="interactive-exercises.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Interactive Exercises</span></a></div></li>
+<li>
+<div class="toc-item"><a href="exercises-timed.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Exercises that are Timed</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="exercises-timed.html#timed-exercises" class="internal"><span class="codenumber">5.7</span> <span class="title">Timed Exercises</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="interactive-projects.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Projects and Friends</span></a></div></li>
+<li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Expedited Samples</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="atomic-video.html" class="internal"><span class="codenumber">5.11</span> <span class="title">YouTube Video Embedding</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -412,13 +427,13 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <div class="toc-item"><a href="appendix-2.html" class="internal"><span class="codenumber">E</span> <span class="title">A Structured Appendix</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-21.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
+<div class="toc-item"><a href="section-24.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
 <ul class="structural"><li>
-<div class="toc-item"><a href="section-21.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-21.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
+<div class="toc-item"><a href="section-24.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-24.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
 </li></ul>
 </li>
-<li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
+<li><div class="toc-item"><a href="section-25.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">F</span> <span class="title">GNU Free Documentation License</span></a></div></li>
@@ -427,17 +442,15 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div class="ptx-content"><section class="exercises" id="cyclic-sage-exercises"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="cyclic-sage-exercises"><h2 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">4.7</span> <span class="title">Sage Exercises</span>
 </h2>
 <section class="introduction" id="introduction-20"><div class="para" id="p-790">This group of exercises is about the group of units mod <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(U(n)\text{,}\)</span> which is sometimes cyclic, sometimes not.  There are some commands in Sage that will answer some of these questions very quickly, but instead of using those now, just use the basic techniques described.  The idea here is to just work with elements, and lists of elements, to discern the subgroup structure of these groups.</div></section><article class="exercise exercise-like" id="exercise-189"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
 <div class="para" id="p-791">Execute the statement <code class="code-inline tex2jax_ignore">R = Integers(40)</code> to create the set <code class="code-inline tex2jax_ignore">[0,1,2,...,39]</code>  This is a group under addition mod <span class="process-math">\(40\text{,}\)</span> which we will ignore.  Instead we are interested in the subset of elements which have an inverse under <em class="emphasis">multiplication</em> mod <span class="process-math">\(40\text{.}\)</span>  Determine how big this subgroup is by executing the command <code class="code-inline tex2jax_ignore">R.unit_group_order()</code>, and then obtain a list of these elements with <code class="code-inline tex2jax_ignore">R.list_of_elements_of_multiplicative_group()</code>.</div></article><article class="exercise exercise-like" id="exercise-190"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para" id="p-792">You can create elements of this group by coercing regular integers into <code class="code-inline tex2jax_ignore">U</code>, such as  with the statement <code class="code-inline tex2jax_ignore">a = U(7)</code>.  (Don't confuse this with our mathematical notation <span class="process-math">\(U(40)\text{.}\)</span>)  This will tell Sage that you want to view <span class="process-math">\(7\)</span> as an element of <span class="process-math">\(U\text{,}\)</span> subject to the corresponding operations.  Determine the elements of the cyclic subgroup of <span class="process-math">\(U\)</span> generated by <span class="process-math">\(7\)</span> with a list comprehension as follows:</div>
-<pre class="ptx-sagecell sage-display"><script type="text/x-sage">R = Integers(40)
+<div class="para" id="p-792">You can create elements of this group by coercing regular integers into <code class="code-inline tex2jax_ignore">U</code>, such as  with the statement <code class="code-inline tex2jax_ignore">a = U(7)</code>.  (Don't confuse this with our mathematical notation <span class="process-math">\(U(40)\text{.}\)</span>)  This will tell Sage that you want to view <span class="process-math">\(7\)</span> as an element of <span class="process-math">\(U\text{,}\)</span> subject to the corresponding operations.  Determine the elements of the cyclic subgroup of <span class="process-math">\(U\)</span> generated by <span class="process-math">\(7\)</span> with a list comprehension as follows:</div> <pre class="ptx-sagecell sage-display"><script type="text/x-sage">R = Integers(40)
 a = R(7)
 [a^i for i in srange(16)]
-</script></pre>
-<div class="para" id="p-793">What is the order of <span class="process-math">\(7\)</span> in <span class="process-math">\(U(40)\text{?}\)</span>
+</script></pre> <div class="para" id="p-793">What is the order of <span class="process-math">\(7\)</span> in <span class="process-math">\(U(40)\text{?}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-191"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
 <div class="para" id="p-794">The group <span class="process-math">\(U(49)\)</span> is cyclic.  Using only the Sage commands described previously, use Sage to find a generator for this group.  Now using <em class="emphasis">only</em> theorems about the structure of cyclic groups, describe each of the subgroups of <span class="process-math">\(U(49)\)</span> by specifying its order and by giving an explicit generator.  Do not repeat any of the subgroups — in other words, present each subgroup <em class="emphasis">exactly</em> once.  You can use Sage to check your work on the subgroups, but your answer about the subgroups should rely only on theorems and be a nicely written paragraph with a table, etc.</div></article><article class="exercise exercise-like" id="exercise-192"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
 <div class="para" id="p-795">The group <span class="process-math">\(U(35)\)</span> is not cyclic.  Again, using only the Sage commands described previously, use computations to provide irrefutable evidence of this.  How many of the <span class="process-math">\(16\)</span> different subgroups of <span class="process-math">\(U(35)\)</span> can you list?</div></article><article class="exercise exercise-like" id="exercise-193"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
@@ -463,6 +476,6 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </body>
 </html>

@@ -13,9 +13,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="og:image" content="https://pretextbook.org/examples/noparts/decorative/html/external/cover_aata_2014.png">
-<meta property="book:title" content="Abstract Algebra">
+<meta property="book:title" content="PreTeXt Sample Book">
 <meta property="book:author" content="Thomas W. Judson">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -48,13 +49,13 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-/* Mathjax typesetting operation is under the control of React */
   startup: {
+    /* Mathjax typesetting operation is under the control of React */
     typeset: false,
-  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
@@ -69,8 +70,8 @@
 eBookConfig = {};
 eBookConfig.useRunestoneServices = false;
 eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
 eBookConfig.isLoggedIn = false;
 eBookConfig.email = '';
 eBookConfig.isInstructor = false;
@@ -80,10 +81,10 @@ eBookConfig.readings = null;
 eBookConfig.activities = null;
 eBookConfig.downloadsEnabled = false;
 eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
+eBookConfig.enableScratchAC = true;
+eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.runestone_version = '5.0.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
@@ -91,8 +92,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runtime.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runestone.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.d789e6e5a9767e06.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/runestone.d5ffdb9ec42bd589.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runtime.b9c4862031d919a3.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runestone.d6e48037c4e99c27.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/runestone.93e720e6c6581fb5.css">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
 var sc_invisible=1;
@@ -106,15 +107,21 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </head>
 <body id="PTXSB" data-react-in-use="yes" class="pretext book ignore-math">
-<a class="assistive" href="#content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/cover_aata_2014.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="sample-book.html"><span class="title">Abstract Algebra:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<h1 class="heading"><a href="sample-book.html"><span class="title">PreTeXt Sample Book:</span> <span class="subtitle">Abstract Algebra (SAMPLE ONLY)</span></a></h1>
 <p class="byline">Thomas W. Judson, Isaac Newton (Editor)</p>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><a href="javascript:runestoneComponents.popupScratchAC()" class="activecode-toggle" title="Scratch ActiveCode"><span class="icon">✏</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -216,7 +223,9 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-14.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="cyclic.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="exercises-10.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-14.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="cyclic.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="exercises-10.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
 \newcommand{\notdivide}{{\not{\mid}}}
 \newcommand{\notsubset}{\not\subset}
 \newcommand{\lcm}{\operatorname{lcm}}
@@ -288,7 +297,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li>
 <div class="toc-item"><a href="integers.html" class="internal"><span class="codenumber">2</span> <span class="title">The Integers</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction</span></a></div></li>
+<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction and Math in a Title <span class="process-math">\(A\notsubset B\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Division Algorithm</span></a></div>
 <ul class="structural">
@@ -373,20 +382,26 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li>
 <div class="toc-item"><a href="rune.html" class="internal"><span class="codenumber">5</span> <span class="title">Runestone Testing</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-15.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
+<li><div class="toc-item"><a href="activecode.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
 <li><div class="toc-item"><a href="code-lens.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Code Lens</span></a></div></li>
 <li><div class="toc-item"><a href="coding-exercises.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Coding Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="section-18.html" class="internal"><span class="codenumber">5.4</span> <span class="title">YouTube Videos</span></a></div></li>
+<li><div class="toc-item"><a href="videos-in-runestone.html" class="internal"><span class="codenumber">5.4</span> <span class="title">YouTube Videos</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-19.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Deeper</span></a></div>
+<div class="toc-item"><a href="rune-nested-divisions.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Deeper</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-19.html#subsection-29" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Subsection One</span></a></div></li>
-<li><div class="toc-item"><a href="section-19.html#subsection-30" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Subsection Two</span></a></div></li>
+<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-29" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Subsection One</span></a></div></li>
+<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-30" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Subsection Two</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-12.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Interactive Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="section-20.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Expedited Samples</span></a></div></li>
-<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="interactive-exercises.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Interactive Exercises</span></a></div></li>
+<li>
+<div class="toc-item"><a href="exercises-timed.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Exercises that are Timed</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="exercises-timed.html#timed-exercises" class="internal"><span class="codenumber">5.7</span> <span class="title">Timed Exercises</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="interactive-projects.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Projects and Friends</span></a></div></li>
+<li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Expedited Samples</span></a></div></li>
+<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Reading Questions</span></a></div></li>
+<li><div class="toc-item"><a href="atomic-video.html" class="internal"><span class="codenumber">5.11</span> <span class="title">YouTube Video Embedding</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -402,13 +417,13 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <div class="toc-item"><a href="appendix-2.html" class="internal"><span class="codenumber">E</span> <span class="title">A Structured Appendix</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="section-21.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
+<div class="toc-item"><a href="section-24.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
 <ul class="structural"><li>
-<div class="toc-item"><a href="section-21.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-21.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
+<div class="toc-item"><a href="section-24.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-24.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
 </li></ul>
 </li>
-<li><div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
+<li><div class="toc-item"><a href="section-25.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">F</span> <span class="title">GNU Free Documentation License</span></a></div></li>
@@ -417,12 +432,11 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div class="ptx-content"><section class="exercises" id="exercises-cyclic"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="exercises-cyclic"><h2 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">4.5</span> <span class="title">Exercises</span>
 </h2>
 <article class="exercise exercise-like" id="exercise-141"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
-<div class="para" id="p-673">Prove or disprove each of the following statements.</div>
-<ol class="lower-alpha">
+<div class="para" id="p-673">Prove or disprove each of the following statements.</div> <ol class="lower-alpha">
 <li id="li-121"><div class="para" id="p-674">All of the generators of <span class="process-math">\({\mathbb Z}_{60}\)</span> are prime.</div></li>
 <li id="li-122"><div class="para" id="p-675">
 <span class="process-math">\(U(8)\)</span> is cyclic.</div></li>
@@ -431,8 +445,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li id="li-124"><div class="para" id="p-677">If every proper subgroup of a group <span class="process-math">\(G\)</span> is cyclic, then <span class="process-math">\(G\)</span> is a cyclic group.</div></li>
 <li id="li-125"><div class="para" id="p-678">A group with a finite number of subgroups is finite.</div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-142"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
-<div class="para" id="p-679">Find the order of each of the following elements.</div>
-<ol class="lower-alpha cols2">
+<div class="para" id="p-679">Find the order of each of the following elements.</div> <ol class="lower-alpha cols2">
 <li id="li-126"><div class="para" id="p-680"><span class="process-math">\(\displaystyle 5 \in {\mathbb Z}_{12}\)</span></div></li>
 <li id="li-127"><div class="para" id="p-681"><span class="process-math">\(\displaystyle \sqrt{3} \in {\mathbb R}\)</span></div></li>
 <li id="li-128"><div class="para" id="p-682"><span class="process-math">\(\displaystyle \sqrt{3} \in {\mathbb R}^\ast\)</span></div></li>
@@ -442,8 +455,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li id="li-131"><div class="para" id="p-685">312 in <span class="process-math">\({\mathbb Z}_{471}\)</span>
 </div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-143"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
-<div class="para" id="p-686">List all of the elements in each of the following subgroups.</div>
-<ol class="lower-alpha">
+<div class="para" id="p-686">List all of the elements in each of the following subgroups.</div> <ol class="lower-alpha">
 <li id="li-132"><div class="para" id="p-687">The subgroup of <span class="process-math">\({\mathbb Z}\)</span> generated by 7</div></li>
 <li id="li-133"><div class="para" id="p-688">The subgroup of <span class="process-math">\({\mathbb Z}_{24}\)</span> generated by 15</div></li>
 <li id="li-134"><div class="para" id="p-689">All subgroups of <span class="process-math">\({\mathbb Z}_{12}\)</span>
@@ -468,8 +480,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 <li id="li-144"><div class="para" id="p-699">The subgroup of <span class="process-math">\({\mathbb C}^\ast\)</span> generated by <span class="process-math">\((1 + \sqrt{3}\, i) / 2\)</span>
 </div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-144"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para" id="p-700">Find the subgroups of <span class="process-math">\(GL_2( {\mathbb R })\)</span> generated by each of the following matrices.</div>
-<ol class="lower-alpha cols3">
+<div class="para" id="p-700">Find the subgroups of <span class="process-math">\(GL_2( {\mathbb R })\)</span> generated by each of the following matrices.</div> <ol class="lower-alpha cols3">
 <li id="li-145"><div class="para" id="p-701"><span class="process-math">\(\displaystyle \displaystyle \begin{pmatrix}
 0 &amp; 1 \\
 -1 &amp; 0
@@ -510,8 +521,7 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
 </div></article><article class="exercise exercise-like" id="exercise-149"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
 <div class="para" id="p-711">List every generator of each subgroup of order 8 in <span class="process-math">\({\mathbb Z}_{32}\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-150"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
-<div class="para" id="p-712">Find all elements of finite order in each of the following groups. Here the “<span class="process-math">\(\ast\)</span>” indicates the set with zero removed.</div>
-<ol class="lower-alpha cols3">
+<div class="para" id="p-712">Find all elements of finite order in each of the following groups. Here the “<span class="process-math">\(\ast\)</span>” indicates the set with zero removed.</div> <ol class="lower-alpha cols3">
 <li id="li-151"><div class="para" id="p-713"><span class="process-math">\(\displaystyle {\mathbb Z}\)</span></div></li>
 <li id="li-152"><div class="para" id="p-714"><span class="process-math">\(\displaystyle {\mathbb Q}^\ast\)</span></div></li>
 <li id="li-153"><div class="para" id="p-715"><span class="process-math">\(\displaystyle {\mathbb R}^\ast\)</span></div></li>
@@ -539,8 +549,7 @@ B =
 </div>
 <div class="para">be elements in <span class="process-math">\(GL_2( {\mathbb R} )\text{.}\)</span> Show that <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> have finite orders but <span class="process-math">\(AB\)</span> does not.</div>
 </div></article><article class="exercise exercise-like" id="exercise-155"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
-<div class="para" id="p-720">Evaluate each of the following.</div>
-<ol class="lower-alpha cols2">
+<div class="para" id="p-720">Evaluate each of the following.</div> <ol class="lower-alpha cols2">
 <li id="li-154"><div class="para" id="p-721"><span class="process-math">\(\displaystyle (3-2i)+ (5i-6)\)</span></div></li>
 <li id="li-155"><div class="para" id="p-722"><span class="process-math">\(\displaystyle (4-5i)-\overline{(4i -4)}\)</span></div></li>
 <li id="li-156"><div class="para" id="p-723"><span class="process-math">\(\displaystyle (5-4i)(7+2i)\)</span></div></li>
@@ -549,15 +558,13 @@ B =
 <li id="li-159"><div class="para" id="p-726"><span class="process-math">\(\displaystyle (1+i)+\overline{(1+i)}\)</span></div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-156"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
 <div class="para" id="p-727">Convert the following complex numbers to the form <span class="process-math">\(a + bi\text{.}\)</span>
-</div>
-<ol class="lower-alpha cols2">
+</div> <ol class="lower-alpha cols2">
 <li id="li-160"><div class="para" id="p-728"><span class="process-math">\(\displaystyle 2 \cis(\pi / 6 )\)</span></div></li>
 <li id="li-161"><div class="para" id="p-729"><span class="process-math">\(\displaystyle 5 \cis(9\pi/4)\)</span></div></li>
 <li id="li-162"><div class="para" id="p-730"><span class="process-math">\(\displaystyle 3 \cis(\pi)\)</span></div></li>
 <li id="li-163"><div class="para" id="p-731"><span class="process-math">\(\displaystyle \cis(7\pi/4) /2\)</span></div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-157"><h3 class="heading"><span class="codenumber">17<span class="period">.</span></span></h3>
-<div class="para" id="p-732">Change the following complex numbers to polar representation.</div>
-<ol class="lower-alpha cols3">
+<div class="para" id="p-732">Change the following complex numbers to polar representation.</div> <ol class="lower-alpha cols3">
 <li id="li-164"><div class="para" id="p-733"><span class="process-math">\(\displaystyle 1-i\)</span></div></li>
 <li id="li-165"><div class="para" id="p-734"><span class="process-math">\(\displaystyle -5\)</span></div></li>
 <li id="li-166"><div class="para" id="p-735"><span class="process-math">\(\displaystyle 2+2i\)</span></div></li>
@@ -565,8 +572,7 @@ B =
 <li id="li-168"><div class="para" id="p-737"><span class="process-math">\(\displaystyle -3i\)</span></div></li>
 <li id="li-169"><div class="para" id="p-738"><span class="process-math">\(\displaystyle 2i + 2 \sqrt{3}\)</span></div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-158"><h3 class="heading"><span class="codenumber">18<span class="period">.</span></span></h3>
-<div class="para" id="p-739">Calculate each of the following expressions.</div>
-<ol class="lower-alpha cols2">
+<div class="para" id="p-739">Calculate each of the following expressions.</div> <ol class="lower-alpha cols2">
 <li id="li-170"><div class="para" id="p-740"><span class="process-math">\(\displaystyle (1+i)^{-1}\)</span></div></li>
 <li id="li-171"><div class="para" id="p-741"><span class="process-math">\(\displaystyle (1 - i)^{6}\)</span></div></li>
 <li id="li-172"><div class="para" id="p-742"><span class="process-math">\(\displaystyle (\sqrt{3} + i)^{5}\)</span></div></li>
@@ -575,8 +581,7 @@ B =
 <li id="li-175"><div class="para" id="p-745"><span class="process-math">\(\displaystyle (-\sqrt{2} - \sqrt{2}\, i)^{12}\)</span></div></li>
 <li id="li-176"><div class="para" id="p-746"><span class="process-math">\(\displaystyle (-2 + 2i)^{-5}\)</span></div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-159"><h3 class="heading"><span class="codenumber">19<span class="period">.</span></span></h3>
-<div class="para" id="p-747">Prove each of the following statements.</div>
-<ol class="lower-alpha cols2">
+<div class="para" id="p-747">Prove each of the following statements.</div> <ol class="lower-alpha cols2">
 <li id="li-177"><div class="para" id="p-748"><span class="process-math">\(\displaystyle |z| = | \overline{z}|\)</span></div></li>
 <li id="li-178"><div class="para" id="p-749"><span class="process-math">\(\displaystyle z \overline{z} = |z|^2\)</span></div></li>
 <li id="li-179"><div class="para" id="p-750"><span class="process-math">\(\displaystyle z^{-1} = \overline{z} / |z|^2\)</span></div></li>
@@ -586,15 +591,13 @@ B =
 </ol></article><article class="exercise exercise-like" id="exercise-160"><h3 class="heading"><span class="codenumber">20<span class="period">.</span></span></h3>
 <div class="para" id="p-754">List and graph the 6th roots of unity. What are the generators of this group?  What are the primitive 6th roots of unity?</div></article><article class="exercise exercise-like" id="exercise-161"><h3 class="heading"><span class="codenumber">21<span class="period">.</span></span></h3>
 <div class="para" id="p-755">List and graph the 5th roots of unity. What are the generators of this group?  What are the primitive 5th roots of unity?</div></article><article class="exercise exercise-like" id="exercise-162"><h3 class="heading"><span class="codenumber">22<span class="period">.</span></span></h3>
-<div class="para" id="p-756">Calculate each of the following.</div>
-<ol class="lower-alpha cols2">
+<div class="para" id="p-756">Calculate each of the following.</div> <ol class="lower-alpha cols2">
 <li id="li-183"><div class="para" id="p-757"><span class="process-math">\(\displaystyle 292^{3171} \pmod{ 582}\)</span></div></li>
 <li id="li-184"><div class="para" id="p-758"><span class="process-math">\(\displaystyle 2557^{ 341} \pmod{ 5681}\)</span></div></li>
 <li id="li-185"><div class="para" id="p-759"><span class="process-math">\(\displaystyle 2071^{ 9521} \pmod{ 4724}\)</span></div></li>
 <li id="li-186"><div class="para" id="p-760"><span class="process-math">\(\displaystyle 971^{ 321} \pmod{ 765}\)</span></div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-163"><h3 class="heading"><span class="codenumber">23<span class="period">.</span></span></h3>
-<div class="para" id="p-761">Let <span class="process-math">\(a, b \in G\text{.}\)</span>  Prove the following statements.</div>
-<ol class="lower-alpha">
+<div class="para" id="p-761">Let <span class="process-math">\(a, b \in G\text{.}\)</span>  Prove the following statements.</div> <ol class="lower-alpha">
 <li id="li-187"><div class="para" id="p-762">The order of <span class="process-math">\(a\)</span> is the same as the order of <span class="process-math">\(a^{-1}\text{.}\)</span>
 </div></li>
 <li id="li-188"><div class="para" id="p-763">For all <span class="process-math">\(g \in G\text{,}\)</span> <span class="process-math">\(|a| = |g^{-1}ag|\text{.}\)</span>
@@ -665,6 +668,6 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </body>
 </html>

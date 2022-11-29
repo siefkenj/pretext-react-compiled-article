@@ -15,7 +15,8 @@
 <meta property="og:image" content="https://pretextbook.org/examples/sample-article/html/external/misc/book-cover-google-art-project.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>window.MathJax = {
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -48,10 +49,9 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-/* Mathjax typesetting operation is under the control of React */
   startup: {
+    /* Mathjax typesetting operation is under the control of React */
     typeset: false,
-  },
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
@@ -60,7 +60,8 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
                        languages: ['sage'],
                        evalButtonText: 'Evaluate (Sage)'});
 </script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
-<script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script defer src="./static/js/bundle.js"></script><script defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
@@ -75,8 +76,8 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 eBookConfig = {};
 eBookConfig.useRunestoneServices = false;
 eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
 eBookConfig.isLoggedIn = false;
 eBookConfig.email = '';
 eBookConfig.isInstructor = false;
@@ -89,7 +90,6 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.runestone_version = '5.0.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
@@ -97,8 +97,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runtime.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/test/runestone.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/vendors-node_modules_bootstrap_dist_js_bootstrap_js-node_modules_jquery-ui_jquery-ui_js-node_-d3d74f.d789e6e5a9767e06.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/test/runestone.d5ffdb9ec42bd589.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runtime.b9c4862031d919a3.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.3.24/runestone.d6e48037c4e99c27.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.3.24/runestone.93e720e6c6581fb5.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!--Start: StatCounter code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***        GET YOUR OWN FROM STATCOUNTER           ***--><script>
 var sc_project=9664088;
@@ -113,13 +113,19 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </head>
 <body id="pretext-SA" data-react-in-use="yes" class="pretext article ignore-math">
-<a class="assistive" href="#content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href="https://pretextbook.org" target="_blank"><img src="external/misc/book-cover-google-art-project.jpg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="derivatives.html"><span class="title">Derivatives and Integrals:</span> <span class="subtitle">An Annotated Discourse</span></a></h1>
 <p class="byline">Robert Beezer</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
 </div>
 </div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
 <script>
@@ -237,7 +243,9 @@ true);
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-7.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="derivatives.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="graphics.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-7.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="derivatives.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="graphics.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
 \newcommand{\myequation}[2]{#1\amp =#2} 
 \newcommand{\indefiniteintegral}[2]{\int#1\,d#2}
 \newcommand{\testingescapedpercent}{ \% } 
@@ -376,22 +384,23 @@ true);
 <ul class="structural">
 <li><div class="toc-item"><a href="section-interactive-authored.html#interactive-html5-canvas" class="internal"><span class="codenumber">14.1</span> <span class="title">HTML5 Canvas</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-authored.html#subsection-53" class="internal"><span class="codenumber">14.2</span> <span class="title">D3.js</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-54" class="internal"><span class="codenumber">14.3</span> <span class="title">SVG</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#svg-interactives" class="internal"><span class="codenumber">14.3</span> <span class="title">SVG</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-authored.html#subsection-55" class="internal"><span class="codenumber">14.4</span> <span class="title">JSXGraph</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-authored.html#subsection-56" class="internal"><span class="codenumber">14.5</span> <span class="title">JessieCode</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-authored.html#subsection-57" class="internal"><span class="codenumber">14.6</span> <span class="title">Sage Interacts</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-authored.html#subsection-58" class="internal"><span class="codenumber">14.7</span> <span class="title">Geogebra</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#interactive-iframes" class="internal"><span class="codenumber">14.8</span> <span class="title">IFrames</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-authored.html#interactive-threejs" class="internal"><span class="codenumber">14.9</span> <span class="title">threejs</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#subsection-59" class="internal"><span class="codenumber">14.8</span> <span class="title">CircuitJS</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#interactive-iframes-local" class="internal"><span class="codenumber">14.9</span> <span class="title">IFrames from Files</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-authored.html#interactive-threejs" class="internal"><span class="codenumber">14.10</span> <span class="title">threejs</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="section-interactive-server.html" class="internal"><span class="codenumber">15</span> <span class="title">Interactive Elements, Server</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="section-interactive-server.html#subsection-geogebra-server" class="internal"><span class="codenumber">15.1</span> <span class="title">GeoGebra</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-server.html#subsection-62" class="internal"><span class="codenumber">15.2</span> <span class="title">Desmos Graphs</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-server.html#subsection-63" class="internal"><span class="codenumber">15.3</span> <span class="title">CalcPlot3D</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-server.html#subsection-64" class="internal"><span class="codenumber">15.4</span> <span class="title">Wolfram CDF</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-server.html#subsection-63" class="internal"><span class="codenumber">15.2</span> <span class="title">Desmos Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-server.html#subsection-64" class="internal"><span class="codenumber">15.3</span> <span class="title">CalcPlot3D</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-server.html#interactive-iframes-server" class="internal"><span class="codenumber">15.4</span> <span class="title">IFrames from Servers</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -405,7 +414,7 @@ true);
 <li><div class="toc-item"><a href="section-interactive-exercises.html#exercises-11" class="internal"><span class="codenumber">16.6</span> <span class="title">Clickable Area</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-exercises.html#exercises-12" class="internal"><span class="codenumber">16.7</span> <span class="title">Old-Style Fillin-In</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-exercises.html#reading-questions-3" class="internal"><span class="codenumber">16.8</span> <span class="title">A Reading Question</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-exercises.html#subsection-65" class="internal"><span class="codenumber">16.9</span> <span class="title">Faux Subsection</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-exercises.html#subsection-66" class="internal"><span class="codenumber">16.9</span> <span class="title">Faux Subsection</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -414,17 +423,17 @@ true);
 <li><div class="toc-item"><a href="section-interactive-code.html#exercises-13" class="internal"><span class="codenumber">17.1</span> <span class="title">ActiveCode</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-code.html#exercises-14" class="internal"><span class="codenumber">17.2</span> <span class="title">CodeLens</span></a></div></li>
 <li><div class="toc-item"><a href="section-interactive-code.html#exercises-15" class="internal"><span class="codenumber">17.3</span> <span class="title">Activity with An ActiveCode</span></a></div></li>
-<li><div class="toc-item"><a href="section-interactive-code.html#subsection-66" class="internal"><span class="codenumber">17.4</span> <span class="title">YouTube</span></a></div></li>
+<li><div class="toc-item"><a href="section-interactive-code.html#subsection-67" class="internal"><span class="codenumber">17.4</span> <span class="title">YouTube</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-audio.html" class="internal"><span class="codenumber">18</span> <span class="title">Audio</span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-video.html" class="internal"><span class="codenumber">19</span> <span class="title">Video</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-video.html#subsection-67" class="internal"><span class="codenumber">19.1</span> <span class="title">Video Files</span></a></div></li>
-<li><div class="toc-item"><a href="section-video.html#subsection-68" class="internal"><span class="codenumber">19.2</span> <span class="title">YouTube</span></a></div></li>
-<li><div class="toc-item"><a href="section-video.html#subsection-69" class="internal"><span class="codenumber">19.3</span> <span class="title">Vimeo</span></a></div></li>
-<li><div class="toc-item"><a href="section-video.html#subsection-70" class="internal"><span class="codenumber">19.4</span> <span class="title">Captions and Subtitles</span></a></div></li>
+<li><div class="toc-item"><a href="section-video.html#subsection-68" class="internal"><span class="codenumber">19.1</span> <span class="title">Video Files</span></a></div></li>
+<li><div class="toc-item"><a href="section-video.html#subsection-69" class="internal"><span class="codenumber">19.2</span> <span class="title">YouTube</span></a></div></li>
+<li><div class="toc-item"><a href="section-video.html#subsection-70" class="internal"><span class="codenumber">19.3</span> <span class="title">Vimeo</span></a></div></li>
+<li><div class="toc-item"><a href="section-video.html#subsection-71" class="internal"><span class="codenumber">19.4</span> <span class="title">Captions and Subtitles</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-cross-referencing.html" class="internal"><span class="codenumber">20</span> <span class="title">Cross-Referencing</span></a></div></li>
@@ -435,23 +444,23 @@ true);
 <li>
 <div class="toc-item"><a href="section-side-by-side.html" class="internal"><span class="codenumber">25</span> <span class="title">Side-By-Side Panels</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-71" class="internal"><span class="codenumber">25.1</span> <span class="title">Figures with Numbers Side-By-Side</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-72" class="internal"><span class="codenumber">25.2</span> <span class="title">Images</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-73" class="internal"><span class="codenumber">25.3</span> <span class="title">Common Side-By-Side Constructions</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-74" class="internal"><span class="codenumber">25.4</span> <span class="title">Vertical Alignment</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-75" class="internal"><span class="codenumber">25.5</span> <span class="title">Text Next to Text and Images</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-76" class="internal"><span class="codenumber">25.6</span> <span class="title">Image Formats, Side-by-Sides</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-77" class="internal"><span class="codenumber">25.7</span> <span class="title">Tables Side-By-Side</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-78" class="internal"><span class="codenumber">25.8</span> <span class="title">Tables Next to Figures</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-79" class="internal"><span class="codenumber">25.9</span> <span class="title">Tables Next to Text</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-80" class="internal"><span class="codenumber">25.10</span> <span class="title">Tabular Next to Each Other</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-81" class="internal"><span class="codenumber">25.11</span> <span class="title">Lists in Side-by-Sides</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-72" class="internal"><span class="codenumber">25.1</span> <span class="title">Figures with Numbers Side-By-Side</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-73" class="internal"><span class="codenumber">25.2</span> <span class="title">Images</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-74" class="internal"><span class="codenumber">25.3</span> <span class="title">Common Side-By-Side Constructions</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-75" class="internal"><span class="codenumber">25.4</span> <span class="title">Vertical Alignment</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-76" class="internal"><span class="codenumber">25.5</span> <span class="title">Text Next to Text and Images</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-77" class="internal"><span class="codenumber">25.6</span> <span class="title">Image Formats, Side-by-Sides</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-78" class="internal"><span class="codenumber">25.7</span> <span class="title">Tables Side-By-Side</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-79" class="internal"><span class="codenumber">25.8</span> <span class="title">Tables Next to Figures</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-80" class="internal"><span class="codenumber">25.9</span> <span class="title">Tables Next to Text</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-81" class="internal"><span class="codenumber">25.10</span> <span class="title">Tabular Next to Each Other</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-82" class="internal"><span class="codenumber">25.11</span> <span class="title">Lists in Side-by-Sides</span></a></div></li>
 <li><div class="toc-item"><a href="section-side-by-side.html#stacking-side-by-side" class="internal"><span class="codenumber">25.12</span> <span class="title">Stacking: Back to Vertical Flow</span></a></div></li>
 <li><div class="toc-item"><a href="section-side-by-side.html#subsection-sbs-other-panels" class="internal"><span class="codenumber">25.13</span> <span class="title">Other Panels</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-84" class="internal"><span class="codenumber">25.14</span> <span class="title">Poems as Side-By-Side Panels</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-85" class="internal"><span class="codenumber">25.14</span> <span class="title">Poems as Side-By-Side Panels</span></a></div></li>
 <li><div class="toc-item"><a href="section-side-by-side.html#subsection-sbsgroup" class="internal"><span class="codenumber">25.15</span> <span class="title">Side-By-Side Groups</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-86" class="internal"><span class="codenumber">25.16</span> <span class="title">Testing a Side-By-Side First</span></a></div></li>
-<li><div class="toc-item"><a href="section-side-by-side.html#subsection-87" class="internal"><span class="codenumber">25.17</span> <span class="title">Testing Styling of Related Elements</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-87" class="internal"><span class="codenumber">25.16</span> <span class="title">Testing a Side-By-Side First</span></a></div></li>
+<li><div class="toc-item"><a href="section-side-by-side.html#subsection-88" class="internal"><span class="codenumber">25.17</span> <span class="title">Testing Styling of Related Elements</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-26.html" class="internal"><span class="codenumber">26</span> <span class="title">Side-by-Side Gallery</span></a></div></li>
@@ -468,28 +477,28 @@ true);
 <li>
 <div class="toc-item"><a href="advanced-numbering.html" class="internal"><span class="codenumber">29</span> <span class="title">Advanced Numbering</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-92" class="internal"><span class="codenumber">29.1</span> <span class="title">One</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-93" class="internal"><span class="codenumber">29.1</span> <span class="title">One</span></a></div></li>
 <li>
-<div class="toc-item"><a href="advanced-numbering.html#subsection-93" class="internal"><span class="codenumber">29.2</span> <span class="title">Two</span></a></div>
+<div class="toc-item"><a href="advanced-numbering.html#subsection-94" class="internal"><span class="codenumber">29.2</span> <span class="title">Two</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="advanced-numbering.html#subsubsection-7" class="internal"><span class="codenumber">29.2.1</span> <span class="title">Uno</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsubsection-8" class="internal"><span class="codenumber">29.2.2</span> <span class="title">Dos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-94" class="internal"><span class="codenumber">29.3</span> <span class="title">Three</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-95" class="internal"><span class="codenumber">29.3</span> <span class="title">Three</span></a></div></li>
 <li>
-<div class="toc-item"><a href="advanced-numbering.html#subsection-95" class="internal"><span class="codenumber">29.4</span> <span class="title">Four</span></a></div>
+<div class="toc-item"><a href="advanced-numbering.html#subsection-96" class="internal"><span class="codenumber">29.4</span> <span class="title">Four</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="advanced-numbering.html#subsubsection-9" class="internal"><span class="codenumber">29.4.1</span> <span class="title">Uno</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsubsection-10" class="internal"><span class="codenumber">29.4.2</span> <span class="title">Dos</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-96" class="internal"><span class="codenumber">29.5</span> <span class="title">Five</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-97" class="internal"><span class="codenumber">29.5</span> <span class="title">Five</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsection-local-theorems" class="internal"><span class="codenumber">29.6</span> <span class="title">Theorems in This Section</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#subsection-with-an-exercise" class="internal"><span class="codenumber">29.7</span> <span class="title">A Title with ] a Right Bracket</span></a></div></li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-99" class="internal"><span class="codenumber">29.8</span> <span class="title">A Title with } a Right Brace</span></a></div></li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-100" class="internal"><span class="codenumber">29.9</span> <span class="title">A Title with <span class="process-math">\(a]b\)</span> a Math Right Bracket</span></a></div></li>
-<li><div class="toc-item"><a href="advanced-numbering.html#subsection-101" class="internal"><span class="codenumber">29.10</span> <span class="title">Just an Exercise</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-100" class="internal"><span class="codenumber">29.8</span> <span class="title">A Title with } a Right Brace</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-101" class="internal"><span class="codenumber">29.9</span> <span class="title">A Title with <span class="process-math">\(a]b\)</span> a Math Right Bracket</span></a></div></li>
+<li><div class="toc-item"><a href="advanced-numbering.html#subsection-102" class="internal"><span class="codenumber">29.10</span> <span class="title">Just an Exercise</span></a></div></li>
 <li><div class="toc-item"><a href="advanced-numbering.html#solutions-2" class="internal"><span class="codenumber">29.11</span> <span class="title">Solutions</span></a></div></li>
 </ul>
 </li>
@@ -497,7 +506,7 @@ true);
 <div class="toc-item"><a href="section-30.html" class="internal"><span class="codenumber">30</span> <span class="title">Customizations</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="section-30.html#rename-facility" class="internal"><span class="codenumber">30.1</span> <span class="title">Renaming Document Parts, Plus This Is A Really Long Title So That We Can Test How Well It Reacts To The Right Margin And Wraps Around To Form A Couple Of Lines, Plus How It Sits Relative To The Number Of The Subsection</span></a></div></li>
-<li><div class="toc-item"><a href="section-30.html#subsection-103" class="internal"><span class="codenumber">30.2</span> <span class="title">Customizing Phrases</span></a></div></li>
+<li><div class="toc-item"><a href="section-30.html#subsection-104" class="internal"><span class="codenumber">30.2</span> <span class="title">Customizing Phrases</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-myopenmath.html" class="internal"><span class="codenumber">31</span> <span class="title">MyOpenMath Interactive Problems</span></a></div></li>
@@ -522,7 +531,7 @@ true);
 <li>
 <div class="toc-item"><a href="exercises-multiple.html" class="internal"><span class="codenumber">36</span> <span class="title">Exercises, Multiple Subsections</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="exercises-multiple.html#subsection-104" class="internal"><span class="codenumber">36.1</span> <span class="title">Faux Subsection</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-multiple.html#subsection-105" class="internal"><span class="codenumber">36.1</span> <span class="title">Faux Subsection</span></a></div></li>
 <li><div class="toc-item"><a href="exercises-multiple.html#exercises-drill" class="internal"><span class="codenumber">36.2</span> <span class="title">Drill Exercises</span></a></div></li>
 <li><div class="toc-item"><a href="exercises-multiple.html#exercises-19" class="internal"><span class="codenumber">36.3</span> <span class="title">Challenging Exercises</span></a></div></li>
 <li><div class="toc-item"><a href="exercises-multiple.html#exercises-20" class="internal"><span class="codenumber">36.4</span> <span class="title">Impossible Exercises</span></a></div></li>
@@ -543,7 +552,7 @@ true);
 <li>
 <div class="toc-item"><a href="appendix-4.html" class="internal"><span class="codenumber">H</span> <span class="title">A Structured Appendix</span></a></div>
 <ul class="structural"><li>
-<div class="toc-item"><a href="appendix-4.html#subsection-105" class="internal"><span class="codenumber">H.1</span> <span class="title">A Subsection in an Appendix</span></a></div>
+<div class="toc-item"><a href="appendix-4.html#subsection-106" class="internal"><span class="codenumber">H.1</span> <span class="title">A Subsection in an Appendix</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="appendix-4.html#subsubsection-11" class="internal"><span class="codenumber">H.1.1</span> <span class="title">A Subsubsection in a Subsection in an Appendix</span></a></div></li></ul>
 </li></ul>
 </li>
@@ -551,7 +560,7 @@ true);
 <li>
 <div class="toc-item"><a href="references.html" class="internal"><span class="codenumber">J</span> <span class="title">Multiple References</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="references.html#subsection-106" class="internal"><span class="codenumber">J.1</span> <span class="title">Multiple Specialized References</span></a></div></li>
+<li><div class="toc-item"><a href="references.html#subsection-107" class="internal"><span class="codenumber">J.1</span> <span class="title">Multiple Specialized References</span></a></div></li>
 <li><div class="toc-item"><a href="references.html#references-5" class="internal"><span class="codenumber">J.2</span> <span class="title">General References</span></a></div></li>
 <li><div class="toc-item"><a href="references.html#references-6" class="internal"><span class="codenumber">J.3</span> <span class="title">Specialized References</span></a></div></li>
 </ul>
@@ -562,7 +571,7 @@ true);
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div class="ptx-content">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="text-in-paragraphs"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8</span> <span class="title">Entering Text in Paragraphs, Titles, Captions</span>
 </h2>
@@ -585,13 +594,11 @@ true);
 <div class="para" id="p-326">‘It is always wise to look ahead, but difficult to look further than you can see.’ (Winston Churchill)</div>
 <div class="para" id="p-327">A large quote can be accomodated with the <code class="code-inline tex2jax_ignore">&lt;blockquote&gt;</code> tag, which can carry within itself an <code class="code-inline tex2jax_ignore">&lt;attribution&gt;</code> element.</div>
 <blockquote class="blockquote" id="blockquote-2">
-<div class="para" id="p-328">The problem with writing a book in verse is, to be successful, it has to sound like you knocked it off on a rainy Friday afternoon. It has to sound easy. When you can do it, it helps tremendously because it's a thing that forces kids to read on. You have this unconsummated feeling if you stop.</div>
-<cite class="attribution">―Dr. Seuss</cite>
+<div class="para" id="p-328">The problem with writing a book in verse is, to be successful, it has to sound like you knocked it off on a rainy Friday afternoon. It has to sound easy. When you can do it, it helps tremendously because it's a thing that forces kids to read on. You have this unconsummated feeling if you stop.</div> <cite class="attribution">―Dr. Seuss</cite>
 </blockquote>
 <div class="para" id="p-329">We say that again, to test a multiline attribution of a block quotation.  Notice how the dash appears automatically, and that it is a <dfn class="terminology">quotation dash</dfn> in HTML, distinct from other sorts of dashes.</div>
 <blockquote class="blockquote" id="blockquote-3">
-<div class="para" id="p-330">The problem with writing a book in verse is, to be successful, it has to sound like you knocked it off on a rainy Friday afternoon. It has to sound easy. When you can do it, it helps tremendously because it's a thing that forces kids to read on. You have this unconsummated feeling if you stop.</div>
-<cite class="attribution">―Dr. Seuss<br>Children's Author</cite>
+<div class="para" id="p-330">The problem with writing a book in verse is, to be successful, it has to sound like you knocked it off on a rainy Friday afternoon. It has to sound easy. When you can do it, it helps tremendously because it's a thing that forces kids to read on. You have this unconsummated feeling if you stop.</div> <cite class="attribution">―Dr. Seuss<br>Children's Author</cite>
 </blockquote>
 <div class="para" id="p-331">Sometimes a quote may extend across several paragraphs.  Or a balanced pair of quotations marks crosses an XML boundary, so we need left, right, single and double versions.  (For example, see Section <a href="poetry.html" class="internal" title="Section 27: Poetry">27</a> on poetry.)  Here are all four in a haphazard order: ”, ‘, “, ’.  These should be a last resort, and <em class="emphasis">not</em> a replacement for the <code class="code-inline tex2jax_ignore">q</code> and <code class="code-inline tex2jax_ignore">sq</code> tags.  The left/right versions are used for the following quote from Abraham Lincoln, which we have edited into two paragraphs.</div>
 <div class="para" id="p-332">“I am not bound to win, but I am bound to be true. I am not bound to succeed, but I am bound to live by the light that I have.</div>
@@ -709,7 +716,7 @@ true);
 </table></div>
 <div class="para" id="p-352">We also distinguish between abbreviations (<abbr class="abbreviation">vs.</abbr>), acronyms (<abbr class="acronym">SCUBA</abbr>) and initialisms (<abbr class="initialism">XML</abbr>).  This is a test of the text version of a multiplication symbol: 2 <span class="times-sign">×</span> 4.</div>
 <div class="para" id="p-353">Simple coordinates with degrees, minutes, seconds, or temperature, or distance in feet and inches.  “We parked the car at 36°16′0.83″N, 122°35′47.27″W, and since it was 93°F, we walked 505′3.6″ so we could swim in the bay.”</div>
-<div class="para" id="p-354">An <dfn class="terminology">em dash</dfn> is the long dash used much like parentheses (not an <dfn class="terminology">en dash</dfn> used to denote a range, such as a range of page numbers).  It should not have spaces around it, but some style guides allow for a <em class="emphasis">thin</em> space, which—we test right now.  The command line stringparam <code class="code-inline tex2jax_ignore">emdash.space</code> can be set to <code class="code-inline tex2jax_ignore">none</code> or <code class="code-inline tex2jax_ignore">thin</code> to control this.</div></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
+<div class="para" id="p-354">An <dfn class="terminology">em dash</dfn> is the long dash used much like parentheses (not an <dfn class="terminology">en dash</dfn> used to denote a range, such as a range of page numbers).  It should not have spaces around it, but some style guides allow for a <em class="emphasis">thin</em> space, which—we test right now.  A publication file entry can be set to <code class="code-inline tex2jax_ignore">none</code> or <code class="code-inline tex2jax_ignore">thin</code> to control this.</div></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.5</span> <span class="title">Currency</span>
 </h3>
 <div class="para" id="p-355">For best results, be certain the right Unicode characters are in your source.  If you only need a certain symbol rarely, you can enter it in your source via its Unicode number.  For example, to obtain a peso, type <code class="code-inline tex2jax_ignore">&amp;#x20B1;</code>.  This table has been tested with our default fonts, and should be fine for <abbr class="initialism">HTML</abbr> output.  Please report any difficulties with different <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> fonts, as there are extra measures we can take to make these more robust.  (We've already done this for the Paraguayan guaraní.)</div>
@@ -844,9 +851,7 @@ true);
 </div>
 <article class="warning remark-like" id="warning-1"><h4 class="heading">
 <span class="type">Warning</span><span class="space"> </span><span class="codenumber">8.4</span><span class="period">.</span><span class="space"> </span><span class="title">Icons, <code class="code-inline tex2jax_ignore">xelatex</code>, and Fonts.</span>
-</h4>
-<div class="para" id="p-359">When processing a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> file with <code class="code-inline tex2jax_ignore">xelatex</code> the FontAwesome icons are expected to be in a <em class="emphasis">system</em> font whose name is <code class="code-inline tex2jax_ignore">FontAwesome</code>.  This is not a filename, and installing the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> <code class="code-inline tex2jax_ignore">fontawesome</code> package into your <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> installation does not mean you have made this font available as a <em class="emphasis">system</em> font.</div>
-<div class="para" id="p-360">The Publisher's Guide contains some discussion about installing fonts into a system, as part of the documentation of creating a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> style, and has particular warnings about only using the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> <code class="code-inline tex2jax_ignore">fontawesome</code> package as a vehicle for installing and accessing these fonts.</div></article></section><section class="subsection" id="subsection-keyboard"><h3 class="heading hide-type">
+</h4> <div class="para" id="p-359">When processing a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> file with <code class="code-inline tex2jax_ignore">xelatex</code> the FontAwesome icons are expected to be in a <em class="emphasis">system</em> font whose name is <code class="code-inline tex2jax_ignore">FontAwesome</code>.  This is not a filename, and installing the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> <code class="code-inline tex2jax_ignore">fontawesome</code> package into your <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> installation does not mean you have made this font available as a <em class="emphasis">system</em> font.</div> <div class="para" id="p-360">The Publisher's Guide contains some discussion about installing fonts into a system, as part of the documentation of creating a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> style, and has particular warnings about only using the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> <code class="code-inline tex2jax_ignore">fontawesome</code> package as a vehicle for installing and accessing these fonts.</div></article></section><section class="subsection" id="subsection-keyboard"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.7</span> <span class="title">Keyboard Keys</span>
 </h3>
 <div class="para" id="p-361">Your text can include specialized text meant to look like a key on the keyboard of a calculator or other device.  So you can go <kbd class="kbdkey">b</kbd> <kbd class="kbdkey">Enter</kbd> <kbd class="kbdkey">&lt;</kbd> or <kbd class="kbdkey">F1</kbd>.  Or maybe a sequence as: <kbd class="kbdkey">Tab</kbd> &gt; <kbd class="kbdkey">Ctrl</kbd> &gt; <kbd class="kbdkey">T</kbd>.  Use the <code class="code-inline tex2jax_ignore">&lt;kbd&gt;</code> element, with the label of the key as content.</div>
@@ -1048,10 +1053,10 @@ true);
 </table></div></figure></section><section class="subsection" id="section-urls"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.8</span> <span class="title">URLs, such as <code class="code-inline tex2jax_ignore">http://example.com</code></span>
 </h3>
-<div class="para" id="p-363">The <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> element can be used to create an external reference.  The mandatory <code class="code-inline tex2jax_ignore">@href</code> attribute is the actual <abbr class="initialism">URL</abbr> complete with the protocol (e.g. <code class="code-inline tex2jax_ignore">https://</code>).  Content for the element is optional, and if provided will be the “clickable” text.  In this case, a <code class="code-inline tex2jax_ignore">@visual</code> attribute must be provided, and this will become a footnote with a more friendly version of the <abbr class="initialism">URL</abbr>.  When no content is provided, the “clickable” will be the <abbr class="initialism">URL</abbr> with a preference for an optional <code class="code-inline tex2jax_ignore">@visual</code>.  This subsection has some (extreme) tests and we leave complete documentation and full details for the PreTeXt Guide.</div>
+<div class="para" id="p-363">The <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> element can be used to create an external reference.  The mandatory <code class="code-inline tex2jax_ignore">@href</code> attribute is the actual <abbr class="initialism">URL</abbr> complete with the protocol (e.g. <code class="code-inline tex2jax_ignore">https://</code>).  Content for the element is optional, and if provided will be the “clickable” text.  In this case, a <code class="code-inline tex2jax_ignore">@visual</code> attribute can be provided, and this will become a footnote with a more friendly version of the <abbr class="initialism">URL</abbr>.  When no content is provided, the “clickable” will be the <abbr class="initialism">URL</abbr> with a preference for an optional <code class="code-inline tex2jax_ignore">@visual</code>.  This subsection has some (extreme) tests and we leave complete documentation and full details for the PreTeXt Guide.</div>
 <div class="para" id="p-364">A long <abbr class="initialism">URL</abbr> for testing:  <a class="external" href="http://www.pcc.edu/enroll/registration/dropping.html#withdraw" target="_blank"><code class="code-inline tex2jax_ignore">www.pcc.edu/enroll/registration/dropping.html#withdraw</code></a>.  Notice in the source that you <em class="emphasis">do not</em> put any tags inside the <code class="code-inline tex2jax_ignore">@href</code> or <code class="code-inline tex2jax_ignore">@visual</code> attributes, but you may need to provide XML escape sequences (see <a href="text-in-paragraphs.html#subsection-xml-escape" class="internal" title="Subsection 8.1: Special XML characters">Subsection 8.1</a>).</div>
 <div class="para logical" id="p-365">
-<div class="para">A <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> element with content will get a footnote, containing the (simplified) URL in the mandatory <code class="code-inline tex2jax_ignore">@visual</code> attribute.  If you do not provide the <code class="code-inline tex2jax_ignore">@visual</code> attribute in this case, then you are using a construction that was deprecated on 2020-01-05.  If you insist, you can make the <code class="code-inline tex2jax_ignore">@visual</code> attribute identical to the <code class="code-inline tex2jax_ignore">@href</code> attribute.  Some tests:</div>
+<div class="para">A <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> element with content will get a footnote, by containing the (simplified) URL in the highly-recommended <code class="code-inline tex2jax_ignore">@visual</code> attribute.  If you do not provide the <code class="code-inline tex2jax_ignore">@visual</code> attribute in this case, then you will get the <code class="code-inline tex2jax_ignore">@href</code> value repeated, possibly with some editing.  If you insist, you can make the <code class="code-inline tex2jax_ignore">@visual</code> attribute identical to the <code class="code-inline tex2jax_ignore">@href</code> attribute.  Some tests:</div>
 <ul class="disc">
 <li id="li-55"><div class="para" id="p-derived-li-55">
 <a class="external" href="http://example.com/" target="_blank">With a useful <code class="code-inline tex2jax_ignore">@visual</code> attribute</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-16" id="fn-16"><sup> 2 </sup></a>
@@ -1059,28 +1064,26 @@ true);
 <li id="li-56"><div class="para" id="p-derived-li-56">
 <a class="external" href="http://example.com/" target="_blank">With a duplicate <code class="code-inline tex2jax_ignore">@visual</code> attribute</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-17" id="fn-17"><sup> 3 </sup></a>
 </div></li>
+<li id="li-57"><div class="para" id="p-derived-li-57">
+<a class="external" href="http://example.com/" target="_blank">With no <code class="code-inline tex2jax_ignore">@visual</code> attribute</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-18" id="fn-18"><sup> 4 </sup></a>, so an edited one is formulated (no protocol)</div></li>
 </ul>
 </div>
 <div class="para" id="p-366">Here is a totally bogus <abbr class="initialism">URL</abbr>, which contains every possible legal character, so if this fails to convert there is some problematic character.  In order to test the use of a percent sign (<code class="code-inline tex2jax_ignore">%</code>) in a URL, we follow it by two hex digits, specifically, <code class="code-inline tex2jax_ignore">58</code>, which is a way to represent the character <code class="code-inline tex2jax_ignore">X</code> in a <abbr class="initialism">URL</abbr>.  Normal text, monospace text, <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> with just <code class="code-inline tex2jax_ignore">@href</code>, <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> with <code class="code-inline tex2jax_ignore">@href</code> and <code class="code-inline tex2jax_ignore">@visual</code>, <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> with <code class="code-inline tex2jax_ignore">@href</code>, <code class="code-inline tex2jax_ignore">@visual</code> and content.  Notice how the various versions do, or do not, line-break in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>/PDF output, including the (potentially confusing) use of a use of a hyphen in the normal text version</div>
 <blockquote class="blockquote" id="blockquote-4">
-<div class="para" id="p-367">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%-._~:/?#[]@!$&amp;'()*+,;=</div>
-<div class="para" id="p-368"><code class="code-inline tex2jax_ignore">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%-._~:/?#[]@!$&amp;'()*+,;=</code></div>
-<div class="para" id="p-369"><a class="external" href="http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#%5B%5D@!%24&amp;'()*+,;=" target="_blank"><code class="code-inline tex2jax_ignore">http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#[]@!$&amp;'()*+,;=</code></a></div>
-<div class="para" id="p-370"><a class="external" href="http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#%5B%5D@!%24&amp;'()*+,;=" target="_blank"><code class="code-inline tex2jax_ignore">example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#[]@!$&amp;'()*+,;=</code></a></div>
-<div class="para" id="p-371">
-<a class="external" href="http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#%5B%5D@!%24&amp;'()*+,;=" target="_blank">Characters to a footnote</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-18" id="fn-18"><sup> 4 </sup></a>
+<div class="para" id="p-367">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%-._~:/?#[]@!$&amp;'()*+,;=</div> <div class="para" id="p-368"><code class="code-inline tex2jax_ignore">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%-._~:/?#[]@!$&amp;'()*+,;=</code></div> <div class="para" id="p-369"><a class="external" href="http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#%5B%5D@!%24&amp;'()*+,;=" target="_blank"><code class="code-inline tex2jax_ignore">http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#[]@!$&amp;'()*+,;=</code></a></div> <div class="para" id="p-370"><a class="external" href="http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#%5B%5D@!%24&amp;'()*+,;=" target="_blank"><code class="code-inline tex2jax_ignore">example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#[]@!$&amp;'()*+,;=</code></a></div> <div class="para" id="p-371">
+<a class="external" href="http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#%5B%5D@!%24&amp;'()*+,;=" target="_blank">Characters to a footnote</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 5 </sup></a>
 </div>
 </blockquote>
 <div class="para" id="p-372">Line-breaking in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>/PDF output is specialized, using path separators (slashes) as candidates for splitting across lines: <a class="external" href="http://example.com/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer" target="_blank"><code class="code-inline tex2jax_ignore">http://example.com/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer/longer</code></a>
 </div>
-<div class="para" id="p-373">We are not fans of footnotes, they are totally unstructured.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 5 </sup></a> A URL in a footnote migrates around, and so care must be taken.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 6 </sup></a> This paragraph has two footnotes, one with a real URL from Jesse Oldroyd, another with a fake URL from the above suite. For good measure, we repeat the URL found in the first footnote (which lacks its own footnote by design): <a class="external" href="https://en.wikipedia.org/wiki/Carleson%27s_theorem" target="_blank">Carleson's Theorem</a>. And we include a no-content version of the same link, with a visual version provided and employed: <a class="external" href="https://en.wikipedia.org/wiki/Carleson%27s_theorem" target="_blank"><code class="code-inline tex2jax_ignore">en.wikipedia.org/wiki/Carleson%27s_theorem</code></a>.</div></section><section class="subsection" id="subsection-25"><h3 class="heading hide-type">
+<div class="para" id="p-373">We are not fans of footnotes, they are totally unstructured.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 6 </sup></a> A URL in a footnote migrates around, and so care must be taken.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 7 </sup></a> This paragraph has two footnotes, one with a real URL from Jesse Oldroyd, another with a fake URL from the above suite. For good measure, we repeat the URL found in the first footnote (which lacks its own footnote by design): <a class="external" href="https://en.wikipedia.org/wiki/Carleson%27s_theorem" target="_blank">Carleson's Theorem</a>. And we include a no-content version of the same link, with a visual version provided and employed: <a class="external" href="https://en.wikipedia.org/wiki/Carleson%27s_theorem" target="_blank"><code class="code-inline tex2jax_ignore">en.wikipedia.org/wiki/Carleson%27s_theorem</code></a>.</div></section><section class="subsection" id="subsection-25"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.9</span> <span class="title">Biological Names</span>
 </h3>
 <div class="para" id="p-374">The <code class="code-inline tex2jax_ignore">taxon</code> element can be used all by itself to get an italicized scientific name, as in <span class="taxon">Escherichia coli</span>.  It can also be structured with the elements <code class="code-inline tex2jax_ignore">genus</code> and <code class="code-inline tex2jax_ignore">species</code>, as in using both together in <span class="taxon"><span class="genus">Cyclops</span> <span class="species">kolensis</span></span>.  Or the subelements can be used individually.  Rules for capitalization are presently your responsibility as an author.  Possible improvements include new subelements, attributes for database identifiers, and checks on capitalization.  Also, we might automatically abbreviate the genus after first use.</div>
-<div class="para" id="p-375">There is an attribute, <code class="code-inline tex2jax_ignore">@ncbi</code> that you can use on the <code class="code-inline tex2jax_ignore">taxon</code> element to precisely identify the organism you are discussing using an identification number from the <a class="external" href="https://www.ncbi.nlm.nih.gov/" target="_blank">National Center for Biotechnology Information</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 7 </sup></a>.  Their <a class="external" href="https://www.ncbi.nlm.nih.gov/taxonomy" target="_blank">taxonomy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-22" id="fn-22"><sup> 8 </sup></a> is at <code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov/taxonomy</code>.  Right now, we do not do anything with this attribute, but things like links are certainly possible.  See the source of this document to see it in use with <span class="taxon"><span class="genus">Drosophila</span> <span class="species">miranda</span></span> which could be used to construct a link to <a class="external" href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7229" target="_blank">further information via id number</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-23" id="fn-23"><sup> 9 </sup></a> or even <a class="external" href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Drosophila+miranda" target="_blank">further information via just the name</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-24" id="fn-24"><sup> 10 </sup></a>.</div></section><section class="subsection" id="subsection-26"><h3 class="heading hide-type">
+<div class="para" id="p-375">There is an attribute, <code class="code-inline tex2jax_ignore">@ncbi</code> that you can use on the <code class="code-inline tex2jax_ignore">taxon</code> element to precisely identify the organism you are discussing using an identification number from the <a class="external" href="https://www.ncbi.nlm.nih.gov/" target="_blank">National Center for Biotechnology Information</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-22" id="fn-22"><sup> 8 </sup></a>.  Their <a class="external" href="https://www.ncbi.nlm.nih.gov/taxonomy" target="_blank">taxonomy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-23" id="fn-23"><sup> 9 </sup></a> is at <code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov/taxonomy</code>.  Right now, we do not do anything with this attribute, but things like links are certainly possible.  See the source of this document to see it in use with <span class="taxon"><span class="genus">Drosophila</span> <span class="species">miranda</span></span> which could be used to construct a link to <a class="external" href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7229" target="_blank">further information via id number</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-24" id="fn-24"><sup> 10 </sup></a> or even <a class="external" href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Drosophila+miranda" target="_blank">further information via just the name</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-25" id="fn-25"><sup> 11 </sup></a>.</div></section><section class="subsection" id="subsection-26"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.10</span> <span class="title">Verbatim in titles, <code class="code-inline tex2jax_ignore">\a&amp;b#c%d~e{f}g$h_i^j</code>, OK</span>
 </h3>
-<div class="para" id="p-376">You can test the migration of the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> special characters in this section title by requesting a 2-deep Table of Contents with <code class="code-inline tex2jax_ignore"> --stringparam toc.level 2</code>.</div></section><section class="subsection" id="subsection-special-situations"><h3 class="heading hide-type">
+<div class="para" id="p-376">You can test the migration of the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> special characters in this section title by requesting a 2-deep Table of Contents via the publication file.</div></section><section class="subsection" id="subsection-special-situations"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.11</span> <span class="title">Special Situations</span>
 </h3>
 <div class="para" id="p-377">Sage defines a nice syntax for generators of algebraic structures, but we must remember to use an escape sequence for the &lt; symbol (see <a href="text-in-paragraphs.html#subsection-xml-escape" class="internal" title="Subsection 8.1: Special XML characters">Subsection 8.1</a>).</div>
@@ -1134,13 +1137,14 @@ c^2\amp\gt a^2 + b^2
 <div class="para" id="p-402">Double backticks is a common <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> construction, which in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>/PDF output <em class="emphasis">should not</em> become an opening quote-mark.  Also, a single backtick in HTML is a signal for MathJax to interpret ASCIIMath, and then a double backtick causes “random” pieces of mathematics on a page to not render at all.  So we have a quotation authored <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>-style: ``We have nothing to fear, but fear itself.''</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-15"><div class="fn"><code class="code-inline tex2jax_ignore">latex-alive.tumblr.com/post/827168808</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-16"><div class="fn"><code class="code-inline tex2jax_ignore">example.com</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-17"><div class="fn"><code class="code-inline tex2jax_ignore">http://example.com/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-18"><div class="fn"><code class="code-inline tex2jax_ignore">example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#[]@!$&amp;'()*+,;=</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-19"><div class="fn"><a class="external" href="https://en.wikipedia.org/wiki/Carleson%27s_theorem" target="_blank">Carleson's Theorem</a></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn"><a class="external" href="http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#%5B%5D@!%24&amp;'()*+,;=" target="_blank"><code class="code-inline tex2jax_ignore">http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#[]@!$&amp;'()*+,;=</code></a></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn"><code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-22"><div class="fn"><code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov/taxonomy</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-23"><div class="fn"><code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7229</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-24"><div class="fn"><code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Drosophila+miranda</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-18"><div class="fn"><code class="code-inline tex2jax_ignore">example.com/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-19"><div class="fn"><code class="code-inline tex2jax_ignore">example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#[]@!$&amp;'()*+,;=</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn"><a class="external" href="https://en.wikipedia.org/wiki/Carleson%27s_theorem" target="_blank">Carleson's Theorem</a></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn"><a class="external" href="http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#%5B%5D@!%24&amp;'()*+,;=" target="_blank"><code class="code-inline tex2jax_ignore">http://example.com/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%58-._~:/?#[]@!$&amp;'()*+,;=</code></a></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-22"><div class="fn"><code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-23"><div class="fn"><code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov/taxonomy</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-24"><div class="fn"><code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7229</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-25"><div class="fn"><code class="code-inline tex2jax_ignore">www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Drosophila+miranda</code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-7.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="graphics.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
@@ -1163,6 +1167,6 @@ document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.j
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code--><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</script><!--End: Google Global Site Tag code-->
 </body>
 </html>
