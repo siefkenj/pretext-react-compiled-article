@@ -258,6 +258,79 @@
       </figure>
 
     </chapter>
+
+    <chapter>
+      <title>test-8</title>
+      <p>
+        This chapter has a lot of section/subsection nesting to test the TOC behavior.
+      </p>
+      <section>
+        <title>Apple Varieties</title>
+        <subsection>
+          <title>Green</title>
+          <subsubsection>
+            <title>Granny Smith</title>
+            <p>
+              The Granny Smith is the classic tart green apple variety.
+            </p>
+          </subsubsection>
+          <subsubsection>
+            <title>Newtonwn Pippin</title>
+            <p>
+              Newtown Pippin is a popular, all-American green apple from New York City.
+            </p>
+          </subsubsection>
+        </subsection>
+        <subsection>
+          <title>Red</title>
+          <subsubsection>
+            <title>Fuji</title>
+            <p>
+              Fuji apples are great flavor enhancers that originated from Japan.
+            </p>
+          </subsubsection>
+          <subsubsection>
+            <title>Honeycrisp</title>
+            <p>
+              The Honeycrisp apple is a crispy red apple with juicy flesh.
+            </p>
+          </subsubsection>
+        </subsection>
+      </section>
+      <section>
+        <title>Plum Varieties</title>
+        <subsection>
+          <title>Dark</title>
+          <subsubsection>
+            <title>Damson</title>
+            <p>
+              This is a European variety of plum with dark skin and tart-flavored skin and flesh.
+            </p>
+          </subsubsection>
+          <subsubsection>
+            <title>Elephant Heart</title>
+            <p>
+              Unsurprisingly, this variety of plums is a large stone fruit that comes in the shape of a heart.
+            </p>
+          </subsubsection>
+        </subsection>
+        <subsection>
+          <title>Light</title>
+          <subsubsection>
+            <title>Greengage</title>
+            <p>
+              These plum types appear in a shade of pale yellow-green to bright lime and have red specks on the surface.
+            </p>
+          </subsubsection>
+          <subsubsection>
+            <title>Mirabelle</title>
+            <p>
+              You know them better as cherry plums that are really small but surprisingly sweet.
+            </p>
+          </subsubsection>
+        </subsection>
+      </section>
+    </chapter>
   </book>
 
 </pretext>
