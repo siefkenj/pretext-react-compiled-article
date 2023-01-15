@@ -1,4 +1,4 @@
-var ptx_lunr_search_style = "default";
+var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
   "id": "frontmatter-1",
@@ -19,6 +19,24 @@ var ptx_lunr_docs = [
   "body": " test-1  This chapter tests functionality of xref knowls and born-hidden knowls. We begin with a definition, so it can be xref-ed.    This is a definition that can be cross-referenced.    Now that we've made a definition, we can add a reference to it, like so: . Next we will add an example, whose solution will be a born-hidden knowl. We could also refer to it with an xref:     Find the derivatives of the following functions:  .  .  .         Recognize that is the composition of and . Remembering that , we have .       "
 },
 {
+  "id": "test-1-def",
+  "level": "2",
+  "url": "test-1.html#test-1-def",
+  "type": "Definition",
+  "number": "1.0.1",
+  "title": "",
+  "body": "  This is a definition that can be cross-referenced.   "
+},
+{
+  "id": "test-1-eg",
+  "level": "2",
+  "url": "test-1.html#test-1-eg",
+  "type": "Example",
+  "number": "1.0.2",
+  "title": "",
+  "body": "  Find the derivatives of the following functions:  .  .  .         Recognize that is the composition of and . Remembering that , we have .      "
+},
+{
   "id": "test-2",
   "level": "1",
   "url": "test-2.html",
@@ -26,6 +44,15 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "test-2",
   "body": " test-2  In this chapter we want to check that the most recently clicked knowl is placed before any previously clicked knowls.   This is an exercise that has several answers, a solution, and a hint.   Here is a hint.   Here is the first answer.   Here is the second answer.   Here is the third answer.   Here is a solution.   "
+},
+{
+  "id": "test-2-ex",
+  "level": "2",
+  "url": "test-2.html#test-2-ex",
+  "type": "Checkpoint",
+  "number": "2.0.1",
+  "title": "",
+  "body": " This is an exercise that has several answers, a solution, and a hint.   Here is a hint.   Here is the first answer.   Here is the second answer.   Here is the third answer.   Here is a solution.  "
 },
 {
   "id": "test-3",
@@ -44,6 +71,15 @@ var ptx_lunr_docs = [
   "number": "4",
   "title": "test-4",
   "body": " test-4  In this chapter we want to test in-context links within knowls, such as , or .  In case we need it to work for an xref to something in the same chapter, consider below.    This is a theorem.    "
+},
+{
+  "id": "test-4-thm",
+  "level": "2",
+  "url": "test-4.html#test-4-thm",
+  "type": "Theorem",
+  "number": "4.0.1",
+  "title": "",
+  "body": "  This is a theorem.   "
 },
 {
   "id": "test-5",
@@ -71,6 +107,15 @@ var ptx_lunr_docs = [
   "number": "7",
   "title": "test-7",
   "body": " test-7  In this chapter we will include a TikZ image, which should enlarge when clicked.   An image, for testing purposes.      "
+},
+{
+  "id": "test-7-fig",
+  "level": "2",
+  "url": "test-7.html#test-7-fig",
+  "type": "Figure",
+  "number": "7.0.1",
+  "title": "",
+  "body": " An image, for testing purposes.     "
 }
 ]
 

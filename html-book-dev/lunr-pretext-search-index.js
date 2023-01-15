@@ -3628,209 +3628,326 @@ var ptx_lunr_docs = [
   "body": "Inline Exercise in a Subsection  I am an interactive short answer question, but only on a capable platform.  "
 },
 {
-  "id": "interactive-exercises",
+  "id": "true-false-exercises",
   "level": "1",
-  "url": "interactive-exercises.html",
+  "url": "true-false-exercises.html",
   "type": "Exercises",
   "number": "5.6",
-  "title": "Interactive Exercises",
-  "body": " Interactive Exercises  A sample of interactive problem types.  True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?   Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?   Multiple-Choice, Randomized, One Answer stop signs  What color is a stop sign? [Static versions retain the order as authored.]     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?   Multiple-Choice, Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.) [Static versions retain the order as authored.]     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?   Mathematical Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which of the following is an antiderivative of ?        Remember that when we write on an antiderivative that this is the way we communicate that there are many possible derivatives, but they all differ by a constant .         The derivative given in the statement of the problem looks exactly like an application of the chain rule to .         Take a derivative on to see that this answer is correct. Extra credit: does this answer differ by a constant when subtracted from either of the other two correct answers?         The antiderivative of a product is not the product of the antiderivatives. Use the product rule to take a derivative and see that this answer is not correct.     You can take a derivative on any one of the choices to see if it is correct or not, rather than using techniques of integration to find a single correct answer.   Parsons Problem, Mathematical Proof even numbers  Create a proof of the theorem: If is an even number, then .    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .   Dorothy will not be much help with this proof.  Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem requires the reader to provide the necessary indentation.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem does not require the reader to provide the necessary indentation, which is the default.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    Parsons Problem, Mathematical Proof, Numbered Blocks even numbers  Create a proof of the theorem: If is an even number, then . [Ed. This version has numbered blocks, online they are on the right end of the block.]    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .   Dorothy will not be much help with this proof.  Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)     Matching Problem, Dates matching US dates  Match each event in United States history with the year it happened.   Review Encyclopedia Brittania, 25 Decade-Defining Events in U.S. History url.    Monroe Doctrine  1823    Haymarket Riot  1886    Louisiana Purchase  1803    Battle of Gettysburg  1863    Matching Problem, Derivatives matching derivatives  Match each function with its derivative.   Did you compute the derivative of each function in the premises (left column)?                Matching Problem, Linear Algebra matching bases and subspaces  Match each subspace with a basis for that subspace. (You may assume that each set is really a basis for at least one of the subspaces.)   Each putative basis is a subset of exactly one of the three subspaces. So for each subspace, two of the three sets can be ruled out by simply testing that the vectors of the basis are members of the subspace, via the membership criteria.                For openers, a basis for a subspace must be a subset of the subspace.   Clickable Areas, Regular Text  Identify (by clicking, or by circling) all of the nouns in this quotation by Eleanor Roosevelt.   The future belongs to those who believe in the beauty of their  dreams .   The incorrect words are pronouns.   Clickable Areas, Code  Identify (by clicking, or by circling) all of the assignment statements in this Python function.   def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)   Remember, the operator = is used for assignment.   Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.     42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.   Short Answer  This sample book is configured to make some simple questions interactive on a capable platform, by adding a <response> element as a signal.   Fill-In, Integer Answer  The game of bowling uses pins that you try to knock down. (This answer blank has been set to be very wide.)      Arranged in a triangle, there are pins, a so-called triangular number.      Close ! You may have used hexadecimal notation, when you did not really mean to.      Incorrect.      Fill-In, String and Number Answers  Complete the following line of a Python program so that it will declare an integer variable age with an initial value of 5 . (These two answer blanks have been set to be very short.)   age =  ;      A variable of type int is appropriate for whole number ages.      Remember that Java uses just the first three letters of the word integer to define an integral type.        An integer variable may be initialized to a value.      Use 5 as the initial value of the variable.      Fill-In, Case-Insensitive Answer  The word is the opposite of yes . (Try a mixture of upper and lower-case letters.)      The correct answers are no, No, nO, and NO.    Incorrect.     Fill-In, Decimal Answer  The decimal number is an approximation of to within three significant figures. ( Wikipedia ).       Any value in the interval is correct.      Incorrect. Did you provide three significant figures ?      "
+  "title": "True\/False Exercises",
+  "body": " True\/False Exercises  True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   "
 },
 {
   "id": "vector-space-dimension",
   "level": "2",
-  "url": "interactive-exercises.html#vector-space-dimension",
+  "url": "true-false-exercises.html#vector-space-dimension",
   "type": "Exercise",
   "number": "5.6.1",
   "title": "True\/False.",
   "body": "True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?  "
 },
 {
+  "id": "multiple-choice-exercises",
+  "level": "1",
+  "url": "multiple-choice-exercises.html",
+  "type": "Exercises",
+  "number": "5.7",
+  "title": "Multiple Choice Exercises",
+  "body": " Multiple Choice Exercises  Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?   Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?   Multiple-Choice, Randomized, One Answer stop signs  What color is a stop sign? [Static versions retain the order as authored.]     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?   Multiple-Choice, Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.) [Static versions retain the order as authored.]     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?   Mathematical Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which of the following is an antiderivative of ?        Remember that when we write on an antiderivative that this is the way we communicate that there are many possible derivatives, but they all differ by a constant .         The derivative given in the statement of the problem looks exactly like an application of the chain rule to .         Take a derivative on to see that this answer is correct. Extra credit: does this answer differ by a constant when subtracted from either of the other two correct answers?         The antiderivative of a product is not the product of the antiderivatives. Use the product rule to take a derivative and see that this answer is not correct.     You can take a derivative on any one of the choices to see if it is correct or not, rather than using techniques of integration to find a single correct answer.   "
+},
+{
   "id": "multiple-choice-not-randomized",
   "level": "2",
-  "url": "interactive-exercises.html#multiple-choice-not-randomized",
+  "url": "multiple-choice-exercises.html#multiple-choice-not-randomized",
   "type": "Exercise",
-  "number": "5.6.2",
+  "number": "5.7.1",
   "title": "Multiple-Choice, Not Randomized, One Answer.",
   "body": "Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  "
 },
 {
   "id": "multiple-choice-multiple-answers",
   "level": "2",
-  "url": "interactive-exercises.html#multiple-choice-multiple-answers",
+  "url": "multiple-choice-exercises.html#multiple-choice-multiple-answers",
   "type": "Exercise",
-  "number": "5.6.3",
+  "number": "5.7.2",
   "title": "Multiple-Choice, Not Randomized, Multiple Answers.",
   "body": "Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?  "
 },
 {
   "id": "multiple-choice-randomized",
   "level": "2",
-  "url": "interactive-exercises.html#multiple-choice-randomized",
+  "url": "multiple-choice-exercises.html#multiple-choice-randomized",
   "type": "Exercise",
-  "number": "5.6.4",
+  "number": "5.7.3",
   "title": "Multiple-Choice, Randomized, One Answer.",
   "body": "Multiple-Choice, Randomized, One Answer stop signs  What color is a stop sign? [Static versions retain the order as authored.]     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  "
 },
 {
   "id": "multiple-choice-randomized-multiple-answers",
   "level": "2",
-  "url": "interactive-exercises.html#multiple-choice-randomized-multiple-answers",
+  "url": "multiple-choice-exercises.html#multiple-choice-randomized-multiple-answers",
   "type": "Exercise",
-  "number": "5.6.5",
+  "number": "5.7.4",
   "title": "Multiple-Choice, Randomized, Multiple Answers.",
   "body": "Multiple-Choice, Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.) [Static versions retain the order as authored.]     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?  "
 },
 {
   "id": "mathematical-multiple-choice-multiple-answers",
   "level": "2",
-  "url": "interactive-exercises.html#mathematical-multiple-choice-multiple-answers",
+  "url": "multiple-choice-exercises.html#mathematical-multiple-choice-multiple-answers",
   "type": "Exercise",
-  "number": "5.6.6",
+  "number": "5.7.5",
   "title": "Mathematical Multiple-Choice, Not Randomized, Multiple Answers.",
   "body": "Mathematical Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which of the following is an antiderivative of ?        Remember that when we write on an antiderivative that this is the way we communicate that there are many possible derivatives, but they all differ by a constant .         The derivative given in the statement of the problem looks exactly like an application of the chain rule to .         Take a derivative on to see that this answer is correct. Extra credit: does this answer differ by a constant when subtracted from either of the other two correct answers?         The antiderivative of a product is not the product of the antiderivatives. Use the product rule to take a derivative and see that this answer is not correct.     You can take a derivative on any one of the choices to see if it is correct or not, rather than using techniques of integration to find a single correct answer.  "
 },
 {
+  "id": "parsons-exercises",
+  "level": "1",
+  "url": "parsons-exercises.html",
+  "type": "Exercises",
+  "number": "5.8",
+  "title": "Parsons Exercises",
+  "body": " Parsons Exercises  Parsons Problem, Mathematical Proof even numbers  Create a proof of the theorem: If is an even number, then .    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .   Dorothy will not be much help with this proof.  Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem requires the reader to provide the necessary indentation.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem does not require the reader to provide the necessary indentation, which is the default.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    Parsons Problem, Mathematical Proof, Numbered Blocks even numbers  Create a proof of the theorem: If is an even number, then . [Ed. This version has numbered blocks, online they are on the right end of the block.]    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .   Dorothy will not be much help with this proof.  Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    "
+},
+{
   "id": "number-theory-proof",
   "level": "2",
-  "url": "interactive-exercises.html#number-theory-proof",
+  "url": "parsons-exercises.html#number-theory-proof",
   "type": "Exercise",
-  "number": "5.6.7",
+  "number": "5.8.1",
   "title": "Parsons Problem, Mathematical Proof.",
   "body": "Parsons Problem, Mathematical Proof even numbers  Create a proof of the theorem: If is an even number, then .    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .   Dorothy will not be much help with this proof. "
 },
 {
   "id": "prime-number-program-indent-yes",
   "level": "2",
-  "url": "interactive-exercises.html#prime-number-program-indent-yes",
+  "url": "parsons-exercises.html#prime-number-program-indent-yes",
   "type": "Exercise",
-  "number": "5.6.8",
+  "number": "5.8.2",
   "title": "Parsons Problem, Programming.",
   "body": "Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem requires the reader to provide the necessary indentation.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)   "
 },
 {
   "id": "prime-number-program-indent-no",
   "level": "2",
-  "url": "interactive-exercises.html#prime-number-program-indent-no",
+  "url": "parsons-exercises.html#prime-number-program-indent-no",
   "type": "Exercise",
-  "number": "5.6.9",
+  "number": "5.8.3",
   "title": "Parsons Problem, Programming.",
   "body": "Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem does not require the reader to provide the necessary indentation, which is the default.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)   "
 },
 {
   "id": "number-theory-proof-numbered-left",
   "level": "2",
-  "url": "interactive-exercises.html#number-theory-proof-numbered-left",
+  "url": "parsons-exercises.html#number-theory-proof-numbered-left",
   "type": "Exercise",
-  "number": "5.6.10",
+  "number": "5.8.4",
   "title": "Parsons Problem, Mathematical Proof, Numbered Blocks.",
   "body": "Parsons Problem, Mathematical Proof, Numbered Blocks even numbers  Create a proof of the theorem: If is an even number, then . [Ed. This version has numbered blocks, online they are on the right end of the block.]    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .   Dorothy will not be much help with this proof. "
 },
 {
   "id": "prime-number-program-numbered-right",
   "level": "2",
-  "url": "interactive-exercises.html#prime-number-program-numbered-right",
+  "url": "parsons-exercises.html#prime-number-program-numbered-right",
   "type": "Exercise",
-  "number": "5.6.11",
+  "number": "5.8.5",
   "title": "Parsons Problem, Programming.",
   "body": "Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)   "
 },
 {
+  "id": "horizontal-parsons-exercises",
+  "level": "1",
+  "url": "horizontal-parsons-exercises.html",
+  "type": "Exercises",
+  "number": "5.9",
+  "title": "Horizontal Parsons Exercises",
+  "body": " Horizontal Parsons Exercises  Parsons Problem, SQL statement  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test   Parsons Problem, SQL statement, no randomization  Form the SQL statement by rearranging the four blocks. This version of this problem will always present the blocks in the same fixed order (but incorrect, hopefully!), as prescribed by the author in the source.   SELECT  *  FROM  test   Parsons Problem, SQL statement, automatic feedback  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  assert 1,1 == world assert 0,1 == hello assert 2,1 == 42  Parsons Problem, Natural Language  Form the sentence often used to show font samples. You can reuse blocks as needed.    quick  brown  fox  jumped  over  the  lazy  dog   Parsons Problem, Natural Language, with Distractors  Form the sentence often used to show font samples. Again, but now with distractors.    quick  brown  fox  jumped  foo  over  the  lazy  bar  dog   Parsons Problem, SQL statement, reusable  Form the SQL statement by rearranging the four blocks. Same problem as above, but we allow blocks to be reused (even though the solution does not require that).   SELECT  *  FROM  test   "
+},
+{
+  "id": "horizontal-parson-sql-statement-simple",
+  "level": "2",
+  "url": "horizontal-parsons-exercises.html#horizontal-parson-sql-statement-simple",
+  "type": "Exercise",
+  "number": "5.9.1",
+  "title": "Parsons Problem, SQL statement.",
+  "body": "Parsons Problem, SQL statement  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  "
+},
+{
+  "id": "horizontal-parson-sql-statement-no-randomize",
+  "level": "2",
+  "url": "horizontal-parsons-exercises.html#horizontal-parson-sql-statement-no-randomize",
+  "type": "Exercise",
+  "number": "5.9.2",
+  "title": "Parsons Problem, SQL statement, no randomization.",
+  "body": "Parsons Problem, SQL statement, no randomization  Form the SQL statement by rearranging the four blocks. This version of this problem will always present the blocks in the same fixed order (but incorrect, hopefully!), as prescribed by the author in the source.   SELECT  *  FROM  test  "
+},
+{
+  "id": "horizontal-parson-sql-statement-with-db",
+  "level": "2",
+  "url": "horizontal-parsons-exercises.html#horizontal-parson-sql-statement-with-db",
+  "type": "Exercise",
+  "number": "5.9.3",
+  "title": "Parsons Problem, SQL statement, automatic feedback.",
+  "body": "Parsons Problem, SQL statement, automatic feedback  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  assert 1,1 == world assert 0,1 == hello assert 2,1 == 42 "
+},
+{
+  "id": "horizontal-parson-natural",
+  "level": "2",
+  "url": "horizontal-parsons-exercises.html#horizontal-parson-natural",
+  "type": "Exercise",
+  "number": "5.9.4",
+  "title": "Parsons Problem, Natural Language.",
+  "body": "Parsons Problem, Natural Language  Form the sentence often used to show font samples. You can reuse blocks as needed.    quick  brown  fox  jumped  over  the  lazy  dog  "
+},
+{
+  "id": "horizontal-parson-natural-distractor",
+  "level": "2",
+  "url": "horizontal-parsons-exercises.html#horizontal-parson-natural-distractor",
+  "type": "Exercise",
+  "number": "5.9.5",
+  "title": "Parsons Problem, Natural Language, with Distractors.",
+  "body": "Parsons Problem, Natural Language, with Distractors  Form the sentence often used to show font samples. Again, but now with distractors.    quick  brown  fox  jumped  foo  over  the  lazy  bar  dog  "
+},
+{
+  "id": "horizontal-parson-sql-statement-reusable",
+  "level": "2",
+  "url": "horizontal-parsons-exercises.html#horizontal-parson-sql-statement-reusable",
+  "type": "Exercise",
+  "number": "5.9.6",
+  "title": "Parsons Problem, SQL statement, reusable.",
+  "body": "Parsons Problem, SQL statement, reusable  Form the SQL statement by rearranging the four blocks. Same problem as above, but we allow blocks to be reused (even though the solution does not require that).   SELECT  *  FROM  test  "
+},
+{
+  "id": "matching-exercises",
+  "level": "1",
+  "url": "matching-exercises.html",
+  "type": "Exercises",
+  "number": "5.10",
+  "title": "Matching Exercises",
+  "body": " Matching Exercises   Matching Problem, Dates matching US dates  Match each event in United States history with the year it happened.   Review Encyclopedia Brittania, 25 Decade-Defining Events in U.S. History url.    Monroe Doctrine  1823    Haymarket Riot  1886    Louisiana Purchase  1803    Battle of Gettysburg  1863    Matching Problem, Derivatives matching derivatives  Match each function with its derivative.   Did you compute the derivative of each function in the premises (left column)?                Matching Problem, Linear Algebra matching bases and subspaces  Match each subspace with a basis for that subspace. (You may assume that each set is really a basis for at least one of the subspaces.)   Each putative basis is a subset of exactly one of the three subspaces. So for each subspace, two of the three sets can be ruled out by simply testing that the vectors of the basis are members of the subspace, via the membership criteria.                For openers, a basis for a subspace must be a subset of the subspace.   "
+},
+{
   "id": "matching-dates",
   "level": "2",
-  "url": "interactive-exercises.html#matching-dates",
+  "url": "matching-exercises.html#matching-dates",
   "type": "Exercise",
-  "number": "5.6.12",
+  "number": "5.10.1",
   "title": "Matching Problem, Dates.",
   "body": "Matching Problem, Dates matching US dates  Match each event in United States history with the year it happened.   Review Encyclopedia Brittania, 25 Decade-Defining Events in U.S. History url.    Monroe Doctrine  1823    Haymarket Riot  1886    Louisiana Purchase  1803    Battle of Gettysburg  1863   "
 },
 {
   "id": "matching-derivatives",
   "level": "2",
-  "url": "interactive-exercises.html#matching-derivatives",
+  "url": "matching-exercises.html#matching-derivatives",
   "type": "Exercise",
-  "number": "5.6.13",
+  "number": "5.10.2",
   "title": "Matching Problem, Derivatives.",
   "body": "Matching Problem, Derivatives matching derivatives  Match each function with its derivative.   Did you compute the derivative of each function in the premises (left column)?               "
 },
 {
   "id": "matching-bases",
   "level": "2",
-  "url": "interactive-exercises.html#matching-bases",
+  "url": "matching-exercises.html#matching-bases",
   "type": "Exercise",
-  "number": "5.6.14",
+  "number": "5.10.3",
   "title": "Matching Problem, Linear Algebra.",
   "body": "Matching Problem, Linear Algebra matching bases and subspaces  Match each subspace with a basis for that subspace. (You may assume that each set is really a basis for at least one of the subspaces.)   Each putative basis is a subset of exactly one of the three subspaces. So for each subspace, two of the three sets can be ruled out by simply testing that the vectors of the basis are members of the subspace, via the membership criteria.                For openers, a basis for a subspace must be a subset of the subspace.  "
 },
 {
+  "id": "clickable-area-exercises",
+  "level": "1",
+  "url": "clickable-area-exercises.html",
+  "type": "Exercises",
+  "number": "5.11",
+  "title": "Clickable Area Exercises",
+  "body": " Clickable Area Exercises  Clickable Areas, Regular Text  Identify (by clicking, or by circling) all of the nouns in this quotation by Eleanor Roosevelt.   The future belongs to those who believe in the beauty of their  dreams .   The incorrect words are pronouns.   Clickable Areas, Code  Identify (by clicking, or by circling) all of the assignment statements in this Python function.   def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)   Remember, the operator = is used for assignment.   Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.     42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.   "
+},
+{
   "id": "clickable-text",
   "level": "2",
-  "url": "interactive-exercises.html#clickable-text",
+  "url": "clickable-area-exercises.html#clickable-text",
   "type": "Exercise",
-  "number": "5.6.15",
+  "number": "5.11.1",
   "title": "Clickable Areas, “Regular” Text.",
   "body": "Clickable Areas, Regular Text  Identify (by clicking, or by circling) all of the nouns in this quotation by Eleanor Roosevelt.   The future belongs to those who believe in the beauty of their  dreams .   The incorrect words are pronouns.  "
 },
 {
   "id": "clickable-code",
   "level": "2",
-  "url": "interactive-exercises.html#clickable-code",
+  "url": "clickable-area-exercises.html#clickable-code",
   "type": "Exercise",
-  "number": "5.6.16",
+  "number": "5.11.2",
   "title": "Clickable Areas, Code.",
   "body": "Clickable Areas, Code  Identify (by clicking, or by circling) all of the assignment statements in this Python function.   def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)   Remember, the operator = is used for assignment.  "
 },
 {
   "id": "clickable-table",
   "level": "2",
-  "url": "interactive-exercises.html#clickable-table",
+  "url": "clickable-area-exercises.html#clickable-table",
   "type": "Exercise",
-  "number": "5.6.17",
+  "number": "5.11.3",
   "title": "Clickable Areas, Text in a Table.",
   "body": "Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.     42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.  "
 },
 {
+  "id": "short-answer-exercises",
+  "level": "1",
+  "url": "short-answer-exercises.html",
+  "type": "Exercises",
+  "number": "5.12",
+  "title": "Short Answer Exercises",
+  "body": " Short Answer Exercises  Short Answer  This sample book is configured to make some simple questions interactive on a capable platform, by adding a <response> element as a signal.   "
+},
+{
   "id": "short-answer-question",
   "level": "2",
-  "url": "interactive-exercises.html#short-answer-question",
+  "url": "short-answer-exercises.html#short-answer-question",
   "type": "Exercise",
-  "number": "5.6.18",
+  "number": "5.12.1",
   "title": "Short Answer.",
   "body": "Short Answer  This sample book is configured to make some simple questions interactive on a capable platform, by adding a <response> element as a signal.  "
 },
 {
+  "id": "fill-in--exercises",
+  "level": "1",
+  "url": "fill-in--exercises.html",
+  "type": "Exercises",
+  "number": "5.13",
+  "title": "Fill-In Exercises",
+  "body": " Fill-In Exercises  Fill-In, Integer Answer  The game of bowling uses pins that you try to knock down. (This answer blank has been set to be very wide.)      Arranged in a triangle, there are pins, a so-called triangular number.      Close ! You may have used hexadecimal notation, when you did not really mean to.      Incorrect.      Fill-In, String and Number Answers  Complete the following line of a Python program so that it will declare an integer variable age with an initial value of 5 . (These two answer blanks have been set to be very short.)   age =  ;      A variable of type int is appropriate for whole number ages.      Remember that Java uses just the first three letters of the word integer to define an integral type.        An integer variable may be initialized to a value.      Use 5 as the initial value of the variable.      Fill-In, Case-Insensitive Answer  The word is the opposite of yes . (Try a mixture of upper and lower-case letters.)      The correct answers are no, No, nO, and NO.    Incorrect.     Fill-In, Decimal Answer  The decimal number is an approximation of to within three significant figures. ( Wikipedia ).       Any value in the interval is correct.      Incorrect. Did you provide three significant figures ?      "
+},
+{
   "id": "fillin-integer",
   "level": "2",
-  "url": "interactive-exercises.html#fillin-integer",
+  "url": "fill-in--exercises.html#fillin-integer",
   "type": "Exercise",
-  "number": "5.6.19",
+  "number": "5.13.1",
   "title": "Fill-In, Integer Answer.",
   "body": "Fill-In, Integer Answer  The game of bowling uses pins that you try to knock down. (This answer blank has been set to be very wide.)      Arranged in a triangle, there are pins, a so-called triangular number.      Close ! You may have used hexadecimal notation, when you did not really mean to.      Incorrect.     "
 },
 {
   "id": "fillin-string-integer",
   "level": "2",
-  "url": "interactive-exercises.html#fillin-string-integer",
+  "url": "fill-in--exercises.html#fillin-string-integer",
   "type": "Exercise",
-  "number": "5.6.20",
+  "number": "5.13.2",
   "title": "Fill-In, String and Number Answers.",
   "body": "Fill-In, String and Number Answers  Complete the following line of a Python program so that it will declare an integer variable age with an initial value of 5 . (These two answer blanks have been set to be very short.)   age =  ;      A variable of type int is appropriate for whole number ages.      Remember that Java uses just the first three letters of the word integer to define an integral type.        An integer variable may be initialized to a value.      Use 5 as the initial value of the variable.     "
 },
 {
   "id": "fillin-case-insensitive",
   "level": "2",
-  "url": "interactive-exercises.html#fillin-case-insensitive",
+  "url": "fill-in--exercises.html#fillin-case-insensitive",
   "type": "Exercise",
-  "number": "5.6.21",
+  "number": "5.13.3",
   "title": "Fill-In, Case-Insensitive Answer.",
   "body": "Fill-In, Case-Insensitive Answer  The word is the opposite of yes . (Try a mixture of upper and lower-case letters.)      The correct answers are no, No, nO, and NO.    Incorrect.    "
 },
 {
   "id": "fillin-decimal",
   "level": "2",
-  "url": "interactive-exercises.html#fillin-decimal",
+  "url": "fill-in--exercises.html#fillin-decimal",
   "type": "Exercise",
-  "number": "5.6.22",
+  "number": "5.13.4",
   "title": "Fill-In, Decimal Answer.",
   "body": "Fill-In, Decimal Answer  The decimal number is an approximation of to within three significant figures. ( Wikipedia ).       Any value in the interval is correct.      Incorrect. Did you provide three significant figures ?     "
 },
@@ -3839,7 +3956,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "exercises-timed.html",
   "type": "Section",
-  "number": "5.7",
+  "number": "5.14",
   "title": "Exercises that are Timed",
   "body": " Exercises that are Timed  This is a section that merely explains and holds an <exercises> division, which will be at the level of a <subsection> . There is a time-limit attribute on <exercises> , set to the value 10 , which implies (a) the collection of (two) exercises is a timed exam when hosted on Runestone, and (b) a student will have 10 minutes to complete the collection.  Showing results, showing feedback, displaying a timer, and allowing pausing are all enabled by default. To disable any of these features, set the corresponding attributes on the <exercises> division, results , feedback , timer , pause , to the value no . As a test, we have turned off pausing. Don't panic!  Of course, if you are not viewing this while online and hosted on a Runestone server, then these exercises will not look any different than in other places.  (Since this is an unstructured division, the number of the <exercises> is not displayed when born. It does have a number, which is the same as the enclosing <section> . To wit: versus .)   Timed Exercises   You have 10 minutes to do these exercises when hosted online on a Runestone server.   True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?    "
 },
@@ -3848,7 +3965,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "exercises-timed.html#vector-space-dimension-timed",
   "type": "Exercise",
-  "number": "5.7.1",
+  "number": "5.14.1",
   "title": "True\/False.",
   "body": "True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?  "
 },
@@ -3857,7 +3974,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "exercises-timed.html#multiple-choice-not-randomized-timed",
   "type": "Exercise",
-  "number": "5.7.2",
+  "number": "5.14.2",
   "title": "Multiple-Choice, Not Randomized, One Answer.",
   "body": "Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  "
 },
@@ -3866,7 +3983,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "interactive-projects.html",
   "type": "Section",
-  "number": "5.8",
+  "number": "5.15",
   "title": "Projects and Friends",
   "body": " Projects and Friends  PROJECT-LIKE refers to the elements\/blocks <project> , <activity> , <activity> , and <exploration> . They are very similar to <exercise> , and here we stress that they can be interactive in all the same ways an <exercise> can. Key differences are that they are blocks, and so are peers of other blocks like paragraphs and examples, and are children of divisions. By default they have their own numbering scheme, though we expect this to convert to an elective behavior.  Both <exercise> and PROJECT-LIKE can be structured with <task> . It would be natural to have a <project> with multiple <task> , each a possibly different interactive problem type. We expect that to be possible soon. For now, <exercise> and <project> (and friends) need to be structured with a <statement> (and their associated signal) in order to be interactive.   Multiple-Choice, Not Randomized, Multiple Answers  stop signs   Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)      Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.      Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?    Now an <exercise> with two <task> . Since the latter is a short-answer question, it will only be interactive on a capable platform.  True\/False and Explain  Structured with task, we can have an introduction, but this does not migrate with the interactive portions.  True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   Explain your reasoning in the previous question.   Now an <exploration> nested two-deep with the same two questions , two times each, just for testing purposes.   Exploring Two-Deep  First Iterations of Each Multiple-Choice, Not Randomized, One Answer (First Copy) stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  Python ActiveCode (First Copy)  Run the following program and observe the information provided at each step.   for i in range(10): print(i)  We're still not really sure.  Second Iterations of Each Multiple-Choice, Not Randomized, One Answer (Second Copy) stop signs  What color is a stop sign?  We include a spurious Python <program> element in the <statement> which should never convert this from a multiple-choice question into a programming exercise (on any host), but should still get syntax highlighting as part of rendering the exercise.   sum = 0 sum += 6 for i in range(sum): print(\"Hello, World!\")      Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  Python ActiveCode (Second Copy)  Run the following program and observe the information provided at each step.   for i in range(10): print(i)  We're still not really sure.   "
 },
@@ -3875,16 +3992,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "interactive-projects.html#activity-multiple-choice-multiple-answers",
   "type": "Activity",
-  "number": "5.8.1",
+  "number": "5.15.1",
   "title": "Multiple-Choice, Not Randomized, Multiple Answers.",
   "body": " Multiple-Choice, Not Randomized, Multiple Answers  stop signs   Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)      Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.      Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?   "
 },
 {
-  "id": "exercise-223",
+  "id": "exercise-229",
   "level": "2",
-  "url": "interactive-projects.html#exercise-223",
+  "url": "interactive-projects.html#exercise-229",
   "type": "Checkpoint",
-  "number": "5.8.1",
+  "number": "5.15.1",
   "title": "True\/False and Explain.",
   "body": "True\/False and Explain  Structured with task, we can have an introduction, but this does not migrate with the interactive portions.  True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   Explain your reasoning in the previous question.  "
 },
@@ -3893,7 +4010,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "interactive-projects.html#exploration-2",
   "type": "Exploration",
-  "number": "5.8.2",
+  "number": "5.15.2",
   "title": "Exploring Two-Deep.",
   "body": " Exploring Two-Deep  First Iterations of Each Multiple-Choice, Not Randomized, One Answer (First Copy) stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  Python ActiveCode (First Copy)  Run the following program and observe the information provided at each step.   for i in range(10): print(i)  We're still not really sure.  Second Iterations of Each Multiple-Choice, Not Randomized, One Answer (Second Copy) stop signs  What color is a stop sign?  We include a spurious Python <program> element in the <statement> which should never convert this from a multiple-choice question into a programming exercise (on any host), but should still get syntax highlighting as part of rendering the exercise.   sum = 0 sum += 6 for i in range(sum): print(\"Hello, World!\")      Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  Python ActiveCode (Second Copy)  Run the following program and observe the information provided at each step.   for i in range(10): print(i)  We're still not really sure.  "
 },
@@ -3902,25 +4019,25 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "section-22.html",
   "type": "Section",
-  "number": "5.9",
+  "number": "5.16",
   "title": "Expedited Samples",
   "body": " Expedited Samples  We hack in various interactive Runestone exercise types while PreTeXt markup evolves to cover more of Runestone's repertoire. In static output these will just produce a message. In HTML they may be interactive simply in a browser, or they may require being hosted on a Runestone server in order to perform.  CodeLens for a Python program:   CodeLens for a Java program. Supplied in source with trace data built beforehand on a Runestone server:   "
 },
 {
-  "id": "exercise-224",
+  "id": "exercise-230",
   "level": "2",
-  "url": "section-22.html#exercise-224",
+  "url": "section-22.html#exercise-230",
   "type": "Checkpoint",
-  "number": "5.9.1",
+  "number": "5.16.1",
   "title": "",
   "body": ""
 },
 {
-  "id": "exercise-225",
+  "id": "exercise-231",
   "level": "2",
-  "url": "section-22.html#exercise-225",
+  "url": "section-22.html#exercise-231",
   "type": "Checkpoint",
-  "number": "5.9.2",
+  "number": "5.16.2",
   "title": "",
   "body": ""
 },
@@ -3929,7 +4046,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "reading-questions-1.html",
   "type": "Reading Questions",
-  "number": "5.10",
+  "number": "5.17",
   "title": "Reading Questions",
   "body": "  This is a simple question. Does this look like a short answer question?  Both questions in this reading-questions division should render in an interactive short answer form on a capable platform.   Shouldn't be hard!    And a second reading question, so we can test having more than one. Specifically to be certain each goes into the manifest properly. How about some math now, . Is that all right?   "
 },
@@ -3938,7 +4055,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "reading-questions-1.html#simple-reading-question",
   "type": "Reading Question",
-  "number": "5.10.1",
+  "number": "5.17.1",
   "title": "",
   "body": " This is a simple question. Does this look like a short answer question?  Both questions in this reading-questions division should render in an interactive short answer form on a capable platform.   Shouldn't be hard!  "
 },
@@ -3947,7 +4064,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "reading-questions-1.html#second-reading-question",
   "type": "Reading Question",
-  "number": "5.10.2",
+  "number": "5.17.2",
   "title": "",
   "body": " And a second reading question, so we can test having more than one. Specifically to be certain each goes into the manifest properly. How about some math now, . Is that all right?  "
 },
@@ -3956,7 +4073,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "atomic-video.html",
   "type": "Section",
-  "number": "5.11",
+  "number": "5.18",
   "title": "YouTube Video Embedding",
   "body": " YouTube Video Embedding  An <video> can be placed in five different ways:  all by itself, as a peer of <p> typically, with layout control,  inside a <figure> , earning a number and caption,  inside a <sidebyside> , with size and layout configured,  inside a <figure> inside a <sidebyside> , with size and layout configured, with a number and caption, and  inside a <figure> inside a <sidebyside> inside a <figure> , with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  A YouTube video is embedded much differently when hosted on a Runestone server, so that an API is available to report reader (student) interactions. We are testing here the various possibilities.  All by itsef, with no layout specified, so showing the default size and placement. Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.   Width set at 40%, so equal margins and thus centered. Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.   Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance. Vivamus suscipit diam eget mi cursus viverra.   As a plain component of a <sidebyside> . Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges. Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.      Inside a <figure> with no adjustments, so default behavior. Note how a <figure> occupies the entire width of the page, so then does the caption.   List Variables    Inside a <figure> with asymmetric (large) margins of 30% and 60%. Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.   List Variables    Inside figures inside a <sidebyside> . Same widths as previous <sidebyside> but alignment on bottoms of the panels, to partially align captions. Note how the captions are constrained in width by the width of the panels of the side-by-side.    List Variables     List Variables (Again)     Identical code to previous example, but now wrapped in an overall <figure> , which has its own caption and number, leaving the interior figures to be sub-numbered. Cross-references use the full number: .   Amalgamation of Videos    List Variables     List Variables  List Variables      "
 },
@@ -3965,7 +4082,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-16",
   "type": "Figure",
-  "number": "5.11.1",
+  "number": "5.18.1",
   "title": "",
   "body": " List Variables   "
 },
@@ -3974,7 +4091,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-17",
   "type": "Figure",
-  "number": "5.11.2",
+  "number": "5.18.2",
   "title": "",
   "body": " List Variables   "
 },
@@ -3983,7 +4100,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-18",
   "type": "Figure",
-  "number": "5.11.3",
+  "number": "5.18.3",
   "title": "",
   "body": " List Variables   "
 },
@@ -3992,7 +4109,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-19",
   "type": "Figure",
-  "number": "5.11.4",
+  "number": "5.18.4",
   "title": "",
   "body": " List Variables (Again)   "
 },
@@ -4001,7 +4118,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-20",
   "type": "Figure",
-  "number": "5.11.5",
+  "number": "5.18.5",
   "title": "",
   "body": " Amalgamation of Videos    List Variables     List Variables  List Variables     "
 },

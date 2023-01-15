@@ -4,15 +4,16 @@ mkdir -p tmp
 
 # Grab the latest version of pretext directly from Rob Beezer's branch, since that
 # branch has the features we need.
-wget https://github.com/rbeezer/pretext/archive/refs/heads/overhaul.zip -nc -O tmp/pretext.zip
+#wget https://github.com/rbeezer/pretext/archive/refs/heads/overhaul.zip -nc -O tmp/pretext.zip
+wget https://github.com/PreTeXtBook/pretext/archive/refs/heads/master.zip -nc -O tmp/pretext.zip
 
 pushd tmp
 
 rm -rf pretext
 unzip -q pretext.zip
-# We are currenty working with the overhaul branch, but that may change in the future,
+# We are currenty working with the main branch, but that may change in the future,
 # so we normalize the path name
-mv pretext-overhaul pretext
+mv pretext-* pretext
 
 popd
 
@@ -22,10 +23,10 @@ PRETEXT_HTML_XSL="$PRETEXT_BASE_PATH/xsl/pretext-html.xsl"
 set -x
 
 # Compile the source!
-pretext build -x $PRETEXT_HTML_XSL html-dev &
-pretext build -x $PRETEXT_HTML_XSL html-reference &
-pretext build -x $PRETEXT_HTML_XSL html-book &
-pretext build -x $PRETEXT_HTML_XSL html-testing &
+pretext build html-dev &
+pretext build html-reference &
+pretext build html-book &
+pretext build html-testing &
 
 wait
 
