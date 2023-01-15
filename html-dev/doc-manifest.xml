@@ -27,21 +27,18 @@
             <title>Symbolic and Numerical Integrals</title>
           </division>
           <division type="subsubsection" number="4.2.2" id="subsubsection-2" url="interesting-corollary.html#subsubsection-2">
-            <title/>
-          </division>
-          <division type="subsubsection" number="4.2.3" id="subsubsection-3" url="interesting-corollary.html#subsubsection-3">
             <title>Advice</title>
           </division>
-          <division type="exercises" number="4.2.4" id="exercises-subsection-solo" url="interesting-corollary.html#exercises-subsection-solo">
+          <division type="exercises" number="4.2.3" id="exercises-subsection-solo" url="interesting-corollary.html#exercises-subsection-solo">
             <title>Exercises</title>
           </division>
-          <division type="reading-questions" number="4.2.5" id="reading-questions-1" url="interesting-corollary.html#reading-questions-1">
+          <division type="reading-questions" number="4.2.4" id="reading-questions-1" url="interesting-corollary.html#reading-questions-1">
             <title>Reading Questions</title>
           </division>
-          <division type="glossary" number="4.2.6" id="glossary-1" url="interesting-corollary.html#glossary-1">
+          <division type="glossary" number="4.2.5" id="glossary-1" url="interesting-corollary.html#glossary-1">
             <title>Glossary</title>
           </division>
-          <division type="solutions" number="4.2.7" id="solutions-subsection" url="interesting-corollary.html#solutions-subsection">
+          <division type="solutions" number="4.2.6" id="solutions-subsection" url="interesting-corollary.html#solutions-subsection">
             <title>Solutions for This Subsection</title>
           </division>
         </division>
@@ -56,10 +53,10 @@
         </division>
         <division type="subsection" number="4.6" id="subsection-intro-conclude" url="interesting-corollary.html#subsection-intro-conclude">
           <title>Introductions and Conclusions</title>
-          <division type="subsubsection" number="4.6.1" id="subsubsection-4" url="interesting-corollary.html#subsubsection-4">
+          <division type="subsubsection" number="4.6.1" id="subsubsection-3" url="interesting-corollary.html#subsubsection-3">
             <title>Test One</title>
           </division>
-          <division type="subsubsection" number="4.6.2" id="subsubsection-5" url="interesting-corollary.html#subsubsection-5">
+          <division type="subsubsection" number="4.6.2" id="subsubsection-4" url="interesting-corollary.html#subsubsection-4">
             <title>Test Two</title>
             <division type="reading-questions" number="4.6.2" id="reading-questions-2" url="interesting-corollary.html#reading-questions-2">
               <title>What Did You Learn?</title>
@@ -68,7 +65,7 @@
               <title>Exercises</title>
             </division>
           </division>
-          <division type="subsubsection" number="4.6.3" id="subsubsection-6" url="interesting-corollary.html#subsubsection-6">
+          <division type="subsubsection" number="4.6.3" id="subsubsection-5" url="interesting-corollary.html#subsubsection-5">
             <title>Test Three</title>
           </division>
         </division>
@@ -464,10 +461,10 @@
         </division>
         <division type="subsection" number="29.2" id="subsection-94" url="advanced-numbering.html#subsection-94">
           <title>Two</title>
-          <division type="subsubsection" number="29.2.1" id="subsubsection-7" url="advanced-numbering.html#subsubsection-7">
+          <division type="subsubsection" number="29.2.1" id="subsubsection-6" url="advanced-numbering.html#subsubsection-6">
             <title>Uno</title>
           </division>
-          <division type="subsubsection" number="29.2.2" id="subsubsection-8" url="advanced-numbering.html#subsubsection-8">
+          <division type="subsubsection" number="29.2.2" id="subsubsection-7" url="advanced-numbering.html#subsubsection-7">
             <title>Dos</title>
           </division>
         </division>
@@ -476,10 +473,10 @@
         </division>
         <division type="subsection" number="29.4" id="subsection-96" url="advanced-numbering.html#subsection-96">
           <title>Four</title>
-          <division type="subsubsection" number="29.4.1" id="subsubsection-9" url="advanced-numbering.html#subsubsection-9">
+          <division type="subsubsection" number="29.4.1" id="subsubsection-8" url="advanced-numbering.html#subsubsection-8">
             <title>Uno</title>
           </division>
-          <division type="subsubsection" number="29.4.2" id="subsubsection-10" url="advanced-numbering.html#subsubsection-10">
+          <division type="subsubsection" number="29.4.2" id="subsubsection-9" url="advanced-numbering.html#subsubsection-9">
             <title>Dos</title>
           </division>
         </division>
@@ -596,7 +593,7 @@
         <title>A Structured Appendix</title>
         <division type="subsection" number="H.1" id="subsection-106" url="appendix-4.html#subsection-106">
           <title>A Subsection in an Appendix</title>
-          <division type="subsubsection" number="H.1.1" id="subsubsection-11" url="appendix-4.html#subsubsection-11">
+          <division type="subsubsection" number="H.1.1" id="subsubsection-10" url="appendix-4.html#subsubsection-10">
             <title>A Subsubsection in a Subsection in an Appendix</title>
           </division>
         </division>

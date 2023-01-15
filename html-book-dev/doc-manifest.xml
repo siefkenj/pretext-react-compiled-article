@@ -24,7 +24,7 @@
       </division>
       <division type="preface" number="" id="contributors" url="contributors.html#contributors">
         <title>Contributors to the 4<span class="process-math">\(^\mathrm{th}\)</span> Edition</title>
-        <division type="contributors" number="[STRUCT].[NUM]" id="contributors-1" url="contributors.html#contributors-1">
+        <division type="contributors" number="" id="contributors-1" url="contributors.html#contributors-1">
           <title/>
         </division>
       </division>
@@ -240,25 +240,46 @@
             <title>Subsection Two</title>
           </division>
         </division>
-        <division type="exercises" number="5.6" id="interactive-exercises" url="interactive-exercises.html#interactive-exercises">
-          <title>Interactive Exercises</title>
+        <division type="exercises" number="5.6" id="true-false-exercises" url="true-false-exercises.html#true-false-exercises">
+          <title>True/False Exercises</title>
         </division>
-        <division type="section" number="5.7" id="exercises-timed" url="exercises-timed.html#exercises-timed">
+        <division type="exercises" number="5.7" id="multiple-choice-exercises" url="multiple-choice-exercises.html#multiple-choice-exercises">
+          <title>Multiple Choice Exercises</title>
+        </division>
+        <division type="exercises" number="5.8" id="parsons-exercises" url="parsons-exercises.html#parsons-exercises">
+          <title>Parsons Exercises</title>
+        </division>
+        <division type="exercises" number="5.9" id="horizontal-parsons-exercises" url="horizontal-parsons-exercises.html#horizontal-parsons-exercises">
+          <title>Horizontal Parsons Exercises</title>
+        </division>
+        <division type="exercises" number="5.10" id="matching-exercises" url="matching-exercises.html#matching-exercises">
+          <title>Matching Exercises</title>
+        </division>
+        <division type="exercises" number="5.11" id="clickable-area-exercises" url="clickable-area-exercises.html#clickable-area-exercises">
+          <title>Clickable Area Exercises</title>
+        </division>
+        <division type="exercises" number="5.12" id="short-answer-exercises" url="short-answer-exercises.html#short-answer-exercises">
+          <title>Short Answer Exercises</title>
+        </division>
+        <division type="exercises" number="5.13" id="fill-in--exercises" url="fill-in--exercises.html#fill-in--exercises">
+          <title>Fill-In Exercises</title>
+        </division>
+        <division type="section" number="5.14" id="exercises-timed" url="exercises-timed.html#exercises-timed">
           <title>Exercises that are Timed</title>
-          <division type="exercises" number="5.7" id="timed-exercises" url="exercises-timed.html#timed-exercises">
+          <division type="exercises" number="5.14" id="timed-exercises" url="exercises-timed.html#timed-exercises">
             <title>Timed Exercises</title>
           </division>
         </division>
-        <division type="section" number="5.8" id="interactive-projects" url="interactive-projects.html#interactive-projects">
+        <division type="section" number="5.15" id="interactive-projects" url="interactive-projects.html#interactive-projects">
           <title>Projects and Friends</title>
         </division>
-        <division type="section" number="5.9" id="section-22" url="section-22.html#section-22">
+        <division type="section" number="5.16" id="section-22" url="section-22.html#section-22">
           <title>Expedited Samples</title>
         </division>
-        <division type="reading-questions" number="5.10" id="reading-questions-1" url="reading-questions-1.html#reading-questions-1">
+        <division type="reading-questions" number="5.17" id="reading-questions-1" url="reading-questions-1.html#reading-questions-1">
           <title>Reading Questions</title>
         </division>
-        <division type="section" number="5.11" id="atomic-video" url="atomic-video.html#atomic-video">
+        <division type="section" number="5.18" id="atomic-video" url="atomic-video.html#atomic-video">
           <title>YouTube Video Embedding</title>
         </division>
       </division>
