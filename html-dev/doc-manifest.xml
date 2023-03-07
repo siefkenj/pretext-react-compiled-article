@@ -368,7 +368,7 @@
         <title>Pre-Formatted Text</title>
       </division>
       <division type="section" number="23" id="section-programs" url="section-programs.html#section-programs">
-        <title>Program Listings</title>
+        <title>Program Listings (with <code class="code-inline tex2jax_ignore">code</code> in the title)</title>
       </division>
       <division type="section" number="24" id="section-24" url="section-24.html#section-24">
         <title>Units of Measure</title>

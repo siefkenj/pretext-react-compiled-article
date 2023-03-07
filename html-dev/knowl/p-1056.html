@@ -12,7 +12,8 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para"><code class="code-inline tex2jax_ignore">If you write a very long snippet of inline code (i.e. within a &lt;c&gt; element) it can impinge on the right margin, since very long words will not hypenate, unless you have a dash/hypen.  Such as when you use words like pneumonoultramicroscopicsilicovolcanoconiosis, parastratiosphecomyia stratiosphecomyioides, floccinaucinihilipilification, or subdermatoglyphic.  For output in LaTeX we get line-breaking, and perhaps word-spacing, but we do not get hyphenation and the font is fixed-width.  So not always perfect.  Consider other options like &lt;cd&gt; or &lt;pre&gt; below.</code></div>
+<div class="para">Snippets should also be robust for cut/paste operations.  For example, you should not get “curly” “smart” quote marks in verbatim text: <code class="code-inline tex2jax_ignore">this should have "dumb" quote marks</code>. Here are a few characters that should migrate through <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> to a PDF unmolested:  <code class="code-inline tex2jax_ignore">'"----"'</code>
+</div>
 <span class="incontext"><a href="section-22.html#p-1056" class="internal">in-context</a></span>
 </body>
 </html>

@@ -228,58 +228,61 @@
         <division type="section" number="5.3" id="coding-exercises" url="coding-exercises.html#coding-exercises">
           <title>Coding Exercises</title>
         </division>
-        <division type="section" number="5.4" id="videos-in-runestone" url="videos-in-runestone.html#videos-in-runestone">
+        <division type="section" number="5.4" id="data-files" url="data-files.html#data-files">
+          <title>Data Files</title>
+        </division>
+        <division type="section" number="5.5" id="videos-in-runestone" url="videos-in-runestone.html#videos-in-runestone">
           <title>YouTube Videos</title>
         </division>
-        <division type="section" number="5.5" id="rune-nested-divisions" url="rune-nested-divisions.html#rune-nested-divisions">
+        <division type="section" number="5.6" id="rune-nested-divisions" url="rune-nested-divisions.html#rune-nested-divisions">
           <title>Deeper</title>
-          <division type="subsection" number="5.5.1" id="subsection-29" url="rune-nested-divisions.html#subsection-29">
+          <division type="subsection" number="5.6.1" id="subsection-29" url="rune-nested-divisions.html#subsection-29">
             <title>Subsection One</title>
           </division>
-          <division type="subsection" number="5.5.2" id="subsection-30" url="rune-nested-divisions.html#subsection-30">
+          <division type="subsection" number="5.6.2" id="subsection-30" url="rune-nested-divisions.html#subsection-30">
             <title>Subsection Two</title>
           </division>
         </division>
-        <division type="exercises" number="5.6" id="true-false-exercises" url="true-false-exercises.html#true-false-exercises">
+        <division type="exercises" number="5.7" id="true-false-exercises" url="true-false-exercises.html#true-false-exercises">
           <title>True/False Exercises</title>
         </division>
-        <division type="exercises" number="5.7" id="multiple-choice-exercises" url="multiple-choice-exercises.html#multiple-choice-exercises">
+        <division type="exercises" number="5.8" id="multiple-choice-exercises" url="multiple-choice-exercises.html#multiple-choice-exercises">
           <title>Multiple Choice Exercises</title>
         </division>
-        <division type="exercises" number="5.8" id="parsons-exercises" url="parsons-exercises.html#parsons-exercises">
+        <division type="exercises" number="5.9" id="parsons-exercises" url="parsons-exercises.html#parsons-exercises">
           <title>Parsons Exercises</title>
         </division>
-        <division type="exercises" number="5.9" id="horizontal-parsons-exercises" url="horizontal-parsons-exercises.html#horizontal-parsons-exercises">
+        <division type="exercises" number="5.10" id="horizontal-parsons-exercises" url="horizontal-parsons-exercises.html#horizontal-parsons-exercises">
           <title>Horizontal Parsons Exercises</title>
         </division>
-        <division type="exercises" number="5.10" id="matching-exercises" url="matching-exercises.html#matching-exercises">
+        <division type="exercises" number="5.11" id="matching-exercises" url="matching-exercises.html#matching-exercises">
           <title>Matching Exercises</title>
         </division>
-        <division type="exercises" number="5.11" id="clickable-area-exercises" url="clickable-area-exercises.html#clickable-area-exercises">
+        <division type="exercises" number="5.12" id="clickable-area-exercises" url="clickable-area-exercises.html#clickable-area-exercises">
           <title>Clickable Area Exercises</title>
         </division>
-        <division type="exercises" number="5.12" id="short-answer-exercises" url="short-answer-exercises.html#short-answer-exercises">
+        <division type="exercises" number="5.13" id="short-answer-exercises" url="short-answer-exercises.html#short-answer-exercises">
           <title>Short Answer Exercises</title>
         </division>
-        <division type="exercises" number="5.13" id="fill-in--exercises" url="fill-in--exercises.html#fill-in--exercises">
+        <division type="exercises" number="5.14" id="fill-in--exercises" url="fill-in--exercises.html#fill-in--exercises">
           <title>Fill-In Exercises</title>
         </division>
-        <division type="section" number="5.14" id="exercises-timed" url="exercises-timed.html#exercises-timed">
+        <division type="section" number="5.15" id="exercises-timed" url="exercises-timed.html#exercises-timed">
           <title>Exercises that are Timed</title>
-          <division type="exercises" number="5.14" id="timed-exercises" url="exercises-timed.html#timed-exercises">
+          <division type="exercises" number="5.15" id="timed-exercises" url="exercises-timed.html#timed-exercises">
             <title>Timed Exercises</title>
           </division>
         </division>
-        <division type="section" number="5.15" id="interactive-projects" url="interactive-projects.html#interactive-projects">
+        <division type="section" number="5.16" id="interactive-projects" url="interactive-projects.html#interactive-projects">
           <title>Projects and Friends</title>
         </division>
-        <division type="section" number="5.16" id="section-22" url="section-22.html#section-22">
+        <division type="section" number="5.17" id="section-23" url="section-23.html#section-23">
           <title>Expedited Samples</title>
         </division>
-        <division type="reading-questions" number="5.17" id="reading-questions-1" url="reading-questions-1.html#reading-questions-1">
+        <division type="reading-questions" number="5.18" id="reading-questions-1" url="reading-questions-1.html#reading-questions-1">
           <title>Reading Questions</title>
         </division>
-        <division type="section" number="5.18" id="atomic-video" url="atomic-video.html#atomic-video">
+        <division type="section" number="5.19" id="atomic-video" url="atomic-video.html#atomic-video">
           <title>YouTube Video Embedding</title>
         </division>
       </division>
@@ -300,16 +303,16 @@
       </division>
       <division type="appendix" number="E" id="appendix-2" url="appendix-2.html#appendix-2">
         <title>A Structured Appendix</title>
-        <division type="section" number="E.1" id="section-24" url="section-24.html#section-24">
+        <division type="section" number="E.1" id="section-25" url="section-25.html#section-25">
           <title>A Section in an Appendix</title>
-          <division type="subsection" number="E.1.1" id="subsection-31" url="section-24.html#subsection-31">
+          <division type="subsection" number="E.1.1" id="subsection-31" url="section-25.html#subsection-31">
             <title>A Subsection in a Section in an Appendix</title>
-            <division type="subsubsection" number="E.1.1.1" id="subsubsection-1" url="section-24.html#subsubsection-1">
+            <division type="subsubsection" number="E.1.1.1" id="subsubsection-1" url="section-25.html#subsubsection-1">
               <title>A Subsubsection in a Subsection in a Section in an Appendix</title>
             </division>
           </division>
         </division>
-        <division type="section" number="E.2" id="section-25" url="section-25.html#section-25">
+        <division type="section" number="E.2" id="section-26" url="section-26.html#section-26">
           <title>Numbering in the Back Matter</title>
         </division>
       </division>

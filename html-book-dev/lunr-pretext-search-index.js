@@ -3391,7 +3391,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "ActiveCode",
-  "body": " ActiveCode  Python programs are made interactive in HTML, on request.   An interactive Python program, using Runestone   print(\"Hello, World!\")    A C program will only be interactive if hosted on a Runestone server.   An C program, interactive on a Runestone server   #include <stdio.h> int main(void) { puts(\"Hello, world!\"); }    A Java program will only be interactive if hosted on a Runestone server.   Informal Java Hello, World  A Java program, interactive on a Runestone server   \"hi\" in Java  import javax.swing.JFrame; \/\/Importing class JFrame import javax.swing.JLabel; \/\/Importing class JLabel public class HelloWorld { public static void main(String[] args) { JFrame frame = new JFrame(); \/\/Creating frame frame.setTitle(\"Hi!\"); \/\/Setting title frame frame.add(new JLabel(\"Hello, world!\"));\/\/Adding text to frame frame.pack(); \/\/Setting size to smallest frame.setLocationRelativeTo(null); \/\/Centering frame frame.setVisible(true); \/\/Showing frame } }    Javascript programs are made interactive in HTML, on request.   An interactive JavaScript program, using Runestone   document.write('Hello, world!');    A <program> is not interactive, by default, no matter where it is hosted.   A static Java program   import javax.swing.JFrame; \/\/Importing class JFrame import javax.swing.JLabel; \/\/Importing class JLabel public class HelloWorld { public static void main(String[] args) { JFrame frame = new JFrame(); \/\/Creating frame frame.setTitle(\"Hi!\"); \/\/Setting title frame frame.add(new JLabel(\"Hello, world!\"));\/\/Adding text to frame frame.pack(); \/\/Setting size to smallest frame.setLocationRelativeTo(null); \/\/Centering frame frame.setVisible(true); \/\/Showing frame } }    An Octave program will only be interactive if hosted on a Runestone server. Octave is meant to be a drop-in replacement for Matlab.   A simple Octave program   x = 2 + 2 printf(\"%d\\n\", x)    A language not supported by Runestone Services will be rendered static.   A Pascal program that cannot be interactive on Runestone   program HelloWorld; begin WriteLn('Hello, world!'); end.    A nonsense paragraph just to check on spacing. A nonsense paragraph just to check on spacing. A nonsense paragraph just to check on spacing. A nonsense paragraph just to check on spacing.  "
+  "body": " ActiveCode  Python programs are made interactive in HTML, on request.   An interactive Python program, using Runestone   print(\"Hello, World!\")    A C program will only be interactive if hosted on a Runestone server.   An C program, interactive on a Runestone server   #include <stdio.h> int main(void) { puts(\"Hello, world!\"); }    A Java program will only be interactive if hosted on a Runestone server.   Informal Java Hello, World  A Java program, interactive on a Runestone server   \"hi\" in Java  import javax.swing.JFrame; \/\/Importing class JFrame import javax.swing.JLabel; \/\/Importing class JLabel public class HelloWorld { public static void main(String[] args) { JFrame frame = new JFrame(); \/\/Creating frame frame.setTitle(\"Hi!\"); \/\/Setting title frame frame.add(new JLabel(\"Hello, world!\"));\/\/Adding text to frame frame.pack(); \/\/Setting size to smallest frame.setLocationRelativeTo(null); \/\/Centering frame frame.setVisible(true); \/\/Showing frame } }    Javascript programs are made interactive in HTML, on request.   An interactive JavaScript program, using Runestone   document.write('Hello, world!');    A <program> is not interactive, by default, no matter where it is hosted.   A static Java program   import javax.swing.JFrame; \/\/Importing class JFrame import javax.swing.JLabel; \/\/Importing class JLabel public class HelloWorld { public static void main(String[] args) { JFrame frame = new JFrame(); \/\/Creating frame frame.setTitle(\"Hi!\"); \/\/Setting title frame frame.add(new JLabel(\"Hello, world!\"));\/\/Adding text to frame frame.pack(); \/\/Setting size to smallest frame.setLocationRelativeTo(null); \/\/Centering frame frame.setVisible(true); \/\/Showing frame } }    An Octave program will only be interactive if hosted on a Runestone server. Octave is meant to be a drop-in replacement for Matlab.   A simple Octave program   x = 2 + 2 printf(\"%d\\n\", x)    A language not supported by Runestone Services will be rendered static.   A Pascal program that cannot be interactive on Runestone   program HelloWorld; begin WriteLn('Hello, world!'); end.    The following Python program is in a <listing> since we will want to reference it shortly. The program does not do very much, it just defines four variables whose values are lists of statistics. It should run, and there will be no syntax errors, but it is a bit boring since there is no output.   A Python program that defines some statistics   loan_amount = [1250.0, 500.0, 1450.0, 200.0, 700.0, 100.0, 250.0, 225.0, 1200.0, 150.0, 600.0, 300.0, 700.0, 125.0, 650.0, 175.0, 1800.0, 1525.0, 575.0, 700.0, 1450.0, 400.0, 200.0, 1000.0, 350.0] country_name = ['Azerbaijan', 'El Salvador', 'Bolivia', 'Paraguay', 'El Salvador', 'Philippines', 'Philippines', 'Nicaragua', 'Guatemala', 'Philippines', 'Paraguay', 'Philippines', 'Bolivia', 'Philippines', 'Philippines', 'Madagascar', 'Georgia', 'Uganda', 'Kenya', 'Tajikistan', 'Jordan', 'Kenya', 'Philippines', 'Ecuador', 'Kenya'] time_to_raise = [193075.0, 1157108.0, 1552939.0, 244945.0, 238797.0, 1248909.0, 773599.0, 116181.0, 2288095.0, 51668.0, 26717.0, 48030.0, 1839190.0, 71117.0, 580401.0, 800427.0, 1156218.0, 1166045.0, 2924705.0, 470622.0, 24078.0, 260044.0, 445938.0, 201408.0, 2370450.0] num_lenders_total = [38, 18, 51, 3, 21, 1, 10, 8, 42, 1, 18, 6, 28, 5, 16, 7, 54, 1, 18, 22, 36, 12, 8, 24, 8]    Now a programming exercise. The program upcoming is going to include all the code of the program preceding. This is accomplished with an include attribute on the including program whose value is the xml:id of the included program. So by running the next program, it should pass all of its three tests (for example another example using unit tests, see ). Now reload the page, do not run the program in the listing, and then see that the program in the exercise still runs correctly.  You'll see nothing that tells the reader that the one chunk of code is prefacing the other. And in static formats it might be even less obvious. So you will want to say something to alert the reader. Here it is easy: includes all the code from .  A Python program, including another  Compute the total amount of money loaned and store it in the variable loan_total .   loan_total = 0 for loan in loan_amount: loan_total += loan print(loan_total)  from unittest.gui import TestCaseGui class MyTests(TestCaseGui): def testOne(self): self.assertTrue('loan_total' in self.getEditorText(), \"you need a loan_total variable\") self.assertEqual(loan_total, sum(loan_amount), \"Use the accumulator pattern to add up all the loans\") self.assertFalse('sum(' in self.getEditorText(), \"you may not use sum()\") MyTests().main()   Exact same exercise again, but now we include two programs. We first get the simple Hello, world! program at and then the same program defining the variables with lists of statistics at . So the output just includes the extra result from the print() statement.  A Python program, including two others  Compute the total amount of money loaned and store it in the variable loan_total .   loan_total = 0 for loan in loan_amount: loan_total += loan print(loan_total)  from unittest.gui import TestCaseGui class MyTests(TestCaseGui): def testOne(self): self.assertTrue('loan_total' in self.getEditorText(), \"you need a loan_total variable\") self.assertEqual(loan_total, sum(loan_amount), \"Use the accumulator pattern to add up all the loans\") self.assertFalse('sum(' in self.getEditorText(), \"you may not use sum\") MyTests().main()   A nonsense paragraph just to check on spacing. A nonsense paragraph just to check on spacing. A nonsense paragraph just to check on spacing. A nonsense paragraph just to check on spacing.  "
 },
 {
   "id": "program-activecode-python",
@@ -3455,6 +3455,42 @@ var ptx_lunr_docs = [
   "number": "5.1.7",
   "title": "",
   "body": " A Pascal program that cannot be interactive on Runestone   program HelloWorld; begin WriteLn('Hello, world!'); end.   "
+},
+{
+  "id": "listing-python-included",
+  "level": "2",
+  "url": "activecode.html#listing-python-included",
+  "type": "Listing",
+  "number": "5.1.8",
+  "title": "",
+  "body": " A Python program that defines some statistics   loan_amount = [1250.0, 500.0, 1450.0, 200.0, 700.0, 100.0, 250.0, 225.0, 1200.0, 150.0, 600.0, 300.0, 700.0, 125.0, 650.0, 175.0, 1800.0, 1525.0, 575.0, 700.0, 1450.0, 400.0, 200.0, 1000.0, 350.0] country_name = ['Azerbaijan', 'El Salvador', 'Bolivia', 'Paraguay', 'El Salvador', 'Philippines', 'Philippines', 'Nicaragua', 'Guatemala', 'Philippines', 'Paraguay', 'Philippines', 'Bolivia', 'Philippines', 'Philippines', 'Madagascar', 'Georgia', 'Uganda', 'Kenya', 'Tajikistan', 'Jordan', 'Kenya', 'Philippines', 'Ecuador', 'Kenya'] time_to_raise = [193075.0, 1157108.0, 1552939.0, 244945.0, 238797.0, 1248909.0, 773599.0, 116181.0, 2288095.0, 51668.0, 26717.0, 48030.0, 1839190.0, 71117.0, 580401.0, 800427.0, 1156218.0, 1166045.0, 2924705.0, 470622.0, 24078.0, 260044.0, 445938.0, 201408.0, 2370450.0] num_lenders_total = [38, 18, 51, 3, 21, 1, 10, 8, 42, 1, 18, 6, 28, 5, 16, 7, 54, 1, 18, 22, 36, 12, 8, 24, 8]   "
+},
+{
+  "id": "p-806",
+  "level": "2",
+  "url": "activecode.html#p-806",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "include "
+},
+{
+  "id": "exercise-python-including",
+  "level": "2",
+  "url": "activecode.html#exercise-python-including",
+  "type": "Checkpoint",
+  "number": "5.1.9",
+  "title": "A Python program, including another.",
+  "body": "A Python program, including another  Compute the total amount of money loaned and store it in the variable loan_total .   loan_total = 0 for loan in loan_amount: loan_total += loan print(loan_total)  from unittest.gui import TestCaseGui class MyTests(TestCaseGui): def testOne(self): self.assertTrue('loan_total' in self.getEditorText(), \"you need a loan_total variable\") self.assertEqual(loan_total, sum(loan_amount), \"Use the accumulator pattern to add up all the loans\") self.assertFalse('sum(' in self.getEditorText(), \"you may not use sum()\") MyTests().main()  "
+},
+{
+  "id": "exercise-python-including-two",
+  "level": "2",
+  "url": "activecode.html#exercise-python-including-two",
+  "type": "Checkpoint",
+  "number": "5.1.10",
+  "title": "A Python program, including two others.",
+  "body": "A Python program, including two others  Compute the total amount of money loaned and store it in the variable loan_total .   loan_total = 0 for loan in loan_amount: loan_total += loan print(loan_total)  from unittest.gui import TestCaseGui class MyTests(TestCaseGui): def testOne(self): self.assertTrue('loan_total' in self.getEditorText(), \"you need a loan_total variable\") self.assertEqual(loan_total, sum(loan_amount), \"Use the accumulator pattern to add up all the loans\") self.assertFalse('sum(' in self.getEditorText(), \"you may not use sum\") MyTests().main()  "
 },
 {
   "id": "code-lens",
@@ -3556,9 +3592,9 @@ var ptx_lunr_docs = [
   "body": " Activity Coding Exercise   Similar to above, but now as a complete Python program inside an <activity> . This demonstrates the possibility to use any project-like block ( <project> , <activity> , <exploration> , <investigation> ), but not in the case when structured with <task> .    for i in range(10): print(i)   We're still not really sure.  "
 },
 {
-  "id": "exercise-196",
+  "id": "exercise-198",
   "level": "2",
-  "url": "coding-exercises.html#exercise-196",
+  "url": "coding-exercises.html#exercise-198",
   "type": "Checkpoint",
   "number": "5.3.3",
   "title": "An Exercise with a Static Program.",
@@ -3574,11 +3610,47 @@ var ptx_lunr_docs = [
   "body": "Coding Exercise, with Unit Tests  Fix the following code so that it always correctly adds two numbers. [Ed. Unit test support is experimental.]   def add(a,b): return 4  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(add(2,2), 4, \"Adding two identical integers\") self.assertEqual(add(7,13), 20, \"Adding two different integers\") self.assertAlmostEqual(add(2.0,3.0), 5.0, 5, \"Adding two decimal numbers\") myTests().main()   We're not really sure. But it would begin as follows:   #include <stdio.h> int main(void)   "
 },
 {
+  "id": "data-files",
+  "level": "1",
+  "url": "data-files.html",
+  "type": "Section",
+  "number": "5.4",
+  "title": "Data Files",
+  "body": " Data Files  In the following file of climate data, the first column is Year, second column is Global Average Temperature (Celcius), and the third column is Global Emmisions C02 (Giga-tons). [Normally you might place this inside a block with the <datafile> .]    1850 -0.37 2.24E-7 1860 -0.34 3.94E-7 1870 -0.28 6.6E-7 1880 -0.24 1.1 1890 -0.42 1.72 1900 -0.2 2.38 1910 -0.49 3.34 1920 -0.25 4.01 1930 -0.14 4.53 1940 0.01 5.5 1950 -0.17 6.63 1960 -0.05 10.5 1970 -0.03 16 1980 0.09 20.3 1990 0.3 22.6 2000 0.29 24.9 2010 0.56 32.7 2019 0.74 33.3    ccfile = open(\"ccdata1.txt\", \"r\") for aline in ccfile: values = aline.split() print('In', values[0], 'the average temp. was', values[1], '°C and CO2 emmisions were', values[2], 'gigatons.') ccfile.close()     Stack Overflow Developer Survey  [A data file can go lots of places. But to make it more prominent, and easy to cross-reference, it would be natural to put it into a <data> block.]  Now that you are experienced with working with files lets look at a bit of the data set. The survey had 98,855 respondents. We will work with a sample of 2000 of those responses for this lab. In addition we have narrowed down the questions from 129 to just 13. The columns we have included in this data set are:  Respondent  Country  JobSatisfaction  UndergradMajor  ConvertedSalary  Exercise  Gender  RaceEthnicity  EducationParents  HoursOutside  Age  LastNewJob  LanguageWorkedWith            import image img = image.Image(\"luther-bell.jpg\") print(img.getWidth()) print(img.getHeight()) p = img.getPixel(45, 55) print(p.getRed(), p.getGreen(), p.getBlue())    Golden Gate Bridge Image processing  This image has a Creative Commons license, but we've lost track of the exact terms.  [Now a data file and a program to process it, all bundled up inside a <computation> , since an <example> gets knowled and the ActiveCode does not fill.]      This program changes every pixel of the image.   import image img = image.Image(\"golden_gate.png\") win = image.ImageWin(img.getWidth(), img.getHeight()) img.draw(win) # img.setDelay(delay, number of pixels between delay) # setDelay(1, 400) will speed up a lot img.setDelay(1,15) for row in range(img.getHeight()): for col in range(img.getWidth()): p = img.getPixel(col, row) newred = p.red * 1.4 newgreen = p.green * .75 newblue = p.blue * 1.1 newpixel = image.Pixel(newred, newgreen, newblue) img.setPixel(col, row, newpixel) img.draw(win) win.exitonclick()    The examples above all use Python, which will run in your browser. Other languages will only run when a project is hosted on Runestone Academy servers. And in this case there is a small twist. You need to indicate which existing <datafile> your program needs, even if that seems obvious by reading the code. Use a datafile attribute on <program> that has a list of filenames. These are the filenames you set via the filename attribute of the <datafile> element, and are the names you use in your program's code. As before, no path information is neede, nor allowed.  [2023-02-21: testing for single files first, list of several not yet implemented.]  When the language attribute of a <program> is set to python3 that means in-browser Python is not good enough, and you want the greater power and flexibility of having your code run on a Runestone Academy server. So this is our first example of using the datafile attribute.  The data file is an abbreviated version of the example above, just to be different. And is not editable.   1900 -0.2 2.38 1910 -0.49 3.34 1920 -0.25 4.01 1930 -0.14 4.53 1940 0.01 5.5 1950 -0.17 6.63 1960 -0.05 10.5 1970 -0.03 16 1980 0.09 20.3 1990 0.3 22.6 2000 0.29 24.9 2010 0.56 32.7 2019 0.74 33.3   The program is identical to the above, but we specify python3 as the language, and use the smaller file. So this example is only active when this content is hosted on a Runestone Academy server.   ccfile = open(\"ccdata2.txt\", \"r\") for aline in ccfile: values = aline.split() print('In', values[0], 'the average temp. was', values[1], '°C and CO2 emmisions were', values[2], 'gigatons.') ccfile.close()   [2023-02-24 Testing Java with multiple data files]   Flowers  Two flower images as <datafile> for use in upcoming Java program.            import java.awt.*; import java.awt.font.*; import java.awt.geom.*; import java.awt.image.BufferedImage; import java.text.*; import java.util.*; import java.util.List; \/** * A class that represents a picture. This class inherits from * SimplePicture and allows the student to add functionality to * the Picture class. * * @author Barbara Ericson ericson@cc.gatech.edu *\/ public class Picture extends SimplePicture { \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ constructors \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ \/** * Constructor that takes no arguments *\/ public Picture () { \/* not needed but use it to show students the implicit call to super() * child constructors always call a parent constructor *\/ super(); } \/** * Constructor that takes a file name and creates the picture * @param fileName the name of the file to create the picture from *\/ public Picture(String fileName) { \/\/ let the parent class handle this fileName super(fileName); } \/** * Constructor that takes the height and width * @param height the height of the desired picture * @param width the width of the desired picture *\/ public Picture(int width, int height) { \/\/ let the parent class handle this width and height super(width,height); } \/** * Constructor that takes a picture and creates a * copy of that picture * @param copyPicture the picture to copy *\/ public Picture(Picture copyPicture) { \/\/ let the parent class do the copy super(copyPicture); } \/** * Constructor that takes a buffered image * @param image the buffered image to use *\/ public Picture(BufferedImage image) { super(image); } \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ methods \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ \/** * Method to return a string with information about this picture. * @return a string with information about the picture such as fileName, * height and width. *\/ public String toString() { String output = \"Picture, filename \" + getFileName() + \" height \" + getHeight() + \" width \" + getWidth(); return output; } \/** zeroBlue() method sets the blue values at all pixels to zero *\/ public void zeroBlue() { Pixel[][] pixels = this.getPixels2D(); for (Pixel[] rowArray : pixels) { for (Pixel p: rowArray) { p.setBlue(0); } } } \/* mirrorVertical() *\/ public void mirrorVertical() { Pixel[][] pixels = this.getPixels2D(); Pixel leftPixel = null; Pixel rightPixel = null; int width = pixels[0].length; for (int row = 0; row < pixels.length; row++) { for (int col = 0; col < width \/ 2; col++) { leftPixel = pixels[row][col]; rightPixel = pixels[row][width - 1 - col]; rightPixel.setColor(leftPixel.getColor()); } } } \/** copy from the passed fromPic to the * specified startRow and startCol in the * current picture * @param fromPic the picture to copy from * @param startRow the start row to copy to * @param startCol the start col to copy to *\/ public void copy(Picture fromPic, int startRow, int startCol) { Pixel fromPixel = null; Pixel toPixel = null; Pixel[][] toPixels = this.getPixels2D(); Pixel[][] fromPixels = fromPic.getPixels2D(); for (int fromRow = 0, toRow = startRow; fromRow < fromPixels.length && toRow < toPixels.length; fromRow++, toRow++) { for (int fromCol = 0, toCol = startCol; fromCol < fromPixels[0].length && toCol < toPixels[0].length; fromCol++, toCol++) { fromPixel = fromPixels[fromRow][fromCol]; toPixel = toPixels[toRow][toCol]; toPixel.setColor(fromPixel.getColor()); } } } public void createCollage() { \/\/ You can also try butterfly.jpg and snowflake.jpg Picture flower1 = new Picture(\"flower1.jpg\"); Picture flower2 = new Picture(\"flower2.jpg\"); this.copy(flower1,0,0); this.copy(flower2,100,0); this.copy(flower1,200,0); Picture flowerNoBlue = new Picture(flower2); flowerNoBlue.zeroBlue(); this.copy(flowerNoBlue,300,0); this.copy(flower1,400,0); this.copy(flower2,500,0); this.mirrorVertical(); this.show(); } \/* Main method for testing *\/ public static void main(String[] args) { Picture p = new Picture(500,500); p.createCollage(); } }     "
+},
+{
+  "id": "data-1",
+  "level": "2",
+  "url": "data-files.html#data-1",
+  "type": "Data",
+  "number": "5.4.1",
+  "title": "Stack Overflow Developer Survey.",
+  "body": " Stack Overflow Developer Survey  [A data file can go lots of places. But to make it more prominent, and easy to cross-reference, it would be natural to put it into a <data> block.]  Now that you are experienced with working with files lets look at a bit of the data set. The survey had 98,855 respondents. We will work with a sample of 2000 of those responses for this lab. In addition we have narrowed down the questions from 129 to just 13. The columns we have included in this data set are:  Respondent  Country  JobSatisfaction  UndergradMajor  ConvertedSalary  Exercise  Gender  RaceEthnicity  EducationParents  HoursOutside  Age  LastNewJob  LanguageWorkedWith      "
+},
+{
+  "id": "computation-1",
+  "level": "2",
+  "url": "data-files.html#computation-1",
+  "type": "Computation",
+  "number": "5.4.2",
+  "title": "Golden Gate Bridge Image processing.",
+  "body": " Golden Gate Bridge Image processing  This image has a Creative Commons license, but we've lost track of the exact terms.  [Now a data file and a program to process it, all bundled up inside a <computation> , since an <example> gets knowled and the ActiveCode does not fill.]      This program changes every pixel of the image.   import image img = image.Image(\"golden_gate.png\") win = image.ImageWin(img.getWidth(), img.getHeight()) img.draw(win) # img.setDelay(delay, number of pixels between delay) # setDelay(1, 400) will speed up a lot img.setDelay(1,15) for row in range(img.getHeight()): for col in range(img.getWidth()): p = img.getPixel(col, row) newred = p.red * 1.4 newgreen = p.green * .75 newblue = p.blue * 1.1 newpixel = image.Pixel(newred, newgreen, newblue) img.setPixel(col, row, newpixel) img.draw(win) win.exitonclick()   "
+},
+{
+  "id": "data-2",
+  "level": "2",
+  "url": "data-files.html#data-2",
+  "type": "Data",
+  "number": "5.4.3",
+  "title": "Flowers.",
+  "body": " Flowers  Two flower images as <datafile> for use in upcoming Java program.         "
+},
+{
   "id": "videos-in-runestone",
   "level": "1",
   "url": "videos-in-runestone.html",
   "type": "Section",
-  "number": "5.4",
+  "number": "5.5",
   "title": "YouTube Videos",
   "body": " YouTube Videos  Runestone uses a YouTube API that broadcasts events when a reader interacts with a video. In this way, Runestone can record video-watching as an activity. As PreTeXt output we concede better behavior on small screens ( responsiveness ) to enable this feature in a Runestone version. A label attribute is necessary for persistence in the Runestone database. Various PreTeXt features, such as playlists, are not yet supported make a request.   A List Variable Video   The margins here are asymmetric just as a test. And this text is here to see where the video ends.  "
 },
@@ -3587,7 +3659,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "rune-nested-divisions.html",
   "type": "Section",
-  "number": "5.5",
+  "number": "5.6",
   "title": "Deeper",
   "body": " Deeper   This is a stub of a <section> , but it contains two <subsection> which each contain a PROJECT-LIKE item that includes a <program> element, and thus is a coding exercise. This tests migration to the Runestone assignment area, though Runestone only has divisions two-deep ( chapter and subchapter , so both will show up associated with the same <section> this one.  The first is a start of a C program, so will only be interactive on a Runestone server. The second is a Python program, so will be interactive in all HTML outputs.    Subsection One  An <activity> next. This one has a <program> so will be made interactive whenever possible.   Activity in a Subsection   We would suggest you do something here.    #include <stdio.h> int main(void)    Nothing suggests this next <project> is interactive.   Project in a Subsection   You would work this project on paper, most likely. It is never interactive since there is no indication of a desire for that, even if hosted on a capable platform.  A little bit of markup, to test a bug: . (The bug was only apparent under a deprecated method for specify a question to be an interactive short-answer question on Runestone Academy.)      Subsection Two  An <exploration> next.   Exploration in a Subsection   We would suggest now that you explore something here. In this case we simply provide a CodeLens, which would be graded as an interaction .    for i in range(10): print(i)    The next simple <exercise> will be a short answer question on a capable interactive platform since we have included a <response> element.  Inline Exercise in a Subsection  I am an interactive short answer question, but only on a capable platform.    "
 },
@@ -3596,7 +3668,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "rune-nested-divisions.html#activity-in-subsection",
   "type": "Activity",
-  "number": "5.5.1",
+  "number": "5.6.1",
   "title": "Activity in a Subsection.",
   "body": " Activity in a Subsection   We would suggest you do something here.    #include <stdio.h> int main(void)   "
 },
@@ -3605,7 +3677,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "rune-nested-divisions.html#project-1",
   "type": "Project",
-  "number": "5.5.2",
+  "number": "5.6.2",
   "title": "Project in a Subsection.",
   "body": " Project in a Subsection   You would work this project on paper, most likely. It is never interactive since there is no indication of a desire for that, even if hosted on a capable platform.  A little bit of markup, to test a bug: . (The bug was only apparent under a deprecated method for specify a question to be an interactive short-answer question on Runestone Academy.)   "
 },
@@ -3614,16 +3686,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "rune-nested-divisions.html#exploration-with-always-static-program",
   "type": "Exploration",
-  "number": "5.5.3",
+  "number": "5.6.3",
   "title": "Exploration in a Subsection.",
   "body": " Exploration in a Subsection   We would suggest now that you explore something here. In this case we simply provide a CodeLens, which would be graded as an interaction .    for i in range(10): print(i)   "
 },
 {
-  "id": "exercise-198",
+  "id": "exercise-200",
   "level": "2",
-  "url": "rune-nested-divisions.html#exercise-198",
+  "url": "rune-nested-divisions.html#exercise-200",
   "type": "Checkpoint",
-  "number": "5.5.1",
+  "number": "5.6.1",
   "title": "Inline Exercise in a Subsection.",
   "body": "Inline Exercise in a Subsection  I am an interactive short answer question, but only on a capable platform.  "
 },
@@ -3632,7 +3704,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "true-false-exercises.html",
   "type": "Exercises",
-  "number": "5.6",
+  "number": "5.7",
   "title": "True\/False Exercises",
   "body": " True\/False Exercises  True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   "
 },
@@ -3641,7 +3713,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "true-false-exercises.html#vector-space-dimension",
   "type": "Exercise",
-  "number": "5.6.1",
+  "number": "5.7.1",
   "title": "True\/False.",
   "body": "True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?  "
 },
@@ -3650,7 +3722,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "multiple-choice-exercises.html",
   "type": "Exercises",
-  "number": "5.7",
+  "number": "5.8",
   "title": "Multiple Choice Exercises",
   "body": " Multiple Choice Exercises  Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?   Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?   Multiple-Choice, Randomized, One Answer stop signs  What color is a stop sign? [Static versions retain the order as authored.]     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?   Multiple-Choice, Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.) [Static versions retain the order as authored.]     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?   Mathematical Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which of the following is an antiderivative of ?        Remember that when we write on an antiderivative that this is the way we communicate that there are many possible derivatives, but they all differ by a constant .         The derivative given in the statement of the problem looks exactly like an application of the chain rule to .         Take a derivative on to see that this answer is correct. Extra credit: does this answer differ by a constant when subtracted from either of the other two correct answers?         The antiderivative of a product is not the product of the antiderivatives. Use the product rule to take a derivative and see that this answer is not correct.     You can take a derivative on any one of the choices to see if it is correct or not, rather than using techniques of integration to find a single correct answer.   "
 },
@@ -3659,7 +3731,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "multiple-choice-exercises.html#multiple-choice-not-randomized",
   "type": "Exercise",
-  "number": "5.7.1",
+  "number": "5.8.1",
   "title": "Multiple-Choice, Not Randomized, One Answer.",
   "body": "Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  "
 },
@@ -3668,7 +3740,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "multiple-choice-exercises.html#multiple-choice-multiple-answers",
   "type": "Exercise",
-  "number": "5.7.2",
+  "number": "5.8.2",
   "title": "Multiple-Choice, Not Randomized, Multiple Answers.",
   "body": "Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?  "
 },
@@ -3677,7 +3749,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "multiple-choice-exercises.html#multiple-choice-randomized",
   "type": "Exercise",
-  "number": "5.7.3",
+  "number": "5.8.3",
   "title": "Multiple-Choice, Randomized, One Answer.",
   "body": "Multiple-Choice, Randomized, One Answer stop signs  What color is a stop sign? [Static versions retain the order as authored.]     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  "
 },
@@ -3686,7 +3758,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "multiple-choice-exercises.html#multiple-choice-randomized-multiple-answers",
   "type": "Exercise",
-  "number": "5.7.4",
+  "number": "5.8.4",
   "title": "Multiple-Choice, Randomized, Multiple Answers.",
   "body": "Multiple-Choice, Randomized, Multiple Answers stop signs  Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.) [Static versions retain the order as authored.]     Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.     Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?  "
 },
@@ -3695,7 +3767,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "multiple-choice-exercises.html#mathematical-multiple-choice-multiple-answers",
   "type": "Exercise",
-  "number": "5.7.5",
+  "number": "5.8.5",
   "title": "Mathematical Multiple-Choice, Not Randomized, Multiple Answers.",
   "body": "Mathematical Multiple-Choice, Not Randomized, Multiple Answers stop signs  Which of the following is an antiderivative of ?        Remember that when we write on an antiderivative that this is the way we communicate that there are many possible derivatives, but they all differ by a constant .         The derivative given in the statement of the problem looks exactly like an application of the chain rule to .         Take a derivative on to see that this answer is correct. Extra credit: does this answer differ by a constant when subtracted from either of the other two correct answers?         The antiderivative of a product is not the product of the antiderivatives. Use the product rule to take a derivative and see that this answer is not correct.     You can take a derivative on any one of the choices to see if it is correct or not, rather than using techniques of integration to find a single correct answer.  "
 },
@@ -3704,7 +3776,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "parsons-exercises.html",
   "type": "Exercises",
-  "number": "5.8",
+  "number": "5.9",
   "title": "Parsons Exercises",
   "body": " Parsons Exercises  Parsons Problem, Mathematical Proof even numbers  Create a proof of the theorem: If is an even number, then .    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .   Dorothy will not be much help with this proof.  Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem requires the reader to provide the necessary indentation.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem does not require the reader to provide the necessary indentation, which is the default.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    Parsons Problem, Mathematical Proof, Numbered Blocks even numbers  Create a proof of the theorem: If is an even number, then . [Ed. This version has numbered blocks, online they are on the right end of the block.]    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .   Dorothy will not be much help with this proof.  Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)    "
 },
@@ -3713,7 +3785,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "parsons-exercises.html#number-theory-proof",
   "type": "Exercise",
-  "number": "5.8.1",
+  "number": "5.9.1",
   "title": "Parsons Problem, Mathematical Proof.",
   "body": "Parsons Problem, Mathematical Proof even numbers  Create a proof of the theorem: If is an even number, then .    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .    And a little bit of irrelevant multi-line math .   Dorothy will not be much help with this proof. "
 },
@@ -3722,7 +3794,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "parsons-exercises.html#prime-number-program-indent-yes",
   "type": "Exercise",
-  "number": "5.8.2",
+  "number": "5.9.2",
   "title": "Parsons Problem, Programming.",
   "body": "Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem requires the reader to provide the necessary indentation.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)   "
 },
@@ -3731,7 +3803,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "parsons-exercises.html#prime-number-program-indent-no",
   "type": "Exercise",
-  "number": "5.8.3",
+  "number": "5.9.3",
   "title": "Parsons Problem, Programming.",
   "body": "Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. this version of this problem does not require the reader to provide the necessary indentation, which is the default.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)   "
 },
@@ -3740,7 +3812,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "parsons-exercises.html#number-theory-proof-numbered-left",
   "type": "Exercise",
-  "number": "5.8.4",
+  "number": "5.9.4",
   "title": "Parsons Problem, Mathematical Proof, Numbered Blocks.",
   "body": "Parsons Problem, Mathematical Proof, Numbered Blocks even numbers  Create a proof of the theorem: If is an even number, then . [Ed. This version has numbered blocks, online they are on the right end of the block.]    Suppose is even.    Then is a prime number.  Then there exists an so that .  Then there exists an so that .    Click the heels of your ruby slippers together three times.    So .  This is a superfluous second paragraph in this block.    Thus .   Dorothy will not be much help with this proof. "
 },
@@ -3749,7 +3821,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "parsons-exercises.html#prime-number-program-numbered-right",
   "type": "Exercise",
-  "number": "5.8.5",
+  "number": "5.9.5",
   "title": "Parsons Problem, Programming.",
   "body": "Parsons Problem, Programming prime numbers Sieve of Eratosthenes  The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1. The first member of the list is a prime and is saved\/recorded. Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list. Now the first number remaining in the list is the next prime number. And the process repeats.  The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than . [Ed. This version has numbered blocks, online they are on the left end of the block.]  This reprises .    n = 250     primes = []  candidates = list(range(2,n))    candidates = []  primes = list(range(2,n))     primes = candidates + [p]    while candidates:    p = candidates[0]  primes.append(p)    for nonprime in range(p, n, p):    if nonprime in candidates:  candidates.remove(nonprime)    print(primes)   "
 },
@@ -3758,7 +3830,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "horizontal-parsons-exercises.html",
   "type": "Exercises",
-  "number": "5.9",
+  "number": "5.10",
   "title": "Horizontal Parsons Exercises",
   "body": " Horizontal Parsons Exercises  Parsons Problem, SQL statement  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test   Parsons Problem, SQL statement, no randomization  Form the SQL statement by rearranging the four blocks. This version of this problem will always present the blocks in the same fixed order (but incorrect, hopefully!), as prescribed by the author in the source.   SELECT  *  FROM  test   Parsons Problem, SQL statement, automatic feedback  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  assert 1,1 == world assert 0,1 == hello assert 2,1 == 42  Parsons Problem, Natural Language  Form the sentence often used to show font samples. You can reuse blocks as needed.    quick  brown  fox  jumped  over  the  lazy  dog   Parsons Problem, Natural Language, with Distractors  Form the sentence often used to show font samples. Again, but now with distractors.    quick  brown  fox  jumped  foo  over  the  lazy  bar  dog   Parsons Problem, SQL statement, reusable  Form the SQL statement by rearranging the four blocks. Same problem as above, but we allow blocks to be reused (even though the solution does not require that).   SELECT  *  FROM  test   "
 },
@@ -3767,7 +3839,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "horizontal-parsons-exercises.html#horizontal-parson-sql-statement-simple",
   "type": "Exercise",
-  "number": "5.9.1",
+  "number": "5.10.1",
   "title": "Parsons Problem, SQL statement.",
   "body": "Parsons Problem, SQL statement  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  "
 },
@@ -3776,7 +3848,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "horizontal-parsons-exercises.html#horizontal-parson-sql-statement-no-randomize",
   "type": "Exercise",
-  "number": "5.9.2",
+  "number": "5.10.2",
   "title": "Parsons Problem, SQL statement, no randomization.",
   "body": "Parsons Problem, SQL statement, no randomization  Form the SQL statement by rearranging the four blocks. This version of this problem will always present the blocks in the same fixed order (but incorrect, hopefully!), as prescribed by the author in the source.   SELECT  *  FROM  test  "
 },
@@ -3785,7 +3857,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "horizontal-parsons-exercises.html#horizontal-parson-sql-statement-with-db",
   "type": "Exercise",
-  "number": "5.9.3",
+  "number": "5.10.3",
   "title": "Parsons Problem, SQL statement, automatic feedback.",
   "body": "Parsons Problem, SQL statement, automatic feedback  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  assert 1,1 == world assert 0,1 == hello assert 2,1 == 42 "
 },
@@ -3794,7 +3866,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "horizontal-parsons-exercises.html#horizontal-parson-natural",
   "type": "Exercise",
-  "number": "5.9.4",
+  "number": "5.10.4",
   "title": "Parsons Problem, Natural Language.",
   "body": "Parsons Problem, Natural Language  Form the sentence often used to show font samples. You can reuse blocks as needed.    quick  brown  fox  jumped  over  the  lazy  dog  "
 },
@@ -3803,7 +3875,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "horizontal-parsons-exercises.html#horizontal-parson-natural-distractor",
   "type": "Exercise",
-  "number": "5.9.5",
+  "number": "5.10.5",
   "title": "Parsons Problem, Natural Language, with Distractors.",
   "body": "Parsons Problem, Natural Language, with Distractors  Form the sentence often used to show font samples. Again, but now with distractors.    quick  brown  fox  jumped  foo  over  the  lazy  bar  dog  "
 },
@@ -3812,7 +3884,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "horizontal-parsons-exercises.html#horizontal-parson-sql-statement-reusable",
   "type": "Exercise",
-  "number": "5.9.6",
+  "number": "5.10.6",
   "title": "Parsons Problem, SQL statement, reusable.",
   "body": "Parsons Problem, SQL statement, reusable  Form the SQL statement by rearranging the four blocks. Same problem as above, but we allow blocks to be reused (even though the solution does not require that).   SELECT  *  FROM  test  "
 },
@@ -3821,7 +3893,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "matching-exercises.html",
   "type": "Exercises",
-  "number": "5.10",
+  "number": "5.11",
   "title": "Matching Exercises",
   "body": " Matching Exercises   Matching Problem, Dates matching US dates  Match each event in United States history with the year it happened.   Review Encyclopedia Brittania, 25 Decade-Defining Events in U.S. History url.    Monroe Doctrine  1823    Haymarket Riot  1886    Louisiana Purchase  1803    Battle of Gettysburg  1863    Matching Problem, Derivatives matching derivatives  Match each function with its derivative.   Did you compute the derivative of each function in the premises (left column)?                Matching Problem, Linear Algebra matching bases and subspaces  Match each subspace with a basis for that subspace. (You may assume that each set is really a basis for at least one of the subspaces.)   Each putative basis is a subset of exactly one of the three subspaces. So for each subspace, two of the three sets can be ruled out by simply testing that the vectors of the basis are members of the subspace, via the membership criteria.                For openers, a basis for a subspace must be a subset of the subspace.   "
 },
@@ -3830,7 +3902,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matching-exercises.html#matching-dates",
   "type": "Exercise",
-  "number": "5.10.1",
+  "number": "5.11.1",
   "title": "Matching Problem, Dates.",
   "body": "Matching Problem, Dates matching US dates  Match each event in United States history with the year it happened.   Review Encyclopedia Brittania, 25 Decade-Defining Events in U.S. History url.    Monroe Doctrine  1823    Haymarket Riot  1886    Louisiana Purchase  1803    Battle of Gettysburg  1863   "
 },
@@ -3839,7 +3911,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matching-exercises.html#matching-derivatives",
   "type": "Exercise",
-  "number": "5.10.2",
+  "number": "5.11.2",
   "title": "Matching Problem, Derivatives.",
   "body": "Matching Problem, Derivatives matching derivatives  Match each function with its derivative.   Did you compute the derivative of each function in the premises (left column)?               "
 },
@@ -3848,7 +3920,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matching-exercises.html#matching-bases",
   "type": "Exercise",
-  "number": "5.10.3",
+  "number": "5.11.3",
   "title": "Matching Problem, Linear Algebra.",
   "body": "Matching Problem, Linear Algebra matching bases and subspaces  Match each subspace with a basis for that subspace. (You may assume that each set is really a basis for at least one of the subspaces.)   Each putative basis is a subset of exactly one of the three subspaces. So for each subspace, two of the three sets can be ruled out by simply testing that the vectors of the basis are members of the subspace, via the membership criteria.                For openers, a basis for a subspace must be a subset of the subspace.  "
 },
@@ -3857,7 +3929,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "clickable-area-exercises.html",
   "type": "Exercises",
-  "number": "5.11",
+  "number": "5.12",
   "title": "Clickable Area Exercises",
   "body": " Clickable Area Exercises  Clickable Areas, Regular Text  Identify (by clicking, or by circling) all of the nouns in this quotation by Eleanor Roosevelt.   The future belongs to those who believe in the beauty of their  dreams .   The incorrect words are pronouns.   Clickable Areas, Code  Identify (by clicking, or by circling) all of the assignment statements in this Python function.   def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)   Remember, the operator = is used for assignment.   Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.     42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.   "
 },
@@ -3866,7 +3938,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "clickable-area-exercises.html#clickable-text",
   "type": "Exercise",
-  "number": "5.11.1",
+  "number": "5.12.1",
   "title": "Clickable Areas, “Regular” Text.",
   "body": "Clickable Areas, Regular Text  Identify (by clicking, or by circling) all of the nouns in this quotation by Eleanor Roosevelt.   The future belongs to those who believe in the beauty of their  dreams .   The incorrect words are pronouns.  "
 },
@@ -3875,7 +3947,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "clickable-area-exercises.html#clickable-code",
   "type": "Exercise",
-  "number": "5.11.2",
+  "number": "5.12.2",
   "title": "Clickable Areas, Code.",
   "body": "Clickable Areas, Code  Identify (by clicking, or by circling) all of the assignment statements in this Python function.   def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)   Remember, the operator = is used for assignment.  "
 },
@@ -3884,7 +3956,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "clickable-area-exercises.html#clickable-table",
   "type": "Exercise",
-  "number": "5.11.3",
+  "number": "5.12.3",
   "title": "Clickable Areas, Text in a Table.",
   "body": "Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.     42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.  "
 },
@@ -3893,7 +3965,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "short-answer-exercises.html",
   "type": "Exercises",
-  "number": "5.12",
+  "number": "5.13",
   "title": "Short Answer Exercises",
   "body": " Short Answer Exercises  Short Answer  This sample book is configured to make some simple questions interactive on a capable platform, by adding a <response> element as a signal.   "
 },
@@ -3902,7 +3974,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "short-answer-exercises.html#short-answer-question",
   "type": "Exercise",
-  "number": "5.12.1",
+  "number": "5.13.1",
   "title": "Short Answer.",
   "body": "Short Answer  This sample book is configured to make some simple questions interactive on a capable platform, by adding a <response> element as a signal.  "
 },
@@ -3911,7 +3983,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "fill-in--exercises.html",
   "type": "Exercises",
-  "number": "5.13",
+  "number": "5.14",
   "title": "Fill-In Exercises",
   "body": " Fill-In Exercises  Fill-In, Integer Answer  The game of bowling uses pins that you try to knock down. (This answer blank has been set to be very wide.)      Arranged in a triangle, there are pins, a so-called triangular number.      Close ! You may have used hexadecimal notation, when you did not really mean to.      Incorrect.      Fill-In, String and Number Answers  Complete the following line of a Python program so that it will declare an integer variable age with an initial value of 5 . (These two answer blanks have been set to be very short.)   age =  ;      A variable of type int is appropriate for whole number ages.      Remember that Java uses just the first three letters of the word integer to define an integral type.        An integer variable may be initialized to a value.      Use 5 as the initial value of the variable.      Fill-In, Case-Insensitive Answer  The word is the opposite of yes . (Try a mixture of upper and lower-case letters.)      The correct answers are no, No, nO, and NO.    Incorrect.     Fill-In, Decimal Answer  The decimal number is an approximation of to within three significant figures. ( Wikipedia ).       Any value in the interval is correct.      Incorrect. Did you provide three significant figures ?      "
 },
@@ -3920,7 +3992,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fill-in--exercises.html#fillin-integer",
   "type": "Exercise",
-  "number": "5.13.1",
+  "number": "5.14.1",
   "title": "Fill-In, Integer Answer.",
   "body": "Fill-In, Integer Answer  The game of bowling uses pins that you try to knock down. (This answer blank has been set to be very wide.)      Arranged in a triangle, there are pins, a so-called triangular number.      Close ! You may have used hexadecimal notation, when you did not really mean to.      Incorrect.     "
 },
@@ -3929,7 +4001,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fill-in--exercises.html#fillin-string-integer",
   "type": "Exercise",
-  "number": "5.13.2",
+  "number": "5.14.2",
   "title": "Fill-In, String and Number Answers.",
   "body": "Fill-In, String and Number Answers  Complete the following line of a Python program so that it will declare an integer variable age with an initial value of 5 . (These two answer blanks have been set to be very short.)   age =  ;      A variable of type int is appropriate for whole number ages.      Remember that Java uses just the first three letters of the word integer to define an integral type.        An integer variable may be initialized to a value.      Use 5 as the initial value of the variable.     "
 },
@@ -3938,7 +4010,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fill-in--exercises.html#fillin-case-insensitive",
   "type": "Exercise",
-  "number": "5.13.3",
+  "number": "5.14.3",
   "title": "Fill-In, Case-Insensitive Answer.",
   "body": "Fill-In, Case-Insensitive Answer  The word is the opposite of yes . (Try a mixture of upper and lower-case letters.)      The correct answers are no, No, nO, and NO.    Incorrect.    "
 },
@@ -3947,7 +4019,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fill-in--exercises.html#fillin-decimal",
   "type": "Exercise",
-  "number": "5.13.4",
+  "number": "5.14.4",
   "title": "Fill-In, Decimal Answer.",
   "body": "Fill-In, Decimal Answer  The decimal number is an approximation of to within three significant figures. ( Wikipedia ).       Any value in the interval is correct.      Incorrect. Did you provide three significant figures ?     "
 },
@@ -3956,7 +4028,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "exercises-timed.html",
   "type": "Section",
-  "number": "5.14",
+  "number": "5.15",
   "title": "Exercises that are Timed",
   "body": " Exercises that are Timed  This is a section that merely explains and holds an <exercises> division, which will be at the level of a <subsection> . There is a time-limit attribute on <exercises> , set to the value 10 , which implies (a) the collection of (two) exercises is a timed exam when hosted on Runestone, and (b) a student will have 10 minutes to complete the collection.  Showing results, showing feedback, displaying a timer, and allowing pausing are all enabled by default. To disable any of these features, set the corresponding attributes on the <exercises> division, results , feedback , timer , pause , to the value no . As a test, we have turned off pausing. Don't panic!  Of course, if you are not viewing this while online and hosted on a Runestone server, then these exercises will not look any different than in other places.  (Since this is an unstructured division, the number of the <exercises> is not displayed when born. It does have a number, which is the same as the enclosing <section> . To wit: versus .)   Timed Exercises   You have 10 minutes to do these exercises when hosted online on a Runestone server.   True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?    "
 },
@@ -3965,7 +4037,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "exercises-timed.html#vector-space-dimension-timed",
   "type": "Exercise",
-  "number": "5.14.1",
+  "number": "5.15.1",
   "title": "True\/False.",
   "body": "True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?  "
 },
@@ -3974,7 +4046,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "exercises-timed.html#multiple-choice-not-randomized-timed",
   "type": "Exercise",
-  "number": "5.14.2",
+  "number": "5.15.2",
   "title": "Multiple-Choice, Not Randomized, One Answer.",
   "body": "Multiple-Choice, Not Randomized, One Answer stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  "
 },
@@ -3983,7 +4055,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "interactive-projects.html",
   "type": "Section",
-  "number": "5.15",
+  "number": "5.16",
   "title": "Projects and Friends",
   "body": " Projects and Friends  PROJECT-LIKE refers to the elements\/blocks <project> , <activity> , <activity> , and <exploration> . They are very similar to <exercise> , and here we stress that they can be interactive in all the same ways an <exercise> can. Key differences are that they are blocks, and so are peers of other blocks like paragraphs and examples, and are children of divisions. By default they have their own numbering scheme, though we expect this to convert to an elective behavior.  Both <exercise> and PROJECT-LIKE can be structured with <task> . It would be natural to have a <project> with multiple <task> , each a possibly different interactive problem type. We expect that to be possible soon. For now, <exercise> and <project> (and friends) need to be structured with a <statement> (and their associated signal) in order to be interactive.   Multiple-Choice, Not Randomized, Multiple Answers  stop signs   Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)      Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.      Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?    Now an <exercise> with two <task> . Since the latter is a short-answer question, it will only be interactive on a capable platform.  True\/False and Explain  Structured with task, we can have an introduction, but this does not migrate with the interactive portions.  True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   Explain your reasoning in the previous question.   Now an <exploration> nested two-deep with the same two questions , two times each, just for testing purposes.   Exploring Two-Deep  First Iterations of Each Multiple-Choice, Not Randomized, One Answer (First Copy) stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  Python ActiveCode (First Copy)  Run the following program and observe the information provided at each step.   for i in range(10): print(i)  We're still not really sure.  Second Iterations of Each Multiple-Choice, Not Randomized, One Answer (Second Copy) stop signs  What color is a stop sign?  We include a spurious Python <program> element in the <statement> which should never convert this from a multiple-choice question into a programming exercise (on any host), but should still get syntax highlighting as part of rendering the exercise.   sum = 0 sum += 6 for i in range(sum): print(\"Hello, World!\")      Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  Python ActiveCode (Second Copy)  Run the following program and observe the information provided at each step.   for i in range(10): print(i)  We're still not really sure.   "
 },
@@ -3992,16 +4064,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "interactive-projects.html#activity-multiple-choice-multiple-answers",
   "type": "Activity",
-  "number": "5.15.1",
+  "number": "5.16.1",
   "title": "Multiple-Choice, Not Randomized, Multiple Answers.",
   "body": " Multiple-Choice, Not Randomized, Multiple Answers  stop signs   Which colors might be found in a rainbow? (Note that the radio buttons now allow multiple buttons to be selected.)      Red    Red is a definitely one of the colors.      Yellow    Yes, yellow is correct.      Black    Remember the acronym ROY G BIV . B stands for blue.      Green    Yes, green is one of the colors.      Do you know the acronym ROY G BIV for the colors of a rainbow, and their order?   "
 },
 {
-  "id": "exercise-229",
+  "id": "exercise-231",
   "level": "2",
-  "url": "interactive-projects.html#exercise-229",
+  "url": "interactive-projects.html#exercise-231",
   "type": "Checkpoint",
-  "number": "5.15.1",
+  "number": "5.16.1",
   "title": "True\/False and Explain.",
   "body": "True\/False and Explain  Structured with task, we can have an introduction, but this does not migrate with the interactive portions.  True\/False vector space  Every vector space has finite dimension.   The vector space of all polynomials with finite degree has a basis, , which is infinte.   , the vector space of polynomials with degree at most , has dimension by . [Cross-reference is just a demo, content is not relevant.] What happens if we relax the defintion and remove the parameter ?   Explain your reasoning in the previous question.  "
 },
@@ -4010,34 +4082,34 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "interactive-projects.html#exploration-2",
   "type": "Exploration",
-  "number": "5.15.2",
+  "number": "5.16.2",
   "title": "Exploring Two-Deep.",
   "body": " Exploring Two-Deep  First Iterations of Each Multiple-Choice, Not Randomized, One Answer (First Copy) stop signs  What color is a stop sign?     Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  Python ActiveCode (First Copy)  Run the following program and observe the information provided at each step.   for i in range(10): print(i)  We're still not really sure.  Second Iterations of Each Multiple-Choice, Not Randomized, One Answer (Second Copy) stop signs  What color is a stop sign?  We include a spurious Python <program> element in the <statement> which should never convert this from a multiple-choice question into a programming exercise (on any host), but should still get syntax highlighting as part of rendering the exercise.   sum = 0 sum += 6 for i in range(sum): print(\"Hello, World!\")      Green    Green means go! .      Red    Red is universally used for prohibited activities or serious warnings.      White    White might be hard to see.     What did you see last time you went driving?   Maybe go out for a drive?  Python ActiveCode (Second Copy)  Run the following program and observe the information provided at each step.   for i in range(10): print(i)  We're still not really sure.  "
 },
 {
-  "id": "section-22",
+  "id": "section-23",
   "level": "1",
-  "url": "section-22.html",
+  "url": "section-23.html",
   "type": "Section",
-  "number": "5.16",
+  "number": "5.17",
   "title": "Expedited Samples",
   "body": " Expedited Samples  We hack in various interactive Runestone exercise types while PreTeXt markup evolves to cover more of Runestone's repertoire. In static output these will just produce a message. In HTML they may be interactive simply in a browser, or they may require being hosted on a Runestone server in order to perform.  CodeLens for a Python program:   CodeLens for a Java program. Supplied in source with trace data built beforehand on a Runestone server:   "
 },
 {
-  "id": "exercise-230",
+  "id": "exercise-232",
   "level": "2",
-  "url": "section-22.html#exercise-230",
+  "url": "section-23.html#exercise-232",
   "type": "Checkpoint",
-  "number": "5.16.1",
+  "number": "5.17.1",
   "title": "",
   "body": ""
 },
 {
-  "id": "exercise-231",
+  "id": "exercise-233",
   "level": "2",
-  "url": "section-22.html#exercise-231",
+  "url": "section-23.html#exercise-233",
   "type": "Checkpoint",
-  "number": "5.16.2",
+  "number": "5.17.2",
   "title": "",
   "body": ""
 },
@@ -4046,7 +4118,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "reading-questions-1.html",
   "type": "Reading Questions",
-  "number": "5.17",
+  "number": "5.18",
   "title": "Reading Questions",
   "body": "  This is a simple question. Does this look like a short answer question?  Both questions in this reading-questions division should render in an interactive short answer form on a capable platform.   Shouldn't be hard!    And a second reading question, so we can test having more than one. Specifically to be certain each goes into the manifest properly. How about some math now, . Is that all right?   "
 },
@@ -4055,7 +4127,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "reading-questions-1.html#simple-reading-question",
   "type": "Reading Question",
-  "number": "5.17.1",
+  "number": "5.18.1",
   "title": "",
   "body": " This is a simple question. Does this look like a short answer question?  Both questions in this reading-questions division should render in an interactive short answer form on a capable platform.   Shouldn't be hard!  "
 },
@@ -4064,7 +4136,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "reading-questions-1.html#second-reading-question",
   "type": "Reading Question",
-  "number": "5.17.2",
+  "number": "5.18.2",
   "title": "",
   "body": " And a second reading question, so we can test having more than one. Specifically to be certain each goes into the manifest properly. How about some math now, . Is that all right?  "
 },
@@ -4073,7 +4145,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "atomic-video.html",
   "type": "Section",
-  "number": "5.18",
+  "number": "5.19",
   "title": "YouTube Video Embedding",
   "body": " YouTube Video Embedding  An <video> can be placed in five different ways:  all by itself, as a peer of <p> typically, with layout control,  inside a <figure> , earning a number and caption,  inside a <sidebyside> , with size and layout configured,  inside a <figure> inside a <sidebyside> , with size and layout configured, with a number and caption, and  inside a <figure> inside a <sidebyside> inside a <figure> , with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  A YouTube video is embedded much differently when hosted on a Runestone server, so that an API is available to report reader (student) interactions. We are testing here the various possibilities.  All by itsef, with no layout specified, so showing the default size and placement. Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.   Width set at 40%, so equal margins and thus centered. Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.   Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance. Vivamus suscipit diam eget mi cursus viverra.   As a plain component of a <sidebyside> . Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges. Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.      Inside a <figure> with no adjustments, so default behavior. Note how a <figure> occupies the entire width of the page, so then does the caption.   List Variables    Inside a <figure> with asymmetric (large) margins of 30% and 60%. Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.   List Variables    Inside figures inside a <sidebyside> . Same widths as previous <sidebyside> but alignment on bottoms of the panels, to partially align captions. Note how the captions are constrained in width by the width of the panels of the side-by-side.    List Variables     List Variables (Again)     Identical code to previous example, but now wrapped in an overall <figure> , which has its own caption and number, leaving the interior figures to be sub-numbered. Cross-references use the full number: .   Amalgamation of Videos    List Variables     List Variables  List Variables      "
 },
@@ -4082,7 +4154,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-16",
   "type": "Figure",
-  "number": "5.18.1",
+  "number": "5.19.1",
   "title": "",
   "body": " List Variables   "
 },
@@ -4091,7 +4163,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-17",
   "type": "Figure",
-  "number": "5.18.2",
+  "number": "5.19.2",
   "title": "",
   "body": " List Variables   "
 },
@@ -4100,7 +4172,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-18",
   "type": "Figure",
-  "number": "5.18.3",
+  "number": "5.19.3",
   "title": "",
   "body": " List Variables   "
 },
@@ -4109,7 +4181,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-19",
   "type": "Figure",
-  "number": "5.18.4",
+  "number": "5.19.4",
   "title": "",
   "body": " List Variables (Again)   "
 },
@@ -4118,7 +4190,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-video.html#figure-20",
   "type": "Figure",
-  "number": "5.18.5",
+  "number": "5.19.5",
   "title": "",
   "body": " Amalgamation of Videos    List Variables     List Variables  List Variables     "
 },
@@ -4159,18 +4231,18 @@ var ptx_lunr_docs = [
   "body": " Hints and Answers to Selected Exercises  "
 },
 {
-  "id": "section-24",
+  "id": "section-25",
   "level": "1",
-  "url": "section-24.html",
+  "url": "section-25.html",
   "type": "Section",
   "number": "E.1",
   "title": "A Section in an Appendix",
   "body": " A Section in an Appendix  Inside a section.   A Subsection in a Section in an Appendix  Inside a subsection.   A Subsubsection in a Subsection in a Section in an Appendix  Nearly terminal.   Paragraphs in a Subsubsection in a Subsection in a Section in an Appendix  The paragraphs element can go in any division, but does not get a number.     "
 },
 {
-  "id": "section-25",
+  "id": "section-26",
   "level": "1",
-  "url": "section-25.html",
+  "url": "section-26.html",
   "type": "Section",
   "number": "E.2",
   "title": "Numbering in the Back Matter",
@@ -4179,7 +4251,7 @@ var ptx_lunr_docs = [
 {
   "id": "example-53",
   "level": "2",
-  "url": "section-25.html#example-53",
+  "url": "section-26.html#example-53",
   "type": "Example",
   "number": "E.2.1",
   "title": "An Example Example.",
