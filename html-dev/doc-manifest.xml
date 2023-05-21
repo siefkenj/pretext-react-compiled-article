@@ -35,7 +35,7 @@
           <division type="reading-questions" number="4.2.4" id="reading-questions-1" url="interesting-corollary.html#reading-questions-1">
             <title>Reading Questions</title>
           </division>
-          <division type="glossary" number="4.2.5" id="glossary-1" url="interesting-corollary.html#glossary-1">
+          <division type="glossary" number="4.2.5" id="glossary-specialized" url="interesting-corollary.html#glossary-specialized">
             <title>Glossary</title>
           </division>
           <division type="solutions" number="4.2.6" id="solutions-subsection" url="interesting-corollary.html#solutions-subsection">
@@ -439,6 +439,9 @@
           <title>
             <code class="code-inline tex2jax_ignore">&lt;image&gt;</code>
           </title>
+          <division type="exercises" number="28.1" id="exercises-16" url="atomic-items.html#exercises-16">
+            <title>Exercises</title>
+          </division>
         </division>
         <division type="subsection" number="28.2" id="atomic-video" url="atomic-items.html#atomic-video">
           <title>
@@ -541,7 +544,7 @@
           <title>More Reading</title>
         </division>
       </division>
-      <division type="exercises" number="35" id="exercises-17" url="exercises-17.html#exercises-17">
+      <division type="exercises" number="35" id="exercises-18" url="exercises-18.html#exercises-18">
         <title>Exercise Section, Structured</title>
       </division>
       <division type="section" number="36" id="exercises-multiple" url="exercises-multiple.html#exercises-multiple">
@@ -552,10 +555,10 @@
         <division type="exercises" number="36.2" id="exercises-drill" url="exercises-multiple.html#exercises-drill">
           <title>Drill Exercises</title>
         </division>
-        <division type="exercises" number="36.3" id="exercises-19" url="exercises-multiple.html#exercises-19">
+        <division type="exercises" number="36.3" id="exercises-20" url="exercises-multiple.html#exercises-20">
           <title>Challenging Exercises</title>
         </division>
-        <division type="exercises" number="36.4" id="exercises-20" url="exercises-multiple.html#exercises-20">
+        <division type="exercises" number="36.4" id="exercises-21" url="exercises-multiple.html#exercises-21">
           <title>Impossible Exercises</title>
         </division>
         <division type="references" number="36.5" id="references-4" url="exercises-multiple.html#references-4">
@@ -600,6 +603,9 @@
       </division>
       <division type="appendix" number="I" id="appendix-5" url="appendix-5.html#appendix-5">
         <title>Index</title>
+      </division>
+      <division type="glossary" number="" id="glossary-backmatter" url="glossary-backmatter.html#glossary-backmatter">
+        <title>Glossary</title>
       </division>
       <division type="appendix" number="J" id="references" url="references.html#references">
         <title>Multiple References</title>

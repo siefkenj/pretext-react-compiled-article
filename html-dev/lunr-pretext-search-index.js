@@ -61,7 +61,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4",
   "title": "An Interesting Corollary",
-  "body": " An Interesting Corollary   Fundamental Structures   This is an <objectives> element you are reading, and this is its introduction. This early section has really grown and tries to accomplish many things. Not all of them are listed here.    Display various blocks , fundamental units of the flow.  More.  Evermore.    This concludes the (incomplete) objectives for this section, so now we can carry-on as before.     This is a cross-reference to one of the objectives above, forced to use the phrase-global form of the text. It should describe the objective as belonging to the section (rather than the objectives ), since objectives are one-per-subdivision and are numbered based upon the containing division: . For comparison this is the (forced) type-global cross-reference: .  The Fundamental Theorem comes in two flavors, where usually one is a corollary of the other.    Second Version of FTC    Leibniz, Newton  Fundamental Theorem of Calculus Corollary   Suppose is a continuous function. Then .    We simply take the indicated derivative, applying Theorem at .    A justification, which is one of the variants of a proof.    Alternate Proof  You can have multiple proofs, and they can have titles which replace the word Proof as a heading. Here we just exercise displayed math with no automatic numbering, and an elective number on the middle equation.    The alternative version of the Fundamental Theorem ( FTC ) in is a compact way to express the result.  For testing purposes, there is a simple bare Sage Cell here.    A Mysterious Derivative!  So if we define a function with its variable employed as a limit of integration, like so then we get the derivative of that function so easily it seems like a mystery, . That's it.  For testing purposes, there is a simple Sage Cell here, buried inside an example that should be a knowl (embedded in the page).   We test a Sage cell inside a knowl, which should set the value of a variable that will be available to subsequent cells within the knowl.    Even if you ran the cell at the top of this page, within this knowl the value of the variable c is not known, so the next cell will cause an error.    The Sage cells on a page will remember results computed elsewhere on the page. If you rely on this feature, remind your readers to evaluate all the necessary cells and that they perhaps need to be evaluated in a certain order.   There are some Sage cells in the previous (knowled) <example> . The results there are restricted to the knowl. In other words, the scope of those cells is the knowl. So if you opened the example and executed the Sage cells there, or if you skipped the example entirely, the next cell should not know the values of those variables and will raise an error.   We cross-reference the example just prior, , to test the simple Sage cells that will now be part of a cross-reference knowl (an external file).   An Equivalent Claim   This claim is an equivalence: it is true if and only if it is correct.    Our purpose here is to show how you can structure a proof with cases, such as an equivalence structured with the arrows typically used to demonstrate the two directions involved in the proof, by using the direction attribute on a case element.   Nulla non lectus suscipit, bibendum leo quis, dignissim justo. In urna turpis, tincidunt id elementum id, faucibus ac tellus.    Quisque auctor ligula turpis, ut aliquam urna consectetur hendrerit. Aenean porta dolor et justo facilisis feugiat in sed sapien. Nullam porta ex et commodo semper.    Case 3b: The inductive step  A case may also have a title , whose formatting and structure is entirely up to the author. This then becomes the text of a cross-reference, as well.    Necessity  If you like, you can have both indications.    No direction, no title, then just a generic title.     Exciting Proof!  We test here that punctuation at the end of the title of a proof is handled correctly.    Exact Proof  This proof should fill exactly three lines (as of defaults in place 2018-12-31) and so the tombstone\/Halmos should be on a fourth line, and then flush right . xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx.       A Pedagogical Note about   Symbolic and Numerical Integrals  The Fundamental Theorem explains why we use the same notation for a definite integral, which is a numerical calculation, Which I think sometimes students lose sight of. and an antiderivative, which is a symbolic expression.  Essay Question: Compare and Contrast  Write a short paragraph which compares, and contrasts, the definite and indefinite integral. This is an exercise which sits in the midst of the narrative, so is formatted more like an example or a remark. It can have a hint and a solution, but this one does not. It can have a title, which this one does.   Start writing!     Advice  Using an integral sign for an antiderivative (aka indefinite integral) would seem to make the Fundamental Theorem a fait accompli . So I would suggest not conflating the notation for two very different things until the Fundamental Theorem exposes them as being highly related.   An Example of Structure   This is an example of an example with a bit more structure. Specifically, the example has a title , as usual, but then has a statement , which is separate from the solution . Why did we implement an example in two ways?    Authors asked for it and it seemed a very natural thing to do, even if we only had an unstructured version for a long time.     An Example of a Question   Any kind of question can be marked as such with <question> . Or similarly, as a <problem> . They behave identically to example s, such as the one preceding and are numbered along with theorems, examples. etc.    You can have a solution. Or several, even if you don't ask a question.    See?    An Inline Exercise  There are lots of exercises in this sample article, but mostly they are in special exercise sections. Sometimes you just want to sprinkle some exercises through the narrative. We call these inline exercises , in contrast to divisional exercises . The inline exercises look a bit more like a theorem or definition, with titles and fully-qualified numbers.  These may also have hints, answers and solutions.   A good hint.   42.   If your exercise feels like proving a theorem, then you might want to make some comments, but also clearly delineate which part of the solution is a the complete proof.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem diam, convallis in nulla sed, accumsan fermentum urna. Pellentesque aliquet leo elit, ut consequat nunc dapibus ac. Sed lobortis leo tincidunt, vulputate nunc at, ultricies leo. Vivamus purus diam, tristique laoreet purus eget, mollis gravida sapien. Nunc vulputate nisl ac mauris hendrerit cursus. Sed vel molestie velit. Suspendisse sem sem, elementum at vehicula id, volutpat ac mi. Nullam ullamcorper fringilla purus in accumsan. Mauris at nunc accumsan orci dictum vulputate id id augue. Suspendisse at dignissim elit, non euismod nunc. Aliquam faucibus magna ac molestie semper. Aliquam hendrerit sem sit amet metus congue tempor. Donec laoreet laoreet metus, id interdum purus mattis vulputate. Proin condimentum vitae erat varius mollis. Donec venenatis libero sed turpis pretium tempor.  Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra. Integer sagittis dictum turpis vel aliquet. Fusce ut suscipit dolor, nec tristique nisl. Aenean luctus, leo et ornare fermentum, nibh dui vulputate leo, nec tincidunt augue ipsum sed odio. Nunc non erat sollicitudin, iaculis eros consequat, dapibus eros.     An Example of with math formula in the title   Just for testing math in knowls, and also extra whitespace in a <p> .    There are many different blocks you can employ, and they mostly behave the same way. A <project> project is very similar to a <question> question or <problem> problem   Start Exploring PreTeXt  You could grab the minimal.xml file from the examples\/minimal directory and experiment with that.  Projects get their own independent numbering scheme, since they may be central to your textbook, workbook, or lab manual. If you process this sample article with level for project numbering set to 0 then you will get consecutive numbers from the beginning of your book, starting with 1.    Exploring Explorations   This is an <exploration> . exploration Other similar possibilities are <project> project , <activity> activity , <task> task , and <investigation> investigation .  Note that projects, activities, explorations, tasks and investigations share the independent numbering scheme, so it is really only intended you use one of these. If you want a variant of the name (  Directed Activity ) you can use the <rename> rename an environment facility ( ).    This is a solution to the exploration. In practice, you might choose to not make this visible for students, but instead include it as part of some guidance you might provide to instructors ( an Instructor's Manual ).     Hints, Answers, Solutions   This is quite the activity upcoming. This is a prelude authored within the activity element, but visually just prior.    Another variant of these project-like items is to possibly include a <hint> and an <answer> before the <solution> .    Just a little help.    The result, but no help in getting there.    Everything to get it all done, in detail.    This was quite the activity just now. This is a postlude authored within the activity element, but visually just after.     A Note on Remarks  <remark> , <convention> , <note> , <observation> and <warning> are designed to hold very simple contents, with no additional structure (no proofs, no solutions, ).  But they do carry a title and a number, can be the target of a cross-reference, and may be optionally knowlized in HTML with the html.knowl.remark processing switch.    An Aside with a Formatted Title  aside  An <aside> is similar to a remark, but is not as critical to the narrative. It is not numbered, and so requires a title. It can be the target of a cross-reference. They are meant to be short, and so are not knowlized at their first appearance. If the content is appropriate, these can be marked as <historical> or <biographical> , though longer items should use subdivisions ( sections, subsections) instead.   An <exercise> can be structured with <task> .  A very structured exercise  This is an over-arching introduction to the whole exercise. We follow with some tasks. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A super-simple task This first task is very simple, just a paragraph. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. Now three paragraphs. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. A title of a task that has a subtask with an <answer> for the Solutions  This second task is further divided by more tasks. This is its introduction. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A task with a title and an <answer> for the Solutions  A really simple subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A short paragraph, before an answer.   With a proof.   In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   And a bit more to say.   A subtask with an answer. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   Right! In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   Three simple sub-sub-tasks. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  First subsubtask. Short paragraph. A second three-deep subsubtask! Second subsubtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. Third subsubtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  The conclusion of the structured subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A simple task as the last subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  This concludes our structured second task. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   This third top-level task is intermediate in complexity, you are reading the statement , which is followed by more items. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   One hint. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   First answer. In interdum suscipit ullamcorper.   Second answer. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   At last, the solution. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   This is a conclusion where you could summarize the exercise. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   The following <project> is nearly identical to the preceding <exercise> .   A very structured project   The next block is a project, demonstrating the use of the task element to structure its parts. You are reading the prelude now. The project has lots of nonsense words, so we can test spacing the nested items. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.    This is an over-arching introduction to the whole project. We follow with some tasks. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   This first task is very simple, just a paragraph. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  Now three paragraphs. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   This second task is further divided by more tasks. This is its introduction. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   A really simple subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A short paragraph, before an answer.   With a proof.   In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   And a bit more to say.   A subtask with an answer. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   Right! In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   Two simple sub-sub-tasks. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  First subsubtask. Short paragraph. Second subsubtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  Third subsubtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   The conclusion of the structured subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A simple task as the last subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  This concludes our structured second task. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.    This third top-level task is intermediate in complexity, you are reading the statement , which is followed by more items. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   One hint. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   First answer. In interdum suscipit ullamcorper.   Second answer. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   At last, the solution. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.    This is a conclusion where you could summarize the project. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.    This postlude appears visually outside the project, but is authored within, to make clear its attachment to the project. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.     Notation mathématique 2   The following <example> , from Elise Desgreniers, is structured with <task> .    Écrivez chacun des exemples suivants avec les conditions pertinentes.    Soit l'ensemble .  On constate que cet ensemble contient uniquement des entiers positifs allant de 1 à 5.  Donc, on peut écrire .      Ce sont des multiples de 3.        Ce sont des nombres impairs.        Ce sont des nombres premiers.        Ce sont des carrés parfaits.        Ce sont des cubes parfaits.      Notes or examples related to computation or technology can go in blocks of the same name.   Sample Use of Sage  This would be a good place to talk about Sage, including a cell or two.   But you might want to describe how to use some other calculator, or maybe some numerical method.    A <paragraphs> with a <project> with an <answer>  The solutions to a project (and similar) once did not migrate to the automatically-generated solutions.    A simple project, no tasks, just an answer.    Here's the answer we are looking for.        This is an exercise in an Exercises subdivision at the level of a subsubsection. There is no question other than if the numbering is appropriate. Here is a self-referential link: Exercise .  The subsubsection has no title in the source, so one is provided automatically, and will adjust according to the language of the document.   This solution will migrate to a list of solutions in the backmatter. We include a sidebyside as a test.   This is a skinny paragraph which should be just 30% of the width.  And another skinny paragraph which should also be just 30% of the width.     An <exercise> can be structured with parts, called <task> . This is the <introduction> .  Do this. And the other thing.     reading questions  A set of reading questions may have an <introduction> , perhaps for preparatory explanation.  If a student has logged in to the HTML version, then they can answer the reading questions directly in the book. Inline math LaTeX can be entered using $ ... $ or \\( ... \\) delimiters, and inline AsciiMath using backticks ` ... ` as delimiters. Here are some `gratuitous backticks` to check that AsciiMath is only active in the answers to reading questions.   This is a reading question that you might have a student answer prior to a class session, based on reading part of the book. A quick glance before class can help you tailor class time to the specific needs of your students. The perfect reading question will reveal whether the student has read and understood the material, and will be difficult to answer if they have not. What do you think of that?  And a second one, with a cross-reference to the first, as a check on numbering: . Reading questions are allowed to have answers, but providing answers misses the point of a reading question, and the answer knowl interacts poorly with the mechanism used to allow students to answer directly in the book. Do you think the schema should ban answers to reading questions?   And for symmetry, a <conclusion> .     glossary   A glossary may have a <headnote> , perhaps with some explanation.    bar  A part of foobar . See .    foobar  A synonym for the acronym FUBAR .     Solutions for This Subsection  solutions for a division   This is an introduction, where you might explain that this division of this subsection contains various hints, answers, solutions of inline exercises, divisional exercises, and\/or project-like blocks. See the source to see just how this solutions division was built.     And a conclusion to this solutions division, which may not be readily apparent as distinct from the final division's worth of solutions, but since it is not prefixed with a number, it may be different enough.      Theorem-Like Environments  There are a variety of pre-defined environments in PreTeXt . All take a title, and must have a statement. Some have proofs (theorems, corollaries, ), while some do not have proofs (conjectures, axioms, principles).   The Title Principle   It is a fundamental principle that many elements can have a title. Try it and see. If you get better formatting, then it is being recognized. If it looks very plain, check the documentation and perhaps make a feature request.    More precisely, <theorem> , <corollary> , <lemma> , <algorithm> , <proposition> , <claim> , <fact> , and <identity> , all behave exactly the same, requiring a statement (as a sequence of paragraphs) followed by an optional proof, and may have an optional title. The elements <axiom> , <conjecture> , <principle> , <heuristic> , <hypothesis> , and <assumption> are functionally the same, barring a proof (since they would never have one!). Definitions are an exception, as it is natural to place <notation> within see the source for Definition for an example.    Linking Sage Cells  Sage cells linking  Sage cells share their results on a per-webpage basis, or a per-knowl basis, so if you move to a new chapter, section, or subsection that happens to be on another webpage, your Sage computations are gone and you start fresh. But maybe you need some results from elsewhere. As an author, you can make an exact copy of a cell in another location by placing the code in an external file, which is pure text, freed from any need to format for XML processing. So, in particular, there is no need to escape ampersands and angle brackets, nor is there employment of the CDATA mechanism. But the real value is that there is just one version to edit, and any changes will be reflected in both copies. We demonstrate this in the sample book, since it has the xinclude mechanism in place. In the chapter on groups, find the section on Sage and then find the discussion of subgroups, and you will find an example of two identical Sage cells produced from one source file.    Hierarchy   Structure  This section of this article has subsections and subsubsections. In a book you can have chapters enclosing multiple sections. There is one finer subdivision, it is achieved with the paragraphs element.  It is basically a sequence of paragraphs, where the first one gets an inline title. You are reading the second, and final, paragraph of one right now. It is useful for organizing very short documents, where numbered subdivisions might be overkill.    A Second Paragraphs  This is a second consecutive paragraphs element, so should seem related to its title, but distinct from the two paragraphs in the grouping with the title Structure immediately prior.    Assemblages: Collections and Summaries  An <assemblage> is a collection, or summary, that does not have much structure to it. So you are limited to paragraphs and friends ( p , blockquote , pre ) and side-by-sides that do not contain captioned items ( sidebyside , sbsgroup ). The intent is that contents are not numbered, so cannot be cross-referenced individually, and so also do not become knowls. You may place <image> , <tabular> , and <program> inside a <sidebyside> , in addition to other objects that do not have captions. Note that p may by extension contain lists ( ol , ul , dl ). Despite limited structure, the presentation should draw attention to it, because the contents should be seen as more important in some way. It should be highlighted in some manner. If you need to connect the entire assemblage with material elsewhere, you can do that with the usual xref\/xml:id mechanism. assemblage  What have we seen so far in this (disorganized) sample?  Theorems, definitions and corollaries. ( )  Sage cells, including with R. ( )  Lots of document structure, like introductions and conclusions (next). ( )   A sample table, as a tabular inside a sidebyside with no caption, follows.   A B C  Uno Dos Tres     This is a small assemblage with no title, simply to make sure the surrounding box behaves properly, especially for latex output.    Assemblages containing  It is acceptable for an assemblage to contain mathematical content, even in its title.     Introductions and Conclusions   An Introductory Introduction  Any subdivision may have a sequence of paragraphs within an <introduction> that precedes subsequent further subdivisions. You are reading one now. They are always leaves of the document structure, so are rendered on some pages that reference the following subdivisions.  An introduction or conclusion is an extremely restrictive container with simple presentation. A title is optional (and probably not advisable). Content is meant to be short and unstructured, in particular, nothing that can be numbered is allowed. If this feels too restrictive, then place your content in an initial numbered subdivision and perhaps title it Introduction . Or make your entire subdivion unstructured and place whatever you want into it.  This ends this introduction to introductions.    Test One  An intervening subsubsection just after an introduction.    Test Two  An intervening subsection section which contains an <exercises> division which must be at the level of a Subsubsubsection.   An inline exercise to examine any clash with divisional exercises below.   An answer so there is something to appear in a <solutions> .    What Did You Learn?   A mock exercise to appease validation.   An answer so there is something to appear in a <solutions> .    And a second to help with formatting the division heading.      A mock exercise to appease validation.   An answer so there is something to appear in a <solutions> .    And a second to help with formatting the division heading.      Test Three  An intervening subsubsection just before a conclusion.    Entirely analogous to introductions are conclusions. Any subdivision may have a sequence of paragraphs within a <conclusion> that follows previous further subdivisions. You are reading one now. They are always leaves of the document structure, so are rendered on some pages that reference the preceding subdivisions.  This concludes this conclusion (and this subsection and this section).     Some Paragraph-Level Markup  Text within a paragraph may be emphasized em emphasis styling words em styling words emphasis with <em> or if you want to take it to the next level you can identify the text as an alert alert styling words alert with <alert> .  Similarly, within a paragraph, you can identify edits between versions as inserted text that has been added styling words insert with <insert> or as deleted text that has been removed styling words delete with <delete> . Note that these identified edits are slightly different than stale text that you want to retain, but which is no longer relevant styling words stale , which is accomplished with <stale> . The original request for stale text came from an instructor with an online list of student topics for presentations, and as students claimed topics they were marked as no longer available for other students.  If you need a fill-in blank , like this , it can be obtained with an empty <fillin> element that defaults to roughly a 10-character width. You can use the <characters> attribute to make the rule longer or shorter, such as a 40-character blank: . The character count is approximate, based on typical character widths within a proportional font carrying English language text. Adjust to suit, or request a language-specific adjustment if it is critical.  This paragraph is intended to make a <fillin> appear right at the start of the second line in print and then the next paragraph has nothing but a <fillin> . Both are for testing purposes.   The following are <fillin> with rows and\/or cols attributes (at least one of which is greater than 1): , , .  Long after we started this mess, we added PreTeXt tags to mark up tags and attributes. The elements are: <tag> , <tage> , <attr> . Examples of how these render are (respectively): <section> , <hash\/> , width . Perhaps this document will make greater use of these tags.  We supply two provisional cross-references for testing purposes only: , .    A conclusion here, which we fill with some numbering tests.  This is a cross-reference to one of the outcomes, forced to use the type-global form of the text. It should describe the outcome as belonging to the section (rather than the outcomes ), since outcomes are one-per-subdivision and are numbered based upon the containing division: . For comparison this is the (forced) type-global cross-reference: .    Fundamental Structures, Revisited   This is a <outcomes> element you are reading, and this is its introduction. This early section has really grown and we have tried to accomplish many things. Not all of them are listed here.    Display various blocks , fundamental units of the flow.  More, and this is what the cross-references above are pointing to.  Evermore.    This concludes the (incomplete) outcomes for this section, so now we can carry-on to the next section.    "
+  "body": " An Interesting Corollary   Fundamental Structures   This is an <objectives> element you are reading, and this is its introduction. This early section has really grown and tries to accomplish many things. Not all of them are listed here.    Display various blocks , fundamental units of the flow.  More.  Evermore.    This concludes the (incomplete) objectives for this section, so now we can carry-on as before.     This is a cross-reference to one of the objectives above, forced to use the phrase-global form of the text. It should describe the objective as belonging to the section (rather than the objectives ), since objectives are one-per-subdivision and are numbered based upon the containing division: . For comparison this is the (forced) type-global cross-reference: .  The Fundamental Theorem comes in two flavors, where usually one is a corollary of the other.    Second Version of FTC    Leibniz, Newton  Fundamental Theorem of Calculus Corollary   Suppose is a continuous function. Then .    We simply take the indicated derivative, applying Theorem at .    A justification, which is one of the variants of a proof.    Alternate Proof  You can have multiple proofs, and they can have titles which replace the word Proof as a heading. Here we just exercise displayed math with no automatic numbering, and an elective number on the middle equation.    The alternative version of the Fundamental Theorem ( FTC ) in is a compact way to express the result.  For testing purposes, there is a simple bare Sage Cell here.    A Mysterious Derivative!  So if we define a function with its variable employed as a limit of integration, like so then we get the derivative of that function so easily it seems like a mystery, . That's it.  For testing purposes, there is a simple Sage Cell here, buried inside an example that should be a knowl (embedded in the page).   We test a Sage cell inside a knowl, which should set the value of a variable that will be available to subsequent cells within the knowl.    Even if you ran the cell at the top of this page, within this knowl the value of the variable c is not known, so the next cell will cause an error.    The Sage cells on a page will remember results computed elsewhere on the page. If you rely on this feature, remind your readers to evaluate all the necessary cells and that they perhaps need to be evaluated in a certain order.   There are some Sage cells in the previous (knowled) <example> . The results there are restricted to the knowl. In other words, the scope of those cells is the knowl. So if you opened the example and executed the Sage cells there, or if you skipped the example entirely, the next cell should not know the values of those variables and will raise an error.   We cross-reference the example just prior, , to test the simple Sage cells that will now be part of a cross-reference knowl (an external file).   An Equivalent Claim   This claim is an equivalence: it is true if and only if it is correct.    Our purpose here is to show how you can structure a proof with cases, such as an equivalence structured with the arrows typically used to demonstrate the two directions involved in the proof, by using the direction attribute on a case element.   Nulla non lectus suscipit, bibendum leo quis, dignissim justo. In urna turpis, tincidunt id elementum id, faucibus ac tellus.    Quisque auctor ligula turpis, ut aliquam urna consectetur hendrerit. Aenean porta dolor et justo facilisis feugiat in sed sapien. Nullam porta ex et commodo semper.    Case 3b: The inductive step  A case may also have a title , whose formatting and structure is entirely up to the author. This then becomes the text of a cross-reference, as well.    Necessity  If you like, you can have both indications.    No direction, no title, then just a generic title.     Exciting Proof!  We test here that punctuation at the end of the title of a proof is handled correctly.    Exact Proof  This proof should fill exactly three lines (as of defaults in place 2018-12-31) and so the tombstone\/Halmos should be on a fourth line, and then flush right . xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx.       A Pedagogical Note about   Symbolic and Numerical Integrals  The Fundamental Theorem explains why we use the same notation for a definite integral, which is a numerical calculation, Which I think sometimes students lose sight of. and an antiderivative, which is a symbolic expression.  Essay Question: Compare and Contrast  Write a short paragraph which compares, and contrasts, the definite and indefinite integral. This is an exercise which sits in the midst of the narrative, so is formatted more like an example or a remark. It can have a hint and a solution, but this one does not. It can have a title, which this one does.   Start writing!     Advice  Using an integral sign for an antiderivative (aka indefinite integral) would seem to make the Fundamental Theorem a fait accompli . So I would suggest not conflating the notation for two very different things until the Fundamental Theorem exposes them as being highly related.   An Example of Structure   This is an example of an example with a bit more structure. Specifically, the example has a title , as usual, but then has a statement , which is separate from the solution . Why did we implement an example in two ways?    Authors asked for it and it seemed a very natural thing to do, even if we only had an unstructured version for a long time.     An Example of a Question   Any kind of question can be marked as such with <question> . Or similarly, as a <problem> . They behave identically to example s, such as the one preceding and are numbered along with theorems, examples. etc.    You can have a solution. Or several, even if you don't ask a question.    See?    An Inline Exercise  There are lots of exercises in this sample article, but mostly they are in special exercise sections. Sometimes you just want to sprinkle some exercises through the narrative. We call these inline exercises , in contrast to divisional exercises . The inline exercises look a bit more like a theorem or definition, with titles and fully-qualified numbers.  These may also have hints, answers and solutions.   A good hint.   42.   If your exercise feels like proving a theorem, then you might want to make some comments, but also clearly delineate which part of the solution is a the complete proof.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem diam, convallis in nulla sed, accumsan fermentum urna. Pellentesque aliquet leo elit, ut consequat nunc dapibus ac. Sed lobortis leo tincidunt, vulputate nunc at, ultricies leo. Vivamus purus diam, tristique laoreet purus eget, mollis gravida sapien. Nunc vulputate nisl ac mauris hendrerit cursus. Sed vel molestie velit. Suspendisse sem sem, elementum at vehicula id, volutpat ac mi. Nullam ullamcorper fringilla purus in accumsan. Mauris at nunc accumsan orci dictum vulputate id id augue. Suspendisse at dignissim elit, non euismod nunc. Aliquam faucibus magna ac molestie semper. Aliquam hendrerit sem sit amet metus congue tempor. Donec laoreet laoreet metus, id interdum purus mattis vulputate. Proin condimentum vitae erat varius mollis. Donec venenatis libero sed turpis pretium tempor.  Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra. Integer sagittis dictum turpis vel aliquet. Fusce ut suscipit dolor, nec tristique nisl. Aenean luctus, leo et ornare fermentum, nibh dui vulputate leo, nec tincidunt augue ipsum sed odio. Nunc non erat sollicitudin, iaculis eros consequat, dapibus eros.     An Example of with math formula in the title   Just for testing math in knowls, and also extra whitespace in a <p> .    There are many different blocks you can employ, and they mostly behave the same way. A <project> project is very similar to a <question> question or <problem> problem   Start Exploring PreTeXt  You could grab the minimal.xml file from the examples\/minimal directory and experiment with that.  Projects get their own independent numbering scheme, since they may be central to your textbook, workbook, or lab manual. If you process this sample article with level for project numbering set to 0 then you will get consecutive numbers from the beginning of your book, starting with 1.    Exploring Explorations   This is an <exploration> . exploration Other similar possibilities are <project> project , <activity> activity , <task> task , and <investigation> investigation .  Note that projects, activities, explorations, tasks and investigations share the independent numbering scheme, so it is really only intended you use one of these. If you want a variant of the name (  Directed Activity ) you can use the <rename> rename an environment facility ( ).    This is a solution to the exploration. In practice, you might choose to not make this visible for students, but instead include it as part of some guidance you might provide to instructors ( an Instructor's Manual ).     Hints, Answers, Solutions   This is quite the activity upcoming. This is a prelude authored within the activity element, but visually just prior.    Another variant of these project-like items is to possibly include a <hint> and an <answer> before the <solution> .    Just a little help.    The result, but no help in getting there.    Everything to get it all done, in detail.    This was quite the activity just now. This is a postlude authored within the activity element, but visually just after.     A Note on Remarks  <remark> , <convention> , <note> , <observation> and <warning> are designed to hold very simple contents, with no additional structure (no proofs, no solutions, ).  But they do carry a title and a number, can be the target of a cross-reference, and may be optionally knowlized in HTML with the html.knowl.remark processing switch.    An Aside with a Formatted Title  aside  An <aside> is similar to a remark, but is not as critical to the narrative. It is not numbered, and so requires a title. It can be the target of a cross-reference. They are meant to be short, and so are not knowlized at their first appearance. If the content is appropriate, these can be marked as <historical> or <biographical> , though longer items should use subdivisions ( sections, subsections) instead.   An <exercise> can be structured with <task> .  A very structured exercise  This is an over-arching introduction to the whole exercise. We follow with some tasks. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A super-simple task This first task is very simple, just a paragraph. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. Now three paragraphs. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. A title of a task that has a subtask with an <answer> for the Solutions  This second task is further divided by more tasks. This is its introduction. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A task with a title and an <answer> for the Solutions  A really simple subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A short paragraph, before an answer.   With a proof.   In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   And a bit more to say.   A subtask with an answer. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   Right! In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   Three simple sub-sub-tasks. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  First subsubtask. Short paragraph. A second three-deep subsubtask! Second subsubtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. Third subsubtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  The conclusion of the structured subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A simple task as the last subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  This concludes our structured second task. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   This third top-level task is intermediate in complexity, you are reading the statement , which is followed by more items. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   One hint. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   First answer. In interdum suscipit ullamcorper.   Second answer. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   At last, the solution. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   This is a conclusion where you could summarize the exercise. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   The following <project> is nearly identical to the preceding <exercise> .   A very structured project   The next block is a project, demonstrating the use of the task element to structure its parts. You are reading the prelude now. The project has lots of nonsense words, so we can test spacing the nested items. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.    This is an over-arching introduction to the whole project. We follow with some tasks. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   This first task is very simple, just a paragraph. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  Now three paragraphs. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   This second task is further divided by more tasks. This is its introduction. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   A really simple subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A short paragraph, before an answer.   With a proof.   In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   And a bit more to say.   A subtask with an answer. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   Right! In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   Two simple sub-sub-tasks. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  First subsubtask. Short paragraph. Second subsubtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  Third subsubtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   The conclusion of the structured subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  A simple task as the last subtask. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  This concludes our structured second task. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.    This third top-level task is intermediate in complexity, you are reading the statement , which is followed by more items. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   One hint. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   First answer. In interdum suscipit ullamcorper.   Second answer. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.   At last, the solution. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.    This is a conclusion where you could summarize the project. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.    This postlude appears visually outside the project, but is authored within, to make clear its attachment to the project. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.     Notation mathématique 2   The following <example> , from Elise Desgreniers, is structured with <task> .    Écrivez chacun des exemples suivants avec les conditions pertinentes.    Soit l'ensemble .  On constate que cet ensemble contient uniquement des entiers positifs allant de 1 à 5.  Donc, on peut écrire .      Ce sont des multiples de 3.        Ce sont des nombres impairs.        Ce sont des nombres premiers.        Ce sont des carrés parfaits.        Ce sont des cubes parfaits.      Notes or examples related to computation or technology can go in blocks of the same name.   Sample Use of Sage  This would be a good place to talk about Sage, including a cell or two.   But you might want to describe how to use some other calculator, or maybe some numerical method.    A <paragraphs> with a <project> with an <answer>  The solutions to a project (and similar) once did not migrate to the automatically-generated solutions.    A simple project, no tasks, just an answer.    Here's the answer we are looking for.        This is an exercise in an Exercises subdivision at the level of a subsubsection. There is no question other than if the numbering is appropriate. Here is a self-referential link: Exercise .  The subsubsection has no title in the source, so one is provided automatically, and will adjust according to the language of the document.   This solution will migrate to a list of solutions in the backmatter. We include a sidebyside as a test.   This is a skinny paragraph which should be just 30% of the width.  And another skinny paragraph which should also be just 30% of the width.     An <exercise> can be structured with parts, called <task> . This is the <introduction> .  Do this. And the other thing.     reading questions  A set of reading questions may have an <introduction> , perhaps for preparatory explanation.  If a student has logged in to the HTML version, then they can answer the reading questions directly in the book. Inline math LaTeX can be entered using $ ... $ or \\( ... \\) delimiters, and inline AsciiMath using backticks ` ... ` as delimiters. Here are some `gratuitous backticks` to check that AsciiMath is only active in the answers to reading questions.   This is a reading question that you might have a student answer prior to a class session, based on reading part of the book. A quick glance before class can help you tailor class time to the specific needs of your students. The perfect reading question will reveal whether the student has read and understood the material, and will be difficult to answer if they have not. What do you think of that?  And a second one, with a cross-reference to the first, as a check on numbering: . Reading questions are allowed to have answers, but providing answers misses the point of a reading question, and the answer knowl interacts poorly with the mechanism used to allow students to answer directly in the book. Do you think the schema should ban answers to reading questions?   And for symmetry, a <conclusion> .     glossary   A glossary may have a <headnote> , perhaps with some explanation. This glossary is a specialized division within a section. Placement in the back matter is another option, see the .    bar  A part of foobar . See .    foobar  A synonym for the acronym FUBAR .     Solutions for This Subsection  solutions for a division   This is an introduction, where you might explain that this division of this subsection contains various hints, answers, solutions of inline exercises, divisional exercises, and\/or project-like blocks. See the source to see just how this solutions division was built.     And a conclusion to this solutions division, which may not be readily apparent as distinct from the final division's worth of solutions, but since it is not prefixed with a number, it may be different enough.      Theorem-Like Environments  There are a variety of pre-defined environments in PreTeXt . All take a title, and must have a statement. Some have proofs (theorems, corollaries, ), while some do not have proofs (conjectures, axioms, principles).   The Title Principle   It is a fundamental principle that many elements can have a title. Try it and see. If you get better formatting, then it is being recognized. If it looks very plain, check the documentation and perhaps make a feature request.    More precisely, <theorem> , <corollary> , <lemma> , <algorithm> , <proposition> , <claim> , <fact> , and <identity> , all behave exactly the same, requiring a statement (as a sequence of paragraphs) followed by an optional proof, and may have an optional title. The elements <axiom> , <conjecture> , <principle> , <heuristic> , <hypothesis> , and <assumption> are functionally the same, barring a proof (since they would never have one!). Definitions are an exception, as it is natural to place <notation> within see the source for Definition for an example.    Linking Sage Cells  Sage cells linking  Sage cells share their results on a per-webpage basis, or a per-knowl basis, so if you move to a new chapter, section, or subsection that happens to be on another webpage, your Sage computations are gone and you start fresh. But maybe you need some results from elsewhere. As an author, you can make an exact copy of a cell in another location by placing the code in an external file, which is pure text, freed from any need to format for XML processing. So, in particular, there is no need to escape ampersands and angle brackets, nor is there employment of the CDATA mechanism. But the real value is that there is just one version to edit, and any changes will be reflected in both copies. We demonstrate this in the sample book, since it has the xinclude mechanism in place. In the chapter on groups, find the section on Sage and then find the discussion of subgroups, and you will find an example of two identical Sage cells produced from one source file.    Hierarchy   Structure  This section of this article has subsections and subsubsections. In a book you can have chapters enclosing multiple sections. There is one finer subdivision, it is achieved with the paragraphs element.  It is basically a sequence of paragraphs, where the first one gets an inline title. You are reading the second, and final, paragraph of one right now. It is useful for organizing very short documents, where numbered subdivisions might be overkill.    A Second Paragraphs  This is a second consecutive paragraphs element, so should seem related to its title, but distinct from the two paragraphs in the grouping with the title Structure immediately prior.    Assemblages: Collections and Summaries  An <assemblage> is a collection, or summary, that does not have much structure to it. So you are limited to paragraphs and friends ( p , blockquote , pre ) and side-by-sides that do not contain captioned items ( sidebyside , sbsgroup ). The intent is that contents are not numbered, so cannot be cross-referenced individually, and so also do not become knowls. You may place <image> , <tabular> , and <program> inside a <sidebyside> , in addition to other objects that do not have captions. Note that p may by extension contain lists ( ol , ul , dl ). Despite limited structure, the presentation should draw attention to it, because the contents should be seen as more important in some way. It should be highlighted in some manner. If you need to connect the entire assemblage with material elsewhere, you can do that with the usual xref\/xml:id mechanism. assemblage  What have we seen so far in this (disorganized) sample?  Theorems, definitions and corollaries. ( )  Sage cells, including with R. ( )  Lots of document structure, like introductions and conclusions (next). ( )   A sample table, as a tabular inside a sidebyside with no caption, follows.   A B C  Uno Dos Tres     This is a small assemblage with no title, simply to make sure the surrounding box behaves properly, especially for latex output.    Assemblages containing  It is acceptable for an assemblage to contain mathematical content, even in its title.     Introductions and Conclusions   An Introductory Introduction  Any subdivision may have a sequence of paragraphs within an <introduction> that precedes subsequent further subdivisions. You are reading one now. They are always leaves of the document structure, so are rendered on some pages that reference the following subdivisions.  An introduction or conclusion is an extremely restrictive container with simple presentation. A title is optional (and probably not advisable). Content is meant to be short and unstructured, in particular, nothing that can be numbered is allowed. If this feels too restrictive, then place your content in an initial numbered subdivision and perhaps title it Introduction . Or make your entire subdivion unstructured and place whatever you want into it.  This ends this introduction to introductions.    Test One  An intervening subsubsection just after an introduction.    Test Two  An intervening subsection section which contains an <exercises> division which must be at the level of a Subsubsubsection.   An inline exercise to examine any clash with divisional exercises below.   An answer so there is something to appear in a <solutions> .    What Did You Learn?   A mock exercise to appease validation.   An answer so there is something to appear in a <solutions> .    And a second to help with formatting the division heading.      A mock exercise to appease validation.   An answer so there is something to appear in a <solutions> .    And a second to help with formatting the division heading.      Test Three  An intervening subsubsection just before a conclusion.    Entirely analogous to introductions are conclusions. Any subdivision may have a sequence of paragraphs within a <conclusion> that follows previous further subdivisions. You are reading one now. They are always leaves of the document structure, so are rendered on some pages that reference the preceding subdivisions.  This concludes this conclusion (and this subsection and this section).     Some Paragraph-Level Markup  Text within a paragraph may be emphasized em emphasis styling words em styling words emphasis with <em> or if you want to take it to the next level you can identify the text as an alert alert styling words alert with <alert> .  Similarly, within a paragraph, you can identify edits between versions as inserted text that has been added styling words insert with <insert> or as deleted text that has been removed styling words delete with <delete> . Note that these identified edits are slightly different than stale text that you want to retain, but which is no longer relevant styling words stale , which is accomplished with <stale> . The original request for stale text came from an instructor with an online list of student topics for presentations, and as students claimed topics they were marked as no longer available for other students.  If you need a fill-in blank , like this , it can be obtained with an empty <fillin> element that defaults to roughly a 10-character width. You can use the <characters> attribute to make the rule longer or shorter, such as a 40-character blank: . The character count is approximate, based on typical character widths within a proportional font carrying English language text. Adjust to suit, or request a language-specific adjustment if it is critical.  This paragraph is intended to make a <fillin> appear right at the start of the second line in print and then the next paragraph has nothing but a <fillin> . Both are for testing purposes.   The following are <fillin> with rows and\/or cols attributes (at least one of which is greater than 1): , , .  Long after we started this mess, we added PreTeXt tags to mark up tags and attributes. The elements are: <tag> , <tage> , <attr> . Examples of how these render are (respectively): <section> , <hash\/> , width . Perhaps this document will make greater use of these tags.  We supply two provisional cross-references for testing purposes only: , .    A conclusion here, which we fill with some numbering tests.  This is a cross-reference to one of the outcomes, forced to use the type-global form of the text. It should describe the outcome as belonging to the section (rather than the outcomes ), since outcomes are one-per-subdivision and are numbered based upon the containing division: . For comparison this is the (forced) type-global cross-reference: .    Fundamental Structures, Revisited   This is a <outcomes> element you are reading, and this is its introduction. This early section has really grown and we have tried to accomplish many things. Not all of them are listed here.    Display various blocks , fundamental units of the flow.  More, and this is what the cross-references above are pointing to.  Evermore.    This concludes the (incomplete) outcomes for this section, so now we can carry-on to the next section.    "
 },
 {
   "id": "dEf",
@@ -384,7 +384,7 @@ var ptx_lunr_docs = [
   "url": "section-6.html#table-euler1",
   "type": "Table",
   "number": "6.2",
-  "title": "Euler's approximation for Duffing's Equation with <span class=\"process-math\">\\(h = 0.2\\)<\/span>",
+  "title": "Euler’s approximation for Duffing’s Equation with <span class=\"process-math\">\\(h = 0.2\\)<\/span>",
   "body": " Euler's approximation for Duffing's Equation with          0 0.00 0.0000 0.5000   1 0.20 0.1000 0.4800   2 0.40 0.1960 0.4560   3 0.60 0.2872 0.4295   4 0.80 0.3731 0.4027   5 1.00 0.4536 0.3783   6 1.20 0.5293 0.3591   7 1.40 0.6011 0.3480   8 1.60 0.6707 0.3474   9 1.80 0.7402 0.3603   10 2.00 0.8123 0.3900   "
 },
 {
@@ -1708,7 +1708,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15",
   "title": "Interactive Elements, Server",
-  "body": " Interactive Elements, Server  interactive elements server  embedded interactive elements server    When outputting Web page versions, it is possible to embed a variety of dynamic interactive elements. In a latex \/PDF version, these will necessarily need to be replaced by some static substitute, such as a screenshot. See for the specifics of embedding instances of the Sage Cell Server, which is more elaborate, and not entirely similar.  Interactives in this section have code that lives on a server somewhere (in the cloud ). So maybe you uploaded an interactive demonstration, or maybe somebody else did. In this sense, these are easier to create or use. But pay attention, the code may come with restrictive licenses, even if you are the author originally. See for more interactives that can be free as in freedom or liberté . CalcPlot3D is the notable exception here.  (2018-06-22) Almost everything in this section is under active development and not stable yet. Feel free to experiment and make suggestions and requests. This page takes a while to completely load, so be patient.    GeoGebra  Geogebra server  Geogebra material  A Geogebra material is something you might use in a class. It could also be called an interactive demonstration. Go browsing at and find something appropriate for your project. Or make an account and create your own.  Once you find a material that looks instructive, it will be at a URL such as https:\/\/www.geogebra.org\/m\/KGn2d4Qd and you want to pick off the identifier on the end, in this case KGn2d4Qd . Then author <interactive geogebra=\"KGn2d4Qd\" \/> At this writing (2018-02-04) you will want to place this inside a figure , with a caption, as we do right now with material KGn2d4Qd .  The shape of the material will be fixed, so guess (or measure with an on-screen ruler), the aspect ratio and use that in the <interactive> element.   Right Triangle Paradox    Note that materials hosted at geogebra.org have a non-standard, non-commercial license you must agree to before you can download them as source code. Perhaps you must forfeit your copyright when you upload a material? We have not investigated this thoroughly.    Desmos Graphs  Desmos graphs  Desmos provides interactive graphing applications. The following example was created by Ann Cary and made available via the Share function of Desmos. You can make your own Desmos graph, choose the Share icon, and the Embed option, to get a URL such as https:\/\/www.desmos.com\/calculator\/ttox1bvxku You want to pick off the identifier on the end, in this case ttox1bvxku , then author <interactive desmos=\"ttox1bvxku\" width=\"60%\" aspect=\"2:3\" \/> as we have done here.  The static image employed in the latex version of this article was obtained by viewing the graph at the Desmos site ( , not the embedded version in the PreTeXt HTML version), and using the Share button to export a PNG image. In this case, we used a Medium Rectangle and Thick lines.   Graph of    Note that Desmos has extensive Terms of Service which include restrictions on commercial uses.    CalcPlot3D  CalcPlot3D  CalcPlot3D is a Javascript application for creating, visualizing, and understanding plots of 3D surfaces. So it would be an ideal companion to a book on multivariate calculus, but should be useful in other courses of study.  To use it, start at the online app version . Create a plot and adjust the image to a viewpoint and scale if you like. Then, click the menu\/hamburger icon in the upper-left and choose File . From here you can save a PNG image for the static version, but you also want to select Encode View in URL . Now your browser address bar is filled with a query string ( all the stuff after the question-mark) that has all the information necessary to reproduce your plot (and view). Copy everything after the first question-mark to the interactive\/code element. Be sure to replace any ampersands by &amp; (see the Author's Guide for more about certain characters in URL s). Examine the source for the examples below to see how they are authored. The Help Manual for CalcPlot3D is also available off the menu\/hamburger icon in the upper-left.  In grab the image with your mouse and rotate it in various directions. Then while the image has focus, press the 3 key (short for 3-D ), to get a 3D view, which will require some red-blue 3D glasses to fully appreciate. Press the key again to return to a regular view.  When using a version with controls (e.g. ), or the full application (e.g. ), specify an aspect ratio that is wider than it is tall. Start with aspect=\"3:2\" , and perhaps fine-tune from there.   Intersection of two planes (minimal embedding)     Probability wavefunction with contours (includes controls)     Plot of on (full application)      IFrames from Servers  The iFrame versions of interactives can point to a network location, presuming the endpoint is reasonably well-behaved. If you are using this sytematically, let us know and perhpas it should become a more dedicated PreTeXt construction. See for the local file version.  This example is from PhET Interactive Simulations .   Fourier: Making Waves iframe     "
+  "body": " Interactive Elements, Server  interactive elements server  embedded interactive elements server    When outputting Web page versions, it is possible to embed a variety of dynamic interactive elements. In a latex \/PDF version, these will necessarily need to be replaced by some static substitute, such as a screenshot. See for the specifics of embedding instances of the Sage Cell Server, which is more elaborate, and not entirely similar.  Interactives in this section have code that lives on a server somewhere (in the cloud ). So maybe you uploaded an interactive demonstration, or maybe somebody else did. In this sense, these are easier to create or use. But pay attention, the code may come with restrictive licenses, even if you are the author originally. See for more interactives that can be free as in freedom or liberté . CalcPlot3D is the notable exception here.  (2018-06-22) Almost everything in this section is under active development and not stable yet. Feel free to experiment and make suggestions and requests. This page takes a while to completely load, so be patient.    GeoGebra  Geogebra server  Geogebra material  A Geogebra material is something you might use in a class. It could also be called an interactive demonstration. Go browsing at and find something appropriate for your project. Or make an account and create your own.  Once you find a material that looks instructive, it will be at a URL such as https:\/\/www.geogebra.org\/m\/KGn2d4Qd and you want to pick off the identifier on the end, in this case KGn2d4Qd . Then author <interactive geogebra=\"KGn2d4Qd\" \/> At this writing (2018-02-04) you will want to place this inside a figure , with a caption, as we do right now with material KGn2d4Qd .  The shape of the material will be fixed, so guess (or measure with an on-screen ruler), the aspect ratio and use that in the <interactive> element.   Right Triangle Paradox    Note that materials hosted at geogebra.org have a non-standard, non-commercial license you must agree to before you can download them as source code. Perhaps you must forfeit your copyright when you upload a material? We have not investigated this thoroughly.    Desmos Graphs  Desmos graphs  Desmos provides interactive graphing applications. The following example was created by Ann Cary and made available via the Share function of Desmos. You can make your own Desmos graph, choose the Share icon, and the Embed option, to get a URL such as https:\/\/www.desmos.com\/calculator\/ttox1bvxku You want to pick off the identifier on the end, in this case ttox1bvxku , then author <interactive desmos=\"ttox1bvxku\" width=\"60%\" aspect=\"2:3\" \/> as we have done here.  The static image employed in the latex version of this article was obtained by viewing the graph at the Desmos site ( , not the embedded version in the PreTeXt HTML version), and using the Share button to export a PNG image. In this case, we used a Medium Rectangle and Thick lines.   Graph of    Note that Desmos has extensive Terms of Service which include restrictions on commercial uses.    CalcPlot3D  CalcPlot3D  CalcPlot3D is a Javascript application for creating, visualizing, and understanding plots of 3D surfaces. So it would be an ideal companion to a book on multivariate calculus, but should be useful in other courses of study.  To use it, start at the online app version . Create a plot and adjust the image to a viewpoint and scale if you like. Then, click the menu\/hamburger icon in the upper-left and choose File . From here you can save a PNG image for the static version, but you also want to select Encode View in URL . Now your browser address bar is filled with a query string ( all the stuff after the question-mark) that has all the information necessary to reproduce your plot (and view). Copy everything after the first question-mark to the interactive\/code element. Be sure to replace any ampersands by &amp; (see the Author's Guide for more about certain characters in URL s). Examine the source for the examples below to see how they are authored. The Help Manual for CalcPlot3D is also available off the menu\/hamburger icon in the upper-left.  In grab the image with your mouse and rotate it in various directions. Then while the image has focus, press the 3 key (short for 3-D ), to get a 3D view, which will require some red-blue 3D glasses to fully appreciate. Press the key again to return to a regular view.  When using a version with controls (e.g. ), or the full application (e.g. ), specify an aspect ratio that is wider than it is tall. Start with aspect=\"3:2\" , and perhaps fine-tune from there.   Intersection of two planes (minimal embedding)     Probability wavefunction with contours (includes controls)     Plot of on (full application)      IFrames from Servers  The iFrame versions of interactives can point to a network location, presuming the endpoint is reasonably well-behaved. If you are using this sytematically, let us know and perhpas it should become a more dedicated PreTeXt construction. See for the local file version.  This example is from PhET Interactive Simulations .   Fourier: Making Waves iframe    Anything that suggests you can embed an interactive widget via an iFrame is fair game for this feature. This is a Google Map of the state of California, for use in a French language document, from Julien Giol. The necessary URL is obtained by using the Share feature, and then the Embed a map option has HTML with the URL in a src attribute.   California.     "
 },
 {
   "id": "p-850",
@@ -1781,6 +1781,24 @@ var ptx_lunr_docs = [
   "number": "15.6",
   "title": "",
   "body": " Fourier: Making Waves iframe   "
+},
+{
+  "id": "p-863",
+  "level": "2",
+  "url": "section-interactive-server.html#p-863",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "embed "
+},
+{
+  "id": "map-california",
+  "level": "2",
+  "url": "section-interactive-server.html#map-california",
+  "type": "Figure",
+  "number": "15.7",
+  "title": "",
+  "body": " California.   "
 },
 {
   "id": "section-interactive-exercises",
@@ -1909,9 +1927,9 @@ var ptx_lunr_docs = [
   "body": " Audio  2019-05-24: this is preliminary, and mostly based on the code for <video> so read the next section and mimic the style from there. But use an <audio> element and have the source attribute point to an OGG, MP3, or WAV file. Plus, an aspect attribute will be ignored.  We have not entirely decided how to handle the static version present in a PDF.  First in a <figure> , so it can be cross-referenced.   MP3 Piano Trill ( www.kozco.com\/tech\/soundtests.html )    Now, naked, between a couple of paragraphs, with specified asymmetric margins, and a computed width.   Now in a <sidebyside> with an Organ Finale WAV file on the left, and on the right, Bach in OGG format at a very low bit rate (32 kps). From .      "
 },
 {
-  "id": "figure-60",
+  "id": "figure-61",
   "level": "2",
-  "url": "section-audio.html#figure-60",
+  "url": "section-audio.html#figure-61",
   "type": "Figure",
   "number": "18.1",
   "title": "",
@@ -1927,38 +1945,29 @@ var ptx_lunr_docs = [
   "body": " Video   First, a gratuitous reference to Exercise about the derivative of a cosine.  You can specify a video by a filename if you host it as part of your document, or a URL giving a location on the Internet. There are a few extra features for YouTube and Vimeo videos, which are near the bottom of this page, so look there first if that meets your needs.    Video Files  Embedded videos can make sense for a web version of your document. This is a video promoting the University of Puget Sound to potential new students, in WebM format. Support is limited to HTML5-capable browsers. The file format can be MP4, Ogg, or WebM, though this may vary depending upon the browser. Use a <video> element, within either a <figure> (numbered, captioned) or a <sidebyside> for more precise control. The source attribute in this first example does not include an extension, and so three possibilities above will be searched for preferentially (you need only provide the video in one format, but providing additional versions will increase the chances every browser will find a compatible format).   University of Puget Sound Promotional Video    You can replace the preview image of a video with one of your own making. HTML refers to this as the poster , presumably because it advertises the video. The image you make should be of the same quality as the video, and with the same aspect-ratio, and is presumably one of the frames of the video. So a screenshot is the likely avenue. (Maybe we will have advice on how to do this easily, or see Issue #853 .) link external, url  reference external, url On the <video> tag, include a preview attribute which is the name of an image file, including a relative path. (JPEG or PNG formats are best. JPEG may be smaller for video screenshots, while PNG is lossless and so may work better for diagrams.) The next video has a preview\/poster that is a fram part way into the introduction.   University of Puget Sound Promotional Video    If you find the posters provided automatically for a video to be distracting or objectionable, you can cover them up by requesting a generic poster with the attribute-value pair: preview = \"generic\" .   University of Puget Sound Promotional Video    You can use a very similar construction to point to a video hosted somewhere on the Internet, just use a complete URL for the <source> attribute. Note that if the URL has a query string (parameters following a question-mark), then any ampersands (&) will need to be escaped, so as to not confuse the XML processor ( use &amp ). Also, the question-mark character needs to not be URL -encoded ( %3F ), so presumably edit the URL to be the character. Here are several examples, the second one uses the start and stop attributes to limit the video to just the time between the 16-second and 30-second locations, and has asymmetric margins.    Big Buck Bunny from Video for Everybody Test Page     Big Buck Bunny, Controlled Start\/End, Asymmetric Margins     Big Buck Bunny, Ogg container, *.ogv extension     Big Buck Bunny, MP4 format     Big Buck Bunny, WebM format     Big Buck Bunny, Automatic best format (temporarily broken)     Videos are assumed to have a 16:9 aspect ratio (width:height). If this is not the case, then you must specify the aspect ratio with either a ratio (e.g. 4:3) or as a number expressing the fraction width\/height (e.g. 1.3333). Four decimal places should suffice for the latter. Note that you cannot change the aspect ratio, and you must supply the aspect ratio for any video that does not have the default ratio. This is a technical requirement that allows us to smoothly scale the videos on small devices (try this page on your mobile phone!).    YouTube  YouTube YouTube videos videos YouTube videos may be embedded with only knowledge of a video's ID or a playlist ID . A single video's YouTube ID is a string of eleven seemingly random characters that show up in the URL when you watch a video. For the Led Zeppelin performance below, the ID is hAzdgU_kpGo , which you might normally watch directly from the URL . As described just above, you need to specify a different aspect ratio if the video does not have a 16:9 aspect ratio.  Note: some of these videos may not play if viewed locally, and maybe not even if you start up a local web server (such as can be easily done with Python). So if you are testing new features, be careful about assuming videos from cloud services are not working properly.  If you have ever owned a drone, you sympathize with this guy. Way funnier than a cat video.   My first day with my drone  First Drone Flight (1:28)    If you are only interested in a piece of the action, you can limit the video with start and end attributes in seconds. You might make those times clear in the caption for readers getting the link out of a PDF. Some videos may not respect these parameters.   My first day with my drone (Splashdown)  First Drone Flight (Splashdown, 0:54 to 1:12)    This next video comes with a default poster from YouTube featuring Robert Plant. We've replaced it with a poster featuring Jimmy Page.   Kashmir (Live), Led Zeppelin  Kashmir (Live), Led Zeppelin. O2 Arena, London. December 10, 2007. (8:55)  Led Zeppelin video    And if you don't want to be reminded of Plant, Page, Bonham, or Jones, you can cover them up entirely.   Kashmir (Live), Led Zeppelin  Kashmir (Live), Led Zeppelin. O2 Arena, London. December 10, 2007. (8:55)  Led Zeppelin video    Videos were first designed mostly on the assumption that they are wrapped in a figure with a title (which is distinct from a caption ). But you can just place a video naked inbetween a couple of paragraphs. This is nice if you don't want the clutter of numbers, and\/or if you plan to exclude videos from some edition of your document.   We can pack two videos side-by-side, with a lot of horizontal control, using two panels in the sidebyside element. We have simply chosen here to not provide a caption (overall, or separately) as an illustration. The sizes are purposely a bit odd. See for much more on side-by-side panels. These videos come from the Topic and VEVO areas of YouTube (respectively) and both have start\/end times.        These next two videos are evenly spaced, one from YouTube, one from a source file hosted by the author. Now with separate captions, but identical margins (through very different choices of layout parameters than in the preceding pair of videos).     Drone Flight      UPS Promo     A YouTube playlist can be built in one of two ways. You may specify the youtube attribute to be a space-separated list of several video IDs. Alternatively, you may set the youtubeplaylist attribute to a YouTube playlist ID.    Individual IDs specified in an itemized playlist      YouTube playlist ID specified in a named playlist      We test three equally-wide YouTube videos in a <sidebyside> with a few variations.    Medium Length     Short     A Really Long Caption That Will Wrap onto a New Line     We test three equally-wide YouTube videos in a <sidebyside> with a few variations, and now contained in a <figure> .   Author-Hosted videos as Sub-Figures    Medium Length     Short     A Really Long Caption That Will Wrap onto a New Line      We test three equally-wide author-hosted videos in a <sidebyside> with a few variations.    Medium Length     Short     A Really Long Caption That Will Wrap onto a New Line     We test three equally-wide author-hosted videos in a <sidebyside> with a few variations, and now contained in a <figure> .   YouTube videos as Sub-Figures    Medium Length     Short     A Really Long Caption That Will Wrap onto a New Line        Vimeo  We support videos from Vimeo in much the same way as YouTube videos. Now the identifier is a long integer. For example, the video up next would normally be found at https:\/\/vimeo.com\/27246366 . But instead, you can embed the video with as little as <video vimeo=\"27246366\"\/> . As of 2019-05-18, we intend to support as many of the options described above as possible. Widths and heights (via the aspect ratio) will perform as expected. We have not investigated start and end times.   MOVE , by Rick Mereki , vimeo.com\/rickmereki    Now with an author-supplied poster.   MOVE , by Rick Mereki , vimeo.com\/rickmereki      Captions and Subtitles  Experimental support for captions and subtitles first. Look at the source, which mimics the actual HTML. The words of the titles and\/or subcaptions (there is a difference!) come from a file in Web Video Text Tracks ( WEBVVT ) format.   Big Buck Bunny with subtitles adapted from      This video is identical to the previous one, except it tests the use of a default <track> . The default attribute on <track> can be set to the value yes to make one set of captions the default (and only one!). Test is a bit lame, the two <track> use the same file, but just have different labels for the player's menu. Track named US English Two will show as in-use at start-up.       "
 },
 {
-  "id": "figure-61",
+  "id": "figure-62",
   "level": "2",
-  "url": "section-video.html#figure-61",
+  "url": "section-video.html#figure-62",
   "type": "Figure",
   "number": "19.1",
   "title": "",
   "body": " University of Puget Sound Promotional Video   "
 },
 {
-  "id": "p-921",
+  "id": "p-922",
   "level": "2",
-  "url": "section-video.html#p-921",
+  "url": "section-video.html#p-922",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "poster "
 },
 {
-  "id": "figure-62",
-  "level": "2",
-  "url": "section-video.html#figure-62",
-  "type": "Figure",
-  "number": "19.2",
-  "title": "",
-  "body": " University of Puget Sound Promotional Video   "
-},
-{
   "id": "figure-63",
   "level": "2",
   "url": "section-video.html#figure-63",
   "type": "Figure",
-  "number": "19.3",
+  "number": "19.2",
   "title": "",
   "body": " University of Puget Sound Promotional Video   "
 },
@@ -1967,88 +1976,88 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-video.html#figure-64",
   "type": "Figure",
-  "number": "19.4",
+  "number": "19.3",
   "title": "",
-  "body": " Big Buck Bunny from Video for Everybody Test Page   "
+  "body": " University of Puget Sound Promotional Video   "
 },
 {
   "id": "figure-65",
   "level": "2",
   "url": "section-video.html#figure-65",
   "type": "Figure",
-  "number": "19.5",
+  "number": "19.4",
   "title": "",
-  "body": " Big Buck Bunny, Controlled Start\/End, Asymmetric Margins   "
+  "body": " Big Buck Bunny from Video for Everybody Test Page   "
 },
 {
   "id": "figure-66",
   "level": "2",
   "url": "section-video.html#figure-66",
   "type": "Figure",
-  "number": "19.6",
+  "number": "19.5",
   "title": "",
-  "body": " Big Buck Bunny, Ogg container, *.ogv extension   "
+  "body": " Big Buck Bunny, Controlled Start\/End, Asymmetric Margins   "
 },
 {
   "id": "figure-67",
   "level": "2",
   "url": "section-video.html#figure-67",
   "type": "Figure",
-  "number": "19.7",
+  "number": "19.6",
   "title": "",
-  "body": " Big Buck Bunny, MP4 format   "
+  "body": " Big Buck Bunny, Ogg container, *.ogv extension   "
 },
 {
   "id": "figure-68",
   "level": "2",
   "url": "section-video.html#figure-68",
   "type": "Figure",
-  "number": "19.8",
+  "number": "19.7",
   "title": "",
-  "body": " Big Buck Bunny, WebM format   "
+  "body": " Big Buck Bunny, MP4 format   "
 },
 {
   "id": "figure-69",
   "level": "2",
   "url": "section-video.html#figure-69",
   "type": "Figure",
-  "number": "19.9",
+  "number": "19.8",
   "title": "",
-  "body": " Big Buck Bunny, Automatic best format (temporarily broken)   "
+  "body": " Big Buck Bunny, WebM format   "
 },
 {
   "id": "figure-70",
   "level": "2",
   "url": "section-video.html#figure-70",
   "type": "Figure",
-  "number": "19.10",
-  "title": "My first day with my drone",
-  "body": " My first day with my drone  First Drone Flight (1:28)   "
+  "number": "19.9",
+  "title": "",
+  "body": " Big Buck Bunny, Automatic best format (temporarily broken)   "
 },
 {
   "id": "figure-71",
   "level": "2",
   "url": "section-video.html#figure-71",
   "type": "Figure",
-  "number": "19.11",
-  "title": "My first day with my drone (Splashdown)",
-  "body": " My first day with my drone (Splashdown)  First Drone Flight (Splashdown, 0:54 to 1:12)   "
+  "number": "19.10",
+  "title": "My first day with my drone",
+  "body": " My first day with my drone  First Drone Flight (1:28)   "
 },
 {
   "id": "figure-72",
   "level": "2",
   "url": "section-video.html#figure-72",
   "type": "Figure",
-  "number": "19.12",
-  "title": "Kashmir (Live), Led Zeppelin",
-  "body": " Kashmir (Live), Led Zeppelin  Kashmir (Live), Led Zeppelin. O2 Arena, London. December 10, 2007. (8:55)  Led Zeppelin video   "
+  "number": "19.11",
+  "title": "My first day with my drone (Splashdown)",
+  "body": " My first day with my drone (Splashdown)  First Drone Flight (Splashdown, 0:54 to 1:12)   "
 },
 {
   "id": "figure-73",
   "level": "2",
   "url": "section-video.html#figure-73",
   "type": "Figure",
-  "number": "19.13",
+  "number": "19.12",
   "title": "Kashmir (Live), Led Zeppelin",
   "body": " Kashmir (Live), Led Zeppelin  Kashmir (Live), Led Zeppelin. O2 Arena, London. December 10, 2007. (8:55)  Led Zeppelin video   "
 },
@@ -2057,124 +2066,124 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-video.html#figure-74",
   "type": "Figure",
-  "number": "19.14",
-  "title": "",
-  "body": " Drone Flight   "
+  "number": "19.13",
+  "title": "Kashmir (Live), Led Zeppelin",
+  "body": " Kashmir (Live), Led Zeppelin  Kashmir (Live), Led Zeppelin. O2 Arena, London. December 10, 2007. (8:55)  Led Zeppelin video   "
 },
 {
   "id": "figure-75",
   "level": "2",
   "url": "section-video.html#figure-75",
   "type": "Figure",
-  "number": "19.15",
+  "number": "19.14",
   "title": "",
-  "body": " UPS Promo   "
+  "body": " Drone Flight   "
 },
 {
   "id": "figure-76",
   "level": "2",
   "url": "section-video.html#figure-76",
   "type": "Figure",
-  "number": "19.16",
+  "number": "19.15",
   "title": "",
-  "body": " Individual IDs specified in an itemized playlist    "
+  "body": " UPS Promo   "
 },
 {
   "id": "figure-77",
   "level": "2",
   "url": "section-video.html#figure-77",
   "type": "Figure",
-  "number": "19.17",
+  "number": "19.16",
   "title": "",
-  "body": " YouTube playlist ID specified in a named playlist    "
+  "body": " Individual IDs specified in an itemized playlist    "
 },
 {
   "id": "figure-78",
   "level": "2",
   "url": "section-video.html#figure-78",
   "type": "Figure",
-  "number": "19.18",
+  "number": "19.17",
   "title": "",
-  "body": " Medium Length   "
+  "body": " YouTube playlist ID specified in a named playlist    "
 },
 {
   "id": "figure-79",
   "level": "2",
   "url": "section-video.html#figure-79",
   "type": "Figure",
-  "number": "19.19",
+  "number": "19.18",
   "title": "",
-  "body": " Short   "
+  "body": " Medium Length   "
 },
 {
   "id": "figure-80",
   "level": "2",
   "url": "section-video.html#figure-80",
   "type": "Figure",
-  "number": "19.20",
+  "number": "19.19",
   "title": "",
-  "body": " A Really Long Caption That Will Wrap onto a New Line   "
+  "body": " Short   "
 },
 {
   "id": "figure-81",
   "level": "2",
   "url": "section-video.html#figure-81",
   "type": "Figure",
+  "number": "19.20",
+  "title": "",
+  "body": " A Really Long Caption That Will Wrap onto a New Line   "
+},
+{
+  "id": "figure-82",
+  "level": "2",
+  "url": "section-video.html#figure-82",
+  "type": "Figure",
   "number": "19.21",
   "title": "",
   "body": " Author-Hosted videos as Sub-Figures    Medium Length     Short     A Really Long Caption That Will Wrap onto a New Line     "
-},
-{
-  "id": "figure-85",
-  "level": "2",
-  "url": "section-video.html#figure-85",
-  "type": "Figure",
-  "number": "19.22",
-  "title": "",
-  "body": " Medium Length   "
 },
 {
   "id": "figure-86",
   "level": "2",
   "url": "section-video.html#figure-86",
   "type": "Figure",
-  "number": "19.23",
+  "number": "19.22",
   "title": "",
-  "body": " Short   "
+  "body": " Medium Length   "
 },
 {
   "id": "figure-87",
   "level": "2",
   "url": "section-video.html#figure-87",
   "type": "Figure",
-  "number": "19.24",
+  "number": "19.23",
   "title": "",
-  "body": " A Really Long Caption That Will Wrap onto a New Line   "
+  "body": " Short   "
 },
 {
   "id": "figure-88",
   "level": "2",
   "url": "section-video.html#figure-88",
   "type": "Figure",
+  "number": "19.24",
+  "title": "",
+  "body": " A Really Long Caption That Will Wrap onto a New Line   "
+},
+{
+  "id": "figure-89",
+  "level": "2",
+  "url": "section-video.html#figure-89",
+  "type": "Figure",
   "number": "19.25",
   "title": "",
   "body": " YouTube videos as Sub-Figures    Medium Length     Short     A Really Long Caption That Will Wrap onto a New Line     "
-},
-{
-  "id": "figure-92",
-  "level": "2",
-  "url": "section-video.html#figure-92",
-  "type": "Figure",
-  "number": "19.26",
-  "title": "",
-  "body": " MOVE , by Rick Mereki , vimeo.com\/rickmereki   "
 },
 {
   "id": "figure-93",
   "level": "2",
   "url": "section-video.html#figure-93",
   "type": "Figure",
-  "number": "19.27",
+  "number": "19.26",
   "title": "",
   "body": " MOVE , by Rick Mereki , vimeo.com\/rickmereki   "
 },
@@ -2182,6 +2191,15 @@ var ptx_lunr_docs = [
   "id": "figure-94",
   "level": "2",
   "url": "section-video.html#figure-94",
+  "type": "Figure",
+  "number": "19.27",
+  "title": "",
+  "body": " MOVE , by Rick Mereki , vimeo.com\/rickmereki   "
+},
+{
+  "id": "figure-95",
+  "level": "2",
+  "url": "section-video.html#figure-95",
   "type": "Figure",
   "number": "19.28",
   "title": "",
@@ -2194,7 +2212,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "20",
   "title": "Cross-Referencing",
-  "body": " Cross-Referencing  Cross-references cross-reference are easy, since that is a key reason for having a highly structured document. Here is a useful feature if you elect to use it. Any <xref> will know what it points to, so you can let it provide the naming part of the cross-reference text. You can turn this on globally with the command-line parameter autoname autoname set to 'yes' . If you do that, you will see most of the names in this document doubled, since the names are written into the source already in most places outside of this section.  Moreover, the names themselves will change with the use of the one language dependent file. And another bonus is that with an autoname, you automatically get a non-breaking space between the name and the reference. The autoname switch makes no sense for provisional cross-references, since there is no information about what they point to.  Here is a reference that has no indication of its type in the source: . So by default you will just see a number that you can click on. If you use the text=\"type-global\" switch then you should see Theorem prepended. Note that if you changed the theorem to a lemma, then that change would be reflected here automatically when autonaming is in effect.  If you set the autonaming behavior globally, or accept the default behavior, there will still be instances where you want to override that choice. Simple: just say text=\"type-global\" or text=\"global\" as part of the xref . Each example below should look the same each time this article is processed, no matter how the global autoname is set.  No name ever:  Always named:   You might also wish to provide a prefix to a cross-reference and have it incorporated into the text of what you would click on in an electronic version. So if you make an xref with some content, then that content will prefix the cross-reference within the clickable\/pokeable text and be attached with a non-breaking space. This xref content totally overrides any prefix that might happen otherwise. So the name of an item (  corollary ) could be replaced, and if you make a cross-reference with custom text, that will be the clickable also. An example:  A grand result: Major Corollary  A grand result: a nice corollary   Suppose you want to reference two theorems, so you might want to say something like Theorems 4.6 and 5.2. With global autonaming on, you can override the first Theorem by providing the content Theorems on the first xref and text=\"global\" on the second xref . (With global autonaming off, you will also get what you want\/expect.) Here is the test, which should look correct no matter what the global switch is: Sections and . (But notice that it is up to you to be certain the types of these targets do not change without you changing the content of the first xref . The author-tools mode and careful choices of xml:id strings can help avoid this trap.)  If you set the value of text to title , then the title you assigned to the theorem will be used as the link for a cross-reference. Here is a the final example, which refers to a fundamental theorem by name .  Cross-references to exercises with hard-coded numbers should respect the supplied number. Exercise should reference problem 42a.  Here we form a list to test pointing at various structures. Each of the following should open a knowl in the HTML version, otherwise it will be a traditional hyperlink (if possible). Note that if a knowl opens, there will always be an in-context link which will take you to the actual location, should you have wished instead to just go there.  Footnotes: Fermat allusion at .  Citations: Judson's AATA with annotation at  Citations: Judson's AATA with autoname that should have zero effect  Citations: In a <references> division inside an appendix  Note: just the annotation of previous citation at  Examples: Mystery derivative at , or a question at .  Definition-like: A mathematical statement with no proof .  A numbered Note:  A link to a proposition element, while this document has globally renamed proposition s as Conundrum s, so this link should use the new name:  Theorems: Fundamental Theorem of Calculus, with proof at  Proof: of second version of FTC at  Figures: A plot with a derivative at .  A Figure within a side-by-side panel, with its own number:  A Table within a side-by-side panel, with a subnumber:  A Figure, containing a side-by-side with two sub-captioned images:  Display Mathematics: single, first with no name: . Then with an autoname: .  Display Mathematics: multi-row, first with no name: . Then with an autoname: . And two, with a plural form: Equations and .  You can cross-reference The Fundamental Theorem of Calculus via custom text of your choice.  Display mathematics: an equation with local tag, which should not be used so very far away: .  You can author a cross-reference to a displayed equation with no number, but it will not be very satisfying. You should get a warning if you try.  Exercises (divisional), a range, with plural form provided to override autonaming: Exercises .  Exercise (inline): with enclosed hint at  A group of two exercises, with introduction, conclusion:  Solution: An autonamed portion of an exercise:  Parts of a complicated exercise:   A subsidary part of an exercise:   knowl nested Three cross-references to individual exercises, but due to their location, they should have different type names in the cross-reference: in an <exercises> division, ; in the narrative, ; and in a <worksheet> , .  An item buried in nested ordered lists:  List item as knowls in HTML, including nested lists: ,  A titled list:  List item inside a named list, second color in rainbow list:  Second color in rainbow list, but now as a local reference:  An item in ordered list, but contained in an unordered list, hence without a number, so a cross-reference by number would be ambiguous. So we use a cross-reference which relies on custom text: No Number List Item  Several examples of hybrid cross-references to list items within a named list can be found in, and adjacent to, .  An assemblage, which never has a number. A cross-reference now requires content in the xref element, with text='custom' : text to xref an assemblage  A cross-reference to a list item in a description list, which has a title, but never a number: . Note that you need to include the attribute text=\"title\" even if that is obvious from the situation. This requirement may be relaxed in a future refactoring of the cross-reference system.  A very similar cross-reference to the previous one, but testing how final punctuation of titles is handled: .  A cross-reference to a paragraphs subdivision, which never has a number (so comments above about description list items and titles applies here too):  A case within the proof of :  A cross-reference to a description list item with a title containing math:  A cross-reference to an aside, by title necessarily, and with some formatting in the title:  A cross-reference to an objectives block, with an autoname. This demonstrates the number of the Objectives here, which is not shown in the original version since it is implicit:  A cross-reference to an individual objective. This is authored as a list item, but displayed as an objective (singular) via an autoname:  A cross-reference to the top-level element ( book ) will point to a summary page similar to a Table of Contents in HTML. For LaTeX output it will behave similarly, unless there is no Table of Contents, then it will go to the main title page: ToC or Title  Cross-references inside quotations previously lost track of their target, so this tests correcting that, not so much the cross-reference itself:  An activity with full details following:  A type-global cross-reference to a second-level task within a project: , the encompassing project : , and a local reference .  A subcaptioned named list:  This opens a knowl for an example . It has a solution, which is orginally presented as a hidden knowl. But since this version is a duplicate, the knowl for the solution is a file version, not an embedded version, and hence free from duplicating any unique identifaction like an HTML id. So we test its styling and function here:  A cross-reference to a poem, where we need to use a title for the link text, since a poem is not numbered:  A cross-reference to a <references> division in a subsection, which should not be numbered where born, but which has the number of its parent division in a cross-reference: . And a cross-reference to a <references> division, which is the main bibliography in the back matter, and so is not numbered where born, nor in a cross-reference (which we must accomplish via it's title): .  A cross-reference to a <solutions> division in a subsection, which should not be numbered where born, but which has the number of its parent division in a cross-reference: . And a cross-reference to a <solutions> division, which should appear as an appendix both where born and as a cross-reference: .  A cross-reference to an <exercises> division in a subsection, which is the only such division in that subsection and therefore should not be numbered where born, but which has the number of its parent division in a cross-reference: . In contrast we cross-reference an <exercises> division which is one of two inside a section, and therefore is numbered, when born and when cross-referenced, in continuity with the preceding subsections: . Also an <exercise> within an <exercises> which should have a cross-reference employing the number of the containing (unstructured) <section> : which is in which is in the (unstructured) .  A custom cross-reference: Custom   Cross-reference to <instructions> of an <interactive> :    Cross-references to structural elements of the document will always take you there directly, since even in the HTML version these parts never get realized as knowls. You will find such links sprinkled through this document, but here is an autonamed link to a subsubsection: .  Cross-references can be built into display mathematics, but they can only point to one item ( a comma-delimited list of targets is not supported). Examples below should test the distinction in HTML output between a link that opens a knowl and a link that jumps to a larger chunk of content. Notice that display mathematics is entirely latex syntax, no matter which output format you create. So if you do not use the autoname facility, you need to wrap non-math text in \\text{} and perhaps use a tilde ( ~ ) as a non-breaking space (examine the source of this article).  bug in-context broken  Variations on the above include multiple xml:id as the value of a single ref attribute on an xref , in the form of a comma-separated list. In this case, only the numbers are links\/knowls and the autonaming attribute is based on the type of the first ref . Wrapping with brackets (citations) or parentheses (equations) is also controlled by the type of the first ref . And the detail attribute for a bibliographic reference is silently ignored. So you can do silly things like have a reference to a theorem within a list of equation numbers and there will be no error message. Handle with care. Spaces after commas in the list will migrate to the output as spaces, so if you don't have any, you won't get any.    Four theorems, with spaces, autonamed:  Two equations, no spaces, autonamed:  Two bibliographic items, no autoname:    If you have a long list of items (such as homework exercises, not in an exercisegroup , or perhaps several chapters), you can get a cross-reference that prints as a range by using xref with two attributes first and last , which may contain a single xml:id each. As with multiple references, first will control autonaming and other features.  A range of exercises, autonamed (this range appears out-of-order since the two exercise are numbered under two different schemes):  A range of equations:  A system of equations, given as range from first to last:  A range of sections, hand-named to be plural: Sections  A range of bibliographic items:    The url url element may be used to link to a data file, either externally, or internally, if you want to make such an object available to a reader. reference external A good example use case is a spreadsheet that might be part of an exercise, or contain data relevant to some discussion. First let us suppose the data resides somewhere on the Internet, then just use the complete address. Here is one from Microsoft: Sample Excel Spreadsheet .  For a link like the previous one, you might want to provide advice appropriate for your audience about using a context menu to download a file, or how to configure helper\/viewer applications.    You can also provide a file yourself, but now it is your obligation to distribute the file with your document ( HTML , PDF , ) and provide a relative link. This creates some complications, such as making sure an electronic PDF has the associated file in the same place relative to the PDF file. Of course, if you make a print PDF, this becomes impossible. Here is a test example anyway, which is highly likely to be broken in a PDF (including at the PreTeXt project site) unless you build this example on your own computer, locally. Here is a template from the Apache OpenOffice project, provided via the Public Documentation License (PDL): Running Statistics Template .  The next four paragraphs are each a single <dataurl> element. Explore the source and the output from different conversions. Strictly for testing as of 2022-11-04.  Foo Sample Excel Spreadsheet Bar  Foo Runners Template Bar  Foo Sample Excel Spreadsheet Bar  Foo Runners Template Bar  "
+  "body": " Cross-Referencing  Cross-references cross-reference are easy, since that is a key reason for having a highly structured document. Here is a useful feature if you elect to use it. Any <xref> will know what it points to, so you can let it provide the naming part of the cross-reference text. You can turn this on globally with the command-line parameter autoname autoname set to 'yes' . If you do that, you will see most of the names in this document doubled, since the names are written into the source already in most places outside of this section.  Moreover, the names themselves will change with the use of the one language dependent file. And another bonus is that with an autoname, you automatically get a non-breaking space between the name and the reference. The autoname switch makes no sense for provisional cross-references, since there is no information about what they point to.  Here is a reference that has no indication of its type in the source: . So by default you will just see a number that you can click on. If you use the text=\"type-global\" switch then you should see Theorem prepended. Note that if you changed the theorem to a lemma, then that change would be reflected here automatically when autonaming is in effect.  If you set the autonaming behavior globally, or accept the default behavior, there will still be instances where you want to override that choice. Simple: just say text=\"type-global\" or text=\"global\" as part of the xref . Each example below should look the same each time this article is processed, no matter how the global autoname is set.  No name ever:  Always named:   You might also wish to provide a prefix to a cross-reference and have it incorporated into the text of what you would click on in an electronic version. So if you make an xref with some content, then that content will prefix the cross-reference within the clickable\/pokeable text and be attached with a non-breaking space. This xref content totally overrides any prefix that might happen otherwise. So the name of an item (  corollary ) could be replaced, and if you make a cross-reference with custom text, that will be the clickable also. An example:  A grand result: Major Corollary  A grand result: a nice corollary   Suppose you want to reference two theorems, so you might want to say something like Theorems 4.6 and 5.2. With global autonaming on, you can override the first Theorem by providing the content Theorems on the first xref and text=\"global\" on the second xref . (With global autonaming off, you will also get what you want\/expect.) Here is the test, which should look correct no matter what the global switch is: Sections and . (But notice that it is up to you to be certain the types of these targets do not change without you changing the content of the first xref . The author-tools mode and careful choices of xml:id strings can help avoid this trap.)  If you set the value of text to title , then the title you assigned to the theorem will be used as the link for a cross-reference. Here is a the final example, which refers to a fundamental theorem by name .  Cross-references to exercises with hard-coded numbers should respect the supplied number. Exercise should reference problem 42a.  Here we form a list to test pointing at various structures. Each of the following should open a knowl in the HTML version, otherwise it will be a traditional hyperlink (if possible). Note that if a knowl opens, there will always be an in-context link which will take you to the actual location, should you have wished instead to just go there.  Footnotes: Fermat allusion at .  Citations: Judson's AATA with annotation at  Citations: Judson's AATA with autoname that should have zero effect  Citations: In a <references> division inside an appendix  Note: just the annotation of previous citation at  Examples: Mystery derivative at , or a question at .  Definition-like: A mathematical statement with no proof .  A numbered Note:  A link to a proposition element, while this document has globally renamed proposition s as Conundrum s, so this link should use the new name:  Theorems: Fundamental Theorem of Calculus, with proof at  Proof: of second version of FTC at  Figures: A plot with a derivative at .  A Figure within a side-by-side panel, with its own number:  A Table within a side-by-side panel, with a subnumber:  A Figure, containing a side-by-side with two sub-captioned images:  Display Mathematics: single, first with no name: . Then with an autoname: .  Display Mathematics: multi-row, first with no name: . Then with an autoname: . And two, with a plural form: Equations and .  You can cross-reference The Fundamental Theorem of Calculus via custom text of your choice.  Display mathematics: an equation with local tag, which should not be used so very far away: .  You can author a cross-reference to a displayed equation with no number, but it will not be very satisfying. You should get a warning if you try.  Exercises (divisional), a range, with plural form provided to override autonaming: Exercises .  Exercise (inline): with enclosed hint at  A group of two exercises, with introduction, conclusion:  Solution: An autonamed portion of an exercise:  Parts of a complicated exercise:   A subsidary part of an exercise:   knowl nested Three cross-references to individual exercises, but due to their location, they should have different type names in the cross-reference: in an <exercises> division, ; in the narrative, ; and in a <worksheet> , .  An item buried in nested ordered lists:  List item as knowls in HTML, including nested lists: ,  A titled list:  List item inside a named list, second color in rainbow list:  Second color in rainbow list, but now as a local reference:  An item in ordered list, but contained in an unordered list, hence without a number, so a cross-reference by number would be ambiguous. So we use a cross-reference which relies on custom text: No Number List Item  Several examples of hybrid cross-references to list items within a named list can be found in, and adjacent to, .  An assemblage, which never has a number. A cross-reference now requires content in the xref element, with text='custom' : text to xref an assemblage  A cross-reference to a list item in a description list, which has a title, but never a number: . Note that you need to include the attribute text=\"title\" even if that is obvious from the situation. This requirement may be relaxed in a future refactoring of the cross-reference system.  A very similar cross-reference to the previous one, but testing how final punctuation of titles is handled: .  A cross-reference to a paragraphs subdivision, which never has a number (so comments above about description list items and titles applies here too):  A case within the proof of :  A cross-reference to a description list item with a title containing math:  A cross-reference to an aside, by title necessarily, and with some formatting in the title:  A cross-reference to an objectives block, with an autoname. This demonstrates the number of the Objectives here, which is not shown in the original version since it is implicit:  A cross-reference to an individual objective. This is authored as a list item, but displayed as an objective (singular) via an autoname:  A cross-reference to the top-level element ( book ) will point to a summary page similar to a Table of Contents in HTML. For LaTeX output it will behave similarly, unless there is no Table of Contents, then it will go to the main title page: ToC or Title  Cross-references inside quotations previously lost track of their target, so this tests correcting that, not so much the cross-reference itself:  An activity with full details following:  A type-global cross-reference to a second-level task within a project: , the encompassing project : , and a local reference .  A subcaptioned named list:  This opens a knowl for an example . It has a solution, which is orginally presented as a hidden knowl. But since this version is a duplicate, the knowl for the solution is a file version, not an embedded version, and hence free from duplicating any unique identifaction like an HTML id. So we test its styling and function here:  A cross-reference to a poem, where we need to use a title for the link text, since a poem is not numbered:  A cross-reference to a <references> division in a subsection, which should not be numbered where born, but which has the number of its parent division in a cross-reference: . And a cross-reference to a <references> division, which is the main bibliography in the back matter, and so is not numbered where born, nor in a cross-reference (which we must accomplish via it's title): .  A cross-reference to a <solutions> division in a subsection, which should not be numbered where born, but which has the number of its parent division in a cross-reference: . And a cross-reference to a <solutions> division, which should appear as an appendix both where born and as a cross-reference: .  A cross-reference to an <exercises> division in a subsection, which is the only such division in that subsection and therefore should not be numbered where born, but which has the number of its parent division in a cross-reference: . In contrast we cross-reference an <exercises> division which is one of two inside a section, and therefore is numbered, when born and when cross-referenced, in continuity with the preceding subsections: . Also an <exercise> within an <exercises> which should have a cross-reference employing the number of the containing (unstructured) <section> : which is in which is in the (unstructured) .  A custom cross-reference: Custom   Cross-reference to <instructions> of an <interactive> :  A hyperlink to a <subexercises> via its required title (no number is assigned):     Cross-references to structural elements of the document will always take you there directly, since even in the HTML version these parts never get realized as knowls. You will find such links sprinkled through this document, but here is an autonamed link to a subsubsection: .  Cross-references can be built into display mathematics, but they can only point to one item ( a comma-delimited list of targets is not supported). Examples below should test the distinction in HTML output between a link that opens a knowl and a link that jumps to a larger chunk of content. Notice that display mathematics is entirely latex syntax, no matter which output format you create. So if you do not use the autoname facility, you need to wrap non-math text in \\text{} and perhaps use a tilde ( ~ ) as a non-breaking space (examine the source of this article).  bug in-context broken  Variations on the above include multiple xml:id as the value of a single ref attribute on an xref , in the form of a comma-separated list. In this case, only the numbers are links\/knowls and the autonaming attribute is based on the type of the first ref . Wrapping with brackets (citations) or parentheses (equations) is also controlled by the type of the first ref . And the detail attribute for a bibliographic reference is silently ignored. So you can do silly things like have a reference to a theorem within a list of equation numbers and there will be no error message. Handle with care. Spaces after commas in the list will migrate to the output as spaces, so if you don't have any, you won't get any.    Four theorems, with spaces, autonamed:  Two equations, no spaces, autonamed:  Two bibliographic items, no autoname:    If you have a long list of items (such as homework exercises, not in an exercisegroup , or perhaps several chapters), you can get a cross-reference that prints as a range by using xref with two attributes first and last , which may contain a single xml:id each. As with multiple references, first will control autonaming and other features.  A range of exercises, autonamed (this range appears out-of-order since the two exercise are numbered under two different schemes):  A range of equations:  A system of equations, given as range from first to last:  A range of sections, hand-named to be plural: Sections  A range of bibliographic items:    The url url element may be used to link to a data file, either externally, or internally, if you want to make such an object available to a reader. reference external A good example use case is a spreadsheet that might be part of an exercise, or contain data relevant to some discussion. First let us suppose the data resides somewhere on the Internet, then just use the complete address. Here is one from Microsoft: Sample Excel Spreadsheet .  For a link like the previous one, you might want to provide advice appropriate for your audience about using a context menu to download a file, or how to configure helper\/viewer applications.    You can also provide a file yourself, but now it is your obligation to distribute the file with your document ( HTML , PDF , ) and provide a relative link. This creates some complications, such as making sure an electronic PDF has the associated file in the same place relative to the PDF file. Of course, if you make a print PDF, this becomes impossible. Here is a test example anyway, which is highly likely to be broken in a PDF (including at the PreTeXt project site) unless you build this example on your own computer, locally. Here is a template from the Apache OpenOffice project, provided via the Public Documentation License (PDL): Running Statistics Template .  The next four paragraphs are each a single <dataurl> element. Explore the source and the output from different conversions. Strictly for testing as of 2022-11-04.  Foo Sample Excel Spreadsheet Bar  Foo Runners Template Bar  Foo Sample Excel Spreadsheet Bar  Foo Runners Template Bar  "
 },
 {
   "id": "section-internationalization",
@@ -2359,9 +2377,9 @@ var ptx_lunr_docs = [
   "body": " Side-By-Side Panels   Introduction  The flow of a page is almost universally top-to-bottom. But at times you would like to go across a page, perhaps to compare items (identical content in two different languages), or to make good use of a page real estate by grouping several small items together ( images). So the <sidebyside> tag is strictly a layout device, though it does convey some meaning by grouping certain objects together. A variety of different objects can be put side-by-side using the sidebyside element. Specifically, figure , image , tabular , p , ol , ul , dl , pre , poem , and more. The individual components of a <sidebyside> are generically called panels panels .  As a layout device, the <sidebyside> does not allow a <caption> , is never numbered, and therefore cannot be cross-referenced. You may cross-reference whatever element holds the <sidebyside> , and many of the panels may be cross-referenced individually.  As a first example, we have two single paragraphs, laid out with different widths, and slight margins on each side. The widths have been chosen experimentally to get roughly identical heights for the two paragraphs of varying length.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem diam, convallis in nulla sed, accumsan fermentum urna. Pellentesque aliquet leo elit, ut consequat nunc dapibus ac. Sed lobortis leo tincidunt, vulputate nunc at, ultricies leo. Vivamus purus diam, tristique laoreet purus eget, mollis gravida sapien. Nunc vulputate nisl ac mauris hendrerit cursus. Sed vel molestie velit. Suspendisse sem sem, elementum at vehicula id, volutpat ac mi. Nullam ullamcorper fringilla purus in accumsan. Mauris at nunc accumsan orci dictum vulputate id id augue. Suspendisse at dignissim elit, non euismod nunc. Aliquam faucibus magna ac molestie semper. Aliquam hendrerit sem sit amet metus congue tempor. Donec laoreet laoreet metus, id interdum purus mattis vulputate. Proin condimentum vitae erat varius mollis. Donec venenatis libero sed turpis pretium tempor.  Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra. Integer sagittis dictum turpis vel aliquet. Fusce ut suscipit dolor, nec tristique nisl. Aenean luctus, leo et ornare fermentum, nibh dui vulputate leo, nec tincidunt augue ipsum sed odio. Nunc non erat sollicitudin, iaculis eros consequat, dapibus eros.     Figures with Numbers Side-By-Side  Figures, or other captioned items such as tables or listings, can be placed side-by-side using the sidebyside element. The figures will be captioned and numbered as if they were part of the vertical flow of the document. For example, see and  However, if the <sidebyside> is placed inside another <figure> , then the outer figure gets an overall caption and a regular number, while the captions of the interior items will be labelled as (a), (b), (c), etc; for example, see the subfigures in . You can also cross-reference the subfigures individually, for example: .  The sidebyside tag can have an attribute widths that specifies a percentage width of the page for each panel of the layout. There are automatic margins by default, and any remaining width is divided evenly to space out the panels. When the margins attribute is given as auto , or in the default case, the margins provided each equal half of the inter-panel space.  With no attributes on the sidebyside , each panel is the same width and there is no inter-panel space and no margin. For a sidebyside with a single panel, with its width specified, the panel will be centered.   Side-by-Side, with figures as children, automatic margin      Trefoil image           Side-by-Side, with figures as children, margin set to zero    width=50%     width=25%        Widths calculated automatically, all defaults                   Interior figure     Regular numbering     Regular numbering       Images  We can use the sidebyside element to put images image next to each other. These will illustrate a text, but with no captions or numbers, cannot be cross-referenced. This next example has 10% margins, and the panels have widths 25% and 40% , leaving 15% computed as the one inter-panel space.      Now we fine-tune with different widths (which add up to 100%). The five images have been given different vertical alignments, top middle bottom top middle via the valigns attribute.         If you want an overall caption to a group of images, but no sub-captions on your images, that is also straightforward. This example has no attributes specified. The overall <figure> may be cross-referenced, as   Two equally-spaced (identical) images         Common Side-By-Side Constructions  We have now seen at least one example of each of the four most common constructions involving sidebyside . Working from the exterior inward, we can go figure , sidebyside , figure , X , where X is some atomic (unnumbered) item we might use elsewhere in a PreTeXt document, the inner figure may be repeated with different objects X , and the figure s have captions. Each figure is independently optional, leading to the four combinations in this table. Note this applies to any captioned item used inside the sidebyside , but a figure is the most flexible.   sidebyside and figure interactions    Outer Figure Inner Figure Effect    Absent Absent Layout only, no numbers nor captions    Absent Present Numbers and captions on figure(s)    Present Absent Number and overall caption    Present Present Number and overall caption, sub-numbers and captions on figure(s)       Vertical Alignment  Vertical alignment can be specified using the valign attribute which admits a space-separated list of top , middle , and bottom ; the default is top .          Middle     Top     Middle     The singular version of the attribute, valign , can provide the same alignment to each panel, here we use five different widths, but all with vertical alignment of middle .           Text Next to Text and Images  Text can be put next to other blocks of text using the stack element, which can contain multiple paragraphs using the p element (see ). If only one paragraph is required, simply use the p element on its own.    here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text    here is some text here is some text here is some text here is some text here  here is some text here is some text here is some text here is some text here  here is some text here is some text here is some text here is some text here   here is some text here is some text here is some text here is some text here  here is some text here is some text here is some text here is some text here   Similarly, text can be put next to images.   here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text cross reference: and math:    You can place text next to numbered figures, as shown below in .   here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text here is some text; cross reference: and math:   Text next to a figure       Image Formats, Side-by-Sides  Most of our demonstrations here use our square blue cross test image, which is provided as a PNG image. You may specify images by any of the methods described in the section on graphics, . The complete graph below is specified with no file extension, on the assumption that an SVG version exists for HTML output, and a PDF version exists for latex output. The second is a JPEG image that we use elsewhere for a YouTube video, but recycle here as an image provided in that format. By default, they are aligned at their tops.      Here are two TikZ images, authored side-by-side. The first has had its geometric portions of the original scaled down to 75%, with the effect of increasing the text, relatively, so the application in a side-by-side panel with 25% width has legible text. We caption only the second panel, which has no text adjustments. From TeXample.net .              tex Work Flow              Images by Stefan Kottwitz  Venn Diagram  Work Flow      Tables Side-By-Side  Tables table can also be put side-by-side, as demonstrated below in ; naturally, subtables can be referenced as in .   Side-by-Side, with tables as children    width=50%        1111  2222    aaaa  bbbb    AAAA  BBBB      width=25%        1111  2222    aaaa  bbbb    AAAA  BBBB        Widths can be calculated automatically    Table with automatic widths        1111  2222    aaaa  bbbb    AAAA  BBBB      Table with automatic widths        1111  2222    aaaa  bbbb    AAAA  BBBB        If you put two table elements side-by-side without an enclosing <figure> , then they will use regular numbering; see Tables .           1111  2222    aaaa  bbbb    AAAA  BBBB             1111  2222    aaaa  bbbb    AAAA  BBBB             1111  2222    aaaa  bbbb    AAAA  BBBB        Tables Next to Figures  Tables and figures can go next to each other, as demonstrated in and , plus within an overall captioned figure, .    Table next to a Figure        1111  2222    aaaa  bbbb    AAAA  BBBB       Figure next to a Table      Figure and Table, with overall caption, hence sub-captioned    Table next to a Figure        1111  2222    aaaa  bbbb    AAAA  BBBB       Figure next to a Table        Tables Next to Text  Tables can go next to blocks of text using the <stack> element (see ).    Table next to text        1111  2222    aaaa  bbbb    AAAA  BBBB      here is some text here is some text here is some text here is some text here  here is some text here is some text here is some text here is some text here  here is some text here is some text here is some text here is some text here    here is some text here is some text here is some text here is some text here  here is some text here is some text here is some text here is some text here      Tabular Next to Each Other  Four tabular elements inside a single <sidebyside> will result in no captions at all.         1111  2222    aaaa  bbbb    AAAA  BBBB    CCCC  DDDD          1111  2222    aaaa  bbbb    AAAA  BBBB          1111  2222    aaaa  bbbb    AAAA  BBBB          1111  2222    aaaa  bbbb    AAAA  BBBB       Lists in Side-by-Sides  A regular list normally belongs in a p but it can be placed unadorned into a panel of a side-by-side, as demonstrated below in . You can also put named lists into a panel, and then the title, introduction, conclusion, and caption will behave as expected, along with a number that might be used in a cross-reference ( ), or perhaps we might cross-reference by title, .   Two named lists    Sea Life   Dr. Seuss again.    One fish  Two fish Not fishes  Red fish  Blue fish     Color Shades  colors shades   Blue in many shades  Light  Navy  Royal   Red  Maroon  Pink  Shocking     This ends our example.      These same two lists can individually be the panels of a <sidebyside> , where vertical alignment on the top aligns the titles.    Sea Life   Dr. Seuss again.    One fish No more fishes  Two fish  Red fish  Blue fish     Color Shades  colors shades   Blue  Light  Navy  Royal   Red a really nice color  Maroon  Pink  Shocking     This ends our example.     We also need to test a sidebyside in a list. The widths are now relative to the space given over to an indented item. Here we nest and nest and nest and nest to get a big, obvious indentation, and then include an image at 100% width and no margin. In your mind's eye, or with a ruler, check that the image spans all the way over to the right margin.  This is  a very  wide   rectangle          Stacking: Back to Vertical Flow  You might wish to mix disparate items within a panel, returning to a vertical flow within a panel. For example, you might want a diagram to the left and some paragraphs of commentary to the right. Or perhaps a photograph on one side and a list of bullet points to the other side. A <stack> is a container that can only be used to collect several items into a single panel of a <sidebyside> . You cannot point to it, but you can point to its contents as usual. Contents may be anything you could otherwise put into a sidebyside panel that does not have a <caption> or a <title> . In particular, these panels cannot be sub-numbered since the panel cannot be made into a <figure> .  Similar items can also be stacked, of course. Most importantly, a normal panel will accept a single paragraph. If you want several paragraphs, simply collect them in a stack .    A simple sentence inside a single <p> as the first item in a stack.      A less simple sentence that will wrap inside the panel to make the right panel taller and allow us to experiment with sliding the left panel contents up and down, here it is placed in the middle .    We have an image to the left, as a regular panel (not a stack). In the right panel we stack a list of properties, followed by a descriptive paragraph. We middle-align the stack at the bottom , just as a demonstration (it would likely look better with top alignment).      Blue  Square  Geometric   The blue-ness of the border contrasts with the stark emptieness of the white interior, evoking images of blue skies and vast sandy deserts. The harsh black cross draws the viewer's attention to the exact center.    In latex an image or a tabular can be used within a paragraph. Here we test a mixture of the three items to make sure they are properly separated in a conversion to latex .    Paragraph one.   Paragraph two.        1111  2222    aaaa  bbbb    AAAA  BBBB       We imagine a <sidebyside> using a <stack> to enable constructions like a table of data in one panel, and maybe a plot with some text next to it.  In the toy example next, the list of data is rigid, so we have set the first panel width to 40% , a value obtained experimentally to just contain the list. This allow us to set the second panel to a width of 58% , and we use no margins. If you try to balance the heights of the two panels, this can become a bit of a zero-sum game. A wider second column means the text occupies fewer lines, but the wider image also creates a taller image, consuming more vertical space.   Experimental results collected in a figure           0 0.00 0.0000 0.5000   1 0.20 0.1000 0.4800   2 0.40 0.1960 0.4560   3 0.60 0.2872 0.4295   4 0.80 0.3731 0.4027   5 1.00 0.4536 0.3783   6 1.20 0.5293 0.3591   7 1.40 0.6011 0.3480   8 1.60 0.6707 0.3474   9 1.80 0.7402 0.3603   10 2.00 0.8123 0.3900     This set of values and this plot have nothing to do with each other. You'll recognize that they've been liberated from earlier in this work.  Step back and simply examine how the pieces all fit together within a <figure> .      Bully Pulpit  Remember that <sidebyside> has attributes that strongly influence layout. That is intentional. But to support a variety of output formats, it does not allow overly-precise control, and they be viewed as providing hints to an implementer of a conversion. So for example, do not expect <sidebyside> to function like a latex  tabular or an HTML  table .  In particular, elements of two consecutive <stack> will not line up, unless perhaps you construct them identically. Consider a <sbsgroup> for something closer to putting items into rows.     Other Panels  Other elements may be placed within a sidebyside element. Pure lists first.    Footnotes: Fermat allusion at .  Examples: Mystery derivative at .  Definition-like: A mathematical statement with no proof .  Figures: An early plot, Figure .    Footnotes: Fermat allusion at .  Examples: Mystery derivative at .  Definition-like: A mathematical statement with no proof .  Figures: An early plot, Figure .    You can place aligned equations in paragraphs within a sidebyside element.   here is some text, and here is an equation that contains alignment.   here is some text, and here is an equation that contains alignment.  here is some text, and here is an equation that contains alignment.    Pre-formatted text may be included by using the pre element. This content is horizontally-rigid, so as the author, you need to be sure to provide enough width for the panel to contain the content. It is easy to see the boundary of the panels when rendered in HTML since there is a background that fills the panel.    Hello, World! in Pascal and C++    program HelloWorld;  begin  WriteLn('Hello, world!');  end.   #include int main() { std::cout << \"Hello, world!\"; return 0; }     A graph defined by data (from Keller and Trotter's Applied Combinatorics )   graph1.txt 9 6 2 1 5 1 7 6 8 9 1 4 3 5 7 1 3 5 9 7 9       Poems as Side-By-Side Panels  Poems poem may be panels of a side-by-side layout. Here we place some commentary alongside. See for general information about poetry.    Fire and Ice  Fire and Ice, Frost  Robert Frost   Some say the world will end in fire,  Some say in ice.  From what I've tasted of desire  I hold with those who favor fire.  But if it had to perish twice,  I think I know enough of hate  To say that for destruction ice  Is also great  And would suffice.     You might have several things to say about a poem and you could use a sequence of paragraphs immediately adjacent.  This is a second paragraph of commentary.    Poems are not horizontally-rigid, but they are not perfectly horizontally-flexible either. The left copy of this next poem is in a panel roughly 2\/3 the width of the page and fits there. The right copy has the first five lines and is in space about half the previous width, and you can see the lines being wrapped with obvious indentation. So you can constrain the width of a poem if you do not mind the additional indentation. (Recognize that this example is a bit extreme.)    Sonnet to Liberty  Sonnet to Liberty, Wilde  Oscar Wilde   Not that I love thy children, whose dull eyes  See nothing save their own unlovely woe,  Whose minds know nothing, nothing care to know,  But that the roar of thy Democracies,  Thy reigns of Terror, thy great Anarchies,  Mirror my wildest passions like the sea,  And give my rage a brother! Liberty!  For this sake only do thy dissonant cries  Delight my discreet soul, else might all kings  By bloody knout or treacherous cannonades  Rob nations of their rights inviolate  And I remain unmoved-and yet, and yet,  These Christs that die upon the barricades,  God knows it I am with them, in some things.     Sonnet to Liberty  Oscar Wilde   Not that I love thy children, whose dull eyes  See nothing save their own unlovely woe,  Whose minds know nothing, nothing care to know,  But that the roar of thy Democracies,  Thy reigns of Terror, thy great Anarchies,        Side-By-Side Groups  A side-by-side group,  <sbsgroup> , is still in development. (Notably, subcaptions do not behave as expected.) It is a sequence of sidebyside , which may conceivably use the same margins, widths and vertical alignments for each horizontal run of panels. Attributes on the sbsgroup are global to the group's enclosed sidebyside , and will be used by each contained sidebyside . If attributes are present on an individual sidebyside , they override the global values. The next two examples demonstrate some of this behavior, in a limited way.   Overall SBS Group    One.  Two.  Three.    Four.  Five.  Six.     A long poem, when placed into a sidebyside will not fit onto a physical page and will not break across pages. With a sbsgroup you can put each stanza (say) into its own sidebyside and place something (commentary) next to it. We include the title with the first stanza and the author with the last stanza. This device can also be useful to attach commentary to specific stanzas.     The Stolen Child  Stolen Child, The, Yeats   Where dips the rocky highland  Of Sleuth Wood in the lake,  There lies a leafy island  Where flapping herons wake  The drowsy water-rats;  There we've hid our faery vats,  Full of berries  And of reddest stolen cherries.  Come away, O human child!  To the waters and the wild  With a faery, hand in hand,  For the world's more full of weeping than you  can understand.     Some commentary on Stanza One.        Where the wave of moonlight glosses  The dim grey sands with light,  Far off by furthest Rosses  We foot it all the night,  Weaving olden dances,  Mingling hands and mingling glances  Till the moon has taken flight;  To and fro we leap  And chase the frothy bubbles,  While the world is full of troubles  And is anxious in its sleep.  Come away, O human child!  To the waters and the wild  With a faery, hand in hand,  For the world's more full of weeping than you  can understand.     Some commentary on Stanza Two.        Where the wandering water gushes  From the hills above Glen-Car,  In pools among the rushes  That scarce could bathe a star,  We seek for slumbering trout  And whispering in their ears  Give them unquiet dreams;  Leaning softly out  From ferns that drop their tears  Over the young streams.  Come away, O human child!  To the waters and the wild  With a faery, hand in hand,  For the world's more full of weeping than you  can understand.     Some commentary on Stanza Three.       William Butler Yeats   Away with us he's going,  The solemn-eyed:  He'll hear no more the lowing  Of the calves on the warm hillside  Or the kettle on the hob  Sing peace into his breast,  Or see the brown mice bob  Round and round the oatmeal-chest.  For he comes, the human child,  To the waters and the wild  With a faery, hand in hand,  From a world more full of weeping than he  can understand.     Some commentary on Stanza Four.      The main rationale for sbsgroup is to layout a grid of items, and by placing the layout parameters on the sbsgroup element, the items can line up across sidebyside and subcaptioning can run across the whole group. So, for example, if you have images to compare by placing in a grid, then making them all the same size, or of the same aspect ratio, can help with the overall consistency.  This example has three sidebyside , each with four figure containing an identical image . Since the images are identical and the width is set to 20% they should all line up nicely with little effort. Since the default for margins is automatic, the remaining 20% of the overall width will be used for three inter-panel spaces of 5% and two margins of 2.5% each. Note the numbering of these as independent figures. We have left the captions empty for reasons of space, but you could add more information. Note that in print, a page break is allowed between any two of the sidebyside and cannot be suppressed.                                                          We recycle the prior sbsgroup but now put it in its own overall figure. That will allow a caption for the whole group, and will cause the twelve figures to be subcaptioned. Except the subcaptioning is not implemented. Soon.   Twelve images, arranged in a grid                                                           One more test. We override the spacing and vertical alignments of the middle sidebyside . Note that it is easy to make a panel so skinny that even the smallest possible caption does not fit in the width.                                                            Testing a Side-By-Side First  A <sidebyside> that appears first within some other container can wreak havoc in latex output. Below we have this situation twice, once in an <activity> , then in an <example> , then in a <paragraphs> .     Here is text block 1  Here is text block 2        Here is text block 1  Here is text block 2     And a <sbsgroup> in similar circumstances.      Here is text block 1  Here is text block 2    Here is text block 3  Here is text block 4       First Child of a Paragraphs     A  B    C  D                  Testing Styling of Related Elements  This subsection has non-side-by-side structures, to aid with the effects of styling decisions across the range of possibilities. First a figure with a caption holding a scaled image and a cross-reference for knowl testing: .   A traditional figure     "
 },
 {
-  "id": "p-1088",
+  "id": "p-1090",
   "level": "2",
-  "url": "section-side-by-side.html#p-1088",
+  "url": "section-side-by-side.html#p-1090",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2377,18 +2395,18 @@ var ptx_lunr_docs = [
   "body": " Side-by-Side, with figures as children, automatic margin      Trefoil image         "
 },
 {
-  "id": "figure-98",
+  "id": "figure-99",
   "level": "2",
-  "url": "section-side-by-side.html#figure-98",
+  "url": "section-side-by-side.html#figure-99",
   "type": "Figure",
   "number": "25.2",
   "title": "",
   "body": " Side-by-Side, with figures as children, margin set to zero    width=50%     width=25%      "
 },
 {
-  "id": "figure-101",
+  "id": "figure-102",
   "level": "2",
-  "url": "section-side-by-side.html#figure-101",
+  "url": "section-side-by-side.html#figure-102",
   "type": "Figure",
   "number": "25.3",
   "title": "",
@@ -2440,27 +2458,27 @@ var ptx_lunr_docs = [
   "body": " sidebyside and figure interactions    Outer Figure Inner Figure Effect    Absent Absent Layout only, no numbers nor captions    Absent Present Numbers and captions on figure(s)    Present Absent Number and overall caption    Present Present Number and overall caption, sub-numbers and captions on figure(s)    "
 },
 {
-  "id": "figure-109",
+  "id": "figure-110",
   "level": "2",
-  "url": "section-side-by-side.html#figure-109",
+  "url": "section-side-by-side.html#figure-110",
   "type": "Figure",
   "number": "25.9",
   "title": "",
   "body": " Middle   "
 },
 {
-  "id": "figure-110",
+  "id": "figure-111",
   "level": "2",
-  "url": "section-side-by-side.html#figure-110",
+  "url": "section-side-by-side.html#figure-111",
   "type": "Figure",
   "number": "25.10",
   "title": "",
   "body": " Top   "
 },
 {
-  "id": "figure-111",
+  "id": "figure-112",
   "level": "2",
-  "url": "section-side-by-side.html#figure-111",
+  "url": "section-side-by-side.html#figure-112",
   "type": "Figure",
   "number": "25.11",
   "title": "",
@@ -2476,9 +2494,9 @@ var ptx_lunr_docs = [
   "body": " Text next to a figure   "
 },
 {
-  "id": "figure-113",
+  "id": "figure-114",
   "level": "2",
-  "url": "section-side-by-side.html#figure-113",
+  "url": "section-side-by-side.html#figure-114",
   "type": "Figure",
   "number": "25.13",
   "title": "",
@@ -2494,9 +2512,9 @@ var ptx_lunr_docs = [
   "body": " Side-by-Side, with tables as children    width=50%        1111  2222    aaaa  bbbb    AAAA  BBBB      width=25%        1111  2222    aaaa  bbbb    AAAA  BBBB      "
 },
 {
-  "id": "figure-115",
+  "id": "figure-116",
   "level": "2",
-  "url": "section-side-by-side.html#figure-115",
+  "url": "section-side-by-side.html#figure-116",
   "type": "Figure",
   "number": "25.15",
   "title": "",
@@ -2566,9 +2584,9 @@ var ptx_lunr_docs = [
   "body": " Table next to text        1111  2222    aaaa  bbbb    AAAA  BBBB    "
 },
 {
-  "id": "figure-119",
+  "id": "figure-120",
   "level": "2",
-  "url": "section-side-by-side.html#figure-119",
+  "url": "section-side-by-side.html#figure-120",
   "type": "Figure",
   "number": "25.23",
   "title": "",
@@ -2593,56 +2611,47 @@ var ptx_lunr_docs = [
   "body": " Color Shades  colors shades   Blue  Light  Navy  Royal   Red a really nice color  Maroon  Pink  Shocking     This ends our example.   "
 },
 {
-  "id": "figure-120",
+  "id": "figure-121",
   "level": "2",
-  "url": "section-side-by-side.html#figure-120",
+  "url": "section-side-by-side.html#figure-121",
   "type": "Figure",
   "number": "25.26",
   "title": "",
   "body": " Experimental results collected in a figure           0 0.00 0.0000 0.5000   1 0.20 0.1000 0.4800   2 0.40 0.1960 0.4560   3 0.60 0.2872 0.4295   4 0.80 0.3731 0.4027   5 1.00 0.4536 0.3783   6 1.20 0.5293 0.3591   7 1.40 0.6011 0.3480   8 1.60 0.6707 0.3474   9 1.80 0.7402 0.3603   10 2.00 0.8123 0.3900     This set of values and this plot have nothing to do with each other. You'll recognize that they've been liberated from earlier in this work.  Step back and simply examine how the pieces all fit together within a <figure> .    "
 },
 {
-  "id": "figure-121",
+  "id": "figure-122",
   "level": "2",
-  "url": "section-side-by-side.html#figure-121",
+  "url": "section-side-by-side.html#figure-122",
   "type": "Figure",
   "number": "25.27",
   "title": "",
   "body": " Hello, World! in Pascal and C++    program HelloWorld;  begin  WriteLn('Hello, world!');  end.   #include int main() { std::cout << \"Hello, world!\"; return 0; }   "
 },
 {
-  "id": "figure-122",
+  "id": "figure-123",
   "level": "2",
-  "url": "section-side-by-side.html#figure-122",
+  "url": "section-side-by-side.html#figure-123",
   "type": "Figure",
   "number": "25.28",
   "title": "",
   "body": " A graph defined by data (from Keller and Trotter's Applied Combinatorics )   graph1.txt 9 6 2 1 5 1 7 6 8 9 1 4 3 5 7 1 3 5 9 7 9    "
 },
 {
-  "id": "figure-123",
+  "id": "figure-124",
   "level": "2",
-  "url": "section-side-by-side.html#figure-123",
+  "url": "section-side-by-side.html#figure-124",
   "type": "Figure",
   "number": "25.29",
   "title": "",
   "body": " Overall SBS Group    One.  Two.  Three.    Four.  Five.  Six.    "
 },
 {
-  "id": "figure-124",
-  "level": "2",
-  "url": "section-side-by-side.html#figure-124",
-  "type": "Figure",
-  "number": "25.30",
-  "title": "",
-  "body": "   "
-},
-{
   "id": "figure-125",
   "level": "2",
   "url": "section-side-by-side.html#figure-125",
   "type": "Figure",
-  "number": "25.31",
+  "number": "25.30",
   "title": "",
   "body": "   "
 },
@@ -2651,7 +2660,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-126",
   "type": "Figure",
-  "number": "25.32",
+  "number": "25.31",
   "title": "",
   "body": "   "
 },
@@ -2660,7 +2669,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-127",
   "type": "Figure",
-  "number": "25.33",
+  "number": "25.32",
   "title": "",
   "body": "   "
 },
@@ -2669,7 +2678,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-128",
   "type": "Figure",
-  "number": "25.34",
+  "number": "25.33",
   "title": "",
   "body": "   "
 },
@@ -2678,7 +2687,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-129",
   "type": "Figure",
-  "number": "25.35",
+  "number": "25.34",
   "title": "",
   "body": "   "
 },
@@ -2687,7 +2696,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-130",
   "type": "Figure",
-  "number": "25.36",
+  "number": "25.35",
   "title": "",
   "body": "   "
 },
@@ -2696,7 +2705,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-131",
   "type": "Figure",
-  "number": "25.37",
+  "number": "25.36",
   "title": "",
   "body": "   "
 },
@@ -2705,7 +2714,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-132",
   "type": "Figure",
-  "number": "25.38",
+  "number": "25.37",
   "title": "",
   "body": "   "
 },
@@ -2714,7 +2723,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-133",
   "type": "Figure",
-  "number": "25.39",
+  "number": "25.38",
   "title": "",
   "body": "   "
 },
@@ -2723,7 +2732,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-134",
   "type": "Figure",
-  "number": "25.40",
+  "number": "25.39",
   "title": "",
   "body": "   "
 },
@@ -2732,7 +2741,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-135",
   "type": "Figure",
-  "number": "25.41",
+  "number": "25.40",
   "title": "",
   "body": "   "
 },
@@ -2741,25 +2750,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-136",
   "type": "Figure",
+  "number": "25.41",
+  "title": "",
+  "body": "   "
+},
+{
+  "id": "figure-137",
+  "level": "2",
+  "url": "section-side-by-side.html#figure-137",
+  "type": "Figure",
   "number": "25.42",
   "title": "",
   "body": " Twelve images, arranged in a grid                                                          "
-},
-{
-  "id": "figure-149",
-  "level": "2",
-  "url": "section-side-by-side.html#figure-149",
-  "type": "Figure",
-  "number": "25.43",
-  "title": "",
-  "body": "   "
 },
 {
   "id": "figure-150",
   "level": "2",
   "url": "section-side-by-side.html#figure-150",
   "type": "Figure",
-  "number": "25.44",
+  "number": "25.43",
   "title": "",
   "body": "   "
 },
@@ -2768,7 +2777,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-151",
   "type": "Figure",
-  "number": "25.45",
+  "number": "25.44",
   "title": "",
   "body": "   "
 },
@@ -2777,7 +2786,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-152",
   "type": "Figure",
-  "number": "25.46",
+  "number": "25.45",
   "title": "",
   "body": "   "
 },
@@ -2786,7 +2795,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-153",
   "type": "Figure",
-  "number": "25.47",
+  "number": "25.46",
   "title": "",
   "body": "   "
 },
@@ -2795,7 +2804,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-154",
   "type": "Figure",
-  "number": "25.48",
+  "number": "25.47",
   "title": "",
   "body": "   "
 },
@@ -2804,7 +2813,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-155",
   "type": "Figure",
-  "number": "25.49",
+  "number": "25.48",
   "title": "",
   "body": "   "
 },
@@ -2813,7 +2822,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-156",
   "type": "Figure",
-  "number": "25.50",
+  "number": "25.49",
   "title": "",
   "body": "   "
 },
@@ -2822,7 +2831,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-157",
   "type": "Figure",
-  "number": "25.51",
+  "number": "25.50",
   "title": "",
   "body": "   "
 },
@@ -2831,7 +2840,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-158",
   "type": "Figure",
-  "number": "25.52",
+  "number": "25.51",
   "title": "",
   "body": "   "
 },
@@ -2840,7 +2849,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-side-by-side.html#figure-159",
   "type": "Figure",
-  "number": "25.53",
+  "number": "25.52",
   "title": "",
   "body": "   "
 },
@@ -2848,6 +2857,15 @@ var ptx_lunr_docs = [
   "id": "figure-160",
   "level": "2",
   "url": "section-side-by-side.html#figure-160",
+  "type": "Figure",
+  "number": "25.53",
+  "title": "",
+  "body": "   "
+},
+{
+  "id": "figure-161",
+  "level": "2",
+  "url": "section-side-by-side.html#figure-161",
   "type": "Figure",
   "number": "25.54",
   "title": "",
@@ -2899,72 +2917,72 @@ var ptx_lunr_docs = [
   "body": " Side-by-Side Gallery  This subsection attempts to survey all the possible items that can be placed into a sidebyside element, in various combinations. While intended to be exhaustive across contents, it does not test all possibilities, and is not meant to be instructive (see for that). The layout is identical for each sidebyside , 5% margins, panel widths of 40% and 45%, leaving 5% for the space between the panels. The vertical alignment is left at the default, top .  We begin with simpler atomic items. If necessary, comments follow each.   Single <p> (left), <stack> (right)   Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae. Curabitur sagittis, risus non suscipit pulvinar, enim tortor posuere purus, id dignissim sapien sapien non dui. Vestibulum ultrices, enim a ornare consectetur, nisl est iaculis arcu, eget scelerisque nunc magna a nisl. Vestibulum vestibulum ante sit amet ex vulputate, eu facilisis sapien tempor.   Aliquam dui nisi, pharetra id enim vel, imperdiet laoreet risus. Nunc convallis elit eu erat imperdiet tincidunt. Sed eget augue et nunc mollis tempor. Suspendisse luctus elit non lorem scelerisque, nec lacinia lectus dictum.  Vivamus ut orci nisl. Donec eleifend ultricies tortor, a pellentesque neque dignissim in. Praesent maximus, augue eu pretium auctor, dolor quam feugiat augue, ut vulputate nunc eros vitae massa. Phasellus quis ante quis est venenatis dapibus eget luctus ipsum.      An <ol> with simple items, a <ul> with items with paragraphs    Blue  Red  Green  Purple  Violet  Brown    Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae.  Curabitur sagittis, risus non suscipit pulvinar, enim tortor posuere purus, id dignissim sapien sapien non dui.  Vestibulum ultrices, enim a ornare consectetur, nisl est iaculis arcu, eget scelerisque nunc magna a nisl.  Vestibulum vestibulum ante sit amet ex vulputate, eu facilisis sapien tempor.      A <program> and a <console>    n_loops <- 10 x.means <- numeric(n_loops) for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) x.means[i] <- mean(x) } x.means    pi@rpi ~$  gcc -o intAndFloat intAndFloat.c  pi@rpi ~$  .\/intAndFloat  19088743 (integer) and 19088.742188 (float)  pi@rpi ~$      Note that these two chunks of verbatim text will very likely exceed the right side of a too-skinny panel. We have severly edited these two examples from previous appearances just to fit here.   An <poem> and a <tabular>    To A Friend Whose Work Has Come To Nothing  William Butler Yeats   Now all the truth is out,  Be secret and take defeat  From any brazen throat,  For how can you compete,  Being honour bred, with one  Who, were it proved he lies,  Were neither shamed in his own  Nor in his neighbours' eyes?  Bred to a harder thing  Than Triumph, turn away  And like a laughing string  Whereon mad fingers play  Amid a place of stone,  Be secret and exult,  Because of all things known  That is most difficult.      Organism Classification   Trout Fish  Monkey Mammal  Crow Bird  Crimini Fungus  Bee Insect     A tabular can exceed the width of its panel in print, while in HTML it may reflow individual cells to stay within a panel, depending on their contents.   A <pre> , and a <pre> employing <cline>   Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae.   Vestibulum sit amet est non  lacus accumsan iaculis  aliquam nec leo. Maecenas  placerat consequat quam,  a lobortis odio convallis  vitae.     Be aware that the lines of pre can spill outside of its panel without any word-wrapping. So you may need to vary panel widths or rearrange line breaks manually. Page width is a scarce resource.   An identical <image> , twice       Images will scale to fill their panel's width. We provide no services to change the aspect ratio of your images, that is your responsibility to accomplish elsewhere. This rectangular image will have slightly different widths, and so will be slightly deeper in the right panel (at a 45:40 ratio). Remember, vertical alignment is at the top.  Now we turn to captioned items: figure , table , listing , and the anomalous named list , list , whose future is uncertain. We test subcaptions here. Note that many different atomic items can go in a figure, and largely they will behave in a sidebyside much as they do when placed in a panel all by themselves ( captionless).   A <figure> and a <table>    A Rectangular Test Image     Classifying Organisms    Organism Classification   Trout Fish  Monkey Mammal  Crow Bird  Crimini Fungus  Bee Insect       A <listing> and a <list>    A statistical computation   n_loops <- 10 x.means <- numeric(n_loops) for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) x.means[i] <- mean(x) } x.means     Colors Again   We have named list of colors.    Blue  Red  Green  Purple  Violet  Brown    That was nice.      Now we have some more interactive elements.        Videos can be placed quite compactly for HTML output, but we display a fair amount of information for a YouTube video in print, and therefore two videos side-by-side gets pretty crowded. The examples above have the bare minimum amount of information attached (not in an overarching figure ), and the bare amount which which is displayed in print. We could relax our common spacing to make it a bit better. Read about side-by-side groups ( sbsgroup ) and experiment with stacking several sub-captioned videos into an overall captioned figure ( ). For other examples see and .  "
 },
 {
-  "id": "figure-162",
+  "id": "figure-163",
   "level": "2",
-  "url": "section-26.html#figure-162",
+  "url": "section-26.html#figure-163",
   "type": "Figure",
   "number": "26.1",
   "title": "",
   "body": " Single <p> (left), <stack> (right)   Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae. Curabitur sagittis, risus non suscipit pulvinar, enim tortor posuere purus, id dignissim sapien sapien non dui. Vestibulum ultrices, enim a ornare consectetur, nisl est iaculis arcu, eget scelerisque nunc magna a nisl. Vestibulum vestibulum ante sit amet ex vulputate, eu facilisis sapien tempor.   Aliquam dui nisi, pharetra id enim vel, imperdiet laoreet risus. Nunc convallis elit eu erat imperdiet tincidunt. Sed eget augue et nunc mollis tempor. Suspendisse luctus elit non lorem scelerisque, nec lacinia lectus dictum.  Vivamus ut orci nisl. Donec eleifend ultricies tortor, a pellentesque neque dignissim in. Praesent maximus, augue eu pretium auctor, dolor quam feugiat augue, ut vulputate nunc eros vitae massa. Phasellus quis ante quis est venenatis dapibus eget luctus ipsum.    "
 },
 {
-  "id": "figure-163",
+  "id": "figure-164",
   "level": "2",
-  "url": "section-26.html#figure-163",
+  "url": "section-26.html#figure-164",
   "type": "Figure",
   "number": "26.2",
   "title": "",
   "body": " An <ol> with simple items, a <ul> with items with paragraphs    Blue  Red  Green  Purple  Violet  Brown    Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae.  Curabitur sagittis, risus non suscipit pulvinar, enim tortor posuere purus, id dignissim sapien sapien non dui.  Vestibulum ultrices, enim a ornare consectetur, nisl est iaculis arcu, eget scelerisque nunc magna a nisl.  Vestibulum vestibulum ante sit amet ex vulputate, eu facilisis sapien tempor.    "
 },
 {
-  "id": "figure-164",
+  "id": "figure-165",
   "level": "2",
-  "url": "section-26.html#figure-164",
+  "url": "section-26.html#figure-165",
   "type": "Figure",
   "number": "26.3",
   "title": "",
   "body": " A <program> and a <console>    n_loops <- 10 x.means <- numeric(n_loops) for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) x.means[i] <- mean(x) } x.means    pi@rpi ~$  gcc -o intAndFloat intAndFloat.c  pi@rpi ~$  .\/intAndFloat  19088743 (integer) and 19088.742188 (float)  pi@rpi ~$     "
 },
 {
-  "id": "figure-165",
+  "id": "figure-166",
   "level": "2",
-  "url": "section-26.html#figure-165",
+  "url": "section-26.html#figure-166",
   "type": "Figure",
   "number": "26.4",
   "title": "",
   "body": " An <poem> and a <tabular>    To A Friend Whose Work Has Come To Nothing  William Butler Yeats   Now all the truth is out,  Be secret and take defeat  From any brazen throat,  For how can you compete,  Being honour bred, with one  Who, were it proved he lies,  Were neither shamed in his own  Nor in his neighbours' eyes?  Bred to a harder thing  Than Triumph, turn away  And like a laughing string  Whereon mad fingers play  Amid a place of stone,  Be secret and exult,  Because of all things known  That is most difficult.      Organism Classification   Trout Fish  Monkey Mammal  Crow Bird  Crimini Fungus  Bee Insect    "
 },
 {
-  "id": "figure-166",
+  "id": "figure-167",
   "level": "2",
-  "url": "section-26.html#figure-166",
+  "url": "section-26.html#figure-167",
   "type": "Figure",
   "number": "26.5",
   "title": "",
   "body": " A <pre> , and a <pre> employing <cline>   Vestibulum sit amet est non lacus accumsan iaculis aliquam nec leo. Maecenas placerat consequat quam, a lobortis odio convallis vitae.   Vestibulum sit amet est non  lacus accumsan iaculis  aliquam nec leo. Maecenas  placerat consequat quam,  a lobortis odio convallis  vitae.    "
 },
 {
-  "id": "figure-167",
+  "id": "figure-168",
   "level": "2",
-  "url": "section-26.html#figure-167",
+  "url": "section-26.html#figure-168",
   "type": "Figure",
   "number": "26.6",
   "title": "",
   "body": " An identical <image> , twice      "
 },
 {
-  "id": "figure-168",
+  "id": "figure-169",
   "level": "2",
-  "url": "section-26.html#figure-168",
+  "url": "section-26.html#figure-169",
   "type": "Figure",
   "number": "26.7",
   "title": "",
   "body": " A <figure> and a <table>    A Rectangular Test Image     Classifying Organisms    Organism Classification   Trout Fish  Monkey Mammal  Crow Bird  Crimini Fungus  Bee Insect     "
 },
 {
-  "id": "figure-170",
+  "id": "figure-171",
   "level": "2",
-  "url": "section-26.html#figure-170",
+  "url": "section-26.html#figure-171",
   "type": "Figure",
   "number": "26.8",
   "title": "",
@@ -2986,32 +3004,23 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "28",
   "title": "Atomic Objects",
-  "body": " Atomic Objects   Some PreTeXt objects are relatively indivisable and are used as components of other structures. We call them atomic , even if the term is not perfect. A good example is <image> (next, ). This section is arranged according to these objects and tests the various ways they can be employed.  We frequently include some nonsense text inside short intervening paragraphs to test spacing and establish margins.     <image>  An <image> can be placed in five different ways:  all by itself, as a peer of <p> typically, with layout control,  inside a <figure> , earning a number and caption,  inside a <sidebyside> , with size and layout configured,  inside a <figure> inside a <sidebyside> , with size and layout configured, with a number and caption, and  inside a <figure> inside a <sidebyside> inside a <figure> , with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  All by itsef, with no layout specified, so showing the default size and placement. Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.   Width set at 40%, so equal margins and thus centered. Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.   Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance. Vivamus suscipit diam eget mi cursus viverra.   As a plain component of a <sidebyside> . Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges. Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.      Inside a <figure> with no adjustments, so default behavior. Note how a <figure> occupies the entire width of the page, so then does the caption.   New Zealand Landscape    Inside a <figure> with asymmetric (large) margins of 30% and 60%. Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.   New Zealand Landscape    Inside figures inside a <sidebyside> . Same widths as previous <sidebyside> but alignment on bottoms of the panels, to partially align captions. Note how the captions are constrained in width by the width of the panels of the side-by-side.    NZ Landscape     New Zealand Terrascape     Identical code to previous example, but now wrapped in an overall <figure> , which has its own caption and number, leaving the interior figures to be sub-numbered. Cross-references use the full number: .   Amalgamation of Scapes    NZ Landscape     New Zealand Terrascape        <video>  An <video> can be placed in five different ways:  all by itself, as a peer of <p> typically, with layout control,  inside a <figure> , earning a number and caption,  inside a <sidebyside> , with size and layout configured,  inside a <figure> inside a <sidebyside> , with size and layout configured, with a number and caption, and  inside a <figure> inside a <sidebyside> inside a <figure> , with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  Videos can be realized in many forms, and can come from a variety of sources. See for tests of some of that variety. Here we are testing placement within surroundings and testing the schema for location. But we do have two videos in each test, one provided as a local file and one embedded from a service.  All by itsef, with no layout specified, so showing the default size and placement. Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.   Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   Width set at 40%, so equal margins and thus centered. Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.   Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance. Vivamus suscipit diam eget mi cursus viverra.   Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   As a plain component of a <sidebyside> . Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges. Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.      Inside a <figure> with no adjustments, so default behavior. Note how a <figure> occupies the entire width of the page, so then does the caption.   University of Puget Sound Promotional Video    Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   Pre-Roll Countdown    Inside a <figure> with asymmetric (large) margins of 30% and 60%. Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.   University of Puget Sound Promotional Video    Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   Pre-Roll Countdown    Inside figures inside a <sidebyside> . Same widths as previous <sidebyside> but alignment on bottoms of the panels, to partially align captions. Note how the captions are constrained in width by the width of the panels of the side-by-side.    Pre-Roll Countdown     University of Puget Sound Promotional Video     Identical code to previous example, but now wrapped in an overall <figure> , which has its own caption and number, leaving the interior figures to be sub-numbered. Cross-references use the full number: .   Amalgamation of Videos    Pre-Roll Countdown     University of Puget Sound Promotional Video        <program> , <console>  A <program> and\/or <console> can be placed in at least six different ways:  all by itself, as a peer of <p> typically, with layout control  inside a <listing> , earning a number and caption, with layout control  inside a <sidebyside> , with size and layout configured  inside a <sidebyside> , with size and layout configured, and inside a <figure>  inside a <sidebyside> , with size and layout configured, with each inside a <listing> , earning different numbers  inside a <figure> inside a <sidebyside> inside a <listing> , with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  Programs can be realized in many forms, and can come from a variety of sources. See for tests of some of that variety. Here we are testing placement within surroundings and testing the schema for location. But we do have two videos in each test, one provided as a local file and one embedded from a service.  All by itsef, with no layout specified, so showing the default size and placement. Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.   n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means   Now a program with shorter lines, with no layout control.   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }   And a <console> element, also with no layout control.   pi@raspberrypi ~\/progs\/chap02 $  gcc -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $    Now similar examples, but with layout control: margins and width.  A <program> with a width attribute, so centered and with equal margins. Note how the lines word wrap due to the smaller width.   n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means   A <program> with short lines, so significant, and asymmetric margins, which experimentally do not induce any word-wrapping.   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }   A longer <console> , with margins so significant the appearance is ill-advised.   pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $    Two <listing> , with <caption> , and no layout control.   Hello, World! in C   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     A console session on a Raspberry Pi   pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     Same two <listing> , but now with layout control on the <program> and <console> .   Hello, World! in C   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     A console session on a Raspberry Pi   pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     This <sidebyside> gives each panel a 30% width. The remaining 10% is apportioned for margins and separation.    \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }    pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means    This is the same three-panel <sidebyside> , but now inside of a <figure> , earning a number and a <caption> .   Some Code Samples    \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }    pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means     Finally, a smaller <program> and a smaller <console> , each inside a <listing> , as the two panels of a <sidebyside> with no margins, and slightly different widths (to control word-wrapping). The panels have been aligned vertically so their captions align.    Hello!   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     Raspberry Pi   $  gcc -Wall -o intAndFloat intAndFloat.c  $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  $      And again, the two-panel <sidebyside> of <listing> , but now inside a <figure> that has a number and a caption. And then the <listing> are sub-numbered as (a) and (b).   Two Code Listings    Hello!   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     Raspberry Pi   $  gcc -Wall -o intAndFloat intAndFloat.c  $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  $         <tabular>  A <tabular> can be placed in six different ways:  all by itself, as a peer of <p> typically, with no layout control and hence with a natural width, and centered  all by itself, as a peer of <p> typically, with explicit layout control,  inside a <table> , earning a number and title,  inside a <sidebyside> , with size and layout configured,  inside a <table> inside a <sidebyside> , with size and layout configured, with a number and title, and  inside a <table> inside a <sidebyside> inside a <figure> , with size and layout configured, with a number and title, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  A <tabular> realized by latex for PDF\/print will normally be as wide as necessary to hold the content, without word-wrapping the content of any cell that is not explicitly authored that way. This is the most rigid of the content types we call planar. So for PreTeXt output as latex , when you explicitly constrain the width to be less than the natural width (including use as a panel of a <sidebyside> , or even setting margins) the table will be scaled down in width, which can result in an apparent font size very much smaller than that of the surrounding text. Note that we do not ever scale a tabular up to be wider with a larger font size. Note also that if there is no attempt to control the space for the table (no layout control, not in a <sidebyside> ) then no scaling is attempted at all and the table may be wider than the text and protrude into the right margin. For more, see the three examples at: , , . Generally, much of the commentary and testing here is about latex \/PDF\/print. While for HTML output the cells will usually automatically word-wrap to fit in the available space, without adjusting the font size. Some might like this behavior and some might not.  Data in a table form can be placed in amongst a series of paragraphs. With no layout control, it will occupy its natural width and be centered.    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    The same effect can be had by specifying that the width attribute have the value auto , but do not specify any margins . We test multiple footnotes in a <tabular> , not included in a <table> .    State Only from the West Coast.  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223 Wow! That is as big as many countries.  163,696  1850    In amongst a run of paragraphs (or similar) a <tabular> can be placed with layout control. For latex output, this will scale the table to fit within the explicit, or implicit, width. This can result in obvious differences in the apparent font size. We first have a width that is experimentally similar to the natural width, with asymetric margins. Then a narrow width, and a wide width, as an illustration.    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    Narrow. 45% width. 20% margin left, 35% margin right.    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    Wide. 97% width. 1% margin left, 2% right.    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    Naturally, a <tabular> can be placed inside a <table> , earning a number and a title.   Natural Width    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     A little narrower, but still centered by default.   Width of 60%, automatic centering    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     Very narrow, asymmetric margins.   Width of 30%, 30% left margin, 40% right margin    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     Wider than necessary, asymmetric margins.   Width of 90%, 8% left margin, 2% right margin    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     The next table is purposely much too wide. In we make no attempt to control the width, and so it will extend into the margins. In we have simple added the attribute width=\"auto\" . This attempt to use layout control will cause an automatic reduction in width and a smaller apparent font size. Adjusting margins providing an explicit percentage width, or placing the tabular as a panel of <sidebyside> will have the same effect. In we have set the width explicity to 100% and so it should be identical to the automatic width case just prior.   Tabular too wide, no layout control    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles      Tabular too wide, scale to automatic width    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles      Tabular too wide, scale to 100% width    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles     Now into <sidebyside> in various ways and with various sizes. First, two <tabular> as panels with widths at 60% and 30%. Note that in latex \/PDF\/print the tabular of functional values does not need the full 30% width, so it is at its natural size and centered within its panel.     State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850          3  9.734    5  2.175     Let's do that again, but with widths experimentally set to make font sizes match (approximately).     State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850          3  9.734    5  2.175     Same tabular, which fills roughly 80% by itself, packed into a single <sidebyside> with just a 2% gap, and no side margins.         State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850          State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     Natural widths, but now as a pair of tables.    West Coast    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850      Function Values        3  9.734    5  2.175      Finally, as two individual <table> , grouped and laid out via a <sidebyside> , and collected as a <figure> . Which causes sub-numbering of the two enclosed <table> .   Geography and Mathematics    West Coast    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850      Function Values        3  9.734    5  2.175        "
+  "body": " Atomic Objects   Some PreTeXt objects are relatively indivisable and are used as components of other structures. We call them atomic , even if the term is not perfect. A good example is <image> (next, ). This section is arranged according to these objects and tests the various ways they can be employed.  We frequently include some nonsense text inside short intervening paragraphs to test spacing and establish margins.     <image>  An <image> can be placed in five different ways:  all by itself, as a peer of <p> typically, with layout control,  inside a <figure> , earning a number and caption,  inside a <sidebyside> , with size and layout configured,  inside a <figure> inside a <sidebyside> , with size and layout configured, with a number and caption, and  inside a <figure> inside a <sidebyside> inside a <figure> , with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  All by itsef, with no layout specified, so showing the default size and placement. Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.   Width set at 40%, so equal margins and thus centered. Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.   Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance. Vivamus suscipit diam eget mi cursus viverra.   As a plain component of a <sidebyside> . Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges. Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.      Inside a <figure> with no adjustments, so default behavior. Note how a <figure> occupies the entire width of the page, so then does the caption.   New Zealand Landscape    Inside a <figure> with asymmetric (large) margins of 30% and 60%. Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.   New Zealand Landscape    Inside figures inside a <sidebyside> . Same widths as previous <sidebyside> but alignment on bottoms of the panels, to partially align captions. Note how the captions are constrained in width by the width of the panels of the side-by-side.    NZ Landscape     New Zealand Terrascape     Identical code to previous example, but now wrapped in an overall <figure> , which has its own caption and number, leaving the interior figures to be sub-numbered. Cross-references use the full number: .   Amalgamation of Scapes    NZ Landscape     New Zealand Terrascape      For latex , in some circumstances it is desirable to print the image on the next line, but backed up by some amount. This top-aligns the image with a number of some sort off to the left. The following are tests for this behavior. Here is a list.                                <video>  An <video> can be placed in five different ways:  all by itself, as a peer of <p> typically, with layout control,  inside a <figure> , earning a number and caption,  inside a <sidebyside> , with size and layout configured,  inside a <figure> inside a <sidebyside> , with size and layout configured, with a number and caption, and  inside a <figure> inside a <sidebyside> inside a <figure> , with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  Videos can be realized in many forms, and can come from a variety of sources. See for tests of some of that variety. Here we are testing placement within surroundings and testing the schema for location. But we do have two videos in each test, one provided as a local file and one embedded from a service.  All by itsef, with no layout specified, so showing the default size and placement. Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.   Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   Width set at 40%, so equal margins and thus centered. Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.   Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance. Vivamus suscipit diam eget mi cursus viverra.   Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   As a plain component of a <sidebyside> . Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges. Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.      Inside a <figure> with no adjustments, so default behavior. Note how a <figure> occupies the entire width of the page, so then does the caption.   University of Puget Sound Promotional Video    Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   Pre-Roll Countdown    Inside a <figure> with asymmetric (large) margins of 30% and 60%. Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.   University of Puget Sound Promotional Video    Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.   Pre-Roll Countdown    Inside figures inside a <sidebyside> . Same widths as previous <sidebyside> but alignment on bottoms of the panels, to partially align captions. Note how the captions are constrained in width by the width of the panels of the side-by-side.    Pre-Roll Countdown     University of Puget Sound Promotional Video     Identical code to previous example, but now wrapped in an overall <figure> , which has its own caption and number, leaving the interior figures to be sub-numbered. Cross-references use the full number: .   Amalgamation of Videos    Pre-Roll Countdown     University of Puget Sound Promotional Video        <program> , <console>  A <program> and\/or <console> can be placed in at least six different ways:  all by itself, as a peer of <p> typically, with layout control  inside a <listing> , earning a number and caption, with layout control  inside a <sidebyside> , with size and layout configured  inside a <sidebyside> , with size and layout configured, and inside a <figure>  inside a <sidebyside> , with size and layout configured, with each inside a <listing> , earning different numbers  inside a <figure> inside a <sidebyside> inside a <listing> , with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  Programs can be realized in many forms, and can come from a variety of sources. See for tests of some of that variety. Here we are testing placement within surroundings and testing the schema for location. But we do have two videos in each test, one provided as a local file and one embedded from a service.  All by itsef, with no layout specified, so showing the default size and placement. Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.   n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means   Now a program with shorter lines, with no layout control.   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }   And a <console> element, also with no layout control.   pi@raspberrypi ~\/progs\/chap02 $  gcc -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $    Now similar examples, but with layout control: margins and width.  A <program> with a width attribute, so centered and with equal margins. Note how the lines word wrap due to the smaller width.   n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means   A <program> with short lines, so significant, and asymmetric margins, which experimentally do not induce any word-wrapping.   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }   A longer <console> , with margins so significant the appearance is ill-advised.   pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $    Two <listing> , with <caption> , and no layout control.   Hello, World! in C   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     A console session on a Raspberry Pi   pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     Same two <listing> , but now with layout control on the <program> and <console> .   Hello, World! in C   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     A console session on a Raspberry Pi   pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     This <sidebyside> gives each panel a 30% width. The remaining 10% is apportioned for margins and separation.    \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }    pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means    This is the same three-panel <sidebyside> , but now inside of a <figure> , earning a number and a <caption> .   Some Code Samples    \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }    pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means     Finally, a smaller <program> and a smaller <console> , each inside a <listing> , as the two panels of a <sidebyside> with no margins, and slightly different widths (to control word-wrapping). The panels have been aligned vertically so their captions align.    Hello!   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     Raspberry Pi   $  gcc -Wall -o intAndFloat intAndFloat.c  $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  $      And again, the two-panel <sidebyside> of <listing> , but now inside a <figure> that has a number and a caption. And then the <listing> are sub-numbered as (a) and (b).   Two Code Listings    Hello!   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     Raspberry Pi   $  gcc -Wall -o intAndFloat intAndFloat.c  $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  $         <tabular>  A <tabular> can be placed in six different ways:  all by itself, as a peer of <p> typically, with no layout control and hence with a natural width, and centered  all by itself, as a peer of <p> typically, with explicit layout control,  inside a <table> , earning a number and title,  inside a <sidebyside> , with size and layout configured,  inside a <table> inside a <sidebyside> , with size and layout configured, with a number and title, and  inside a <table> inside a <sidebyside> inside a <figure> , with size and layout configured, with a number and title, but now sub-numbered ((a), (b), (c), ).  Examples of each, and more.  A <tabular> realized by latex for PDF\/print will normally be as wide as necessary to hold the content, without word-wrapping the content of any cell that is not explicitly authored that way. This is the most rigid of the content types we call planar. So for PreTeXt output as latex , when you explicitly constrain the width to be less than the natural width (including use as a panel of a <sidebyside> , or even setting margins) the table will be scaled down in width, which can result in an apparent font size very much smaller than that of the surrounding text. Note that we do not ever scale a tabular up to be wider with a larger font size. Note also that if there is no attempt to control the space for the table (no layout control, not in a <sidebyside> ) then no scaling is attempted at all and the table may be wider than the text and protrude into the right margin. For more, see the three examples at: , , . Generally, much of the commentary and testing here is about latex \/PDF\/print. While for HTML output the cells will usually automatically word-wrap to fit in the available space, without adjusting the font size. Some might like this behavior and some might not.  Data in a table form can be placed in amongst a series of paragraphs. With no layout control, it will occupy its natural width and be centered.    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    The same effect can be had by specifying that the width attribute have the value auto , but do not specify any margins . We test multiple footnotes in a <tabular> , not included in a <table> .    State Only from the West Coast.  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223 Wow! That is as big as many countries.  163,696  1850    In amongst a run of paragraphs (or similar) a <tabular> can be placed with layout control. For latex output, this will scale the table to fit within the explicit, or implicit, width. This can result in obvious differences in the apparent font size. We first have a width that is experimentally similar to the natural width, with asymetric margins. Then a narrow width, and a wide width, as an illustration.    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    Narrow. 45% width. 20% margin left, 35% margin right.    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    Wide. 97% width. 1% margin left, 2% right.    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    Naturally, a <tabular> can be placed inside a <table> , earning a number and a title.   Natural Width    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     A little narrower, but still centered by default.   Width of 60%, automatic centering    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     Very narrow, asymmetric margins.   Width of 30%, 30% left margin, 40% right margin    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     Wider than necessary, asymmetric margins.   Width of 90%, 8% left margin, 2% right margin    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     The next table is purposely much too wide. In we make no attempt to control the width, and so it will extend into the margins. In we have simple added the attribute width=\"auto\" . This attempt to use layout control will cause an automatic reduction in width and a smaller apparent font size. Adjusting margins providing an explicit percentage width, or placing the tabular as a panel of <sidebyside> will have the same effect. In we have set the width explicity to 100% and so it should be identical to the automatic width case just prior.   Tabular too wide, no layout control    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles      Tabular too wide, scale to automatic width    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles      Tabular too wide, scale to 100% width    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles     Now into <sidebyside> in various ways and with various sizes. First, two <tabular> as panels with widths at 60% and 30%. Note that in latex \/PDF\/print the tabular of functional values does not need the full 30% width, so it is at its natural size and centered within its panel.     State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850          3  9.734    5  2.175     Let's do that again, but with widths experimentally set to make font sizes match (approximately).     State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850          3  9.734    5  2.175     Same tabular, which fills roughly 80% by itself, packed into a single <sidebyside> with just a 2% gap, and no side margins.         State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850          State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850     Natural widths, but now as a pair of tables.    West Coast    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850      Function Values        3  9.734    5  2.175      Finally, as two individual <table> , grouped and laid out via a <sidebyside> , and collected as a <figure> . Which causes sub-numbering of the two enclosed <table> .   Geography and Mathematics    West Coast    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850      Function Values        3  9.734    5  2.175        "
 },
 {
-  "id": "p-1223",
+  "id": "p-1225",
   "level": "2",
-  "url": "atomic-items.html#p-1223",
+  "url": "atomic-items.html#p-1225",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "atomic "
 },
 {
-  "id": "figure-171",
-  "level": "2",
-  "url": "atomic-items.html#figure-171",
-  "type": "Figure",
-  "number": "28.1",
-  "title": "",
-  "body": " New Zealand Landscape   "
-},
-{
   "id": "figure-172",
   "level": "2",
   "url": "atomic-items.html#figure-172",
   "type": "Figure",
-  "number": "28.2",
+  "number": "28.1",
   "title": "",
   "body": " New Zealand Landscape   "
 },
@@ -3020,36 +3029,72 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#figure-173",
   "type": "Figure",
-  "number": "28.3",
+  "number": "28.2",
   "title": "",
-  "body": " NZ Landscape   "
+  "body": " New Zealand Landscape   "
 },
 {
   "id": "figure-174",
   "level": "2",
   "url": "atomic-items.html#figure-174",
   "type": "Figure",
-  "number": "28.4",
+  "number": "28.3",
   "title": "",
-  "body": " New Zealand Terrascape   "
+  "body": " NZ Landscape   "
 },
 {
   "id": "figure-175",
   "level": "2",
   "url": "atomic-items.html#figure-175",
   "type": "Figure",
+  "number": "28.4",
+  "title": "",
+  "body": " New Zealand Terrascape   "
+},
+{
+  "id": "figure-176",
+  "level": "2",
+  "url": "atomic-items.html#figure-176",
+  "type": "Figure",
   "number": "28.5",
   "title": "",
   "body": " Amalgamation of Scapes    NZ Landscape     New Zealand Terrascape     "
 },
 {
-  "id": "figure-178",
+  "id": "exercise-60",
   "level": "2",
-  "url": "atomic-items.html#figure-178",
-  "type": "Figure",
+  "url": "atomic-items.html#exercise-60",
+  "type": "Checkpoint",
   "number": "28.6",
   "title": "",
-  "body": " University of Puget Sound Promotional Video   "
+  "body": "    "
+},
+{
+  "id": "exercise-61",
+  "level": "2",
+  "url": "atomic-items.html#exercise-61",
+  "type": "Exercise",
+  "number": "28.1.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-62",
+  "level": "2",
+  "url": "atomic-items.html#exercise-62",
+  "type": "Exercise",
+  "number": "28.1.2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "exercise-63",
+  "level": "2",
+  "url": "atomic-items.html#exercise-63",
+  "type": "Exercise",
+  "number": "28.1.3",
+  "title": "",
+  "body": "  "
 },
 {
   "id": "figure-179",
@@ -3058,7 +3103,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "28.7",
   "title": "",
-  "body": " Pre-Roll Countdown   "
+  "body": " University of Puget Sound Promotional Video   "
 },
 {
   "id": "figure-180",
@@ -3067,7 +3112,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "28.8",
   "title": "",
-  "body": " University of Puget Sound Promotional Video   "
+  "body": " Pre-Roll Countdown   "
 },
 {
   "id": "figure-181",
@@ -3076,7 +3121,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "28.9",
   "title": "",
-  "body": " Pre-Roll Countdown   "
+  "body": " University of Puget Sound Promotional Video   "
 },
 {
   "id": "figure-182",
@@ -3094,7 +3139,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "28.11",
   "title": "",
-  "body": " University of Puget Sound Promotional Video   "
+  "body": " Pre-Roll Countdown   "
 },
 {
   "id": "figure-184",
@@ -3103,6 +3148,15 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "28.12",
   "title": "",
+  "body": " University of Puget Sound Promotional Video   "
+},
+{
+  "id": "figure-185",
+  "level": "2",
+  "url": "atomic-items.html#figure-185",
+  "type": "Figure",
+  "number": "28.13",
+  "title": "",
   "body": " Amalgamation of Videos    Pre-Roll Countdown     University of Puget Sound Promotional Video     "
 },
 {
@@ -3110,7 +3164,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#listing-9",
   "type": "Listing",
-  "number": "28.13",
+  "number": "28.14",
   "title": "",
   "body": " Hello, World! in C   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }   "
 },
@@ -3119,7 +3173,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#listing-10",
   "type": "Listing",
-  "number": "28.14",
+  "number": "28.15",
   "title": "",
   "body": " A console session on a Raspberry Pi   pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $    "
 },
@@ -3128,7 +3182,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#listing-11",
   "type": "Listing",
-  "number": "28.15",
+  "number": "28.16",
   "title": "",
   "body": " Hello, World! in C   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }   "
 },
@@ -3137,16 +3191,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#listing-12",
   "type": "Listing",
-  "number": "28.16",
+  "number": "28.17",
   "title": "",
   "body": " A console session on a Raspberry Pi   pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $    "
 },
 {
-  "id": "figure-187",
+  "id": "figure-188",
   "level": "2",
-  "url": "atomic-items.html#figure-187",
+  "url": "atomic-items.html#figure-188",
   "type": "Figure",
-  "number": "28.17",
+  "number": "28.18",
   "title": "",
   "body": " Some Code Samples    \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }    pi@raspberrypi ~\/progs\/chap02 $  gcc -Wall -o intAndFloat intAndFloat.c  pi@raspberrypi ~\/progs\/chap02 $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  pi@raspberrypi ~\/progs\/chap02 $     n_loops <- 10 x.means <- numeric(n_loops) # create a vector of zeros for results for (i in 1:n_loops){ x <- as.integer(runif(100, 1, 7)) # 1 to 6, uniformly x.means[i] <- mean(x) } x.means    "
 },
@@ -3155,7 +3209,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#listing-13",
   "type": "Listing",
-  "number": "28.18",
+  "number": "28.19",
   "title": "",
   "body": " Hello!   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }   "
 },
@@ -3164,16 +3218,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#listing-14",
   "type": "Listing",
-  "number": "28.19",
+  "number": "28.20",
   "title": "",
   "body": " Raspberry Pi   $  gcc -Wall -o intAndFloat intAndFloat.c  $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  $    "
 },
 {
-  "id": "figure-188",
+  "id": "figure-189",
   "level": "2",
-  "url": "atomic-items.html#figure-188",
+  "url": "atomic-items.html#figure-189",
   "type": "Figure",
-  "number": "28.20",
+  "number": "28.21",
   "title": "",
   "body": " Two Code Listings    Hello!   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     Raspberry Pi   $  gcc -Wall -o intAndFloat intAndFloat.c  $  .\/intAndFloat  The integer is 19088743 and the float is 19088.742188  $      "
 },
@@ -3182,7 +3236,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#table-54",
   "type": "Table",
-  "number": "28.21",
+  "number": "28.22",
   "title": "Natural Width",
   "body": " Natural Width    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    "
 },
@@ -3191,7 +3245,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#table-55",
   "type": "Table",
-  "number": "28.22",
+  "number": "28.23",
   "title": "Width of 60%, automatic centering",
   "body": " Width of 60%, automatic centering    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    "
 },
@@ -3200,7 +3254,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#table-56",
   "type": "Table",
-  "number": "28.23",
+  "number": "28.24",
   "title": "Width of 30%, 30% left margin, 40% right margin",
   "body": " Width of 30%, 30% left margin, 40% right margin    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    "
 },
@@ -3209,7 +3263,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#table-57",
   "type": "Table",
-  "number": "28.24",
+  "number": "28.25",
   "title": "Width of 90%, 8% left margin, 2% right margin",
   "body": " Width of 90%, 8% left margin, 2% right margin    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    "
 },
@@ -3218,7 +3272,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#natural-too-wide",
   "type": "Table",
-  "number": "28.25",
+  "number": "28.26",
   "title": "Tabular too wide, no layout control",
   "body": " Tabular too wide, no layout control    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles    "
 },
@@ -3227,7 +3281,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#scale-down-auto",
   "type": "Table",
-  "number": "28.26",
+  "number": "28.27",
   "title": "Tabular too wide, scale to automatic width",
   "body": " Tabular too wide, scale to automatic width    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles    "
 },
@@ -3236,7 +3290,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#scale-down-100",
   "type": "Table",
-  "number": "28.27",
+  "number": "28.28",
   "title": "Tabular too wide, scale to 100% width",
   "body": " Tabular too wide, scale to 100% width    State  Population  Area (sq. mi.)  Statehood (Year)  Capitol City  Largest City    Washington  7,614,893  71,362  1889  Olympia  Seattle    Oregon  4,217,737  98,381  1859  Salem  Portland    California  39,512,223  163,696  1850  Sacremento  Los Angeles    "
 },
@@ -3245,7 +3299,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#table-61",
   "type": "Table",
-  "number": "28.28",
+  "number": "28.29",
   "title": "West Coast",
   "body": " West Coast    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850    "
 },
@@ -3254,16 +3308,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "atomic-items.html#table-62",
   "type": "Table",
-  "number": "28.29",
+  "number": "28.30",
   "title": "Function Values",
   "body": " Function Values        3  9.734    5  2.175    "
 },
 {
-  "id": "figure-189",
+  "id": "figure-190",
   "level": "2",
-  "url": "atomic-items.html#figure-189",
+  "url": "atomic-items.html#figure-190",
   "type": "Figure",
-  "number": "28.30",
+  "number": "28.31",
   "title": "",
   "body": " Geography and Mathematics    West Coast    State  Population  Area (sq. mi.)  Statehood (Year)    Washington  7,614,893  71,362  1889    Oregon  4,217,737  98,381  1859    California  39,512,223  163,696  1850      Function Values        3  9.734    5  2.175      "
 },
@@ -3448,9 +3502,9 @@ var ptx_lunr_docs = [
   "body": "A Right Brace } and a Right Bracket]  The right brace is is used as a grouping character in latex so this is just a test of its behavior in titles.   A faux hint to get this exercise to migrate into a <solutions> .  "
 },
 {
-  "id": "exercise-61",
+  "id": "exercise-65",
   "level": "2",
-  "url": "advanced-numbering.html#exercise-61",
+  "url": "advanced-numbering.html#exercise-65",
   "type": "Checkpoint",
   "number": "29.20",
   "title": "An Extraneous Exercise.",
@@ -3484,18 +3538,18 @@ var ptx_lunr_docs = [
   "body": " MyOpenMath Interactive Problems  This is a test with two inline exercises containing MyOpenMath (MOM) problems. None of this is in the schema, and all of it is subject to change.  Negative Numbers and Exponents  This is an introduction, providing articulation between the MOM problem and the contents of the text. For example, you might cross-reference a result or example given previosly. (HTML Note: The resizer for the knowl is not functioning yet.)   A Statistical Test  This is an introduction, providing articulation between the MOM problem and the contents of the text. For example, you might cross-reference a result or example given previosly. (HTML Note: The resizer for the knowl is not functioning yet.)   "
 },
 {
-  "id": "exercise-62",
+  "id": "exercise-66",
   "level": "2",
-  "url": "section-myopenmath.html#exercise-62",
+  "url": "section-myopenmath.html#exercise-66",
   "type": "Checkpoint",
   "number": "31.1",
   "title": "Negative Numbers and Exponents.",
   "body": "Negative Numbers and Exponents  This is an introduction, providing articulation between the MOM problem and the contents of the text. For example, you might cross-reference a result or example given previosly. (HTML Note: The resizer for the knowl is not functioning yet.)  "
 },
 {
-  "id": "exercise-63",
+  "id": "exercise-67",
   "level": "2",
-  "url": "section-myopenmath.html#exercise-63",
+  "url": "section-myopenmath.html#exercise-67",
   "type": "Checkpoint",
   "number": "31.2",
   "title": "A Statistical Test.",
@@ -3583,18 +3637,18 @@ var ptx_lunr_docs = [
   "body": " Show that .   Use .  "
 },
 {
-  "id": "exercise-66",
+  "id": "exercise-70",
   "level": "2",
-  "url": "worksheets.html#exercise-66",
+  "url": "worksheets.html#exercise-70",
   "type": "Worksheet Exercise",
   "number": "33.1.3",
   "title": "",
   "body": " To show that the point exists (as the common intersection of the ), show that .  "
 },
 {
-  "id": "exercise-67",
+  "id": "exercise-71",
   "level": "2",
-  "url": "worksheets.html#exercise-67",
+  "url": "worksheets.html#exercise-71",
   "type": "Worksheet Exercise",
   "number": "33.1.4",
   "title": "",
@@ -3624,7 +3678,7 @@ var ptx_lunr_docs = [
   "url": "worksheets.html#example-9",
   "type": "Example",
   "number": "33.7",
-  "title": "Kirchoff's Current Law.",
+  "title": "Kirchoff’s Current Law.",
   "body": " Kirchoff's Current Law  For the circuit below .     "
 },
 {
@@ -3637,90 +3691,90 @@ var ptx_lunr_docs = [
   "body": " Kirchoffs Voltage Law  The sum of the voltages around any closed circuit (or subcircuit) is zero.   "
 },
 {
-  "id": "exercise-68",
+  "id": "exercise-72",
   "level": "2",
-  "url": "worksheets.html#exercise-68",
+  "url": "worksheets.html#exercise-72",
   "type": "Worksheet Exercise",
   "number": "33.2.1",
   "title": "",
   "body": " For the simple network pictured, calculuate the amperage in each part of the network by setting up a system of linear equations for the amperages.     "
 },
 {
-  "id": "exercise-69",
+  "id": "exercise-73",
   "level": "2",
-  "url": "worksheets.html#exercise-69",
+  "url": "worksheets.html#exercise-73",
   "type": "Worksheet Exercise",
   "number": "33.2.2",
   "title": "",
   "body": " Compare it with a parallel circuit network. Calculate the amperage in each part of the network by setting up a system of linear equations for the amperages.     "
 },
 {
-  "id": "exercise-70",
+  "id": "exercise-74",
   "level": "2",
-  "url": "worksheets.html#exercise-70",
+  "url": "worksheets.html#exercise-74",
   "type": "Worksheet Exercise",
   "number": "33.2.3",
   "title": "",
   "body": " Now for a more complicated network. Calculate the amperage in each part of the network by setting up a system of linear equations for the amperages.     "
 },
 {
-  "id": "exercise-71",
+  "id": "exercise-75",
   "level": "2",
-  "url": "worksheets.html#exercise-71",
+  "url": "worksheets.html#exercise-75",
   "type": "Worksheet Exercise",
   "number": "33.2.4",
   "title": "",
   "body": " Now generalize these ideas to a context outside of electrical circuits. Consider the network of streets given in the diagram (with one-way directions as indicated).     A traffic engineer counts the hourly flow of cars into and out of this network at the entrances. They get (EB = East Bound; WB = West Bound):   Estimated hourly traffic flow for the road network      EB Winooski  WB Winooski  Shelburne St  Willow  Jay    into  50  400  0  10  50    out of  55  390  20  15  30     Use a variable for each segment inside of the network and set up a system of linear equations restricting the flow. Solve the system. Note that you should not get a unique solution as traffic should be able to flow through the network in various ways.  "
 },
 {
-  "id": "exercise-72",
+  "id": "exercise-76",
   "level": "2",
-  "url": "worksheets.html#exercise-72",
+  "url": "worksheets.html#exercise-76",
   "type": "Worksheet Exercise",
   "number": "33.3.1",
   "title": "",
   "body": " Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra.  "
 },
 {
-  "id": "exercise-73",
+  "id": "exercise-77",
   "level": "2",
-  "url": "worksheets.html#exercise-73",
+  "url": "worksheets.html#exercise-77",
   "type": "Worksheet Exercise",
   "number": "33.3.2",
   "title": "",
   "body": " Integer sagittis dictum turpis vel aliquet. Fusce ut suscipit dolor, nec tristique nisl. Aenean luctus, leo et ornare fermentum, nibh dui vulputate leo, nec tincidunt augue ipsum sed odio. Nunc non erat sollicitudin, iaculis eros consequat, dapibus eros.  "
 },
 {
-  "id": "exercise-74",
+  "id": "exercise-78",
   "level": "2",
-  "url": "worksheets.html#exercise-74",
+  "url": "worksheets.html#exercise-78",
   "type": "Worksheet Exercise",
   "number": "33.3.3",
   "title": "A full-width exercise.",
   "body": "A full-width exercise  Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra.  Integer sagittis dictum turpis vel aliquet. Fusce ut suscipit dolor, nec tristique nisl. Aenean luctus, leo et ornare fermentum, nibh dui vulputate leo, nec tincidunt augue ipsum sed odio. Nunc non erat sollicitudin, iaculis eros consequat, dapibus eros.  "
 },
 {
-  "id": "exercise-75",
+  "id": "exercise-79",
   "level": "2",
-  "url": "worksheets.html#exercise-75",
+  "url": "worksheets.html#exercise-79",
   "type": "Worksheet Exercise",
   "number": "33.3.4",
   "title": "",
   "body": " Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra.  "
 },
 {
-  "id": "exercise-76",
+  "id": "exercise-80",
   "level": "2",
-  "url": "worksheets.html#exercise-76",
+  "url": "worksheets.html#exercise-80",
   "type": "Worksheet Exercise",
   "number": "33.3.5",
   "title": "",
   "body": " Integer sagittis dictum turpis vel aliquet. Fusce ut suscipit dolor, nec tristique nisl. Aenean luctus, leo et ornare fermentum, nibh dui vulputate leo, nec tincidunt augue ipsum sed odio. Nunc non erat sollicitudin, iaculis eros consequat, dapibus eros.  "
 },
 {
-  "id": "exercise-77",
+  "id": "exercise-81",
   "level": "2",
-  "url": "worksheets.html#exercise-77",
+  "url": "worksheets.html#exercise-81",
   "type": "Worksheet Exercise",
   "number": "33.3.6",
   "title": "",
@@ -3736,63 +3790,63 @@ var ptx_lunr_docs = [
   "body": " A Mock Activity   The problem, as we see it.    A worksheet could have hints, no? But no spacing. Note row below has widths set to balance the heights.   "
 },
 {
-  "id": "exercise-78",
+  "id": "exercise-82",
   "level": "2",
-  "url": "worksheets.html#exercise-78",
+  "url": "worksheets.html#exercise-82",
   "type": "Worksheet Exercise",
   "number": "33.3.7",
   "title": "",
   "body": " Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra.  "
 },
 {
-  "id": "exercise-79",
+  "id": "exercise-83",
   "level": "2",
-  "url": "worksheets.html#exercise-79",
+  "url": "worksheets.html#exercise-83",
   "type": "Worksheet Exercise",
   "number": "33.3.8",
   "title": "",
   "body": " Integer sagittis dictum turpis vel aliquet. Fusce ut suscipit dolor, nec tristique nisl. Aenean luctus, leo et ornare fermentum, nibh dui vulputate leo, nec tincidunt augue ipsum sed odio. Nunc non erat sollicitudin, iaculis eros consequat, dapibus eros.  "
 },
 {
-  "id": "exercise-80",
+  "id": "exercise-84",
   "level": "2",
-  "url": "worksheets.html#exercise-80",
+  "url": "worksheets.html#exercise-84",
   "type": "Worksheet Exercise",
   "number": "33.3.9",
   "title": "",
   "body": " Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra.  "
 },
 {
-  "id": "exercise-81",
+  "id": "exercise-85",
   "level": "2",
-  "url": "worksheets.html#exercise-81",
+  "url": "worksheets.html#exercise-85",
   "type": "Worksheet Exercise",
   "number": "33.4.1",
   "title": "",
   "body": " Let , , , . Find the values of the following expressions:  Are any of these vectors perpendicular to each other? "
 },
 {
-  "id": "exercise-82",
+  "id": "exercise-86",
   "level": "2",
-  "url": "worksheets.html#exercise-82",
+  "url": "worksheets.html#exercise-86",
   "type": "Worksheet Exercise",
   "number": "33.4.2",
   "title": "",
   "body": " The vectors and are pictured below. Derive the formula for projection on a line and use it to find the projection of on the line spanned by . Also compute the length of the residual vector.   two vectors...   "
 },
 {
-  "id": "exercise-83",
+  "id": "exercise-87",
   "level": "2",
-  "url": "worksheets.html#exercise-83",
+  "url": "worksheets.html#exercise-87",
   "type": "Worksheet Exercise",
   "number": "33.4.3",
   "title": "",
   "body": " Consider the vector equation .  Check that there is no solution that makes the equation true. Use projection to find the best approximation . Compute . Compute the residual vector. Compute the length of the residual vector and explain what it means. "
 },
 {
-  "id": "exercise-84",
+  "id": "exercise-88",
   "level": "2",
-  "url": "worksheets.html#exercise-84",
+  "url": "worksheets.html#exercise-88",
   "type": "Worksheet Exercise",
   "number": "33.4.4",
   "title": "",
@@ -3808,9 +3862,9 @@ var ptx_lunr_docs = [
   "body": " Exercises, One Subsection  This <section> of the sample article demonstrates an unstructured division. There are no <subsection> , you are just reading the first two paragraphs, followed by some nonsense text. Then there is a single  <exercises> division. Note that this division is not numbered (since it is unique within the <section> ). And a cross-reference to one of the contained <exercise> will be numbered as a member of the <section> , .  If you use the unstructured form of a division, and have both inline and divisional exercises, there is a potential to form ambiguous cross-references. To wit, check that and are really different exercises (which you are unable to do if you are reading this in print!). The solution is to include the type of exercise in the reference, which will assist everybody, but especially your print readers: and .  Compare this section with the similar , next. The following text is mostly nonsense, just for testing purposes.  Inline One  Aliquam vitae risus placerat, pellentesque leo vitae, iaculis ante. Praesent ac odio eget mi bibendum eleifend ac eget metus. Morbi in dolor et diam accumsan mattis. Aenean elementum pulvinar efficitur. Etiam viverra ut tellus quis consequat. Phasellus sit amet nisl a ligula pharetra tempus id in elit. Maecenas congue quam eu purus fermentum pretium. Fusce pellentesque ultricies arcu, egestas sollicitudin erat condimentum non. Integer non velit at dolor dictum aliquam et rhoncus mauris. Sed nec nibh id nunc convallis tincidunt ut at ligula. Etiam elementum nisl eu erat dapibus rhoncus.   Pellentesque nec condimentum ligula, quis interdum mauris. Ut sed urna lacinia, aliquam arcu id, faucibus nisi. Suspendisse potenti. Curabitur in erat ultricies, condimentum mi nec, vehicula mauris. Duis faucibus risus fermentum velit hendrerit, non laoreet massa maximus. Donec bibendum elit ac lectus lobortis luctus. Ut finibus, dolor ut euismod tristique, ligula tortor tempus arcu, finibus semper purus erat ut ligula. Aenean accumsan ut ante vel euismod.  Inline Two Ut porttitor neque a pharetra euismod. Vivamus ut metus pretium, placerat massa tempor, condimentum metus. Phasellus vestibulum iaculis turpis non posuere. Vestibulum quis aliquet neque. Donec nec metus iaculis, laoreet massa vitae, suscipit tellus. Etiam et ultrices quam, quis pretium ligula. In ut cursus metus. Aenean volutpat quam odio, quis tempus dolor egestas eget. Nunc fringilla lobortis nunc, ut interdum lorem posuere sed. Sed sodales risus a laoreet venenatis. Nunc sodales tempor mollis. Nam sollicitudin velit sed ex viverra feugiat. Nunc consectetur mi vitae urna sollicitudin malesuada. Fusce eget risus lectus. Mauris augue velit, vestibulum vitae tempus sit amet, porttitor eget turpis.   Major Result  Vivamus tortor tortor, lobortis et sem vel, accumsan placerat libero. Sed eget metus non magna accumsan efficitur a non turpis. Curabitur maximus arcu ipsum, eget vestibulum nulla mollis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vel eleifend risus. Morbi hendrerit tellus eget nibh imperdiet, ac mollis nisl sagittis. Ut commodo pharetra leo. Suspendisse consequat velit eget velit condimentum feugiat.   Inline Three  Suspendisse lacinia mattis risus, eget viverra urna dictum eu. Maecenas ut sem in turpis egestas varius nec at ipsum. Praesent bibendum nisi et turpis congue, a pellentesque felis tempor. Vivamus non dolor in risus interdum mattis. In tempus iaculis velit, sit amet rhoncus tellus aliquam convallis. Sed ut tellus id ipsum blandit convallis sed eget tortor. Nunc leo felis, scelerisque vel ante porta, volutpat rhoncus neque. Mauris convallis, felis at aliquam aliquet, felis ipsum semper mi, vitae auctor purus ante non erat. Ut nec felis mi.    Exercise Collection  Drill One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.   A figure in an <exercise> in an unstructured division to test that it is numbered as if the containing <exercises> is not present     A side-by-side in a figure in an <exercise> in an unstructured division to test that it is numbered as if the containing <exercises> is not present and to test the numbering of the panels in a solutions manual    First Panel, subcaptioned     Second Panel, subcaptioned        First Panel, not subcaptioned     Second Panel, not subcaptioned      Drill Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Testing numbering, figure in a <exercise> in an un-numbered <exercises>     Drill Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.   Challenging One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.     An introduction to an exercisegroup . This is here to attempt to interrupt the flow of the counting from this division to the next.   Challenging Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Challenging Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.    Impossible One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.   Impossible Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Impossible Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.     More Reading   Left intentionally blank, just checking sectioning.   David C. Lay, Subspaces and Echelon Forms . The College Mathematics Journal , January 1993, 24  1 , 57 62.   "
 },
 {
-  "id": "exercise-85",
+  "id": "exercise-89",
   "level": "2",
-  "url": "exercises-single.html#exercise-85",
+  "url": "exercises-single.html#exercise-89",
   "type": "Checkpoint",
   "number": "34.1",
   "title": "Inline One.",
@@ -3835,18 +3889,18 @@ var ptx_lunr_docs = [
   "body": " Major Result  Vivamus tortor tortor, lobortis et sem vel, accumsan placerat libero. Sed eget metus non magna accumsan efficitur a non turpis. Curabitur maximus arcu ipsum, eget vestibulum nulla mollis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vel eleifend risus. Morbi hendrerit tellus eget nibh imperdiet, ac mollis nisl sagittis. Ut commodo pharetra leo. Suspendisse consequat velit eget velit condimentum feugiat.  "
 },
 {
-  "id": "exercise-87",
+  "id": "exercise-91",
   "level": "2",
-  "url": "exercises-single.html#exercise-87",
+  "url": "exercises-single.html#exercise-91",
   "type": "Checkpoint",
   "number": "34.4",
   "title": "Inline Three.",
   "body": "Inline Three  Suspendisse lacinia mattis risus, eget viverra urna dictum eu. Maecenas ut sem in turpis egestas varius nec at ipsum. Praesent bibendum nisi et turpis congue, a pellentesque felis tempor. Vivamus non dolor in risus interdum mattis. In tempus iaculis velit, sit amet rhoncus tellus aliquam convallis. Sed ut tellus id ipsum blandit convallis sed eget tortor. Nunc leo felis, scelerisque vel ante porta, volutpat rhoncus neque. Mauris convallis, felis at aliquam aliquet, felis ipsum semper mi, vitae auctor purus ante non erat. Ut nec felis mi.  "
 },
 {
-  "id": "exercise-88",
+  "id": "exercise-92",
   "level": "2",
-  "url": "exercises-single.html#exercise-88",
+  "url": "exercises-single.html#exercise-92",
   "type": "Exercise",
   "number": "34.1",
   "title": "Drill One.",
@@ -3862,9 +3916,9 @@ var ptx_lunr_docs = [
   "body": "Drill Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Testing numbering, figure in a <exercise> in an un-numbered <exercises>    "
 },
 {
-  "id": "exercise-90",
+  "id": "exercise-94",
   "level": "2",
-  "url": "exercises-single.html#exercise-90",
+  "url": "exercises-single.html#exercise-94",
   "type": "Exercise",
   "number": "34.3",
   "title": "Drill Three.",
@@ -3880,117 +3934,117 @@ var ptx_lunr_docs = [
   "body": "Challenging One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.  "
 },
 {
-  "id": "exercise-92",
+  "id": "exercise-96",
   "level": "2",
-  "url": "exercises-single.html#exercise-92",
+  "url": "exercises-single.html#exercise-96",
   "type": "Exercise",
   "number": "34.5",
   "title": "Challenging Two.",
   "body": "Challenging Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.  "
 },
 {
-  "id": "exercise-93",
+  "id": "exercise-97",
   "level": "2",
-  "url": "exercises-single.html#exercise-93",
+  "url": "exercises-single.html#exercise-97",
   "type": "Exercise",
   "number": "34.6",
   "title": "Challenging Three.",
   "body": "Challenging Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.  "
 },
 {
-  "id": "exercise-94",
+  "id": "exercise-98",
   "level": "2",
-  "url": "exercises-single.html#exercise-94",
+  "url": "exercises-single.html#exercise-98",
   "type": "Exercise",
   "number": "34.7",
   "title": "Impossible One.",
   "body": "Impossible One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.  "
 },
 {
-  "id": "exercise-95",
+  "id": "exercise-99",
   "level": "2",
-  "url": "exercises-single.html#exercise-95",
+  "url": "exercises-single.html#exercise-99",
   "type": "Exercise",
   "number": "34.8",
   "title": "Impossible Two.",
   "body": "Impossible Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.  "
 },
 {
-  "id": "exercise-96",
+  "id": "exercise-100",
   "level": "2",
-  "url": "exercises-single.html#exercise-96",
+  "url": "exercises-single.html#exercise-100",
   "type": "Exercise",
   "number": "34.9",
   "title": "Impossible Three.",
   "body": "Impossible Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.  "
 },
 {
-  "id": "exercises-17",
+  "id": "exercises-18",
   "level": "1",
-  "url": "exercises-17.html",
+  "url": "exercises-18.html",
   "type": "Exercises",
   "number": "35",
   "title": "Exercise Section, Structured",
   "body": " Exercise Section, Structured   A collection of exercises, in a top-level <exercises> division, structured with <subexercises> .    Easy Exercises  Arithmetic  Compute .     Trigonometry  Compute .     Hard Problems  Number Theory  Prove Fermat's Last Theorem.   Millenial  Find general solutions to the Navier-Stokes equation.     With an Exercise Group    This is an exercise group, and this is its introduction.   One    Subtract.   Two     Outside exercisegroup, inside subexercises  6+5    "
 },
 {
-  "id": "exercise-97",
+  "id": "exercise-101",
   "level": "2",
-  "url": "exercises-17.html#exercise-97",
+  "url": "exercises-18.html#exercise-101",
   "type": "Exercise",
   "number": "35.1",
   "title": "Arithmetic.",
   "body": "Arithmetic  Compute .    "
 },
 {
-  "id": "exercise-98",
+  "id": "exercise-102",
   "level": "2",
-  "url": "exercises-17.html#exercise-98",
+  "url": "exercises-18.html#exercise-102",
   "type": "Exercise",
   "number": "35.2",
   "title": "Trigonometry.",
   "body": "Trigonometry  Compute .  "
 },
 {
-  "id": "exercise-99",
+  "id": "exercise-103",
   "level": "2",
-  "url": "exercises-17.html#exercise-99",
+  "url": "exercises-18.html#exercise-103",
   "type": "Exercise",
   "number": "35.3",
   "title": "Number Theory.",
   "body": "Number Theory  Prove Fermat's Last Theorem.  "
 },
 {
-  "id": "exercise-100",
+  "id": "exercise-104",
   "level": "2",
-  "url": "exercises-17.html#exercise-100",
+  "url": "exercises-18.html#exercise-104",
   "type": "Exercise",
   "number": "35.4",
   "title": "Millenial.",
   "body": "Millenial  Find general solutions to the Navier-Stokes equation.  "
 },
 {
-  "id": "exercise-101",
+  "id": "exercise-105",
   "level": "2",
-  "url": "exercises-17.html#exercise-101",
+  "url": "exercises-18.html#exercise-105",
   "type": "Exercise",
   "number": "35.5",
   "title": "One.",
   "body": "One    Subtract.  "
 },
 {
-  "id": "exercise-102",
+  "id": "exercise-106",
   "level": "2",
-  "url": "exercises-17.html#exercise-102",
+  "url": "exercises-18.html#exercise-106",
   "type": "Exercise",
   "number": "35.6",
   "title": "Two.",
   "body": "Two   "
 },
 {
-  "id": "exercise-103",
+  "id": "exercise-107",
   "level": "2",
-  "url": "exercises-17.html#exercise-103",
+  "url": "exercises-18.html#exercise-107",
   "type": "Exercise",
   "number": "35.7",
   "title": "Outside exercisegroup, inside subexercises.",
@@ -4006,18 +4060,18 @@ var ptx_lunr_docs = [
   "body": " Exercises, Multiple Subsections   This <section> of the sample article demonstrates a structured division. You are reading the introduction to the division, then there is a faux <subsection> , followed by three <exercises> divisions. Note that the three are numbered as if they are also fellow <subsection> . And a cross-reference to one of the contained <exercise> will be numbered use the number of the <subsection> , .  Compare this section with the similar , previous. The following text is mostly nonsense, just for testing purposes.    Faux Subsection  Inline One  Aliquam vitae risus placerat, pellentesque leo vitae, iaculis ante. Praesent ac odio eget mi bibendum eleifend ac eget metus. Morbi in dolor et diam accumsan mattis. Aenean elementum pulvinar efficitur. Etiam viverra ut tellus quis consequat. Phasellus sit amet nisl a ligula pharetra tempus id in elit. Maecenas congue quam eu purus fermentum pretium. Fusce pellentesque ultricies arcu, egestas sollicitudin erat condimentum non. Integer non velit at dolor dictum aliquam et rhoncus mauris. Sed nec nibh id nunc convallis tincidunt ut at ligula. Etiam elementum nisl eu erat dapibus rhoncus.   Pellentesque nec condimentum ligula, quis interdum mauris. Ut sed urna lacinia, aliquam arcu id, faucibus nisi. Suspendisse potenti. Curabitur in erat ultricies, condimentum mi nec, vehicula mauris. Duis faucibus risus fermentum velit hendrerit, non laoreet massa maximus. Donec bibendum elit ac lectus lobortis luctus. Ut finibus, dolor ut euismod tristique, ligula tortor tempus arcu, finibus semper purus erat ut ligula. Aenean accumsan ut ante vel euismod.  Inline Two  Ut porttitor neque a pharetra euismod. Vivamus ut metus pretium, placerat massa tempor, condimentum metus. Phasellus vestibulum iaculis turpis non posuere. Vestibulum quis aliquet neque. Donec nec metus iaculis, laoreet massa vitae, suscipit tellus. Etiam et ultrices quam, quis pretium ligula. In ut cursus metus. Aenean volutpat quam odio, quis tempus dolor egestas eget. Nunc fringilla lobortis nunc, ut interdum lorem posuere sed. Sed sodales risus a laoreet venenatis. Nunc sodales tempor mollis. Nam sollicitudin velit sed ex viverra feugiat. Nunc consectetur mi vitae urna sollicitudin malesuada. Fusce eget risus lectus. Mauris augue velit, vestibulum vitae tempus sit amet, porttitor eget turpis.    Major Result  Vivamus tortor tortor, lobortis et sem vel, accumsan placerat libero. Sed eget metus non magna accumsan efficitur a non turpis. Curabitur maximus arcu ipsum, eget vestibulum nulla mollis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vel eleifend risus. Morbi hendrerit tellus eget nibh imperdiet, ac mollis nisl sagittis. Ut commodo pharetra leo. Suspendisse consequat velit eget velit condimentum feugiat.   Inline Three  Suspendisse lacinia mattis risus, eget viverra urna dictum eu. Maecenas ut sem in turpis egestas varius nec at ipsum. Praesent bibendum nisi et turpis congue, a pellentesque felis tempor. Vivamus non dolor in risus interdum mattis. In tempus iaculis velit, sit amet rhoncus tellus aliquam convallis. Sed ut tellus id ipsum blandit convallis sed eget tortor. Nunc leo felis, scelerisque vel ante porta, volutpat rhoncus neque. Mauris convallis, felis at aliquam aliquet, felis ipsum semper mi, vitae auctor purus ante non erat. Ut nec felis mi.     Drill Exercises  Drill One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.   A figure in an <exercise> in a structured division to test that it is numbered with consideration of the containing <exercises>     Drill Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Drill Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.     Challenging Exercises  Challenging One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.     An introduction to an exercisegroup . This is here to attempt to interrupt the flow of the counting from this division to the next.   Challenging Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Challenging Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.      Impossible Exercises  Impossible One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.   Impossible Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Impossible Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.     More Reading   Left intentionally blank, just checking sectioning.   David C. Lay, Subspaces and Echelon Forms . The College Mathematics Journal , January 1993, 24  1 , 57 62.   "
 },
 {
-  "id": "exercise-104",
+  "id": "exercise-108",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-104",
+  "url": "exercises-multiple.html#exercise-108",
   "type": "Checkpoint",
   "number": "36.1",
   "title": "Inline One.",
   "body": "Inline One  Aliquam vitae risus placerat, pellentesque leo vitae, iaculis ante. Praesent ac odio eget mi bibendum eleifend ac eget metus. Morbi in dolor et diam accumsan mattis. Aenean elementum pulvinar efficitur. Etiam viverra ut tellus quis consequat. Phasellus sit amet nisl a ligula pharetra tempus id in elit. Maecenas congue quam eu purus fermentum pretium. Fusce pellentesque ultricies arcu, egestas sollicitudin erat condimentum non. Integer non velit at dolor dictum aliquam et rhoncus mauris. Sed nec nibh id nunc convallis tincidunt ut at ligula. Etiam elementum nisl eu erat dapibus rhoncus.  "
 },
 {
-  "id": "exercise-105",
+  "id": "exercise-109",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-105",
+  "url": "exercises-multiple.html#exercise-109",
   "type": "Checkpoint",
   "number": "36.2",
   "title": "Inline Two.",
@@ -4042,27 +4096,27 @@ var ptx_lunr_docs = [
   "body": "Inline Three  Suspendisse lacinia mattis risus, eget viverra urna dictum eu. Maecenas ut sem in turpis egestas varius nec at ipsum. Praesent bibendum nisi et turpis congue, a pellentesque felis tempor. Vivamus non dolor in risus interdum mattis. In tempus iaculis velit, sit amet rhoncus tellus aliquam convallis. Sed ut tellus id ipsum blandit convallis sed eget tortor. Nunc leo felis, scelerisque vel ante porta, volutpat rhoncus neque. Mauris convallis, felis at aliquam aliquet, felis ipsum semper mi, vitae auctor purus ante non erat. Ut nec felis mi.  "
 },
 {
-  "id": "exercise-107",
+  "id": "exercise-111",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-107",
+  "url": "exercises-multiple.html#exercise-111",
   "type": "Exercise",
   "number": "36.2.1",
   "title": "Drill One.",
   "body": "Drill One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.   A figure in an <exercise> in a structured division to test that it is numbered with consideration of the containing <exercises>    "
 },
 {
-  "id": "exercise-108",
+  "id": "exercise-112",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-108",
+  "url": "exercises-multiple.html#exercise-112",
   "type": "Exercise",
   "number": "36.2.2",
   "title": "Drill Two.",
   "body": "Drill Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.  "
 },
 {
-  "id": "exercise-109",
+  "id": "exercise-113",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-109",
+  "url": "exercises-multiple.html#exercise-113",
   "type": "Exercise",
   "number": "36.2.3",
   "title": "Drill Three.",
@@ -4078,45 +4132,45 @@ var ptx_lunr_docs = [
   "body": "Challenging One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.  "
 },
 {
-  "id": "exercise-111",
+  "id": "exercise-115",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-111",
+  "url": "exercises-multiple.html#exercise-115",
   "type": "Exercise",
   "number": "36.3.2",
   "title": "Challenging Two.",
   "body": "Challenging Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.  "
 },
 {
-  "id": "exercise-112",
+  "id": "exercise-116",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-112",
+  "url": "exercises-multiple.html#exercise-116",
   "type": "Exercise",
   "number": "36.3.3",
   "title": "Challenging Three.",
   "body": "Challenging Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.  "
 },
 {
-  "id": "exercise-113",
+  "id": "exercise-117",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-113",
+  "url": "exercises-multiple.html#exercise-117",
   "type": "Exercise",
   "number": "36.4.1",
   "title": "Impossible One.",
   "body": "Impossible One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.  "
 },
 {
-  "id": "exercise-114",
+  "id": "exercise-118",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-114",
+  "url": "exercises-multiple.html#exercise-118",
   "type": "Exercise",
   "number": "36.4.2",
   "title": "Impossible Two.",
   "body": "Impossible Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.  "
 },
 {
-  "id": "exercise-115",
+  "id": "exercise-119",
   "level": "2",
-  "url": "exercises-multiple.html#exercise-115",
+  "url": "exercises-multiple.html#exercise-119",
   "type": "Exercise",
   "number": "36.4.3",
   "title": "Impossible Three.",
@@ -4132,27 +4186,27 @@ var ptx_lunr_docs = [
   "body": " Exercises, Top-Level    This <exercises> of the sample article is a peer of all the preceding <section> and is the only such <exercises> . As such, it is not numbered, and contains only <exercise> , but for this <introduction> you are reading. The <exercises> contained within will be numbered in cross-references according to the enclosing division, in this case the entire article and so without any qualification, to wit, .   Drill One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.   Drill Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Testing numbering in a <exercises> without a number     Drill Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.   Challenging One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.     An introduction to an exercisegroup . This is here to attempt to interrupt the flow of the counting from this division to the next.   Challenging Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Challenging Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.    Impossible One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.   Impossible Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Impossible Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.   An Exercise in a Section  Exercises can appear in a section of their own. You need to give the section a title, even if it seems obvious what to call it. Individual exercises may have titles, as you choose. Problem: How should we hide solutions?   Maybe a global switch should be used to suppress solutions, while a separate processing regime could use them as part of a solutions manual.   An Exercise with a Hard-Coded Problem Number  Compute the definite integral , not as an approximate value from a Riemann sum, but as an exact value based of the limit by using the Fundamental Theorem.   An antiderivative of is , so by the FTC, !?! This is indeed an exciting result, but we are mostly interested in seeing that the sentence-ending punctuation is absorbed properly into the displayed equation.    Can you prove Corollary directly? If not consider that a problem could have several parts, which should be formatted as a second-level list, since the problems normally get numbered at the top level.  Why is this result a Corollary?  Could you interchange the Theorem and Corollary?    MVT  Consider the definite integral as an area function and employ the Mean Value Theorem.   Motivator  Think harder!   Helpful   It follows easily.  Yes.    We could prove either result first, then obtain the other as an easy consequence.   "
 },
 {
-  "id": "exercise-116",
+  "id": "exercise-120",
   "level": "2",
-  "url": "exercises.html#exercise-116",
+  "url": "exercises.html#exercise-120",
   "type": "Exercise",
   "number": "37.1",
   "title": "Drill One.",
   "body": "Drill One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.  "
 },
 {
-  "id": "exercise-117",
+  "id": "exercise-121",
   "level": "2",
-  "url": "exercises.html#exercise-117",
+  "url": "exercises.html#exercise-121",
   "type": "Exercise",
   "number": "37.2",
   "title": "Drill Two.",
   "body": "Drill Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.   Testing numbering in a <exercises> without a number    "
 },
 {
-  "id": "exercise-118",
+  "id": "exercise-122",
   "level": "2",
-  "url": "exercises.html#exercise-118",
+  "url": "exercises.html#exercise-122",
   "type": "Exercise",
   "number": "37.3",
   "title": "Drill Three.",
@@ -4168,54 +4222,54 @@ var ptx_lunr_docs = [
   "body": "Challenging One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.  "
 },
 {
-  "id": "exercise-120",
+  "id": "exercise-124",
   "level": "2",
-  "url": "exercises.html#exercise-120",
+  "url": "exercises.html#exercise-124",
   "type": "Exercise",
   "number": "37.5",
   "title": "Challenging Two.",
   "body": "Challenging Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.  "
 },
 {
-  "id": "exercise-121",
+  "id": "exercise-125",
   "level": "2",
-  "url": "exercises.html#exercise-121",
+  "url": "exercises.html#exercise-125",
   "type": "Exercise",
   "number": "37.6",
   "title": "Challenging Three.",
   "body": "Challenging Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.  "
 },
 {
-  "id": "exercise-122",
+  "id": "exercise-126",
   "level": "2",
-  "url": "exercises.html#exercise-122",
+  "url": "exercises.html#exercise-126",
   "type": "Exercise",
   "number": "37.7",
   "title": "Impossible One.",
   "body": "Impossible One  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue urna nulla. Aliquam eget euismod tellus. Maecenas nibh libero, venenatis a laoreet in, tempor sit amet sem. Morbi sit amet justo tempor velit auctor placerat. Maecenas nec lobortis orci. Aenean dictum enim lacus, ac blandit lacus elementum nec. Mauris porttitor neque volutpat tincidunt sollicitudin. Cras porta lectus ac facilisis tempor. Suspendisse in velit nisl. Sed convallis leo at nunc aliquet fermentum. Pellentesque feugiat at ex sed elementum. In porta vulputate ipsum sit amet consectetur.  "
 },
 {
-  "id": "exercise-123",
+  "id": "exercise-127",
   "level": "2",
-  "url": "exercises.html#exercise-123",
+  "url": "exercises.html#exercise-127",
   "type": "Exercise",
   "number": "37.8",
   "title": "Impossible Two.",
   "body": "Impossible Two  Aliquam sagittis ex at magna porttitor, quis scelerisque ligula malesuada. Vestibulum vitae mauris id nisi pretium ornare a id lectus. Nam suscipit magna id sem ultricies vestibulum. Nulla facilisi. Duis venenatis lectus massa, ac mollis nisi suscipit non. Sed et sapien vulputate, imperdiet nibh vel, lobortis nisl. Curabitur sagittis justo nibh. Nulla vulputate sodales justo at efficitur. Cras justo augue, mollis vitae nulla sed, vestibulum tincidunt ante. Vestibulum et lorem lectus. Maecenas accumsan lacus a nisi euismod rutrum eu dapibus justo. Etiam scelerisque a odio a euismod. Pellentesque vestibulum pellentesque nisi, a tempus erat cursus ac. Morbi ut auctor lectus.  "
 },
 {
-  "id": "exercise-124",
+  "id": "exercise-128",
   "level": "2",
-  "url": "exercises.html#exercise-124",
+  "url": "exercises.html#exercise-128",
   "type": "Exercise",
   "number": "37.9",
   "title": "Impossible Three.",
   "body": "Impossible Three  Nam congue ex nec justo iaculis maximus. Vestibulum lobortis magna sed urna auctor, vel dignissim massa posuere. In sed venenatis elit. Vivamus congue gravida tempus. Nunc quis fermentum nisi. Nullam hendrerit lorem et tellus semper, sit amet scelerisque purus lobortis. Quisque sollicitudin quis neque eu suscipit. Praesent volutpat justo quis magna vehicula molestie.  "
 },
 {
-  "id": "exercise-125",
+  "id": "exercise-129",
   "level": "2",
-  "url": "exercises.html#exercise-125",
+  "url": "exercises.html#exercise-129",
   "type": "Exercise",
   "number": "37.10",
   "title": "An Exercise in a Section.",
@@ -4231,9 +4285,9 @@ var ptx_lunr_docs = [
   "body": "An Exercise with a Hard-Coded Problem Number  Compute the definite integral , not as an approximate value from a Riemann sum, but as an exact value based of the limit by using the Fundamental Theorem.   An antiderivative of is , so by the FTC, !?! This is indeed an exciting result, but we are mostly interested in seeing that the sentence-ending punctuation is absorbed properly into the displayed equation.  "
 },
 {
-  "id": "exercise-127",
+  "id": "exercise-131",
   "level": "2",
-  "url": "exercises.html#exercise-127",
+  "url": "exercises.html#exercise-131",
   "type": "Exercise",
   "number": "37.12",
   "title": "",
@@ -4303,9 +4357,9 @@ var ptx_lunr_docs = [
   "body": " Lists of Exercises  Since <exercise> come in several flavors, we use pseudo-elements to specify the distinct types. There are not many reading questions but here is a list of all of them, by section, using a readingquestion pseudo-element.   And now a list of all the inline exercises, and including the title of every <section> , even if there is no inline exercise contained inside it. The pseudo-element is inlineexercise .   "
 },
 {
-  "id": "p-1486",
+  "id": "p-1489",
   "level": "2",
-  "url": "appendix-exercise-lists.html#p-1486",
+  "url": "appendix-exercise-lists.html#p-1489",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4328,6 +4382,24 @@ var ptx_lunr_docs = [
   "number": "I",
   "title": "Index",
   "body": " Index  There is an index manufactured at the end of the back matter. So we are talking about it here, rather than within the index, which is an impossibility. It contains some sample entries, and is not meant to be comprehensive. Look at the source of this XML file, searching on <idx> , to see how they are written. They may be placed inside of a a variety of structures, and their location greatly influences the cross-references produced in the HTML version of the index.  The latex version of the index is more traditional, using page numbers to reference locations. A newer package is used to create the index, and so there is no extra intermediate step required to process the index. The one downside of this convenience is that index entries may not be placed in the back colophon (which is the only subdivision that may follow the index).  There is an index entry about multicolumn lists which spans more than one page. This requires doubly-linked index entries, the first has the index content and points to the xml:id of the second. The second is an empty element, but points back to the xml:id of the first entry. So each has a marker and a reference, which allows the span of the index topic to cut across XML boundaries in the source. This is the mechanism to produce a page range in the latex index. See the source of this article for syntax details.   Bully Pulpit: Index Headings  Professionals do not capitalize the headings (entries) of an index, unless it is a proper noun (name, place, ). We do not provide any enforcement of this advice, nor any assistance. It is your responsibility to provide quality source material in this regard.    Note  Most all of the index entries below to page 2 (PDF output) are just from a suite of non-sensical tests. These are harder to recognize in the HTML output.   "
+},
+{
+  "id": "glossary-backmatter",
+  "level": "1",
+  "url": "glossary-backmatter.html",
+  "type": "Glossary",
+  "number": "",
+  "title": "Glossary",
+  "body": " glossary   A glossary may have a <headnote> , perhaps with some explanation. This glossary is placed in the back matter. Placement as a specialized division is another option, see .    bar  A part of foobar . See .    foobar  A synonym for the acronym FUBAR .   "
+},
+{
+  "id": "p-1501",
+  "level": "2",
+  "url": "glossary-backmatter.html#p-1501",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "foobar "
 },
 {
   "id": "references",

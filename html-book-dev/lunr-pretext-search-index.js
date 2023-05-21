@@ -213,7 +213,7 @@ var ptx_lunr_docs = [
   "url": "section-sets-and-equivalence-relations.html#theorem-1",
   "type": "Theorem",
   "number": "1.2.3",
-  "title": "De Morgan's Laws.",
+  "title": "De Morgan’s Laws.",
   "body": " De Morgan's Laws  Augustus De Morgan, 1806 1871  De Morgan's laws for sets   Let and be sets. Then  ;  .     (1) We must show that and . Let . Then . So is neither in nor in , by the definition of the union of sets. By the definition of the complement, and . Therefore, and we have .  To show the reverse inclusion, suppose that . Then and , and so and . Thus and so . Hence, and so .  The proof of (2) is left as an exercise.   "
 },
 {
@@ -3832,7 +3832,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "5.10",
   "title": "Horizontal Parsons Exercises",
-  "body": " Horizontal Parsons Exercises  Parsons Problem, SQL statement  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test   Parsons Problem, SQL statement, no randomization  Form the SQL statement by rearranging the four blocks. This version of this problem will always present the blocks in the same fixed order (but incorrect, hopefully!), as prescribed by the author in the source.   SELECT  *  FROM  test   Parsons Problem, SQL statement, automatic feedback  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  assert 1,1 == world assert 0,1 == hello assert 2,1 == 42  Parsons Problem, Natural Language  Form the sentence often used to show font samples. You can reuse blocks as needed.    quick  brown  fox  jumped  over  the  lazy  dog   Parsons Problem, Natural Language, with Distractors  Form the sentence often used to show font samples. Again, but now with distractors.    quick  brown  fox  jumped  foo  over  the  lazy  bar  dog   Parsons Problem, SQL statement, reusable  Form the SQL statement by rearranging the four blocks. Same problem as above, but we allow blocks to be reused (even though the solution does not require that).   SELECT  *  FROM  test   "
+  "body": " Horizontal Parsons Exercises  Parsons Problem, SQL statement  Form the SQL statement by rearranging the four blocks.    SELECT  *  FROM  test   Parsons Problem, SQL statement, no randomization  Form the SQL statement by rearranging the four blocks. This version of this problem will always present the blocks in the same fixed order (but incorrect, hopefully!), as prescribed by the author in the source.   SELECT  *  FROM  test   Parsons Problem, SQL statement, automatic feedback  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  assert 1,1 == world assert 0,1 == hello assert 2,1 == 42  Parsons Problem, Natural Language  Form the sentence often used to show font samples. You can reuse blocks as needed.    quick  brown  fox  jumped  over  the  lazy  dog   Parsons Problem, Natural Language, with Distractors  Form the sentence often used to show font samples. Again, but now with distractors.    quick  brown  fox  jumped  foo  over  the  lazy  bar  dog   Parsons Problem, SQL statement, reusable  Form the SQL statement by rearranging the four blocks. Same problem as above, but we allow blocks to be reused (even though the solution does not require that).   SELECT  *  FROM  test   "
 },
 {
   "id": "horizontal-parson-sql-statement-simple",
@@ -3841,7 +3841,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.10.1",
   "title": "Parsons Problem, SQL statement.",
-  "body": "Parsons Problem, SQL statement  Form the SQL statement by rearranging the four blocks.   SELECT  *  FROM  test  "
+  "body": "Parsons Problem, SQL statement  Form the SQL statement by rearranging the four blocks.    SELECT  *  FROM  test  "
 },
 {
   "id": "horizontal-parson-sql-statement-no-randomize",
@@ -3931,7 +3931,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "5.12",
   "title": "Clickable Area Exercises",
-  "body": " Clickable Area Exercises  Clickable Areas, Regular Text  Identify (by clicking, or by circling) all of the nouns in this quotation by Eleanor Roosevelt.   The future belongs to those who believe in the beauty of their  dreams .   The incorrect words are pronouns.   Clickable Areas, Code  Identify (by clicking, or by circling) all of the assignment statements in this Python function.   def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)   Remember, the operator = is used for assignment.   Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.     42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.   "
+  "body": " Clickable Area Exercises  Clickable Areas, Regular Text  Identify (by clicking, or by circling) all of the nouns in this quotation by Eleanor Roosevelt.   The future belongs to those who believe in the beauty of their  dreams .   The incorrect words are pronouns.   Clickable Areas, Code  Identify (by clicking, or by circling) all of the assignment statements in this Python function.   def main():   x = 4  for i in range(5):   y = i   if y > 2:  print(y)   Remember, the operator = is used for assignment.   Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.      42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.   "
 },
 {
   "id": "clickable-text",
@@ -3958,7 +3958,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.12.3",
   "title": "Clickable Areas, Text in a Table.",
-  "body": "Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.     42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.  "
+  "body": "Clickable Areas, Text in a Table  A two-dimensional array was created in Python with the list comprehension:  [[0 for x in range(3)] for y in range(2)]  Then the values were (mostly) changed from zeros and the final array is shown below.  Identify (by clicking, or by circling) all of the boolean values in the array.      42  True  'towel'    'true'  0  False    This second table has no <area> , in order to test CSS for tables.    42  True  'towel'    'true'  0  False     Python boolean variables are True and False . A value in quotation marks is a string, not a boolean.   Python boolean variables begin with capital latters.  "
 },
 {
   "id": "short-answer-exercises",
