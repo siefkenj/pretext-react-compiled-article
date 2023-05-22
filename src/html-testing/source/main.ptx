@@ -258,6 +258,42 @@
       </figure>
 
     </chapter>
+    <chapter xml:id="test-8">
+      <title>test-8</title>
+      <p>
+        In this chapter we test whether a listing gets its code syntax-highlighted.
+      </p>
+
+      <listing xml:id="test-8-listing-c">
+          <caption>C Version of <q>Hello, World!</q></caption>
+          <program language="c">
+              <input>
+              /* Hello World program */
+
+              #include&lt;stdio.h&gt;
+
+              main()
+              {
+                  printf("Hello, World!");
+              }
+              </input>
+          </program>
+      </listing>
+
+      <program language="matlab" xml:id="test-8-listing-matlab">
+          <input>
+          a = [0:0.5:5]; % A Matlab comment here
+          b = 2*a.^2 + 3*a -5;
+          c = 1.2*a.^2+4*a-3;
+          subplot(1,2,1)
+          plot(a,b,'-or','MarkerFaceColor','g','LineWidth',2)
+          xlabel('X'); ylabel('Y'); legend('Curve ','Location','NorthWest')
+          subplot(1,2,2)
+          plot(a,c,'--ok','MarkerFaceColor','c','LineWidth',2)
+          xlabel('X'); ylabel('Y'); legend('Curve 2','Location','NorthWest')
+          </input>
+      </program>
+    </chapter>
   </book>
 
 </pretext>
