@@ -116,6 +116,24 @@ var ptx_lunr_docs = [
   "number": "7.0.1",
   "title": "",
   "body": " An image, for testing purposes.     "
+},
+{
+  "id": "test-8",
+  "level": "1",
+  "url": "test-8.html",
+  "type": "Chapter",
+  "number": "8",
+  "title": "test-8",
+  "body": " test-8  In this chapter we test whether a listing gets its code syntax-highlighted.   C Version of Hello, World!   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }     a = [0:0.5:5]; % A Matlab comment here b = 2*a.^2 + 3*a -5; c = 1.2*a.^2+4*a-3; subplot(1,2,1) plot(a,b,'-or','MarkerFaceColor','g','LineWidth',2) xlabel('X'); ylabel('Y'); legend('Curve ','Location','NorthWest') subplot(1,2,2) plot(a,c,'--ok','MarkerFaceColor','c','LineWidth',2) xlabel('X'); ylabel('Y'); legend('Curve 2','Location','NorthWest')   "
+},
+{
+  "id": "test-8-listing-c",
+  "level": "2",
+  "url": "test-8.html#test-8-listing-c",
+  "type": "Listing",
+  "number": "8.0.1",
+  "title": "",
+  "body": " C Version of Hello, World!   \/* Hello World program *\/ #include<stdio.h> main() { printf(\"Hello, World!\"); }   "
 }
 ]
 

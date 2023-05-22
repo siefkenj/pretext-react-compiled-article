@@ -28,6 +28,9 @@
       <division type="chapter" number="7" id="test-7" url="test-7.html#test-7">
         <title>test-7</title>
       </division>
+      <division type="chapter" number="8" id="test-8" url="test-8.html#test-8">
+        <title>test-8</title>
+      </division>
     </division>
   </division>
 </toc>
