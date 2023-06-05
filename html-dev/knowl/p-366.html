@@ -12,7 +12,19 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Here is a totally bogus <abbr class="initialism">URL</abbr>, which contains every possible legal character, so if this fails to convert there is some problematic character.  In order to test the use of a percent sign (<code class="code-inline tex2jax_ignore">%</code>) in a URL, we follow it by two hex digits, specifically, <code class="code-inline tex2jax_ignore">58</code>, which is a way to represent the character <code class="code-inline tex2jax_ignore">X</code> in a <abbr class="initialism">URL</abbr>.  Normal text, monospace text, <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> with just <code class="code-inline tex2jax_ignore">@href</code>, <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> with <code class="code-inline tex2jax_ignore">@href</code> and <code class="code-inline tex2jax_ignore">@visual</code>, <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> with <code class="code-inline tex2jax_ignore">@href</code>, <code class="code-inline tex2jax_ignore">@visual</code> and content.  Notice how the various versions do, or do not, line-break in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>/PDF output, including the (potentially confusing) use of a use of a hyphen in the normal text version</div>
+<div class="para logical">
+<div class="para">A <code class="code-inline tex2jax_ignore">&lt;url&gt;</code> element with content will get a footnote, by containing the (simplified) URL in the highly-recommended <code class="code-inline tex2jax_ignore">@visual</code> attribute.  If you do not provide the <code class="code-inline tex2jax_ignore">@visual</code> attribute in this case, then you will get the <code class="code-inline tex2jax_ignore">@href</code> value repeated, possibly with some editing.  If you insist, you can make the <code class="code-inline tex2jax_ignore">@visual</code> attribute identical to the <code class="code-inline tex2jax_ignore">@href</code> attribute.  Some tests:</div>
+<ul class="disc">
+<li><div class="para">
+<a class="external" href="http://example.com/" target="_blank">With a useful <code class="code-inline tex2jax_ignore">@visual</code> attribute</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-17-hidden.html" title="Footnote 8.2"><sup> 2 </sup></a>
+</div></li>
+<li><div class="para">
+<a class="external" href="http://example.com/" target="_blank">With a duplicate <code class="code-inline tex2jax_ignore">@visual</code> attribute</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-18-hidden.html" title="Footnote 8.3"><sup> 3 </sup></a>
+</div></li>
+<li><div class="para">
+<a class="external" href="http://example.com/" target="_blank">With no <code class="code-inline tex2jax_ignore">@visual</code> attribute</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-19-hidden.html" title="Footnote 8.4"><sup> 4 </sup></a>, so an edited one is formulated (no protocol)</div></li>
+</ul>
+</div>
 <span class="incontext"><a href="text-in-paragraphs.html#p-366" class="internal">in-context</a></span>
 </body>
 </html>

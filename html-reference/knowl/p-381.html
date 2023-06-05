@@ -12,7 +12,15 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">A Jupyter notebook allows a mix of <abbr class="initialism">HTML</abbr> (our logistical preference for a conversion) and Markown (another set of special characters and their escaped versions).  Certain pairs of delimiters, when appearing in consecutive <abbr class="initialism">HTML</abbr> <code class="code-inline tex2jax_ignore">&lt;code&gt;</code> elements require extraordinary care.  But the one nut we cannot crack is pairs of dollar signs.  So the next paragraph is known to render badly in a Jupyter notebook, but should otherwise be a bit boring.</div>
+<div class="para logical">
+<div class="para">We test the three pre-defined <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> macros for &amp;, &lt;, and &gt; with a pair of aligned equations:</div>
+<div class="displaymath process-math">
+\begin{align*}
+a^2 + b^2\amp\lt c^2\\
+c^2\amp\gt a^2 + b^2
+\end{align*}
+</div>
+</div>
 <span class="incontext"><a href="text-in-paragraphs.html#p-381" class="internal">in-context</a></span>
 </body>
 </html>

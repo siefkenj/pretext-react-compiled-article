@@ -12,11 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">Look carefully at the source and rendering of this example as <abbr class="initialism">HTML</abbr>.  The functions to choose from via radio buttons, and the change in <span class="process-math">\(x\text{,}\)</span> denoted later as <span class="process-math">\(h\text{,}\)</span> are being rendered as mathematics by the Javascript MathJax library.  However, this cannot be accomplished with simply <code class="code-inline tex2jax_ignore">$...$</code> nor by simply <code class="code-inline tex2jax_ignore">\(...\)</code>, but instead by using the <code class="code-inline tex2jax_ignore">\(...\)</code> and then also wrapping that in a <code class="code-inline tex2jax_ignore">&lt;span&gt;</code> element with a <code class="code-inline tex2jax_ignore">@class</code> attribute set to <code class="code-inline tex2jax_ignore">process-math</code>. (The latter is how we instruct MathJax as to which parts of a page to process, or not).  So to have MathJax render a nice <span class="process-math">\(x^2\)</span> in this context (math inside <abbr class="initialism">HTML</abbr> inside a <code class="code-inline tex2jax_ignore">&lt;slate&gt;</code> inside an <code class="code-inline tex2jax_ignore">&lt;interactive&gt;</code>) would be accomplished with</div>
-<pre class="code-display tex2jax_ignore">&lt;span class="process-math"&gt;x^2&lt;/span&gt;
-</pre>
-</div>
+<div class="para">Entirely similar to using an HTML5 <code class="code-inline tex2jax_ignore">canvas</code> element (<a href="section-interactive-authored.html#interactive-html5-canvas" class="internal" title="Subsection 14.1: HTML5 Canvas">14.1</a>), it is possible to control an <abbr class="initialism">SVG</abbr> element with Javascript.  This example is from Mark McClure.</div>
 <span class="incontext"><a href="section-interactive-authored.html#p-801" class="internal">in-context</a></span>
 </body>
 </html>

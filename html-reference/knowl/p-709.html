@@ -12,7 +12,13 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">A list in a paragraph is a construction in HTML that browsers try to correct, which leads to unpredictable results, so we have to decompose an author’s paragraph with lists into a sequence of HTML paragraphs, interrupted by lists.  This subsection is only relevant to HTML output, and only for testing.</div>
+<div class="para logical">
+<div class="para">Introductory text.</div>
+<ol class="upper-alpha"><li><div class="para">First item, first list.</div></li></ol>
+<div class="para">Intermediate text.</div>
+<ol class="lower-alpha"><li><div class="para">First item, second list.</div></li></ol>
+<div class="para">Concluding text.</div>
+</div>
 <span class="incontext"><a href="lists.html#p-709" class="internal">in-context</a></span>
 </body>
 </html>

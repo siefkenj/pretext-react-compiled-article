@@ -106,15 +106,9 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runtime.781dd7d867d0f314.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.b937fb9c1f129732.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.f9add1ca35d5ad93.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runtime.6202a67446f93426.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.f9add1ca35d5ad93.css">
 <link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.1f1f63d2cda36a4d.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48811660-1"></script><script>  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-48811660-1');
-</script><!--End: Google Global Site Tag code-->
 </head>
 <body id="pretext-SA" class="pretext article ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -578,7 +572,7 @@ true);
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-6"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6</span> <span class="title">Some Advanced Ideas</span>
 </h2>
-<div class="para logical" id="p-273">
+<div class="para logical" id="p-274">
 <div class="para">The multi-row displayed mathematics in the proof of the Fundamental Theorem had equations aligned on the equals signs via the &amp; character.  Sometimes you don’t want that.  Here is an example with some differential equations, with each equation centered and unnumbered,</div>
 <div class="displaymath process-math" id="md-2">
 \begin{gather*}
@@ -588,9 +582,9 @@ true);
 </div>
 <div class="para"> Just prior to this sentence, in the middle of this paragraph, is an <code class="code-inline tex2jax_ignore">&lt;idx&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;notation&gt;</code>, adjacent, but separated by some whitespace in the authored source.  That insignificant whitespace will be removed akways, which will be a (slightly) noticeable improvement in the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output.  We test referencing notation here, placed <em class="emphasis">before</em> the sentence-ending period and right after some inline mathematics—for <span class="process-math">\(\mathbb{Z}_n\)</span>.</div>
 </div>
-<div class="para" id="p-274">
+<div class="para" id="p-275">
 <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> has a device where you can interrupt a sequence of equations with a small amout of text and preserve the equation alignment on either side.  Here are two tests of that device, with aligned equations and non-aligned equations.  Study the source to see use and differences.  (The math does not make sense.)</div>
-<div class="para logical" id="p-275">
+<div class="para logical" id="p-276">
 <div class="para">Aligned and numbered first.</div>
 <div class="displaymath process-math" id="mdn-2">
 \begin{align}
@@ -604,7 +598,7 @@ true);
 \end{align}
 </div>
 </div>
-<div class="para logical" id="p-276">
+<div class="para logical" id="p-277">
 <div class="para">Now with no numbers and no alignment.  We include two cross-references in the <code class="code-inline tex2jax_ignore">intertext</code> portion for testing.</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/corollary-FTC-derivative.html" id="md-3">
 \begin{gather*}
@@ -618,8 +612,8 @@ true);
 \end{gather*}
 </div>
 </div>
-<div class="para" id="p-277">Tables can get quite complex.  Simple ones are simpler, such as this example of numerical computations for Euler’s method in just a bit.</div>
-<div class="para" id="p-278">But first we make a figure with two very simple tables next to each other.  This causes the very first instance of <code class="code-inline tex2jax_ignore">&lt;table&gt;</code> to actually be a “subtable”, which exposes a bug provoked by Emiliano Vega and fixed around 2020-08-06. (So we have to place this early to create the same behavior that exposed the bug.)</div>
+<div class="para" id="p-278">Tables can get quite complex.  Simple ones are simpler, such as this example of numerical computations for Euler’s method in just a bit.</div>
+<div class="para" id="p-279">But first we make a figure with two very simple tables next to each other.  This causes the very first instance of <code class="code-inline tex2jax_ignore">&lt;table&gt;</code> to actually be a “subtable”, which exposes a bug provoked by Emiliano Vega and fixed around 2020-08-06. (So we have to place this early to create the same behavior that exposed the bug.)</div>
 <figure class="figure figure-like" id="figure-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel fixed-width top" style="width:50%;"><figure class="table table-like" id="table-1"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">One</td></tr></table>
 <figcaption><span class="codenumber">(a)</span><span class="space"> </span>First</figcaption></figure></div>

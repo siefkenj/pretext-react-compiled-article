@@ -12,7 +12,11 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Select a function with the radio buttons, then use the checkbox to add the secant line.  The denominator of the difference quotient, <span class="process-math">\(h\text{,}\)</span> can be adjusted with the slider and the red point will react to the different values.  The green point is the point of tangency, and can be dragged with the mouse.</div>
+<div class="para logical">
+<div class="para">Look carefully at the source and rendering of this example as <abbr class="initialism">HTML</abbr>.  The functions to choose from via radio buttons, and the change in <span class="process-math">\(x\text{,}\)</span> denoted later as <span class="process-math">\(h\text{,}\)</span> are being rendered as mathematics by the Javascript MathJax library.  However, this cannot be accomplished with simply <code class="code-inline tex2jax_ignore">$...$</code> nor by simply <code class="code-inline tex2jax_ignore">\(...\)</code>, but instead by using the <code class="code-inline tex2jax_ignore">\(...\)</code> and then also wrapping that in a <code class="code-inline tex2jax_ignore">&lt;span&gt;</code> element with a <code class="code-inline tex2jax_ignore">@class</code> attribute set to <code class="code-inline tex2jax_ignore">process-math</code>. (The latter is how we instruct MathJax as to which parts of a page to process, or not).  So to have MathJax render a nice <span class="process-math">\(x^2\)</span> in this context (math inside <abbr class="initialism">HTML</abbr> inside a <code class="code-inline tex2jax_ignore">&lt;slate&gt;</code> inside an <code class="code-inline tex2jax_ignore">&lt;interactive&gt;</code>) would be accomplished with</div>
+<pre class="code-display tex2jax_ignore">&lt;span class="process-math"&gt;x^2&lt;/span&gt;
+</pre>
+</div>
 <span class="incontext"><a href="section-interactive-authored.html#p-802" class="internal">in-context</a></span>
 </body>
 </html>
