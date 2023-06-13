@@ -15,20 +15,38 @@
 <meta property="og:image" content="https://pretextbook.org/examples/noparts/decorative/html/external/cover_aata_2014.png">
 <meta property="book:title" content="PreTeXt Sample Book">
 <meta property="book:author" content="Thomas W. Judson">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -38,21 +56,31 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
-    /* Mathjax typesetting operation is under the control of React */
-    typeset: false,
-  },
+  "startup": {
+    "typeset": false
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>js_version = 0.3</script><script type="module" defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,15 +112,15 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev1';
+eBookConfig.runestone_version = '7.0.0dev2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runtime.6202a67446f93426.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.1f1f63d2cda36a4d.css">
 </head>
 <body id="PTXSB" data-react-in-use="yes" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -506,7 +534,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="indexletter" id="indexletter-s">
 <div class="indexitem">Sieve of Eratosthenes<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/prime-number-program-indent-yes.html" title="Exercise 5.9.2: Parsons Problem, Programming">Exercise</a> <a href="" class="xref" data-knowl="./knowl/prime-number-program-indent-no.html" title="Exercise 5.9.3: Parsons Problem, Programming">Exercise</a> <a href="" class="xref" data-knowl="./knowl/prime-number-program-numbered-right.html" title="Exercise 5.9.5: Parsons Problem, Programming">Exercise</a> <a href="" class="xref" data-knowl="./knowl/sieve-primes.html" title="Exercise 2.5.1: The Sieve of Eratosthenes">Exercise</a></span>
 </div>
-<div class="indexitem">stop signs<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/multiple-choice-not-randomized.html" title="Exercise 5.8.1: Multiple-Choice, Not Randomized, One Answer">Exercise</a> <a href="" class="xref" data-knowl="./knowl/multiple-choice-multiple-answers.html" title="Exercise 5.8.2: Multiple-Choice, Not Randomized, Multiple Answers">Exercise</a> <a href="" class="xref" data-knowl="./knowl/multiple-choice-randomized.html" title="Exercise 5.8.3: Multiple-Choice, Randomized, One Answer">Exercise</a> <a href="" class="xref" data-knowl="./knowl/multiple-choice-randomized-multiple-answers.html" title="Exercise 5.8.4: Multiple-Choice, Randomized, Multiple Answers">Exercise</a> <a href="" class="xref" data-knowl="./knowl/mathematical-multiple-choice-multiple-answers.html" title="Exercise 5.8.5: Mathematical Multiple-Choice, Not Randomized, Multiple Answers">Exercise</a> <a href="" class="xref" data-knowl="./knowl/multiple-choice-not-randomized-timed.html" title="Exercise 5.15.2: Multiple-Choice, Not Randomized, One Answer">Exercise</a> <a href="" class="xref" data-knowl="./knowl/activity-multiple-choice-multiple-answers.html" title="Activity 5.16.1: Multiple-Choice, Not Randomized, Multiple Answers">Activity</a> <a href="" class="xref" data-knowl="./knowl/exploration-2.html" title="Exploration 5.16.2: Exploring Two-Deep">Exploration</a> <a href="" class="xref" data-knowl="./knowl/exploration-2.html" title="Exploration 5.16.2: Exploring Two-Deep">Exploration</a></span>
+<div class="indexitem">stop signs<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/multiple-choice-not-randomized.html" title="Exercise 5.8.1: Multiple-Choice, Not Randomized, One Answer">Exercise</a> <a href="" class="xref" data-knowl="./knowl/multiple-choice-multiple-answers.html" title="Exercise 5.8.2: Multiple-Choice, Not Randomized, Multiple Answers">Exercise</a> <a href="" class="xref" data-knowl="./knowl/multiple-choice-randomized.html" title="Exercise 5.8.3: Multiple-Choice, Randomized, One Answer">Exercise</a> <a href="" class="xref" data-knowl="./knowl/multiple-choice-randomized-multiple-answers.html" title="Exercise 5.8.4: Multiple-Choice, Randomized, Multiple Answers">Exercise</a> <a href="" class="xref" data-knowl="./knowl/mathematical-multiple-choice-multiple-answers.html" title="Exercise 5.8.5: Mathematical Multiple-Choice, Not Randomized, Multiple Answers">Exercise</a> <a href="" class="xref" data-knowl="./knowl/multiple-choice-not-randomized-timed.html" title="Exercise 5.15.2: Multiple-Choice, Not Randomized, One Answer">Exercise</a> <a href="" class="xref" data-knowl="./knowl/activity-multiple-choice-multiple-answers.html" title="Activity 5.16.1: Multiple-Choice, Not Randomized, Multiple Answers">Activity</a> <a href="" class="xref" data-knowl="./knowl/exploration-two-deep.html" title="Exploration 5.16.2: Exploring Two-Deep">Exploration</a> <a href="" class="xref" data-knowl="./knowl/exploration-two-deep.html" title="Exploration 5.16.2: Exploring Two-Deep">Exploration</a></span>
 </div>
 <div class="indexitem">Subgroup</div>
 <div class="subindexitem">cyclic<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-626.html" title="Paragraph">Paragraph</a></span>
@@ -520,7 +548,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="indexletter" id="indexletter-u"><div class="indexitem">Universal Product Code<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/exercise-131.html" title="Exercise 3.6.1: UPC Symbols">Exercise</a></span>
 </div></div>
-<div class="indexletter" id="indexletter-v"><div class="indexitem">vector space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/vector-space-dimension.html" title="Exercise 5.7.1: True/False">Exercise</a> <a href="" class="xref" data-knowl="./knowl/vector-space-dimension-timed.html" title="Exercise 5.15.1: True/False">Exercise</a> <a href="" class="xref" data-knowl="./knowl/exercise-231.html" title="Checkpoint 5.16.1: True/False and Explain">Checkpoint</a></span>
+<div class="indexletter" id="indexletter-v"><div class="indexitem">vector space<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/vector-space-dimension.html" title="Exercise 5.7.1: True/False">Exercise</a> <a href="" class="xref" data-knowl="./knowl/vector-space-dimension-timed.html" title="Exercise 5.15.1: True/False">Exercise</a> <a href="" class="xref" data-knowl="./knowl/true-false-exercise-with-tasks.html" title="Checkpoint 5.16.1: True/False and Explain">Checkpoint</a></span>
 </div></div>
 <div class="indexletter" id="indexletter-w">
 <div class="indexitem">Well-defined map<span class="indexknowl">, <a href="" class="xref" data-knowl="./knowl/p-86.html" title="Paragraph">Paragraph</a></span>

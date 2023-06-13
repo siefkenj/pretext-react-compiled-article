@@ -15,20 +15,38 @@
 <meta property="og:image" content="https://pretextbook.org/examples/sample-article/html/external/misc/book-cover-google-art-project.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -38,21 +56,31 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
-    /* Mathjax typesetting operation is under the control of React */
-    typeset: false,
-  },
+  "startup": {
+    "typeset": false
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>js_version = 0.3</script><script type="module" defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,15 +111,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev1';
+eBookConfig.runestone_version = '7.0.0dev2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runtime.6202a67446f93426.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.1f1f63d2cda36a4d.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body id="pretext-SA" data-react-in-use="yes" class="pretext article ignore-math">
@@ -805,7 +833,7 @@ main()
 <div class="para" id="p-1271">The same effect can be had by specifying that the <code class="code-inline tex2jax_ignore">@width</code> attribute have the value <code class="code-inline tex2jax_ignore">auto</code>, but do not specify any <code class="code-inline tex2jax_ignore">@margins</code>.  We test multiple footnotes in a <code class="code-inline tex2jax_ignore">&lt;tabular&gt;</code>, not included in a <code class="code-inline tex2jax_ignore">&lt;table&gt;</code>.</div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
-<th scope="col" class="l m b0 r0 l0 t0 lines">State<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-92" id="fn-92"><sup> 1 </sup></a>
+<th scope="col" class="l m b0 r0 l0 t0 lines">State<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-93" id="fn-93"><sup> 1 </sup></a>
 </th>
 <th scope="col" class="l m b0 r0 l0 t0 lines">Population</th>
 <th scope="col" class="l m b0 r0 l0 t0 lines">Area (sq. mi.)</th>
@@ -825,7 +853,7 @@ main()
 </tr>
 <tr>
 <td class="l m b0 r0 l0 t0 lines">California</td>
-<td class="l m b0 r0 l0 t0 lines">39,512,223<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-93" id="fn-93"><sup> 2 </sup></a>
+<td class="l m b0 r0 l0 t0 lines">39,512,223<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-94" id="fn-94"><sup> 2 </sup></a>
 </td>
 <td class="l m b0 r0 l0 t0 lines">163,696</td>
 <td class="l m b0 r0 l0 t0 lines">1850</td>
@@ -1347,8 +1375,8 @@ main()
 </table>
 <figcaption><span class="codenumber">(b)</span><span class="space"> </span>Function Values</figcaption></figure></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">28.31<span class="period">.</span></span><span class="space"> </span>Geography and Mathematics</figcaption></figure></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-92"><div class="fn">Only from the West Coast.</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-93"><div class="fn">Wow! That is as big as many countries.</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">28.31<span class="period">.</span></span><span class="space"> </span>Geography and Mathematics</figcaption></figure></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-93"><div class="fn">Only from the West Coast.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-94"><div class="fn">Wow! That is as big as many countries.</div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="poetry.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="advanced-numbering.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

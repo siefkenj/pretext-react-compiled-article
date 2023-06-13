@@ -15,20 +15,38 @@
 <meta property="og:image" content="https://pretextbook.org/examples/sample-article/html/external/misc/book-cover-google-art-project.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -38,21 +56,31 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
-    /* Mathjax typesetting operation is under the control of React */
-    typeset: false,
-  },
+  "startup": {
+    "typeset": false
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>js_version = 0.3</script><script type="module" defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,15 +111,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev1';
+eBookConfig.runestone_version = '7.0.0dev2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runtime.6202a67446f93426.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.1f1f63d2cda36a4d.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body id="pretext-SA" data-react-in-use="yes" class="pretext article ignore-math">
@@ -460,20 +488,20 @@ true);
 </h3>
 <div class="para" id="p-405">If you have raster images (photographs, etc.) then they are specified with complete filenames, as above in Figure <a href="" class="xref" data-knowl="./knowl/figure-function-derivative.html" title="Figure 5.2">5.2</a> or just below.</div>
 <figure class="figure figure-like" id="figure-3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/nz-landscape.jpg" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.1<span class="period">.</span></span><span class="space"> </span>New Zealand Landscape, <a class="external" href="https://commons.wikimedia.org/wiki/File:NZ_Landscape_from_the_van.jpg" target="_blank"><code class="code-inline tex2jax_ignore">commons.wikimedia.org</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-27" id="fn-27"><sup> 1 </sup></a>, CC-BY-SA-2.0</figcaption></figure><div class="para" id="p-406">If you have existing images that are vector graphics, then PDF format works best for <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output and SVG format works best for HTML.  The utility <code class="code-inline tex2jax_ignore">pdf2svg</code> works well for converting PDF to SVG.  In this case, specify your source as a filename, but leave off the file extension, and the appropriate version will be used for the current output format.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.1<span class="period">.</span></span><span class="space"> </span>New Zealand Landscape, <a class="external" href="https://commons.wikimedia.org/wiki/File:NZ_Landscape_from_the_van.jpg" target="_blank"><code class="code-inline tex2jax_ignore">commons.wikimedia.org</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 1 </sup></a>, CC-BY-SA-2.0</figcaption></figure><div class="para" id="p-406">If you have existing images that are vector graphics, then PDF format works best for <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output and SVG format works best for HTML.  The utility <code class="code-inline tex2jax_ignore">pdf2svg</code> works well for converting PDF to SVG.  In this case, specify your source as a filename, but leave off the file extension, and the appropriate version will be used for the current output format.</div>
 <div class="para" id="p-407">The image below is provided from a PDF file in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> output, and was converted to an SVG for use with the HTML output.  It has been explicitly scaled to a width of 65% of the text width.</div>
 <figure class="figure figure-like" id="figure-complete-graph"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="external/images/complete-graph.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.2<span class="period">.</span></span><span class="space"> </span>Complete graph on <span class="process-math">\(16\)</span> vertices, from <code class="code-inline tex2jax_ignore">www.texample.net</code></figcaption></figure><article class="remark remark-like" id="remark-2"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">9.3</span><span class="period">.</span><span class="space"> </span><span class="title">Footnote Buried.</span>
 </h4> <div class="para" id="p-408">Nested <code class="code-inline tex2jax_ignore">tcolorbox</code> (in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> conversion) need special care when footnotes are interior.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:30%;">
-<div class="sbspanel top" style="width:50%;"><div class="para" id="p-409">A paragraph interior to a <code class="code-inline tex2jax_ignore">sidebyside</code> with a footnote<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 2 </sup></a> buried inside the paragraph.</div></div>
+<div class="sbspanel top" style="width:50%;"><div class="para" id="p-409">A paragraph interior to a <code class="code-inline tex2jax_ignore">sidebyside</code> with a footnote<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 2 </sup></a> buried inside the paragraph.</div></div>
 <div class="sbspanel top" style="width:50%;"><div class="para" id="p-410">A second paragraph, just to avoid a one-panel warning.</div></div>
 </div></div> <div class="para" id="p-411">The final paragraph of this remark, randomly placed, to test footnotes in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> conversions.</div></article></section><section class="subsection" id="subsection-32"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">9.2</span> <span class="title"><span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> images</span>
 </h3>
-<div class="para" id="p-412">There are several graphics engine packages that a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> document can employ. Code from these packages renders diagrams automatically as part of normal processing of <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> files.  For HTML output the <code class="code-inline tex2jax_ignore">pretext</code> script produces SVG versions of the pictures.  The script can also produce standalone <span class="latex-logo">T<span class="E">e</span>X</span> source files, PDFs, PNGs, and EPSs. The packages should be loaded in <code class="code-inline tex2jax_ignore">docinfo/latex-image-preamble</code>, which is also where global package settings should be made. If any ampersands occur in your <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> code you should use the <code class="code-inline tex2jax_ignore">\amp</code> macro pre-defined by PreTeXt. These first examples are from the <a class="external" href="http://www.texample.net/tikz/examples/" target="_blank">TeXample.net</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 3 </sup></a> site.  Note that any <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> macros used in the rest of your document may be employed in the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>-standalone or Asymptote diagrams (with this feature coming to Sage graphics next?).</div>
+<div class="para" id="p-412">There are several graphics engine packages that a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> document can employ. Code from these packages renders diagrams automatically as part of normal processing of <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> files.  For HTML output the <code class="code-inline tex2jax_ignore">pretext</code> script produces SVG versions of the pictures.  The script can also produce standalone <span class="latex-logo">T<span class="E">e</span>X</span> source files, PDFs, PNGs, and EPSs. The packages should be loaded in <code class="code-inline tex2jax_ignore">docinfo/latex-image-preamble</code>, which is also where global package settings should be made. If any ampersands occur in your <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> code you should use the <code class="code-inline tex2jax_ignore">\amp</code> macro pre-defined by PreTeXt. These first examples are from the <a class="external" href="http://www.texample.net/tikz/examples/" target="_blank">TeXample.net</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 3 </sup></a> site.  Note that any <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> macros used in the rest of your document may be employed in the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>-standalone or Asymptote diagrams (with this feature coming to Sage graphics next?).</div>
 <figure class="figure figure-like" id="figure-tikz-electronics"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/tikz-electronics.svg" role="img" class="contained" alt="A pile of electronic components wired together"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.4<span class="period">.</span></span><span class="space"> </span>TikZ Electronics Diagram</figcaption></figure><div class="para" id="p-413">The next example began life in <a class="external" href="http://www.frontiernet.net/~eugene.ressler/" target="_blank">Sketch</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 4 </sup></a>, which will output TikZ code (though the code has been edited by hand for readability).</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.4<span class="period">.</span></span><span class="space"> </span>TikZ Electronics Diagram</figcaption></figure><div class="para" id="p-413">The next example began life in <a class="external" href="http://www.frontiernet.net/~eugene.ressler/" target="_blank">Sketch</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-31" id="fn-31"><sup> 4 </sup></a>, which will output TikZ code (though the code has been edited by hand for readability).</div>
 <figure class="figure figure-like" id="figure-tikz-cone3D"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/tikz-cone.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.5<span class="period">.</span></span><span class="space"> </span>TikZ Cone Drawing</figcaption></figure><div class="para" id="p-414">The pgfplots package was included in <code class="code-inline tex2jax_ignore">docinfo/latex-image-preamble</code>. Here, it is used. Also, here we demonstrate using <code class="code-inline tex2jax_ignore">\amp</code> where you would normally use an ampersand in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>. There are known issues with <code class="code-inline tex2jax_ignore">xelatex</code> processing any gradient shading in <code class="code-inline tex2jax_ignore">tikz</code>. To (successfully) create the gradient shading in the 3D image here, you may need to use <code class="code-inline tex2jax_ignore">pdflatex</code> until <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> developers resolve this issue.</div>
 <figure class="figure figure-like" id="figure-pgfplots-demo"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/pgfplots-demo.svg" role="img" class="contained" alt="A pgfplots example, with a function, a parametric curve, and some points plotted."></div>
@@ -509,7 +537,7 @@ true);
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.10<span class="period">.</span></span><span class="space"> </span>Aymptote Lever, plus Integral</figcaption></figure></section><section class="subsection" id="graphics-asymptote-webgl"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">9.4</span> <span class="title">Asymptote, 3D via WebGL</span>
 </h3>
-<div class="para" id="p-423">Asymptote can create an <abbr class="initialism">HTML</abbr> file that is an interactive version of a 3D shape.  At this writing (2020-05-18) support via the <code class="code-inline tex2jax_ignore">pretext</code> script is evolving.  Plus, you will need newer versions of Asymptote and the <code class="code-inline tex2jax_ignore">dvisvgm</code> utility to duplicate all of the results being displayed here in this testing document.  The other distinction is that the author needs to provide the aspect ratio of the figure, and this should be placed on the <code class="code-inline tex2jax_ignore">&lt;asymptote&gt;</code> element (not on the <code class="code-inline tex2jax_ignore">&lt;image&gt;</code> element).  <a href="" class="xref" data-knowl="./knowl/figure-asymptote-workcone.html" title="Figure 9.11">Figure 9.11</a> is from the <a class="external" href="http://asymptote.sourceforge.net/gallery/3Dwebgl/" target="_blank">Asymptote Gallery</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-31" id="fn-31"><sup> 5 </sup></a>.</div>
+<div class="para" id="p-423">Asymptote can create an <abbr class="initialism">HTML</abbr> file that is an interactive version of a 3D shape.  At this writing (2020-05-18) support via the <code class="code-inline tex2jax_ignore">pretext</code> script is evolving.  Plus, you will need newer versions of Asymptote and the <code class="code-inline tex2jax_ignore">dvisvgm</code> utility to duplicate all of the results being displayed here in this testing document.  The other distinction is that the author needs to provide the aspect ratio of the figure, and this should be placed on the <code class="code-inline tex2jax_ignore">&lt;asymptote&gt;</code> element (not on the <code class="code-inline tex2jax_ignore">&lt;image&gt;</code> element).  <a href="" class="xref" data-knowl="./knowl/figure-asymptote-workcone.html" title="Figure 9.11">Figure 9.11</a> is from the <a class="external" href="http://asymptote.sourceforge.net/gallery/3Dwebgl/" target="_blank">Asymptote Gallery</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 5 </sup></a>.</div>
 <figure class="figure figure-like" id="figure-asymptote-workcone"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;">
 <div class="asymptote-box" style="padding-top: 108.63309352518%"><iframe src="generated/asymptote/asymptote-workcone.html" class="asymptote"></iframe></div>
 <div style="text-align: center;"><a href="https://pretextbook.org/examples/sample-article/html/generated/asymptote/asymptote-workcone.html">Link to full-sized image</a></div>
@@ -558,7 +586,7 @@ true);
 <figure class="figure figure-like" id="figure-sage-double-plot"><div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="generated/sageplot/sageplot-updown.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.15<span class="period">.</span></span><span class="space"> </span>Two Sage plots on one set of axes</figcaption></figure><div class="para" id="p-428">Sage code comprised of just a single line was once mishandled, leading to <em class="emphasis">no ouput</em>.  From Jean-Sébastien Turcotte we have the example that revealed the problem.</div>
 <figure class="figure figure-like" id="figure-sage-exosagevec1"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="generated/sageplot/sageplot-exosagevec1.svg" role="img" class="contained" alt="Les vecteurs \(\vec{u}\) et \(\vec{v}\)sont tracés tel que demandé, respectivement en rouge et en bleu."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.16<span class="period">.</span></span><span class="space"> </span>Les vecteurs <span class="process-math">\(\vec{u}\)</span> et <span class="process-math">\(\vec{v}\)</span></figcaption></figure><div class="para" id="p-429">The following examples are from the <a class="external" href="http://www.sagemath.org/tour-graphics.html" target="_blank">Sage Tour</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 6 </sup></a>.  We package them into a <code class="code-inline tex2jax_ignore">sidebyside</code> layout element, see <a href="section-side-by-side.html" class="internal" title="Section 25: Side-By-Side Panels">Section 25</a>.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.16<span class="period">.</span></span><span class="space"> </span>Les vecteurs <span class="process-math">\(\vec{u}\)</span> et <span class="process-math">\(\vec{v}\)</span></figcaption></figure><div class="para" id="p-429">The following examples are from the <a class="external" href="http://www.sagemath.org/tour-graphics.html" target="_blank">Sage Tour</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-33" id="fn-33"><sup> 6 </sup></a>.  We package them into a <code class="code-inline tex2jax_ignore">sidebyside</code> layout element, see <a href="section-side-by-side.html" class="internal" title="Section 25: Side-By-Side Panels">Section 25</a>.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
 <div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="figure-sage-multigraph"><img src="generated/sageplot/sageplot-sentence-multigraph.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.17<span class="period">.</span></span><span class="space"> </span>A Sage multigraph of a sentence</figcaption></figure></div>
 <div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="figure-sage-polynomial-approximation"><img src="generated/sageplot/sageplot-polynomial-approximation.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.18<span class="period">.</span></span><span class="space"> </span>Sage polynomial approximations of <span class="process-math">\(f(x)=1/(1+25x^2)\)</span></figcaption></figure></div>
@@ -577,7 +605,7 @@ true);
 <span class="type">Subsection</span> <span class="codenumber">9.6</span> <span class="title">Inkscape Images</span>
 </h3>
 <div class="para" id="p-431">
-<a class="external" href="https://inkscape.org/" target="_blank">Inkscape</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-33" id="fn-33"><sup> 7 </sup></a> is a great tool for creating images.  It ticks all the boxes: open source, mature, cross-platform, standards-compliant.  Read much more about it in The PreTeXt Guide.  In <abbr class="initialism">HTML</abbr> output the two images below are both in <abbr class="initialism">SVG</abbr> format.  The first is “pure” SVG, while the second has embedded information that makes it easier to edit in Inkscape.  You could view the source for this page in the <abbr class="initialism">HTML</abbr> version, deduce the filename of the second image, download it, and manipulate it profitably with Inkscape.  Both files are quite small, but the first is half the size of the second.  In <abbr class="initialism">PDF</abbr> the two images come from files that are identical, so nothing is being tested.  The <abbr class="initialism">PDF</abbr> version is smaller still.</div>
+<a class="external" href="https://inkscape.org/" target="_blank">Inkscape</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-34" id="fn-34"><sup> 7 </sup></a> is a great tool for creating images.  It ticks all the boxes: open source, mature, cross-platform, standards-compliant.  Read much more about it in The PreTeXt Guide.  In <abbr class="initialism">HTML</abbr> output the two images below are both in <abbr class="initialism">SVG</abbr> format.  The first is “pure” SVG, while the second has embedded information that makes it easier to edit in Inkscape.  You could view the source for this page in the <abbr class="initialism">HTML</abbr> version, deduce the filename of the second image, download it, and manipulate it profitably with Inkscape.  Both files are quite small, but the first is half the size of the second.  In <abbr class="initialism">PDF</abbr> the two images come from files that are identical, so nothing is being tested.  The <abbr class="initialism">PDF</abbr> version is smaller still.</div>
 <figure class="figure figure-like" id="figure-20"><div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;">
 <div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/images/inkscape-stars-plain.svg" role="img" class="contained"></div>
 <div class="sbspanel top" style="width:33.3333333333333%;"><img src="external/images/inkscape-stars-native.svg" role="img" class="contained"></div>
@@ -592,7 +620,7 @@ true);
 </h3>
 <div class="para" id="p-434">A caption could be as substantial as a paragraph, here we test out one such example.</div>
 <figure class="figure figure-like" id="figure-long-caption"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="external/images/cross-square.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.22<span class="period">.</span></span><span class="space"> </span>A caption can be a whole paragraph with lots of technical details, and maybe a hyperlink to something external, such as <a class="external" href="https://pretextbook.org" target="_blank"><code class="code-inline tex2jax_ignore">pretextbook.org</code></a> or <a class="external" href="https://pretextbook.org" target="_blank">PreTeXt</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-34" id="fn-34"><sup> 8 </sup></a>.  There could be some inline mathematics, such as <span class="process-math">\(x^2 + y^2 = c^2\text{.}\)</span>  Would a knowl open here?  Recursively?  Let’s see: <a href="" class="xref" data-knowl="./knowl/figure-long-caption.html" title="Figure 9.22">9.22</a>.  Display mathematics, side-by-sides, theorems, and lots of other things should be banned.  Footnotes sound like a bad idea.  Strange characters should be fine: §.</figcaption></figure></section><section class="subsection" id="captionless-images"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.22<span class="period">.</span></span><span class="space"> </span>A caption can be a whole paragraph with lots of technical details, and maybe a hyperlink to something external, such as <a class="external" href="https://pretextbook.org" target="_blank"><code class="code-inline tex2jax_ignore">pretextbook.org</code></a> or <a class="external" href="https://pretextbook.org" target="_blank">PreTeXt</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-35" id="fn-35"><sup> 8 </sup></a>.  There could be some inline mathematics, such as <span class="process-math">\(x^2 + y^2 = c^2\text{.}\)</span>  Would a knowl open here?  Recursively?  Let’s see: <a href="" class="xref" data-knowl="./knowl/figure-long-caption.html" title="Figure 9.22">9.22</a>.  Display mathematics, side-by-sides, theorems, and lots of other things should be banned.  Footnotes sound like a bad idea.  Strange characters should be fine: §.</figcaption></figure></section><section class="subsection" id="captionless-images"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">9.9</span> <span class="title">Captionless Images</span>
 </h3>
 <div class="para" id="p-435">We strongly suggest placing images within a <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code>, as we have done above, so that you can reference them, and use the (required) <code class="code-inline tex2jax_ignore">&lt;caption&gt;</code> to explain what they are.  However there are places, such as a <code class="code-inline tex2jax_ignore">&lt;preface&gt;</code>, where numbered items are not permitted.  So you might want a solo image there.  Or maybe graphics are an illustration of sorts, and a numbered figure feels like overkill.  Or it is part of an <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code> or <code class="code-inline tex2jax_ignore">&lt;proof&gt;</code> of a <code class="code-inline tex2jax_ignore">&lt;theorem&gt;</code>. But notice that you cannot then use this image as the target of a cross-reference, so you may need to refer to some enclosing container.</div>
@@ -731,14 +759,14 @@ direction="northeast" offset="3mm"&gt;&lt;m&gt;y&lt;/m&gt;-axis&lt;/label&gt;
 <div class="sbspanel top" style="width:21.0526315789474%;"><div class="para" id="p-466">Good description, <code class="code-inline tex2jax_ignore">@decorative</code> set to <code class="code-inline tex2jax_ignore">yes</code>
 </div></div>
 <div class="sbspanel top" style="width:21.0526315789474%;"><img src="external/images/cross-square.png" class="contained" alt=""></div>
-</div></div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-27"><div class="fn"><code class="code-inline tex2jax_ignore">commons.wikimedia.org/wiki/File:NZ_Landscape_from_the_van.jpg</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-28"><div class="fn">Interior footnote.</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn"><code class="code-inline tex2jax_ignore">www.texample.net/tikz/examples/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn"><code class="code-inline tex2jax_ignore">www.frontiernet.net/~eugene.ressler/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-31"><div class="fn"><code class="code-inline tex2jax_ignore">asymptote.sourceforge.net/gallery/3Dwebgl/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-32"><div class="fn"><code class="code-inline tex2jax_ignore">www.sagemath.org/tour-graphics.html</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-33"><div class="fn"><code class="code-inline tex2jax_ignore">inkscape.org</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-34"><div class="fn"><code class="code-inline tex2jax_ignore">pretextbook.org</code></div></div>
+</div></div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-28"><div class="fn"><code class="code-inline tex2jax_ignore">commons.wikimedia.org/wiki/File:NZ_Landscape_from_the_van.jpg</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn">Interior footnote.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn"><code class="code-inline tex2jax_ignore">www.texample.net/tikz/examples/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-31"><div class="fn"><code class="code-inline tex2jax_ignore">www.frontiernet.net/~eugene.ressler/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-32"><div class="fn"><code class="code-inline tex2jax_ignore">asymptote.sourceforge.net/gallery/3Dwebgl/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-33"><div class="fn"><code class="code-inline tex2jax_ignore">www.sagemath.org/tour-graphics.html</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-34"><div class="fn"><code class="code-inline tex2jax_ignore">inkscape.org</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-35"><div class="fn"><code class="code-inline tex2jax_ignore">pretextbook.org</code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="text-in-paragraphs.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-10.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

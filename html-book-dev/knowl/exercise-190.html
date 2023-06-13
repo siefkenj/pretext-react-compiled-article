@@ -11,14 +11,24 @@
 <meta name="robots" content="noindex, nofollow">
 <script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                       linked: true,
-                       languages: ['sage'],
-                       evalButtonText: 'Evaluate (Sage)'});
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
 </script><script>// Make *any* pre with class 'sage-display' a visible, uneditable Sage cell
-sagecell.makeSagecell({inputLocation: 'pre.sage-display',
-                       editor: 'codemirror-readonly',
-                       hide: ['evalButton', 'editorToggle', 'language']});
+sagecell.makeSagecell({
+  "inputLocation": "pre.sage-display",
+  "editor": "codemirror-readonly",
+  "hide": [
+    "evalButton",
+    "editorToggle",
+    "language"
+  ]
+});
 </script>
 </head>
 <body class="ignore-math">

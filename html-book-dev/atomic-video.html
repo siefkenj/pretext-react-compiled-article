@@ -15,20 +15,38 @@
 <meta property="og:image" content="https://pretextbook.org/examples/noparts/decorative/html/external/cover_aata_2014.png">
 <meta property="book:title" content="PreTeXt Sample Book">
 <meta property="book:author" content="Thomas W. Judson">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -38,21 +56,31 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
-    /* Mathjax typesetting operation is under the control of React */
-    typeset: false,
-  },
+  "startup": {
+    "typeset": false
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>js_version = 0.3</script><script type="module" defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,15 +112,15 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev1';
+eBookConfig.runestone_version = '7.0.0dev2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runtime.6202a67446f93426.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.1f1f63d2cda36a4d.css">
 </head>
 <body id="PTXSB" data-react-in-use="yes" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -326,7 +354,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="atomic-video"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.19</span> <span class="title">YouTube Video Embedding</span>
 </h2>
-<div class="para logical" id="p-1030">
+<div class="para logical" id="p-1064">
 <div class="para">An <code class="code-inline tex2jax_ignore">&lt;video&gt;</code> can be placed in five different ways:</div>
 <ol class="decimal">
 <li id="li-203"><div class="para" id="p-derived-li-203">all by itself, as a peer of <code class="code-inline tex2jax_ignore">&lt;p&gt;</code> typically, with layout control,</div></li>
@@ -337,30 +365,30 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="para">Examples of each, and more.</div>
 </div>
-<div class="para" id="p-1031">A YouTube video is embedded much differently when hosted on a Runestone server, so that an <abbr class="initialism">API</abbr> is available to report reader (student) interactions.  We are testing here the various possibilities.</div>
-<div class="para" id="p-1032">All by itsef, with no layout specified, so showing the default size and placement.  Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.</div>
+<div class="para" id="p-1065">A YouTube video is embedded much differently when hosted on a Runestone server, so that an <abbr class="initialism">API</abbr> is available to report reader (student) interactions.  We are testing here the various possibilities.</div>
+<div class="para" id="p-1066">All by itsef, with no layout specified, so showing the default size and placement.  Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.</div>
 <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="youtube-list-vars-one" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<div class="para" id="p-1033">Width set at 40%, so equal margins and thus centered.  Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.</div>
+<div class="para" id="p-1067">Width set at 40%, so equal margins and thus centered.  Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.</div>
 <div class="video-box" style="width: 40%;padding-top: 22.5%; margin-left: 30%; margin-right: 30%;"><iframe id="youtube-list-vars-two" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<div class="para" id="p-1034">Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance.  Vivamus suscipit diam eget mi cursus viverra.</div>
+<div class="para" id="p-1068">Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance.  Vivamus suscipit diam eget mi cursus viverra.</div>
 <div class="video-box" style="width: 40%;padding-top: 22.5%; margin-left: 20%; margin-right: 40%;"><iframe id="youtube-list-vars-three" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<div class="para" id="p-1035">As a plain component of a <code class="code-inline tex2jax_ignore">&lt;sidebyside&gt;</code>.  Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges.  Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.</div>
+<div class="para" id="p-1069">As a plain component of a <code class="code-inline tex2jax_ignore">&lt;sidebyside&gt;</code>.  Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges.  Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;">
 <div class="sbspanel top" style="width:26.6666666666667%;"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="youtube-list-vars-four" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div></div>
 <div class="sbspanel top" style="width:40%;"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="youtube-list-vars-five" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div></div>
 </div></div>
-<div class="para" id="p-1036">Inside a <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code> with no adjustments, so default behavior.  Note how a <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code> occupies the entire width of the page, so then does the caption.</div>
+<div class="para" id="p-1070">Inside a <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code> with no adjustments, so default behavior.  Note how a <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code> occupies the entire width of the page, so then does the caption.</div>
 <figure class="figure figure-like" id="figure-16"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="youtube-list-vars-six" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.19.1<span class="period">.</span></span><span class="space"> </span>List Variables</figcaption></figure><div class="para" id="p-1037">Inside a <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code> with asymmetric (large) margins of 30% and 60%.  Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.19.1<span class="period">.</span></span><span class="space"> </span>List Variables</figcaption></figure><div class="para" id="p-1071">Inside a <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code> with asymmetric (large) margins of 30% and 60%.  Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.</div>
 <figure class="figure figure-like" id="figure-17"><div class="video-box" style="width: 10%;padding-top: 5.624999999999999%; margin-left: 30%; margin-right: 60%;"><iframe id="youtube-list-vars-seven" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.19.2<span class="period">.</span></span><span class="space"> </span>List Variables</figcaption></figure><div class="para" id="p-1038">Inside figures inside a <code class="code-inline tex2jax_ignore">&lt;sidebyside&gt;</code>.  Same widths as previous <code class="code-inline tex2jax_ignore">&lt;sidebyside&gt;</code> but alignment on bottoms of the panels, to partially align captions.  Note how the captions are constrained in width by the width of the panels of the side-by-side.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.19.2<span class="period">.</span></span><span class="space"> </span>List Variables</figcaption></figure><div class="para" id="p-1072">Inside figures inside a <code class="code-inline tex2jax_ignore">&lt;sidebyside&gt;</code>.  Same widths as previous <code class="code-inline tex2jax_ignore">&lt;sidebyside&gt;</code> but alignment on bottoms of the panels, to partially align captions.  Note how the captions are constrained in width by the width of the panels of the side-by-side.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;">
 <div class="sbspanel bottom" style="width:26.6666666666667%;"><figure class="figure figure-like" id="figure-18"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="youtube-list-vars-eight" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.19.3<span class="period">.</span></span><span class="space"> </span>List Variables</figcaption></figure></div>
 <div class="sbspanel bottom" style="width:40%;"><figure class="figure figure-like" id="figure-19"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="youtube-list-vars-nine" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.19.4<span class="period">.</span></span><span class="space"> </span>List Variables (Again)</figcaption></figure></div>
 </div></div>
-<div class="para" id="p-1039">Identical code to previous example, but now wrapped in an overall <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code>, which has its own caption and number, leaving the interior figures to be sub-numbered.  Cross-references use the full number: <a href="" class="xref" data-knowl="./knowl/ups-video.html" title="Figure 5.19.5.(b): List Variables">Figure 5.19.5.(b)</a>.</div>
+<div class="para" id="p-1073">Identical code to previous example, but now wrapped in an overall <code class="code-inline tex2jax_ignore">&lt;figure&gt;</code>, which has its own caption and number, leaving the interior figures to be sub-numbered.  Cross-references use the full number: <a href="" class="xref" data-knowl="./knowl/ups-video.html" title="Figure 5.19.5.(b): List Variables">Figure 5.19.5.(b)</a>.</div>
 <figure class="figure figure-like" id="figure-20"><div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;">
 <div class="sbspanel bottom" style="width:26.6666666666667%;"><figure class="figure figure-like" id="figure-21"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="youtube-list-vars-ten" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/X1-UNHUajfk?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="codenumber">(a)</span><span class="space"> </span>List Variables</figcaption></figure></div>

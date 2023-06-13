@@ -15,20 +15,38 @@
 <meta property="og:image" content="https://pretextbook.org/examples/sample-article/html/external/misc/book-cover-google-art-project.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -38,25 +56,36 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
@@ -99,15 +128,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev1';
+eBookConfig.runestone_version = '7.0.0dev2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runtime.6202a67446f93426.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.1f1f63d2cda36a4d.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body id="pretext-SA" class="pretext article ignore-math">
@@ -705,7 +734,7 @@ true);
 <img src="external/images/led-zeppelin-kashmir.jpg" class="contained"><div class="image-archive"><a href="external/external/images/led-zeppelin-kashmir.jpg">jpg</a></div>
 </div>
 </div></div>
-<div class="para" id="p-1118">Here are two TikZ images, authored side-by-side.  The first has had its geometric portions of the original scaled down to 75%, with the effect of increasing the text, relatively, so the application in a side-by-side panel with 25% width has legible text.  We caption only the second panel, which has no text adjustments.  From <a class="external" href="http://www.texample.net/tikz/examples/" target="_blank">TeXample.net</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-84" id="fn-84"><sup> 1 </sup></a>.</div>
+<div class="para" id="p-1118">Here are two TikZ images, authored side-by-side.  The first has had its geometric portions of the original scaled down to 75%, with the effect of increasing the text, relatively, so the application in a side-by-side panel with 25% width has legible text.  We caption only the second panel, which has no text adjustments.  From <a class="external" href="http://www.texample.net/tikz/examples/" target="_blank">TeXample.net</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-85" id="fn-85"><sup> 1 </sup></a>.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel top" style="width:26.3157894736842%;">
 <img src="generated/latex-image/tikz-venn-diagram.svg" role="img" class="contained"><div class="image-archive">
@@ -717,10 +746,10 @@ true);
 <div class="para">Images by Stefan Kottwitz</div>
 <ul class="disc">
 <li id="li-356"><div class="para" id="p-derived-li-356">
-<a class="external" href="http://www.texample.net/tikz/examples/venn/" target="_blank">Venn Diagram</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-85" id="fn-85"><sup> 2 </sup></a>
+<a class="external" href="http://www.texample.net/tikz/examples/venn/" target="_blank">Venn Diagram</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-86" id="fn-86"><sup> 2 </sup></a>
 </div></li>
 <li id="li-357"><div class="para" id="p-derived-li-357">
-<a class="external" href="http://www.texample.net/tikz/examples/smart-circle/" target="_blank">Work Flow</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-86" id="fn-86"><sup> 3 </sup></a>
+<a class="external" href="http://www.texample.net/tikz/examples/smart-circle/" target="_blank">Work Flow</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-87" id="fn-87"><sup> 3 </sup></a>
 </div></li>
 </ul>
 </div></div>
@@ -982,7 +1011,7 @@ true);
 <div class="introduction" id="introduction-32"><div class="para" id="p-1131">Dr. Seuss again.</div></div>
 <ul class="disc">
 <li id="li-358"><div class="para" id="p-derived-li-358">One fish</div></li>
-<li id="li-359"><div class="para" id="p-derived-li-359">Two fish<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-87" id="fn-87"><sup> 4 </sup></a>
+<li id="li-359"><div class="para" id="p-derived-li-359">Two fish<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-88" id="fn-88"><sup> 4 </sup></a>
 </div></li>
 <li id="li-360"><div class="para" id="p-derived-li-360">Red fish</div></li>
 <li id="li-361"><div class="para" id="p-derived-li-361">Blue fish</div></li>
@@ -992,7 +1021,7 @@ true);
 <div class="sbspanel top" style="width:63.1578947368421%;"><figure class="list table-like" id="color-list-as-panel"><div class="named-list-content">
 <ol class="decimal">
 <li id="li-362"><div class="para logical" id="p-1132">
-<div class="para">Blue<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-88" id="fn-88"><sup> 5 </sup></a>
+<div class="para">Blue<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-89" id="fn-89"><sup> 5 </sup></a>
 </div>
 <ol class="lower-alpha">
 <li id="li-363"><div class="para" id="p-derived-li-363">Light</div></li>
@@ -1018,7 +1047,7 @@ true);
 <div class="sbspanel bottom" style="width:31.5789473684211%;"><figure class="list table-like" id="list-6"><div class="named-list-content">
 <div class="introduction" id="introduction-33"><div class="para" id="p-1136">Dr. Seuss again.</div></div>
 <ul class="disc">
-<li id="li-370"><div class="para" id="p-derived-li-370">One fish<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-89" id="fn-89"><sup> 6 </sup></a>
+<li id="li-370"><div class="para" id="p-derived-li-370">One fish<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-90" id="fn-90"><sup> 6 </sup></a>
 </div></li>
 <li id="li-371"><div class="para" id="p-derived-li-371">Two fish</div></li>
 <li id="li-372"><div class="para" id="p-derived-li-372">Red fish</div></li>
@@ -1037,7 +1066,7 @@ true);
 </ol>
 </div></li>
 <li id="li-378"><div class="para logical" id="p-1138">
-<div class="para">Red<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-90" id="fn-90"><sup> 7 </sup></a>
+<div class="para">Red<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-91" id="fn-91"><sup> 7 </sup></a>
 </div>
 <ol class="lower-alpha">
 <li id="li-379"><div class="para" id="p-derived-li-379">Maroon</div></li>
@@ -1538,13 +1567,13 @@ int main()
 </h3>
 <div class="para" id="p-1204">This subsection has non-side-by-side structures, to aid with the effects of styling decisions across the range of possibilities.  First a <code class="code-inline tex2jax_ignore">figure</code> with a <code class="code-inline tex2jax_ignore">caption</code> holding a scaled image and a cross-reference for knowl testing: <a href="" class="xref" data-knowl="./knowl/figure-traditional.html" title="Figure 25.57">Figure 25.57</a>.</div>
 <figure class="figure figure-like" id="figure-traditional"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="external/images/cross-square.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">25.57<span class="period">.</span></span><span class="space"> </span>A traditional figure</figcaption></figure></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-84"><div class="fn"><code class="code-inline tex2jax_ignore">www.texample.net/tikz/examples/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-85"><div class="fn"><code class="code-inline tex2jax_ignore">www.texample.net/tikz/examples/venn/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-86"><div class="fn"><code class="code-inline tex2jax_ignore">www.texample.net/tikz/examples/smart-circle/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-87"><div class="fn">Not fishes</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-88"><div class="fn">in many shades</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-89"><div class="fn">No more fishes</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-90"><div class="fn">a really nice color</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">25.57<span class="period">.</span></span><span class="space"> </span>A traditional figure</figcaption></figure></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-85"><div class="fn"><code class="code-inline tex2jax_ignore">www.texample.net/tikz/examples/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-86"><div class="fn"><code class="code-inline tex2jax_ignore">www.texample.net/tikz/examples/venn/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-87"><div class="fn"><code class="code-inline tex2jax_ignore">www.texample.net/tikz/examples/smart-circle/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-88"><div class="fn">Not fishes</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-89"><div class="fn">in many shades</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-90"><div class="fn">No more fishes</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-91"><div class="fn">a really nice color</div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-24.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-26.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

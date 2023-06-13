@@ -15,20 +15,38 @@
 <meta property="og:image" content="https://pretextbook.org/examples/sample-article/html/external/misc/book-cover-google-art-project.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="external/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="external/favicon/favicon-16x16.png">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -38,28 +56,42 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
-    /* Mathjax typesetting operation is under the control of React */
-    typeset: false,
-  },
+  "startup": {
+    "typeset": false
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                       linked: true,
-                       languages: ['sage'],
-                       evalButtonText: 'Evaluate (Sage)'});
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
 </script><script>js_version = 0.3</script><script type="module" defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -89,15 +121,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev1';
+eBookConfig.runestone_version = '7.0.0dev2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runtime.6202a67446f93426.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev1/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.1f1f63d2cda36a4d.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body id="pretext-SA" data-react-in-use="yes" class="pretext article ignore-math">
@@ -472,7 +504,7 @@ true);
 <pre class="code-display tex2jax_ignore">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</pre>
 <div class="para">as the first line of your source file. (You <em class="emphasis">may</em> be able to accurately cut-and-paste this version here.  But if the copy has non-standard characters in it, go back to the top of this source file for a copy.)</div>
 </div></li>
-<li id="li-347"><div class="para" id="p-1040">Alan Wood’s <a class="external" href="http://www.alanwood.net/unicode/unicode_samples.html" target="_blank">Unicode Resources</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-81" id="fn-81"><sup> 1 </sup></a> has a plethora of samples of various groups of Unicode characters.  If you, or your readers, are “missing” characters in a web browser, this is a good place to start testing the local setup.</div></li>
+<li id="li-347"><div class="para" id="p-1040">Alan Wood’s <a class="external" href="http://www.alanwood.net/unicode/unicode_samples.html" target="_blank">Unicode Resources</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-82" id="fn-82"><sup> 1 </sup></a> has a plethora of samples of various groups of Unicode characters.  If you, or your readers, are “missing” characters in a web browser, this is a good place to start testing the local setup.</div></li>
 </ul>
 </div></section><section class="paragraphs" id="paragraphs-9"><h3 class="heading"><span class="title">Characters in <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>, PDF, print.</span></h3> <div class="para" id="p-1041">The situation for <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> is a bit more complicated, since <span class="latex-logo">T<span class="E">e</span>X</span> pre-dates Unicode’s widespread adoption.</div> <div class="para" id="p-1042">This sample article is intended to work well, out-of-the-box, for authors just starting with PreTeXt.  So we only include here examples that we know are likely to convert to <abbr class="initialism">PDF</abbr> without any errors.  For more extensive examples and experiments, we provide the sample document <code class="code-inline tex2jax_ignore">examples/fonts/fonts-and-characters.xml</code>, so be aware of that example as you look to see what is possible.</div> <div class="para" id="p-1043">Similarly, you should be able to process this sample article successfully with various <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> engines.  We test regularly with <code class="code-inline tex2jax_ignore">pdflatex</code> and <code class="code-inline tex2jax_ignore">xelatex</code> and provide online sample PDF output of this document processed by <code class="code-inline tex2jax_ignore">pdflatex</code>.  In principle, you should be able to use <code class="code-inline tex2jax_ignore">latex</code> (to produce a DVI), and possibly other (unsupported) engines, such as <code class="code-inline tex2jax_ignore">lualatex</code>.</div> <div class="para" id="p-1044">Once you get beyond the Latin alphabet, with accents common in Western Europe and the Western Hemisphere, you will almost assuredly need to restrict your attention to producing <abbr class="initialism">PDF</abbr> output with the <code class="code-inline tex2jax_ignore">xelatex</code> engine.  This is discussed and tested in <code class="code-inline tex2jax_ignore">examples/fonts/fonts-and-characters.xml</code>.</div></section><section class="paragraphs" id="paragraphs-10"><h3 class="heading"><span class="title">Basic Latin, <code class="code-inline tex2jax_ignore">U+0000</code>–<code class="code-inline tex2jax_ignore">U+007F</code>.</span></h3> <div class="para" id="p-1045">Unicode uses multiple 8-bit bytes to represent characters, and these are typically expressed in hexadecimal (base 16) notation.  Using just a single byte, we can get 256 values, and the first 128 (hex <code class="code-inline tex2jax_ignore">00</code> to <code class="code-inline tex2jax_ignore">7F</code>) are the “usual” Latin characters with some values used as control codes.  These 95 characters are the most basic, and will all render using <code class="code-inline tex2jax_ignore">pdflatex</code> or <code class="code-inline tex2jax_ignore">xelatex</code> with no special setup (and will render easily in HTML).  <code class="code-inline tex2jax_ignore">U+0000</code> to <code class="code-inline tex2jax_ignore">U+001F</code> are control codes and not used here.  <code class="code-inline tex2jax_ignore">U+007F</code> is also a control code and so is excluded, while <code class="code-inline tex2jax_ignore">U+0020</code> is a space, so appears invisible in the table.  In the source we have authored each character by its escaped version using its Unicode number (in hexadecimal).  So, for example, capital-B is authored as <code class="code-inline tex2jax_ignore">&amp;#x0042;</code>.</div>    <figure class="table table-like" id="table-37"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">21.1<span class="period">.</span></span><span class="space"> </span>Basic Latin, Regular</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
@@ -1035,7 +1067,7 @@ true);
 <tr><td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">9876543210</code></td></tr>
 <tr><td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">iiiiiiiiii</code></td></tr>
 <tr><td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">mmmmmmmmmm</code></td></tr>
-</table></div></figure><div class="para" id="p-1054">Again, more examples and more thorough explanations can be found in the sample: <code class="code-inline tex2jax_ignore">examples/fonts/fonts-and-characters.xml</code>.  Be aware that the nature of the more advanced sample is that it will likely produce many errors when processed with <code class="code-inline tex2jax_ignore">pdflatex</code>.  Adding <code class="code-inline tex2jax_ignore">-interaction batchmode</code> or <code class="code-inline tex2jax_ignore">-interaction nonstopmode</code> to the <code class="code-inline tex2jax_ignore">pdflatex</code> command-line will sometimes be less painless than acknowledging each error.  The more advanced sample will perform well when processed with <code class="code-inline tex2jax_ignore">xelatex</code>.</div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-81"><div class="fn"><code class="code-inline tex2jax_ignore">www.alanwood.net/unicode/unicode_samples.html</code></div></div>
+</table></div></figure><div class="para" id="p-1054">Again, more examples and more thorough explanations can be found in the sample: <code class="code-inline tex2jax_ignore">examples/fonts/fonts-and-characters.xml</code>.  Be aware that the nature of the more advanced sample is that it will likely produce many errors when processed with <code class="code-inline tex2jax_ignore">pdflatex</code>.  Adding <code class="code-inline tex2jax_ignore">-interaction batchmode</code> or <code class="code-inline tex2jax_ignore">-interaction nonstopmode</code> to the <code class="code-inline tex2jax_ignore">pdflatex</code> command-line will sometimes be less painless than acknowledging each error.  The more advanced sample will perform well when processed with <code class="code-inline tex2jax_ignore">xelatex</code>.</div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-82"><div class="fn"><code class="code-inline tex2jax_ignore">www.alanwood.net/unicode/unicode_samples.html</code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-cross-referencing.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-22.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
