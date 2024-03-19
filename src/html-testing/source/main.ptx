@@ -40,7 +40,7 @@
         </statement>
       </definition>
 
-      <p>
+      <p id="special-par">
         Now that we've made a definition, we can add a reference to it,
         like so: <xref ref="test-1-def"/>.
         Next we will add an example, whose solution will be a born-hidden knowl.
