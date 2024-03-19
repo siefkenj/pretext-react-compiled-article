@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Coding Exercise, with Unit Tests.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="coding-exercise-python-unit-test">
+<div class="ac_question" id="coding-exercise-python-unit-test_question"><div class="para" id="coding-exercise-python-unit-test-2-1">Fix the following code so that it always correctly adds two numbers. [Ed. Unit test support is experimental.]</div></div>
+<textarea data-lang="python" data-timelimit="25000" data-audio="" data-coach="true" style="visibility: hidden;" id="coding-exercise-python-unit-test_editor" data-question_label="" data-codelens="true">def add(a,b):
+    return 4
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+       self.assertEqual(add(2,2), 4, "Adding two identical integers")
+       self.assertEqual(add(7,13), 20, "Adding two different integers")
+       self.assertAlmostEqual(add(2.0,3.0), 5.0, 5, "Adding two decimal numbers")
+
+myTests().main()
+</textarea>
+</div></div></div>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para">We’re not really sure.  But it would begin as follows:</div> <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-c">#include &lt;stdio.h&gt;
+
+int main(void)
+</code></pre></div>
+</div></details></div></article><span class="incontext"><a class="internal" href="coding-exercises.html#coding-exercise-python-unit-test">in-context</a></span>
+</body>
+</html>

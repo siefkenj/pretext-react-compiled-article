@@ -1,9 +1,9 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "frontmatter-1",
+  "id": "testing-document-2",
   "level": "1",
-  "url": "frontmatter-1.html",
+  "url": "testing-document-2.html",
   "type": "Front Matter",
   "number": "",
   "title": "Front Matter",
@@ -141,6 +141,7 @@ var ptx_lunr_idx = lunr(function () {
   this.ref('id')
   this.field('title')
   this.field('body')
+  this.metadataWhitelist = ['position']
 
   ptx_lunr_docs.forEach(function (doc) {
     this.add(doc)
