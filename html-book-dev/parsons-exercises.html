@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>SB Parsons Exercises</title>
@@ -75,20 +75,21 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "https://pretextbook.org/js/lib"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
     "typeset": false
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>js_version = 0.3</script><script type="module" defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script type="module" defer src="./static/js/main.js"></script><link href="./static/css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 <!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -112,31 +113,34 @@ eBookConfig.enableScratchAC = true;
 eBookConfig.acDefaultLanguage = 'python';
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.0dev2';
+eBookConfig.runestone_version = '7.2.15';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runtime.71ffd81c0faeb38b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.89675c0f3da021d1.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.0dev2/prefix-runestone.1f1f63d2cda36a4d.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.15/prefix-runtime.d30f9fb21d6c7b70.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.15/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.15/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.15/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.15/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="PTXSB" data-react-in-use="yes" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="external/cover_aata_2014.png" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href="http://abstract.pugetsound.edu"><img src="external/cover_aata_2014.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="sample-book.html"><span class="title">PreTeXt Sample Book:</span> <span class="subtitle">Abstract Algebra (SAMPLE ONLY)</span></a></h1>
 <p class="byline">Thomas W. Judson, Isaac Newton (Editor)</p>
 </div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-8.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
-</h2>
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><span class="treebuttons"><a class="previous-button button" href="multiple-choice-exercises.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="rune.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="horizontal-parsons-exercises.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
-</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="multiple-choice-exercises.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="rune.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="horizontal-parsons-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\identity}{\mathrm{id}}
 \newcommand{\notdivide}{{\not{\mid}}}
 \newcommand{\notsubset}{\not\subset}
 \newcommand{\lcm}{\operatorname{lcm}}
@@ -155,232 +159,238 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts"><ul class="structural">
-<li>
-<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
-<li><div class="toc-item"><a href="author-bio-TWJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
-<li><div class="toc-item"><a href="author-bio-RAB.html" class="internal"><span class="title">About Robert A. Beezer</span></a></div></li>
-<li><div class="toc-item"><a href="dedication.html" class="internal"><span class="title">Dedication</span></a></div></li>
-<li><div class="toc-item"><a href="acknowledgement.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
-<li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
-<li>
-<div class="toc-item"><a href="contributors.html" class="internal"><span class="title">Contributors to the 4<span class="process-math">\(^\mathrm{th}\)</span> Edition</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="contributors.html#contributors-1" class="internal"><span class="title"></span></a></div></li></ul>
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-TWJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RAB.html" class="internal"><span class="title">About Robert A. Beezer</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="dedication.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="acknowledgement.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-preface">
+<div class="toc-title-box"><a href="contributors.html" class="internal"><span class="title">Contributors to the 4<span class="process-math">\(^\mathrm{th}\)</span> Edition</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-contributors"><div class="toc-title-box"><a href="contributors.html#contributors-3" class="internal"><span class="title"></span></a></div></li></ul>
 </li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="part-basics.html" class="internal"><span class="codenumber">I</span> <span class="title">Basics</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">A Short Note on Proofs</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-note-on-proofs.html#subsection-1" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Some Cautions and Suggestions</span></a></div></li></ul>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part-basics.html" class="internal"><span class="codenumber">I</span> <span class="title">Basics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="sets.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-note-on-proofs.html" class="internal"><span class="codenumber">1.1</span> <span class="title">A Short Note on Proofs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-note-on-proofs.html#section-note-on-proofs-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Some Cautions and Suggestions</span></a></div></li></ul>
 </li>
-<li>
-<div class="toc-item"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets and Equivalence Relations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#subsection-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Set Theory</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#subsection-3" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Cartesian Products and Mappings</span></a></div></li>
-<li><div class="toc-item"><a href="section-sets-and-equivalence-relations.html#subsection-4" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Equivalence Relations and Partitions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-sets-and-equivalence-relations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets and Equivalence Relations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-sets-and-equivalence-relations.html#section-sets-and-equivalence-relations-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Set Theory</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-sets-and-equivalence-relations.html#section-sets-and-equivalence-relations-3" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Cartesian Products and Mappings</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-sets-and-equivalence-relations.html#section-sets-and-equivalence-relations-4" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Equivalence Relations and Partitions</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="sets-sage.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sage</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sets-sage.html#subsection-5" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Executing Sage Commands</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-6" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Immediate Help</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-7" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Annotating Your Work</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-8" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Lists</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-9" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Lists of Integers</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage.html#subsection-10" class="internal"><span class="codenumber">1.3.6</span> <span class="title">Saving and Sharing Your Work</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sets-sage.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sage</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sets-sage.html#sets-sage-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Executing Sage Commands</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sets-sage.html#sets-sage-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Immediate Help</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sets-sage.html#sets-sage-5" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Annotating Your Work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sets-sage.html#sets-sage-6" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Lists</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sets-sage.html#sets-sage-7" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Lists of Integers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sets-sage.html#sets-sage-8" class="internal"><span class="codenumber">1.3.6</span> <span class="title">Saving and Sharing Your Work</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="references-1.html" class="internal"><span class="codenumber">1.6</span> <span class="title">References and Suggested Readings</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-sets.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sets-sage-exercises.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Sage Exercises</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="sets-8.html" class="internal"><span class="codenumber">1.6</span> <span class="title">References and Suggested Readings</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="integers.html" class="internal"><span class="codenumber">2</span> <span class="title">The Integers</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction and Math in a Title <span class="process-math">\(A\notsubset B\)</span></span></a></div></li>
-<li>
-<div class="toc-item"><a href="section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Division Algorithm</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="section-division-algorithm.html#subsection-11" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Euclidean Algorithm</span></a></div></li>
-<li><div class="toc-item"><a href="section-division-algorithm.html#subsection-12" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Prime Numbers</span></a></div></li>
-<li><div class="toc-item"><a href="section-division-algorithm.html#subsection-13" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Historical Note</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="integers.html" class="internal"><span class="codenumber">2</span> <span class="title">The Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-math-induction.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Mathematical Induction and Math in a Title <span class="process-math">\(A\notsubset B\)</span></span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-division-algorithm.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Division Algorithm</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-division-algorithm.html#section-division-algorithm-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The Euclidean Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-division-algorithm.html#section-division-algorithm-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Prime Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-division-algorithm.html#section-division-algorithm-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Historical Note</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="integers-sage.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Sage</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="integers-sage.html#subsection-14" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Division Algorithm</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-15" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Greatest Common Divisor</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage.html#subsection-16" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Primes and Factoring</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="integers-sage.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Sage</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="integers-sage.html#integers-sage-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Division Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="integers-sage.html#integers-sage-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Greatest Common Divisor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="integers-sage.html#integers-sage-5" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Primes and Factoring</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="exercises-integers.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-4.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Programming Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Sage Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="references-2.html" class="internal"><span class="codenumber">2.7</span> <span class="title">References and Suggested Readings</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-algebra.html" class="internal"><span class="codenumber">II</span> <span class="title">Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="groups.html" class="internal"><span class="codenumber">3</span> <span class="title">Groups</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="section-mod-n-sym.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Integer Equivalence Classes and Symmetries</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="section-mod-n-sym.html#subsection-17" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Integers mod <span class="process-math">\(n\)</span></span></a></div></li>
-<li><div class="toc-item"><a href="section-mod-n-sym.html#subsection-18" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Symmetries</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="section-groups-define.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Definitions and Examples</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="section-groups-define.html#subsection-19" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Definition of a Group</span></a></div></li>
-<li><div class="toc-item"><a href="section-groups-define.html#subsection-20" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Examples of Groups</span></a></div></li>
-<li><div class="toc-item"><a href="section-groups-define.html#subsection-21" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Basic Properties of Groups</span></a></div></li>
-<li><div class="toc-item"><a href="section-groups-define.html#subsection-22" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Historical Note</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="section-subgroups.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Subgroups</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="section-subgroups.html#subsection-23" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Definitions and Examples</span></a></div></li>
-<li><div class="toc-item"><a href="section-subgroups.html#subsection-24" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Some Subgroup Theorems</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="groups-sage.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Sage</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="groups-sage.html#subsection-25" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Integers mod n</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-26" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Groups of symmetries</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-27" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Quaternions</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage.html#subsection-28" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Subgroups</span></a></div></li>
-</ul>
-</li>
-<li><div class="toc-item"><a href="exercises-groups.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-7.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Additional Exercises: Detecting Errors</span></a></div></li>
-<li><div class="toc-item"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Sage Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="references-3.html" class="internal"><span class="codenumber">3.8</span> <span class="title">References and Suggested Readings</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="cyclic.html" class="internal"><span class="codenumber">4</span> <span class="title">Cyclicity</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="section-11.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Cyclic groups</span></a></div></li>
-<li><div class="toc-item"><a href="section-12.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Subgroups of a Cyclic Group</span></a></div></li>
-<li><div class="toc-item"><a href="section-13.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Cyclic Groups of Complex Numbers</span></a></div></li>
-<li><div class="toc-item"><a href="section-14.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Large Powers of Integers</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-cyclic.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="exercises-10.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Programming Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sage Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="references-4.html" class="internal"><span class="codenumber">4.8</span> <span class="title">References and Suggested Readings</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rune.html" class="internal"><span class="codenumber">5</span> <span class="title">Runestone Testing</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="activecode.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
-<li><div class="toc-item"><a href="code-lens.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Code Lens</span></a></div></li>
-<li><div class="toc-item"><a href="coding-exercises.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Coding Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="data-files.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Data Files</span></a></div></li>
-<li><div class="toc-item"><a href="videos-in-runestone.html" class="internal"><span class="codenumber">5.5</span> <span class="title">YouTube Videos</span></a></div></li>
-<li>
-<div class="toc-item"><a href="rune-nested-divisions.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Deeper</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-29" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Subsection One</span></a></div></li>
-<li><div class="toc-item"><a href="rune-nested-divisions.html#subsection-30" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Subsection Two</span></a></div></li>
-</ul>
-</li>
-<li><div class="toc-item"><a href="true-false-exercises.html" class="internal"><span class="codenumber">5.7</span> <span class="title">True/False Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="multiple-choice-exercises.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Multiple Choice Exercises</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="parsons-exercises.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Parsons Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="horizontal-parsons-exercises.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Horizontal Parsons Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="matching-exercises.html" class="internal"><span class="codenumber">5.11</span> <span class="title">Matching Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="clickable-area-exercises.html" class="internal"><span class="codenumber">5.12</span> <span class="title">Clickable Area Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="short-answer-exercises.html" class="internal"><span class="codenumber">5.13</span> <span class="title">Short Answer Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="fill-in--exercises.html" class="internal"><span class="codenumber">5.14</span> <span class="title">Fill-In Exercises</span></a></div></li>
-<li>
-<div class="toc-item"><a href="exercises-timed.html" class="internal"><span class="codenumber">5.15</span> <span class="title">Exercises that are Timed</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="exercises-timed.html#timed-exercises" class="internal"><span class="codenumber">5.15</span> <span class="title">Timed Exercises</span></a></div></li></ul>
-</li>
-<li><div class="toc-item"><a href="interactive-projects.html" class="internal"><span class="codenumber">5.16</span> <span class="title">Projects and Friends</span></a></div></li>
-<li><div class="toc-item"><a href="section-23.html" class="internal"><span class="codenumber">5.17</span> <span class="title">Expedited Samples</span></a></div></li>
-<li><div class="toc-item"><a href="reading-questions-1.html" class="internal"><span class="codenumber">5.18</span> <span class="title">Reading Questions</span></a></div></li>
-<li><div class="toc-item"><a href="atomic-video.html" class="internal"><span class="codenumber">5.19</span> <span class="title">YouTube Video Embedding</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-integers.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="integers-7.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Programming Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="integers-sage-exercises.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Sage Exercises</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="integers-9.html" class="internal"><span class="codenumber">2.7</span> <span class="title">References and Suggested Readings</span></a></div></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="appendix-1.html" class="internal"><span class="codenumber">A</span> <span class="title">Notation</span></a></div></li>
-<li><div class="toc-item"><a href="solutions-1.html" class="internal"><span class="codenumber">B</span> <span class="title">Hints and Answers to Selected Odd Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="solutions-2.html" class="internal"><span class="codenumber">C</span> <span class="title">Hints and Answers to Selected Even Exercises</span></a></div></li>
-<li><div class="toc-item"><a href="solutions-3.html" class="internal"><span class="codenumber">D</span> <span class="title">Hints and Answers to Selected Exercises</span></a></div></li>
-<li>
-<div class="toc-item"><a href="appendix-2.html" class="internal"><span class="codenumber">E</span> <span class="title">A Structured Appendix</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="section-25.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
-<ul class="structural"><li>
-<div class="toc-item"><a href="section-25.html#subsection-31" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-25.html#subsubsection-1" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part-algebra.html" class="internal"><span class="codenumber">II</span> <span class="title">Algebra</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="groups.html" class="internal"><span class="codenumber">3</span> <span class="title">Groups</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-mod-n-sym.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Integer Equivalence Classes and Symmetries</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-mod-n-sym.html#section-mod-n-sym-5" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Integers mod <span class="process-math">\(n\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-mod-n-sym.html#section-mod-n-sym-6" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Symmetries</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-groups-define.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Definitions and Examples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-groups-define.html#section-groups-define-2" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Definition of a Group</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-groups-define.html#section-groups-define-3" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Examples of Groups</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-groups-define.html#section-groups-define-4" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Basic Properties of Groups</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-groups-define.html#section-groups-define-5" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Historical Note</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-subgroups.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Subgroups</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-subgroups.html#section-subgroups-2" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Definitions and Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-subgroups.html#section-subgroups-3" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Some Subgroup Theorems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="groups-sage.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Sage</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="groups-sage.html#groups-sage-3" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Integers mod n</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="groups-sage.html#groups-sage-4" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Groups of symmetries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="groups-sage.html#groups-sage-5" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Quaternions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="groups-sage.html#groups-sage-6" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Subgroups</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-groups.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="groups-9.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Additional Exercises: Detecting Errors</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="groups-sage-exercises.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Sage Exercises</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="groups-11.html" class="internal"><span class="codenumber">3.8</span> <span class="title">References and Suggested Readings</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="cyclic.html" class="internal"><span class="codenumber">4</span> <span class="title">Cyclicity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cyclic-4.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Cyclic groups</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cyclic-5.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Subgroups of a Cyclic Group</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cyclic-6.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Cyclic Groups of Complex Numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cyclic-7.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Large Powers of Integers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-cyclic.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="cyclic-9.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Programming Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="cyclic-sage-exercises.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Sage Exercises</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="cyclic-11.html" class="internal"><span class="codenumber">4.8</span> <span class="title">References and Suggested Readings</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="rune.html" class="internal"><span class="codenumber">5</span> <span class="title">Runestone Testing</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="activecode.html" class="internal"><span class="codenumber">5.1</span> <span class="title">ActiveCode</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="code-lens.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Code Lens</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="coding-exercises.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Coding Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="data-files.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Data Files</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="videos-in-runestone.html" class="internal"><span class="codenumber">5.5</span> <span class="title">YouTube Videos</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="rune-nested-divisions.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Deeper</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="rune-nested-divisions.html#rune-nested-divisions-3" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Subsection One</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="rune-nested-divisions.html#rune-nested-divisions-4" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Subsection Two</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="true-false-exercises.html" class="internal"><span class="codenumber">5.7</span> <span class="title">True/False Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="multiple-choice-exercises.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Multiple Choice Exercises</span></a></div></li>
+<li class="toc-item toc-exercises active"><div class="toc-title-box"><a href="parsons-exercises.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Parsons Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="horizontal-parsons-exercises.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Horizontal Parsons Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="matching-exercises.html" class="internal"><span class="codenumber">5.11</span> <span class="title">Matching Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="clickable-area-exercises.html" class="internal"><span class="codenumber">5.12</span> <span class="title">Clickable Area Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="select-exercises.html" class="internal"><span class="codenumber">5.13</span> <span class="title">Select Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="short-answer-exercises.html" class="internal"><span class="codenumber">5.14</span> <span class="title">Short Answer Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="fill-in-exercises.html" class="internal"><span class="codenumber">5.15</span> <span class="title">Fill-In Exercises</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="rune-18.html" class="internal"><span class="codenumber">5.16</span> <span class="title">Hodgepodge&gt;</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="exercises-timed.html" class="internal"><span class="codenumber">5.17</span> <span class="title">Exercises that are Timed</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercises-timed.html#timed-exercises" class="internal"><span class="codenumber">5.17</span> <span class="title">Timed Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="interactive-projects.html" class="internal"><span class="codenumber">5.18</span> <span class="title">Projects and Friends</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rune-21.html" class="internal"><span class="codenumber">5.19</span> <span class="title">Expedited Samples</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="rune-22.html" class="internal"><span class="codenumber">5.20</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="atomic-video.html" class="internal"><span class="codenumber">5.21</span> <span class="title">YouTube Video Embedding</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-runestone-assignment-testing.html" class="internal"><span class="codenumber">5.22</span> <span class="title">Runestone Assignment Testing</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-runestone-assignment-testing.html#section-runestone-assignment-testing-3" class="internal"><span class="codenumber">5.22</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Notation</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Hints and Answers to Selected Odd Exercises</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">Hints and Answers to Selected Even Exercises</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="codenumber">D</span> <span class="title">Hints and Answers to Selected Exercises</span></a></div></li>
+<li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="codenumber">E</span> <span class="title">A Structured Appendix</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="backmatter-6-3.html" class="internal"><span class="codenumber">E.1</span> <span class="title">A Section in an Appendix</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="backmatter-6-3.html#backmatter-6-3-3" class="internal"><span class="codenumber">E.1.1</span> <span class="title">A Subsection in a Section in an Appendix</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="backmatter-6-3.html#backmatter-6-3-3-3" class="internal"><span class="codenumber">E.1.1.1</span> <span class="title">A Subsubsection in a Subsection in a Section in an Appendix</span></a></div></li></ul>
 </li></ul>
 </li>
-<li><div class="toc-item"><a href="section-26.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="backmatter-6-4.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Numbering in the Back Matter</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">F</span> <span class="title">GNU Free Documentation License</span></a></div></li>
-<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
-<li><div class="toc-item"><a href="back-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">F</span> <span class="title">GNU Free Documentation License</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-8.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="back-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="parsons-exercises"><h2 class="heading hide-type">
-<span class="type">Exercises</span> <span class="codenumber">5.9</span> <span class="title">Parsons Exercises</span>
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">5.9</span><span class="space"> </span><span class="title">Parsons Exercises</span>
 </h2>
 <article class="exercise exercise-like" id="number-theory-proof"><h3 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Parsons Problem, Mathematical Proof.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="number-theory-proof">
-<div class="parsons_question parsons-text"><div class="para" id="p-900">Create a proof of the theorem: If <span class="process-math">\(n\)</span> is an even number, then <span class="process-math">\(n\equiv 0\mod 2\text{.}\)</span>
+<div class="parsons_question parsons-text"><div class="para" id="number-theory-proof-3-1">Create a proof of the theorem: If <span class="process-math">\(n\)</span> is an even number, then <span class="process-math">\(n\equiv 0\mod 2\text{.}\)</span>
 </div></div>
-<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-adaptive="true" data-noindent="true"><div class="para" id="p-901">Suppose <span class="process-math">\(n\)</span> is even.</div>
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-adaptive="true" data-noindent="true"><div class="para" id="number-theory-proof-4-1-1">Suppose <span class="process-math">\(n\)</span> is even.</div>
 ---
-<div class="para" id="p-903">Then there exists an <span class="process-math">\(m\)</span> so that <span class="process-math">\(n = 2m\text{.}\)</span>
+<div class="para" id="number-theory-proof-4-2-2-1">Then there exists an <span class="process-math">\(m\)</span> so that <span class="process-math">\(n = 2m\text{.}\)</span>
 </div>
 ---
-<div class="para" id="p-902">Then <span class="process-math">\(n\)</span> is a prime number.</div> #paired
+<div class="para" id="number-theory-proof-4-2-1-1">Then <span class="process-math">\(n\)</span> is a prime number.</div> #paired
 ---
-<div class="para" id="p-904">Then there exists an <span class="process-math">\(m\)</span> so that <span class="process-math">\(n = 2m + 1\text{.}\)</span>
+<div class="para" id="number-theory-proof-4-2-3-1">Then there exists an <span class="process-math">\(m\)</span> so that <span class="process-math">\(n = 2m + 1\text{.}\)</span>
 </div> #paired
 ---
-<div class="para" id="p-905">Click the heels of your ruby slippers together three times.</div> #distractor
+<div class="para" id="number-theory-proof-4-3-1">Click the heels of your ruby slippers together three times.</div> #distractor
 ---
-<div class="para" id="p-906">So <span class="process-math">\(n = 2m + 0\text{.}\)</span>
-</div> <div class="para" id="p-907">This is a superfluous second paragraph in this block.</div>
+<div class="para" id="number-theory-proof-4-4-1">So <span class="process-math">\(n = 2m + 0\text{.}\)</span>
+</div> <div class="para" id="number-theory-proof-4-4-2">This is a superfluous second paragraph in this block.</div>
 ---
-<div class="para" id="p-908">Thus <span class="process-math">\(n\equiv 0\mod 2\text{.}\)</span>
+<div class="para" id="number-theory-proof-4-5-1">Thus <span class="process-math">\(n\equiv 0\mod 2\text{.}\)</span>
 </div>
 ---
-<div class="para logical" id="p-909">
+<div class="para logical" id="number-theory-proof-4-6-1">
 <div class="para">And a little bit of irrelevant multi-line math</div>
-<div class="displaymath process-math" id="md-45">
+<div class="displaymath process-math" id="number-theory-proof-4-6-1-1">
 \begin{align*}
 c^2&amp;a^2+b^2\\
 &amp;x^2+y^2\text{.}
@@ -388,14 +398,12 @@ c^2&amp;a^2+b^2\\
 </div>
 </div> #distractor</pre>
 </div></div></div>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-40" id="hint-40"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-40"><div class="hint solution-like">Dorothy will not be much help with this proof.</div></div>
-</div></article><article class="exercise exercise-like" id="prime-number-program-indent-yes"><h3 class="heading">
+<div class="solutions"><details id="number-theory-proof-5" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="number-theory-proof-5-1">Dorothy will not be much help with this proof.</div></div></details></div></article><article class="exercise exercise-like" id="prime-number-program-indent-yes"><h3 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Parsons Problem, Programming.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="prime-number-program-indent-yes">
 <div class="parsons_question parsons-text">
-<div class="para" id="p-910">The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1.  The first member of the list is a prime and is saved/recorded.  Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list.  Now the first number remaining in the list is the next prime number.  And the process repeats.</div> <div class="para" id="p-911">The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than <span class="process-math">\(250\text{.}\)</span> [Ed. this version of this problem requires the reader to provide the necessary indentation.]</div> <div class="para" id="p-912">This reprises <a href="" class="xref" data-knowl="./knowl/sieve-primes.html" title="Exercise 2.5.1: The Sieve of Eratosthenes">Exercise 2.5.1</a>.</div>
+<div class="para" id="prime-number-program-indent-yes-4-1">The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1.  The first member of the list is a prime and is saved/recorded.  Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list.  Now the first number remaining in the list is the next prime number.  And the process repeats.</div> <div class="para" id="prime-number-program-indent-yes-4-2">The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than <span class="process-math">\(250\text{.}\)</span> [Ed. this version of this problem requires the reader to provide the necessary indentation.]</div> <div class="para" id="prime-number-program-indent-yes-4-3">This reprises <a href="integers-7.html#sieve-primes" class="xref" data-knowl="./knowl/xref/sieve-primes.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.5.1: The Sieve of Eratosthenes">Exercise 2.5.1</a>.</div>
 </div>
 <pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="python" data-adaptive="true" data-noindent="false">n = 250
 ---
@@ -423,7 +431,7 @@ print(primes)</pre>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="prime-number-program-indent-no">
 <div class="parsons_question parsons-text">
-<div class="para" id="p-913">The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1.  The first member of the list is a prime and is saved/recorded.  Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list.  Now the first number remaining in the list is the next prime number.  And the process repeats.</div> <div class="para" id="p-914">The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than <span class="process-math">\(250\text{.}\)</span> [Ed. this version of this problem does not require the reader to provide the necessary indentation, which is the default.]</div> <div class="para" id="p-915">This reprises <a href="" class="xref" data-knowl="./knowl/sieve-primes.html" title="Exercise 2.5.1: The Sieve of Eratosthenes">Exercise 2.5.1</a>.</div>
+<div class="para" id="prime-number-program-indent-no-4-1">The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1.  The first member of the list is a prime and is saved/recorded.  Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list.  Now the first number remaining in the list is the next prime number.  And the process repeats.</div> <div class="para" id="prime-number-program-indent-no-4-2">The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than <span class="process-math">\(250\text{.}\)</span> [Ed. this version of this problem does not require the reader to provide the necessary indentation, which is the default.]</div> <div class="para" id="prime-number-program-indent-no-4-3">This reprises <a href="integers-7.html#sieve-primes" class="xref" data-knowl="./knowl/xref/sieve-primes.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.5.1: The Sieve of Eratosthenes">Exercise 2.5.1</a>.</div>
 </div>
 <pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="python" data-adaptive="true" data-noindent="true">n = 250
 ---
@@ -450,33 +458,31 @@ print(primes)</pre>
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Parsons Problem, Mathematical Proof, Numbered Blocks.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="number-theory-proof-numbered-left">
-<div class="parsons_question parsons-text"><div class="para" id="p-916">Create a proof of the theorem: If <span class="process-math">\(n\)</span> is an even number, then <span class="process-math">\(n\equiv 0\mod 2\text{.}\)</span> [Ed.  This version has numbered blocks, online they are on the right end of the block.]</div></div>
-<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-numbered="right" data-adaptive="true" data-noindent="true"><div class="para" id="p-917">Suppose <span class="process-math">\(n\)</span> is even.</div>
+<div class="parsons_question parsons-text"><div class="para" id="number-theory-proof-numbered-left-3-1">Create a proof of the theorem: If <span class="process-math">\(n\)</span> is an even number, then <span class="process-math">\(n\equiv 0\mod 2\text{.}\)</span> [Ed.  This version has numbered blocks, online they are on the right end of the block.]</div></div>
+<pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="natural" data-numbered="right" data-adaptive="true" data-noindent="true"><div class="para" id="number-theory-proof-numbered-left-4-1-1">Suppose <span class="process-math">\(n\)</span> is even.</div>
 ---
-<div class="para" id="p-919">Then there exists an <span class="process-math">\(m\)</span> so that <span class="process-math">\(n = 2m\text{.}\)</span>
+<div class="para" id="number-theory-proof-numbered-left-4-2-2-1">Then there exists an <span class="process-math">\(m\)</span> so that <span class="process-math">\(n = 2m\text{.}\)</span>
 </div>
 ---
-<div class="para" id="p-918">Then <span class="process-math">\(n\)</span> is a prime number.</div> #paired
+<div class="para" id="number-theory-proof-numbered-left-4-2-1-1">Then <span class="process-math">\(n\)</span> is a prime number.</div> #paired
 ---
-<div class="para" id="p-920">Then there exists an <span class="process-math">\(m\)</span> so that <span class="process-math">\(n = 2m + 1\text{.}\)</span>
+<div class="para" id="number-theory-proof-numbered-left-4-2-3-1">Then there exists an <span class="process-math">\(m\)</span> so that <span class="process-math">\(n = 2m + 1\text{.}\)</span>
 </div> #paired
 ---
-<div class="para" id="p-921">Click the heels of your ruby slippers together three times.</div> #distractor
+<div class="para" id="number-theory-proof-numbered-left-4-3-1">Click the heels of your ruby slippers together three times.</div> #distractor
 ---
-<div class="para" id="p-922">So <span class="process-math">\(n = 2m + 0\text{.}\)</span>
-</div> <div class="para" id="p-923">This is a superfluous second paragraph in this block.</div>
+<div class="para" id="number-theory-proof-numbered-left-4-4-1">So <span class="process-math">\(n = 2m + 0\text{.}\)</span>
+</div> <div class="para" id="number-theory-proof-numbered-left-4-4-2">This is a superfluous second paragraph in this block.</div>
 ---
-<div class="para" id="p-924">Thus <span class="process-math">\(n\equiv 0\mod 2\text{.}\)</span>
+<div class="para" id="number-theory-proof-numbered-left-4-5-1">Thus <span class="process-math">\(n\equiv 0\mod 2\text{.}\)</span>
 </div></pre>
 </div></div></div>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-41" id="hint-41"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-41"><div class="hint solution-like">Dorothy will not be much help with this proof.</div></div>
-</div></article><article class="exercise exercise-like" id="prime-number-program-numbered-right"><h3 class="heading">
+<div class="solutions"><details id="number-theory-proof-numbered-left-5" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="number-theory-proof-numbered-left-5-1">Dorothy will not be much help with this proof.</div></div></details></div></article><article class="exercise exercise-like" id="prime-number-program-numbered-right"><h3 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Parsons Problem, Programming.</span>
 </h3>
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="prime-number-program-numbered-right">
 <div class="parsons_question parsons-text">
-<div class="para" id="p-925">The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1.  The first member of the list is a prime and is saved/recorded.  Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list.  Now the first number remaining in the list is the next prime number.  And the process repeats.</div> <div class="para" id="p-926">The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than <span class="process-math">\(250\text{.}\)</span> [Ed.  This version has numbered blocks, online they are on the left end of the block.]</div> <div class="para" id="p-927">This reprises <a href="" class="xref" data-knowl="./knowl/sieve-primes.html" title="Exercise 2.5.1: The Sieve of Eratosthenes">Exercise 2.5.1</a>.</div>
+<div class="para" id="prime-number-program-numbered-right-4-1">The Sieve of Eratosthenes computes prime numbers by starting with a finite list of the integers bigger than 1.  The first member of the list is a prime and is saved/recorded.  Then all multiples of that prime (which not a prime, excepting the prime itself!) are removed from the list.  Now the first number remaining in the list is the next prime number.  And the process repeats.</div> <div class="para" id="prime-number-program-numbered-right-4-2">The code blocks below can be rearranged to form one of the many possible programs to implement this algorithm to compute a list of all the primes less than <span class="process-math">\(250\text{.}\)</span> [Ed.  This version has numbered blocks, online they are on the left end of the block.]</div> <div class="para" id="prime-number-program-numbered-right-4-3">This reprises <a href="integers-7.html#sieve-primes" class="xref" data-knowl="./knowl/xref/sieve-primes.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.5.1: The Sieve of Eratosthenes">Exercise 2.5.1</a>.</div>
 </div>
 <pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="python" data-numbered="left" data-adaptive="true" data-noindent="false">n = 250
 ---
@@ -501,7 +507,7 @@ while candidates:
 print(primes)</pre>
 </div></div></div></article></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="multiple-choice-exercises.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="horizontal-parsons-exercises.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="multiple-choice-exercises.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="horizontal-parsons-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
