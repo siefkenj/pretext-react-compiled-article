@@ -24,7 +24,7 @@
       </division>
       <division type="preface" number="" id="contributors" url="contributors.html#contributors">
         <title>Contributors to the 4<span class="process-math">\(^\mathrm{th}\)</span> Edition</title>
-        <division type="contributors" number="" id="contributors-1" url="contributors.html#contributors-1">
+        <division type="contributors" number="" id="contributors-3" url="contributors.html#contributors-3">
           <title/>
         </division>
       </division>
@@ -35,40 +35,40 @@
         <title>Preliminaries</title>
         <division type="section" number="1.1" id="section-note-on-proofs" url="section-note-on-proofs.html#section-note-on-proofs">
           <title>A Short Note on Proofs</title>
-          <division type="subsection" number="1.1.1" id="subsection-1" url="section-note-on-proofs.html#subsection-1">
+          <division type="subsection" number="1.1.1" id="section-note-on-proofs-3" url="section-note-on-proofs.html#section-note-on-proofs-3">
             <title>Some Cautions and Suggestions</title>
           </division>
         </division>
         <division type="section" number="1.2" id="section-sets-and-equivalence-relations" url="section-sets-and-equivalence-relations.html#section-sets-and-equivalence-relations">
           <title>Sets and Equivalence Relations</title>
-          <division type="subsection" number="1.2.1" id="subsection-2" url="section-sets-and-equivalence-relations.html#subsection-2">
+          <division type="subsection" number="1.2.1" id="section-sets-and-equivalence-relations-2" url="section-sets-and-equivalence-relations.html#section-sets-and-equivalence-relations-2">
             <title>Set Theory</title>
           </division>
-          <division type="subsection" number="1.2.2" id="subsection-3" url="section-sets-and-equivalence-relations.html#subsection-3">
+          <division type="subsection" number="1.2.2" id="section-sets-and-equivalence-relations-3" url="section-sets-and-equivalence-relations.html#section-sets-and-equivalence-relations-3">
             <title>Cartesian Products and Mappings</title>
           </division>
-          <division type="subsection" number="1.2.3" id="subsection-4" url="section-sets-and-equivalence-relations.html#subsection-4">
+          <division type="subsection" number="1.2.3" id="section-sets-and-equivalence-relations-4" url="section-sets-and-equivalence-relations.html#section-sets-and-equivalence-relations-4">
             <title>Equivalence Relations and Partitions</title>
           </division>
         </division>
         <division type="section" number="1.3" id="sets-sage" url="sets-sage.html#sets-sage">
           <title>Sage</title>
-          <division type="subsection" number="1.3.1" id="subsection-5" url="sets-sage.html#subsection-5">
+          <division type="subsection" number="1.3.1" id="sets-sage-3" url="sets-sage.html#sets-sage-3">
             <title>Executing Sage Commands</title>
           </division>
-          <division type="subsection" number="1.3.2" id="subsection-6" url="sets-sage.html#subsection-6">
+          <division type="subsection" number="1.3.2" id="sets-sage-4" url="sets-sage.html#sets-sage-4">
             <title>Immediate Help</title>
           </division>
-          <division type="subsection" number="1.3.3" id="subsection-7" url="sets-sage.html#subsection-7">
+          <division type="subsection" number="1.3.3" id="sets-sage-5" url="sets-sage.html#sets-sage-5">
             <title>Annotating Your Work</title>
           </division>
-          <division type="subsection" number="1.3.4" id="subsection-8" url="sets-sage.html#subsection-8">
+          <division type="subsection" number="1.3.4" id="sets-sage-6" url="sets-sage.html#sets-sage-6">
             <title>Lists</title>
           </division>
-          <division type="subsection" number="1.3.5" id="subsection-9" url="sets-sage.html#subsection-9">
+          <division type="subsection" number="1.3.5" id="sets-sage-7" url="sets-sage.html#sets-sage-7">
             <title>Lists of Integers</title>
           </division>
-          <division type="subsection" number="1.3.6" id="subsection-10" url="sets-sage.html#subsection-10">
+          <division type="subsection" number="1.3.6" id="sets-sage-8" url="sets-sage.html#sets-sage-8">
             <title>Saving and Sharing Your Work</title>
           </division>
         </division>
@@ -78,7 +78,7 @@
         <division type="exercises" number="1.5" id="sets-sage-exercises" url="sets-sage-exercises.html#sets-sage-exercises">
           <title>Sage Exercises</title>
         </division>
-        <division type="references" number="1.6" id="references-1" url="references-1.html#references-1">
+        <division type="references" number="1.6" id="sets-8" url="sets-8.html#sets-8">
           <title>References and Suggested Readings</title>
         </division>
       </division>
@@ -89,38 +89,38 @@
         </division>
         <division type="section" number="2.2" id="section-division-algorithm" url="section-division-algorithm.html#section-division-algorithm">
           <title>The Division Algorithm</title>
-          <division type="subsection" number="2.2.1" id="subsection-11" url="section-division-algorithm.html#subsection-11">
+          <division type="subsection" number="2.2.1" id="section-division-algorithm-3" url="section-division-algorithm.html#section-division-algorithm-3">
             <title>The Euclidean Algorithm</title>
           </division>
-          <division type="subsection" number="2.2.2" id="subsection-12" url="section-division-algorithm.html#subsection-12">
+          <division type="subsection" number="2.2.2" id="section-division-algorithm-4" url="section-division-algorithm.html#section-division-algorithm-4">
             <title>Prime Numbers</title>
           </division>
-          <division type="subsection" number="2.2.3" id="subsection-13" url="section-division-algorithm.html#subsection-13">
+          <division type="subsection" number="2.2.3" id="section-division-algorithm-5" url="section-division-algorithm.html#section-division-algorithm-5">
             <title>Historical Note</title>
           </division>
         </division>
         <division type="section" number="2.3" id="integers-sage" url="integers-sage.html#integers-sage">
           <title>Sage</title>
-          <division type="subsection" number="2.3.1" id="subsection-14" url="integers-sage.html#subsection-14">
+          <division type="subsection" number="2.3.1" id="integers-sage-3" url="integers-sage.html#integers-sage-3">
             <title>Division Algorithm</title>
           </division>
-          <division type="subsection" number="2.3.2" id="subsection-15" url="integers-sage.html#subsection-15">
+          <division type="subsection" number="2.3.2" id="integers-sage-4" url="integers-sage.html#integers-sage-4">
             <title>Greatest Common Divisor</title>
           </division>
-          <division type="subsection" number="2.3.3" id="subsection-16" url="integers-sage.html#subsection-16">
+          <division type="subsection" number="2.3.3" id="integers-sage-5" url="integers-sage.html#integers-sage-5">
             <title>Primes and Factoring</title>
           </division>
         </division>
         <division type="exercises" number="2.4" id="exercises-integers" url="exercises-integers.html#exercises-integers">
           <title>Exercises</title>
         </division>
-        <division type="exercises" number="2.5" id="exercises-4" url="exercises-4.html#exercises-4">
+        <division type="exercises" number="2.5" id="integers-7" url="integers-7.html#integers-7">
           <title>Programming Exercises</title>
         </division>
         <division type="exercises" number="2.6" id="integers-sage-exercises" url="integers-sage-exercises.html#integers-sage-exercises">
           <title>Sage Exercises</title>
         </division>
-        <division type="references" number="2.7" id="references-2" url="references-2.html#references-2">
+        <division type="references" number="2.7" id="integers-9" url="integers-9.html#integers-9">
           <title>References and Suggested Readings</title>
         </division>
       </division>
@@ -131,89 +131,89 @@
         <title>Groups</title>
         <division type="section" number="3.1" id="section-mod-n-sym" url="section-mod-n-sym.html#section-mod-n-sym">
           <title>Integer Equivalence Classes and Symmetries</title>
-          <division type="subsection" number="3.1.1" id="subsection-17" url="section-mod-n-sym.html#subsection-17">
+          <division type="subsection" number="3.1.1" id="section-mod-n-sym-5" url="section-mod-n-sym.html#section-mod-n-sym-5">
             <title>The Integers mod <span class="process-math">\(n\)</span></title>
           </division>
-          <division type="subsection" number="3.1.2" id="subsection-18" url="section-mod-n-sym.html#subsection-18">
+          <division type="subsection" number="3.1.2" id="section-mod-n-sym-6" url="section-mod-n-sym.html#section-mod-n-sym-6">
             <title>Symmetries</title>
           </division>
         </division>
         <division type="section" number="3.2" id="section-groups-define" url="section-groups-define.html#section-groups-define">
           <title>Definitions and Examples</title>
-          <division type="subsection" number="3.2.1" id="subsection-19" url="section-groups-define.html#subsection-19">
+          <division type="subsection" number="3.2.1" id="section-groups-define-2" url="section-groups-define.html#section-groups-define-2">
             <title>Definition of a Group</title>
           </division>
-          <division type="subsection" number="3.2.2" id="subsection-20" url="section-groups-define.html#subsection-20">
+          <division type="subsection" number="3.2.2" id="section-groups-define-3" url="section-groups-define.html#section-groups-define-3">
             <title>Examples of Groups</title>
           </division>
-          <division type="subsection" number="3.2.3" id="subsection-21" url="section-groups-define.html#subsection-21">
+          <division type="subsection" number="3.2.3" id="section-groups-define-4" url="section-groups-define.html#section-groups-define-4">
             <title>Basic Properties of Groups</title>
           </division>
-          <division type="subsection" number="3.2.4" id="subsection-22" url="section-groups-define.html#subsection-22">
+          <division type="subsection" number="3.2.4" id="section-groups-define-5" url="section-groups-define.html#section-groups-define-5">
             <title>Historical Note</title>
           </division>
         </division>
         <division type="section" number="3.3" id="section-subgroups" url="section-subgroups.html#section-subgroups">
           <title>Subgroups</title>
-          <division type="subsection" number="3.3.1" id="subsection-23" url="section-subgroups.html#subsection-23">
+          <division type="subsection" number="3.3.1" id="section-subgroups-2" url="section-subgroups.html#section-subgroups-2">
             <title>Definitions and Examples</title>
           </division>
-          <division type="subsection" number="3.3.2" id="subsection-24" url="section-subgroups.html#subsection-24">
+          <division type="subsection" number="3.3.2" id="section-subgroups-3" url="section-subgroups.html#section-subgroups-3">
             <title>Some Subgroup Theorems</title>
           </division>
         </division>
         <division type="section" number="3.4" id="groups-sage" url="groups-sage.html#groups-sage">
           <title>Sage</title>
-          <division type="subsection" number="3.4.1" id="subsection-25" url="groups-sage.html#subsection-25">
+          <division type="subsection" number="3.4.1" id="groups-sage-3" url="groups-sage.html#groups-sage-3">
             <title>Integers mod n</title>
           </division>
-          <division type="subsection" number="3.4.2" id="subsection-26" url="groups-sage.html#subsection-26">
+          <division type="subsection" number="3.4.2" id="groups-sage-4" url="groups-sage.html#groups-sage-4">
             <title>Groups of symmetries</title>
           </division>
-          <division type="subsection" number="3.4.3" id="subsection-27" url="groups-sage.html#subsection-27">
+          <division type="subsection" number="3.4.3" id="groups-sage-5" url="groups-sage.html#groups-sage-5">
             <title>Quaternions</title>
           </division>
-          <division type="subsection" number="3.4.4" id="subsection-28" url="groups-sage.html#subsection-28">
+          <division type="subsection" number="3.4.4" id="groups-sage-6" url="groups-sage.html#groups-sage-6">
             <title>Subgroups</title>
           </division>
         </division>
         <division type="exercises" number="3.5" id="exercises-groups" url="exercises-groups.html#exercises-groups">
           <title>Exercises</title>
         </division>
-        <division type="exercises" number="3.6" id="exercises-7" url="exercises-7.html#exercises-7">
+        <division type="exercises" number="3.6" id="groups-9" url="groups-9.html#groups-9">
           <title>Additional Exercises: Detecting Errors</title>
         </division>
         <division type="exercises" number="3.7" id="groups-sage-exercises" url="groups-sage-exercises.html#groups-sage-exercises">
           <title>Sage Exercises</title>
         </division>
-        <division type="references" number="3.8" id="references-3" url="references-3.html#references-3">
+        <division type="references" number="3.8" id="groups-11" url="groups-11.html#groups-11">
           <title>References and Suggested Readings</title>
         </division>
       </division>
       <division type="chapter" number="4" id="cyclic" url="cyclic.html#cyclic">
         <title>Cyclicity</title>
-        <division type="section" number="4.1" id="section-11" url="section-11.html#section-11">
+        <division type="section" number="4.1" id="cyclic-4" url="cyclic-4.html#cyclic-4">
           <title>Cyclic groups</title>
         </division>
-        <division type="section" number="4.2" id="section-12" url="section-12.html#section-12">
+        <division type="section" number="4.2" id="cyclic-5" url="cyclic-5.html#cyclic-5">
           <title>Subgroups of a Cyclic Group</title>
         </division>
-        <division type="section" number="4.3" id="section-13" url="section-13.html#section-13">
+        <division type="section" number="4.3" id="cyclic-6" url="cyclic-6.html#cyclic-6">
           <title>Cyclic Groups of Complex Numbers</title>
         </division>
-        <division type="section" number="4.4" id="section-14" url="section-14.html#section-14">
+        <division type="section" number="4.4" id="cyclic-7" url="cyclic-7.html#cyclic-7">
           <title>Large Powers of Integers</title>
         </division>
         <division type="exercises" number="4.5" id="exercises-cyclic" url="exercises-cyclic.html#exercises-cyclic">
           <title>Exercises</title>
         </division>
-        <division type="exercises" number="4.6" id="exercises-10" url="exercises-10.html#exercises-10">
+        <division type="exercises" number="4.6" id="cyclic-9" url="cyclic-9.html#cyclic-9">
           <title>Programming Exercises</title>
         </division>
         <division type="exercises" number="4.7" id="cyclic-sage-exercises" url="cyclic-sage-exercises.html#cyclic-sage-exercises">
           <title>Sage Exercises</title>
         </division>
-        <division type="references" number="4.8" id="references-4" url="references-4.html#references-4">
+        <division type="references" number="4.8" id="cyclic-11" url="cyclic-11.html#cyclic-11">
           <title>References and Suggested Readings</title>
         </division>
       </division>
@@ -236,10 +236,10 @@
         </division>
         <division type="section" number="5.6" id="rune-nested-divisions" url="rune-nested-divisions.html#rune-nested-divisions">
           <title>Deeper</title>
-          <division type="subsection" number="5.6.1" id="subsection-29" url="rune-nested-divisions.html#subsection-29">
+          <division type="subsection" number="5.6.1" id="rune-nested-divisions-3" url="rune-nested-divisions.html#rune-nested-divisions-3">
             <title>Subsection One</title>
           </division>
-          <division type="subsection" number="5.6.2" id="subsection-30" url="rune-nested-divisions.html#subsection-30">
+          <division type="subsection" number="5.6.2" id="rune-nested-divisions-4" url="rune-nested-divisions.html#rune-nested-divisions-4">
             <title>Subsection Two</title>
           </division>
         </division>
@@ -261,65 +261,77 @@
         <division type="exercises" number="5.12" id="clickable-area-exercises" url="clickable-area-exercises.html#clickable-area-exercises">
           <title>Clickable Area Exercises</title>
         </division>
-        <division type="exercises" number="5.13" id="short-answer-exercises" url="short-answer-exercises.html#short-answer-exercises">
+        <division type="exercises" number="5.13" id="select-exercises" url="select-exercises.html#select-exercises">
+          <title>Select Exercises</title>
+        </division>
+        <division type="exercises" number="5.14" id="short-answer-exercises" url="short-answer-exercises.html#short-answer-exercises">
           <title>Short Answer Exercises</title>
         </division>
-        <division type="exercises" number="5.14" id="fill-in--exercises" url="fill-in--exercises.html#fill-in--exercises">
+        <division type="exercises" number="5.15" id="fill-in-exercises" url="fill-in-exercises.html#fill-in-exercises">
           <title>Fill-In Exercises</title>
         </division>
-        <division type="section" number="5.15" id="exercises-timed" url="exercises-timed.html#exercises-timed">
+        <division type="exercises" number="5.16" id="rune-18" url="rune-18.html#rune-18">
+          <title>Hodgepodge&gt;</title>
+        </division>
+        <division type="section" number="5.17" id="exercises-timed" url="exercises-timed.html#exercises-timed">
           <title>Exercises that are Timed</title>
-          <division type="exercises" number="5.15" id="timed-exercises" url="exercises-timed.html#timed-exercises">
+          <division type="exercises" number="5.17" id="timed-exercises" url="exercises-timed.html#timed-exercises">
             <title>Timed Exercises</title>
           </division>
         </division>
-        <division type="section" number="5.16" id="interactive-projects" url="interactive-projects.html#interactive-projects">
+        <division type="section" number="5.18" id="interactive-projects" url="interactive-projects.html#interactive-projects">
           <title>Projects and Friends</title>
         </division>
-        <division type="section" number="5.17" id="section-23" url="section-23.html#section-23">
+        <division type="section" number="5.19" id="rune-21" url="rune-21.html#rune-21">
           <title>Expedited Samples</title>
         </division>
-        <division type="reading-questions" number="5.18" id="reading-questions-1" url="reading-questions-1.html#reading-questions-1">
+        <division type="reading-questions" number="5.20" id="rune-22" url="rune-22.html#rune-22">
           <title>Reading Questions</title>
         </division>
-        <division type="section" number="5.19" id="atomic-video" url="atomic-video.html#atomic-video">
+        <division type="section" number="5.21" id="atomic-video" url="atomic-video.html#atomic-video">
           <title>YouTube Video Embedding</title>
+        </division>
+        <division type="section" number="5.22" id="section-runestone-assignment-testing" url="section-runestone-assignment-testing.html#section-runestone-assignment-testing">
+          <title>Runestone Assignment Testing</title>
+          <division type="exercises" number="5.22" id="section-runestone-assignment-testing-3" url="section-runestone-assignment-testing.html#section-runestone-assignment-testing-3">
+            <title>Exercises</title>
+          </division>
         </division>
       </division>
     </division>
     <division type="backmatter" number="" id="backmatter" url="backmatter.html#backmatter">
       <title>Back Matter</title>
-      <division type="appendix" number="A" id="appendix-1" url="appendix-1.html#appendix-1">
+      <division type="appendix" number="A" id="backmatter-2" url="backmatter-2.html#backmatter-2">
         <title>Notation</title>
       </division>
-      <division type="solutions" number="B" id="solutions-1" url="solutions-1.html#solutions-1">
+      <division type="solutions" number="B" id="backmatter-3" url="backmatter-3.html#backmatter-3">
         <title>Hints and Answers to Selected Odd Exercises</title>
       </division>
-      <division type="solutions" number="C" id="solutions-2" url="solutions-2.html#solutions-2">
+      <division type="solutions" number="C" id="backmatter-4" url="backmatter-4.html#backmatter-4">
         <title>Hints and Answers to Selected Even Exercises</title>
       </division>
-      <division type="solutions" number="D" id="solutions-3" url="solutions-3.html#solutions-3">
+      <division type="solutions" number="D" id="backmatter-5" url="backmatter-5.html#backmatter-5">
         <title>Hints and Answers to Selected Exercises</title>
       </division>
-      <division type="appendix" number="E" id="appendix-2" url="appendix-2.html#appendix-2">
+      <division type="appendix" number="E" id="backmatter-6" url="backmatter-6.html#backmatter-6">
         <title>A Structured Appendix</title>
-        <division type="section" number="E.1" id="section-25" url="section-25.html#section-25">
+        <division type="section" number="E.1" id="backmatter-6-3" url="backmatter-6-3.html#backmatter-6-3">
           <title>A Section in an Appendix</title>
-          <division type="subsection" number="E.1.1" id="subsection-31" url="section-25.html#subsection-31">
+          <division type="subsection" number="E.1.1" id="backmatter-6-3-3" url="backmatter-6-3.html#backmatter-6-3-3">
             <title>A Subsection in a Section in an Appendix</title>
-            <division type="subsubsection" number="E.1.1.1" id="subsubsection-1" url="section-25.html#subsubsection-1">
+            <division type="subsubsection" number="E.1.1.1" id="backmatter-6-3-3-3" url="backmatter-6-3.html#backmatter-6-3-3-3">
               <title>A Subsubsection in a Subsection in a Section in an Appendix</title>
             </division>
           </division>
         </division>
-        <division type="section" number="E.2" id="section-26" url="section-26.html#section-26">
+        <division type="section" number="E.2" id="backmatter-6-4" url="backmatter-6-4.html#backmatter-6-4">
           <title>Numbering in the Back Matter</title>
         </division>
       </division>
       <division type="appendix" number="F" id="appendix-gfdl" url="appendix-gfdl.html#appendix-gfdl">
         <title>GNU Free Documentation License</title>
       </division>
-      <division type="index" number="" id="index-1" url="index-1.html#index-1">
+      <division type="index" number="" id="backmatter-8" url="backmatter-8.html#backmatter-8">
         <title>Index</title>
       </division>
       <division type="colophon" number="" id="back-colophon" url="back-colophon.html#back-colophon">
